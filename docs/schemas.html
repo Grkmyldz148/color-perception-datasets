@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schemas · color-perception-datasets</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="./">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="./">Datasets</a><a href="./schemas.html" class="active">Schemas</a><a href="./about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <span class="eyebrow">Schemas</span>
+  <h1>Every canonical CSV follows one of these schemas.</h1>
+  <p class="lede">Each <code>meta.yaml</code> declares which schema its <code>canonical.csv</code> uses. Schemas live in the repo at <code>schemas/&lt;name&gt;.yaml</code>.</p>
+</section>
+<section style="margin-bottom:36px">
+  <h2><code>color_names</code></h2>
+  <p>Color-naming dataset: each row maps a natural-language color name to a
+representative RGB swatch. Used for evaluating color appearance models
+on language/perceptual category boundaries, and as a sanity test for
+color-space hue uniformity (chips with similar names should be near
+each other in a uniform space).</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Column</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+    <tbody><tr><td><code>name</code></td><td>string</td><td>yes</td><td>Color name as collected from observers (free-form English).</td></tr><tr><td><code>hex</code></td><td>string</td><td>yes</td><td>Representative sRGB hex (e.g. &#x27;#acc2d9&#x27;).</td></tr><tr><td><code>R</code></td><td>int</td><td>yes</td><td></td></tr><tr><td><code>G</code></td><td>int</td><td>yes</td><td></td></tr><tr><td><code>B</code></td><td>int</td><td>yes</td><td></td></tr><tr><td><code>L</code></td><td>float</td><td>no</td><td>CIELAB L* under D65 (computed from hex).</td></tr><tr><td><code>a</code></td><td>float</td><td>no</td><td></td></tr><tr><td><code>b</code></td><td>float</td><td>no</td><td></td></tr></tbody>
+  </table></div>
+  <h3>Invariants</h3><ul><li>hex must parse to (R,G,B); R,G,B values must match.</li></ul>
+</section><section style="margin-bottom:36px">
+  <h2><code>compound_legacy</code></h2>
+  <p>Compound legacy dataset — multiple original files with mixed per-file
+schemas that are not merged into a single canonical table. The
+`canonical.csv` is an INDEX of the raw files (filename, size, category)
+rather than a flat data table. Users read individual raw files from
+`raw/` according to their experimental needs.
+
+This schema exists because some classic color-appearance datasets
+(LUTCHI, certain CAM corpus data) ship as collections of small files
+whose per-file schemas only make sense in the context of the source
+paper. Merging them into one canonical CSV would erase the experimental
+structure that gives each file its meaning.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Column</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+    <tbody><tr><td><code>filename</code></td><td>string</td><td>yes</td><td></td></tr><tr><td><code>size_bytes</code></td><td>int</td><td>yes</td><td></td></tr><tr><td><code>category</code></td><td>string</td><td>yes</td><td>Coarse grouping (e.g. &quot;mean appearance estimates&quot;, &quot;colorimetric reference data&quot;).</td></tr><tr><td><code>lines</code></td><td>int</td><td>no</td><td>Row count of the raw file, if applicable.</td></tr></tbody>
+  </table></div>
+  <h3>Invariants</h3><ul><li>Every listed filename must exist in raw/.</li></ul>
+</section><section style="margin-bottom:36px">
+  <h2><code>constant_hue</code></h2>
+  <p>Standard schema for constant-hue datasets. Each row = one chip on a
+perceptually constant-hue line or surface. Used to test hue uniformity
+of a color space (chips with the same hue_id should fall on a straight
+line through the achromatic axis in a perceptually uniform space).</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Column</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+    <tbody><tr><td><code>chip_id</code></td><td>string</td><td>yes</td><td>Stable identifier for the chip.</td></tr><tr><td><code>hue_id</code></td><td>string</td><td>yes</td><td>Hue family label (e.g. &quot;R&quot;, &quot;Y&quot;, &quot;10R&quot; for Munsell-style).</td></tr><tr><td><code>L</code></td><td>float</td><td>yes</td><td></td></tr><tr><td><code>a</code></td><td>float</td><td>yes</td><td></td></tr><tr><td><code>b</code></td><td>float</td><td>yes</td><td></td></tr><tr><td><code>C</code></td><td>float</td><td>no</td><td>Chroma. Computed sqrt(a^2 + b^2) if absent.</td></tr><tr><td><code>h</code></td><td>float</td><td>no</td><td>Hue angle in degrees [0, 360). Computed if absent.</td></tr><tr><td><code>illuminant</code></td><td>string</td><td>no</td><td></td></tr></tbody>
+  </table></div>
+  
+</section><section style="margin-bottom:36px">
+  <h2><code>corresponding_colors</code></h2>
+  <p>Corresponding-colors data for chromatic-adaptation research. Each row
+pairs a &quot;test&quot; stimulus (viewed under one illuminant) with the &quot;matched&quot;
+stimulus (viewed under another illuminant) that an observer reports as
+the same color. Optional fields carry observer scatter and per-observer
+deviations when reported in the source.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Column</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+    <tbody><tr><td><code>pair_id</code></td><td>string</td><td>yes</td><td></td></tr><tr><td><code>experiment_id</code></td><td>string</td><td>yes</td><td>Identifier for the experimental condition (e.g. &quot;Breneman_Exp_1&quot;).</td></tr><tr><td><code>color_name</code></td><td>string</td><td>no</td><td>Sample label (Illuminant, Gray, Red, Skin, etc.).</td></tr><tr><td><code>u_t</code></td><td>float</td><td>yes</td><td>CIE u&#x27; chromaticity of the TEST stimulus (under test illuminant).</td></tr><tr><td><code>v_t</code></td><td>float</td><td>yes</td><td>CIE v&#x27; chromaticity of the TEST stimulus.</td></tr><tr><td><code>u_m</code></td><td>float</td><td>yes</td><td>CIE u&#x27; chromaticity of the MATCHED stimulus (under reference illuminant).</td></tr><tr><td><code>v_m</code></td><td>float</td><td>yes</td><td>CIE v&#x27; chromaticity of the MATCHED stimulus.</td></tr><tr><td><code>sigma_u</code></td><td>float</td><td>no</td><td>Inter-observer scatter on u&#x27;, if reported.</td></tr><tr><td><code>sigma_v</code></td><td>float</td><td>no</td><td>Inter-observer scatter on v&#x27;, if reported.</td></tr><tr><td><code>illuminant_test</code></td><td>string</td><td>no</td><td>Illuminant under which the test stimulus was viewed.</td></tr><tr><td><code>illuminant_reference</code></td><td>string</td><td>no</td><td>Illuminant under which the matched stimulus was viewed.</td></tr></tbody>
+  </table></div>
+  <h3>Invariants</h3><ul><li>A perfectly accurate chromatic adaptation transform maps (u_t, v_t) → (u_m, v_m) under the given illuminant change.</li></ul>
+</section><section style="margin-bottom:36px">
+  <h2><code>delta_only</code></h2>
+  <p>Pair dataset where the source publication reports only Δ (delta) values
+between paired colors, without the endpoint Lab coordinates. Used when
+the underlying chip coordinates are not directly linkable to pair rows
+in the original source (e.g. He 2022 — chips and pair-Δ values live in
+separate sheets with no shared chip-pair index).</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Column</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+    <tbody><tr><td><code>pair_id</code></td><td>string</td><td>yes</td><td></td></tr><tr><td><code>dv</code></td><td>float</td><td>no</td><td>Visual difference score. Column name may differ per dataset
+(e.g. dv_CLAB, dv_DE2000) — see meta.yaml for the canonical column.</td></tr><tr><td><code>DE_00</code></td><td>float</td><td>no</td><td>CIEDE2000 between the two chips (often present).</td></tr></tbody>
+  </table></div>
+  <h3>Invariants</h3><ul><li>All delta values should be non-negative.</li><li>If multiple dv conventions are reported (CLAB vs DE2000), they should be within a few percent of each other.</li></ul>
+</section><section style="margin-bottom:36px">
+  <h2><code>gamut_boundary</code></h2>
+  <p>Standard schema for real-world gamut boundary datasets. Each row = one
+boundary point in CIELAB (or sometimes xyY) marking the outer surface
+of an empirical color volume (e.g. Pointer&#x27;s real surface colors).</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Column</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+    <tbody><tr><td><code>point_id</code></td><td>string</td><td>yes</td><td></td></tr><tr><td><code>L</code></td><td>float</td><td>yes</td><td></td></tr><tr><td><code>a</code></td><td>float</td><td>yes</td><td></td></tr><tr><td><code>b</code></td><td>float</td><td>yes</td><td></td></tr><tr><td><code>x</code></td><td>float</td><td>no</td><td>CIE xyY x chromaticity (if dataset is xyY-native).</td></tr><tr><td><code>y</code></td><td>float</td><td>no</td><td></td></tr><tr><td><code>Y</code></td><td>float</td><td>no</td><td></td></tr><tr><td><code>illuminant</code></td><td>string</td><td>no</td><td></td></tr></tbody>
+  </table></div>
+  
+</section><section style="margin-bottom:36px">
+  <h2><code>jnd_ellipses</code></h2>
+  <p>Just-noticeable-difference (JND) discrimination-threshold ellipse data.
+Each row is one ellipse: a chromaticity center (x_c, y_c) plus the
+semi-major axis (a), semi-minor axis (b), and rotation angle (theta)
+of the discrimination ellipse around that center. Unlike pair_diff, the
+data is one ellipse per chromaticity, not one pair per row — the ellipse
+IS the JND distribution.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Column</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+    <tbody><tr><td><code>center_id</code></td><td>string</td><td>yes</td><td>Stable identifier for the chromaticity center.</td></tr><tr><td><code>x_c</code></td><td>float</td><td>yes</td><td>CIE x chromaticity coordinate of the ellipse center.</td></tr><tr><td><code>y_c</code></td><td>float</td><td>yes</td><td>CIE y chromaticity coordinate of the ellipse center.</td></tr><tr><td><code>a</code></td><td>float</td><td>yes</td><td>Semi-major axis length (in the same chromaticity units as x, y, typically ×10⁻³).</td></tr><tr><td><code>b</code></td><td>float</td><td>yes</td><td>Semi-minor axis length.</td></tr><tr><td><code>theta_deg</code></td><td>float</td><td>yes</td><td>Rotation angle of the semi-major axis from the +x direction, in degrees.</td></tr><tr><td><code>Y</code></td><td>float</td><td>no</td><td>Optional reference luminance factor (Y).</td></tr><tr><td><code>illuminant</code></td><td>string</td><td>no</td><td></td></tr></tbody>
+  </table></div>
+  <h3>Invariants</h3><ul><li>a &gt;= b &gt; 0</li><li>0 &lt;= theta_deg &lt; 180 (modulo 180 — ellipse orientation is rotation-symmetric)</li></ul>
+</section><section style="margin-bottom:36px">
+  <h2><code>pair_diff</code></h2>
+  <p>Standard schema for color-difference pair datasets. One row = one pair of
+colors with an associated visual-difference score from a psychophysical
+experiment. All colors are in CIELAB under the dataset&#x27;s declared
+illuminant (see meta.yaml).</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Column</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+    <tbody><tr><td><code>pair_id</code></td><td>string</td><td>yes</td><td>Stable identifier for the pair, unique within the dataset.</td></tr><tr><td><code>L1</code></td><td>float</td><td>yes</td><td>CIE L* of color 1.</td></tr><tr><td><code>a1</code></td><td>float</td><td>yes</td><td>CIE a* of color 1.</td></tr><tr><td><code>b1</code></td><td>float</td><td>yes</td><td>CIE b* of color 1.</td></tr><tr><td><code>L2</code></td><td>float</td><td>yes</td><td></td></tr><tr><td><code>a2</code></td><td>float</td><td>yes</td><td></td></tr><tr><td><code>b2</code></td><td>float</td><td>yes</td><td></td></tr><tr><td><code>dv</code></td><td>float</td><td>yes</td><td>Visual difference score reported by observers. Units and scale are
+dataset-specific (see meta.yaml `dv_units`). For most published
+datasets this is in DE units; for HumanFB it is a 0-100 slider scale.</td></tr><tr><td><code>weight</code></td><td>float</td><td>no</td><td>Per-pair weight. Typical sources: nstar (effective observer count) or
+raw observer count. NaN means unweighted. See meta.yaml `weight_meaning`.</td></tr><tr><td><code>sub_dataset</code></td><td>string</td><td>no</td><td>Sub-experiment label within a composite dataset, e.g. &quot;BFD-P&quot;, &quot;LEEDS&quot;,
+&quot;RIT-DuPont&quot;, &quot;WITT&quot; for COMBVD; &quot;table1&quot;/&quot;table2&quot; for MacAdam 1974.</td></tr><tr><td><code>illuminant</code></td><td>string</td><td>no</td><td>Illuminant for THIS pair if it differs from the dataset-level default
+(e.g. mixed-illuminant collections). Leave empty to inherit meta.yaml.</td></tr></tbody>
+  </table></div>
+  <h3>Invariants</h3><ul><li>If dv is reported in ΔE units, |dv| should be within a few DE units for threshold experiments and within ~50 DE for suprathreshold.</li><li>Catch trials (identical colors) should have dv ≈ 0; pairs with L1==L2 and a1==a2 and b1==b2 but dv &gt; 0 indicate sentinel issues.</li></ul>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

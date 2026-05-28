@@ -1,0 +1,31 @@
+name: Cherepkova_2025_Contrast_Preferences
+full_name: Cherepkova et al. (2025) Individual Contrast Preferences Database (NTNU)
+schema: contrast_preference
+n_responses: 10978
+n_images: 499
+n_observers: 22
+type: individual contrast preferences for natural images (accessibility-relevant)
+is_jnd: false
+is_suprathreshold: false
+description: Per-observer preferred contrast adjustments for 500 natural images, gathered
+  by Cherepkova and colleagues at the NTNU Colour and Visual Computing Lab (2025).
+  22 observers each rated their preferred contrast modification for every image; values
+  are signed deltas (negative = less contrast preferred, positive = more contrast
+  preferred). Useful as a perceptual ground-truth for image-adaptive contrast algorithms
+  (APCA / WCAG-adjacent work), and as a sanity test for any color space that claims
+  a perceptually meaningful lightness curve — preferred contrast should correlate
+  with image L*-distribution properties in a well-calibrated space.
+notes:
+- ★ This is a CONTRAST-PREFERENCE dataset, not a color-difference dataset. Adjacent
+  to image quality assessment and accessibility (APCA/WCAG) research, not classical
+  color-space evaluation.
+- 22 observers, 500 images = 11,000 max responses (some cells empty in source).
+- Reference images (JPEGs at zero-contrast adjustment) are bundled in `raw/full_bundle.zip`
+  if you need to compute image-level features. The canonical.csv only contains observer
+  responses.
+- Stratifies well by image content (faces, landscapes, indoor) — see the original
+  NTNU paper for image categorization.
+sources:
+- paper: Cherepkova, O. et al. (2025). Individual Contrast Preferences Database. NTNU
+    Colour and Visual Computing Lab. Zenodo DOI 10.5281/zenodo.17430959
+license: CC BY 4.0 (declared on Zenodo). Cite Cherepkova et al. (2025).

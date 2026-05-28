@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alder_1982_Ellipses · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / Alder_1982_Ellipses</div>
+  <h1>Alder, Chaing, Chong, Coates, Khalili &amp; Rigg (1982) chromaticity discrimination ellipses</h1>
+  <p class="lede">JND chromaticity-discrimination ellipses under two illuminants</p>
+  <div class="detail-tags"><span class="card-type" style="background:#dc262615;color:#dc2626"><span class="dot"></span>JND</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>Chromaticity-discrimination ellipses measured by Alder, Chaing, Chong, Coates, Khalili &amp; Rigg (1982) at the Society of Dyers and Colourists&#x27; uniform-chromaticity-scale study. Replicates the MacAdam 1942 methodology with a different observer pool and reports ellipses under both Illuminant D65 and Illuminant A — useful for testing whether a color space&#x27;s small-difference geometry generalizes across illumination, not just across chromaticity. Each row reports the ellipse center (x_c, y_c, Y), the semi-major axis a, the semi-minor axis b (derived from the published a/b ratio), and the orientation theta.</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">alder1982.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">6.4 KB</span>
+      <a class="btn btn-primary" href="../downloads/alder1982.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>Two illuminants (D65 and A) — filter by `illuminant` for a single condition. Comparing D65 vs A ellipse fields tells you how well a chromatic adaptation transform preserves discrimination performance.</li><li>Each ellipse summarizes n trials (the original `n` column in raw/table*.dat); 7–15 trials per center.</li><li>Semi-axes were published as `a×10^4` and `a/b` ratio; canonical csv stores a (already divided by 10^4) and b (= a / ratio).</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>center_id</th><th>x_c</th><th>y_c</th><th>a</th><th>b</th><th>theta_deg</th><th>Y</th><th>illuminant</th></tr></thead><tbody><tr><td>alder1982_D65_RCK_1</td><td>0.3268</td><td>0.4783</td><td>0.0142</td><td>0.00617391</td><td>74.0</td><td>28.41</td><td>D65</td></tr><tr><td>alder1982_D65_RCK_2</td><td>0.4002</td><td>0.5064</td><td>0.015</td><td>0.00721154</td><td>55.0</td><td>27.22</td><td>D65</td></tr><tr><td>alder1982_D65_RCK_3</td><td>0.3504</td><td>0.4706</td><td>0.0127</td><td>0.00552174</td><td>71.0</td><td>28.26</td><td>D65</td></tr><tr><td>alder1982_D65_RCK_4</td><td>0.3404</td><td>0.3863</td><td>0.0114</td><td>0.00295337</td><td>59.0</td><td>28.7</td><td>D65</td></tr><tr><td>alder1982_D65_RCK_5</td><td>0.387</td><td>0.4492</td><td>0.0097</td><td>0.00360595</td><td>51.0</td><td>30.32</td><td>D65</td></tr></tbody></table></div>
+
+    
+
+    <h3>Raw files preserved</h3><div class='table-wrap'><table><thead><tr><th>File</th><th class='num'>Size</th></tr></thead><tbody><tr><td><code>raw/README.md</code></td><td class='num'>229 B</td></tr><tr><td><code>raw/table4.dat</code></td><td class='num'>3.9 KB</td></tr><tr><td><code>raw/table5.dat</code></td><td class='num'>2.1 KB</td></tr></tbody></table></div>
+
+    <h2>Source publications</h2>
+    <div class="citation">Alder, C., Chaing, K. P., Chong, T. F., Coates, E., Khalili, A. A. &amp; Rigg, B. (1982). Uniform Chromaticity Scales — New Experimental Data. Journal of the Society of Dyers and Colourists 98, 14–20.</div><div class="citation">Snapshot: coloria-dev/color-data on GitHub (community extraction of the published tables).</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">1982</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">D65</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">jnd_ellipses</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">120</span></div><div class="aside-stat"><span class="k">JND data?</span><span class="v">yes</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">6.4 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

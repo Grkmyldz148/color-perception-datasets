@@ -1,0 +1,43 @@
+schema_name: color_names
+version: 1
+description: |
+  Color-naming dataset: each row maps a natural-language color name to a
+  representative RGB swatch. Used for evaluating color appearance models
+  on language/perceptual category boundaries, and as a sanity test for
+  color-space hue uniformity (chips with similar names should be near
+  each other in a uniform space).
+
+columns:
+  name:
+    type: string
+    required: true
+    description: Color name as collected from observers (free-form English).
+  hex:
+    type: string
+    required: true
+    description: Representative sRGB hex (e.g. '#acc2d9').
+  R:
+    type: int
+    required: true
+    range: [0, 255]
+  G:
+    type: int
+    required: true
+    range: [0, 255]
+  B:
+    type: int
+    required: true
+    range: [0, 255]
+  L:
+    type: float
+    required: false
+    description: CIELAB L* under D65 (computed from hex).
+  a:
+    type: float
+    required: false
+  b:
+    type: float
+    required: false
+
+invariants:
+  - "hex must parse to (R,G,B); R,G,B values must match."

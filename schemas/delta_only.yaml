@@ -1,0 +1,27 @@
+schema_name: delta_only
+version: 1
+description: |
+  Pair dataset where the source publication reports only Δ (delta) values
+  between paired colors, without the endpoint Lab coordinates. Used when
+  the underlying chip coordinates are not directly linkable to pair rows
+  in the original source (e.g. He 2022 — chips and pair-Δ values live in
+  separate sheets with no shared chip-pair index).
+
+columns:
+  pair_id:
+    type: string
+    required: true
+  dv:
+    type: float
+    required: false
+    description: |
+      Visual difference score. Column name may differ per dataset
+      (e.g. dv_CLAB, dv_DE2000) — see meta.yaml for the canonical column.
+  DE_00:
+    type: float
+    required: false
+    description: CIEDE2000 between the two chips (often present).
+
+invariants:
+  - "All delta values should be non-negative."
+  - "If multiple dv conventions are reported (CLAB vs DE2000), they should be within a few percent of each other."

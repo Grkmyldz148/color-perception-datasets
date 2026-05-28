@@ -1,0 +1,41 @@
+name: Hong_2025_Ellipsoids
+full_name: Hong et al. (2025) modern isoluminant color-discrimination ellipsoids (Brainard
+  Lab, UPenn)
+schema: compound_legacy
+n_files: 2
+n_observers: 8
+n_trials_approx: 12000
+illuminant: calibrated display (isoluminant plane)
+type: modern replacement-class for MacAdam 1942 — Wishart Process ellipsoid fits in
+  isoluminant plane
+is_jnd: true
+is_suprathreshold: false
+description: 'The modern descendant of MacAdam 1942: dense color-discrimination ellipsoids
+  measured by Hong, Yoon, Yoo & Brainard (2025) at UPenn using a 3AFC oddity task
+  with adaptive psychophysics (AEPsych) on a calibrated display. ~6,000 adaptive +
+  ~6,000 validation trials per observer × 8 color-normal observers, fitted with a
+  Wishart Process Psychophysical Model that yields a smooth ellipsoid field across
+  the isoluminant plane (rather than 25 isolated ellipses). Published in eLife 2025;
+  code on GitHub, raw + organized data on OSF. The first JND-class dataset that fixes
+  MacAdam 1942''s two biggest problems: (1) a single observer and (2) sparse sampling.
+  Use this dataset to test whether your color space''s small-difference geometry generalizes
+  beyond the historical 25 centers.'
+notes:
+- ★ The actual data lives on OSF (https://osf.io/k27js/) and is too large for this
+  repo. raw/ contains only the dataset README.pdf and a pointer file with download
+  instructions.
+- Wishart Process fits give a smooth ellipsoid field, not discrete ellipses — use
+  the OSF 'Organized data' folder for the model predictions, 'Raw experimental data'
+  for the trial-level data.
+- Adaptive psychophysics (AEPsych framework) means trial placements are non-uniform;
+  standard JND comparisons against MacAdam 1942 require care.
+- 8 color-normal observers — much smaller than WCS's 24/lang but much larger than
+  MacAdam's 1. Each observer has individual ellipsoids + the paper reports a group-level
+  fit.
+sources:
+- paper: Hong, F. F., Yoon, J., Yoo, Y. & Brainard, D. H. (2025). Comprehensive characterization
+    of color discrimination thresholds with a Wishart Process Psychophysical Model.
+    eLife reviewed preprint 108943.
+- snapshot_source: OSF project https://osf.io/k27js/ (CC-BY); code https://github.com/fh862/ellipsoids_eLife2025
+license: CC BY (per OSF project metadata). Cite Hong et al. (2025) when using the
+  data.

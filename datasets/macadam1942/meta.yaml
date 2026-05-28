@@ -1,0 +1,33 @@
+name: MacAdam_1942_Ellipses
+full_name: MacAdam (1942) discrimination ellipses (Observer PGN)
+schema: jnd_ellipses
+n_ellipses: 25
+illuminant: CIE Illuminant C
+type: JND threshold ellipses
+is_jnd: true
+is_suprathreshold: false
+description: The classic 25 just-noticeable-difference (JND) chromaticity ellipses
+  measured by David MacAdam in 1942 under daylight illumination, using a single highly
+  trained observer (Perley G. Nutting Jr., 'PGN'). Each ellipse maps the locus of
+  color matches around a fixed center — the inside of the ellipse is the threshold
+  of perceptual indistinguishability. Foundational data for color discrimination thresholds,
+  the inspiration for the entire 'perceptually uniform color space' research line,
+  and the reason CIELAB and CIELUV were developed.
+notes:
+- ★ This is the REAL JND dataset — not to be confused with MacAdam (1974) OSA UCS
+  which is suprathreshold. Many papers cite '1942' but use '1974' data, or vice versa.
+  Always check.
+- Single observer (PGN). MacAdam later replicated with 2 more observers in 1949 but
+  the 1942 PGN data is the canonical set used in every textbook.
+- Ellipse semi-axes (a, b) are stored in CIE chromaticity units, NOT the source paper's
+  ×10³ convention — divide-by-1000 already applied in canonical.csv.
+- Illuminant C (Munsell-era daylight standard); apply chromatic adaptation if using
+  under D65.
+sources:
+- paper: MacAdam, D. L. (1942). Visual Sensitivities to Color Differences in Daylight.
+    Journal of the Optical Society of America 32(5), 247–274.
+- paper: 'Wyszecki, G. & Stiles, W. S. (2000). Color Science: Concepts and Methods,
+    Quantitative Data and Formulae, Table 2(5.4.1). Wiley.'
+- snapshot_source: colour.DATA_MACADAM_1942_ELLIPSES (BSD-3 licensed source data)
+license: CC BY 4.0 for this canonical export. Underlying data public-domain (1942
+  publication).

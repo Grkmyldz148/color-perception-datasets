@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WCS · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / WCS</div>
+  <h1>World Color Survey (Kay, Berlin, Maffi, Merrifield &amp; Cook)</h1>
+  <p class="lede">cross-cultural color naming (110 languages × ~24 speakers × 330 chips)</p>
+  <div class="detail-tags"><span class="card-type" style="background:#47556915;color:#475569"><span class="dot"></span>naming</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>The World Color Survey, conducted by Paul Kay, Brent Berlin, Luisa Maffi, William Merrifield and Richard Cook between 1976 and 1981. 110 unwritten languages, ~24 speakers per language, each shown a standard 330-Munsell-chip grid and asked to (a) name every chip in their own language and (b) pick the best example chip for their basic color terms. Originally collected to test the Berlin-Kay hypothesis of universal color-term evolution; now the de facto reference dataset for cross-cultural color cognition and a powerful stress test for any color space that claims perceptual uniformity (a uniform space&#x27;s focal-color clusters across languages should land in compact regions).</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">wcs.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">2.6 MB</span>
+      <a class="btn btn-primary" href="../downloads/wcs.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>★ Compound dataset — chips.csv + languages.csv are flat tables; `canonical.csv` is an index of every raw file. The actual naming data lives in raw/term.txt (~863k rows) and raw/foci-exp.txt (~18k rows). Read those directly.</li><li>term.txt format: &lt;lnum&gt; &lt;speaker&gt; &lt;cnum&gt; &lt;WCS_code&gt;. Look up &lt;WCS_code&gt; in raw/dict.txt to get the language-specific transliteration.</li><li>foci.txt and foci-exp.txt: focal-color picks per speaker per basic-color-term. Chip column may be a single cnum or a range (e.g. &#x27;D9..12&#x27;) — strip and explode for cleanest analysis.</li><li>The 330-chip grid is Berlin &amp; Kay&#x27;s &#x27;Mercator projection of color space&#x27; — Munsell hue 1..40 × value 1..8 plus 10 neutrals. Coordinates in chips.csv are under Illuminant C.</li><li>Test: if your color space is uniform, focal-color centroids per term (e.g. all &#x27;red&#x27; picks across all languages) should form tight clusters. Cross-cultural variation should sit along Munsell hue, not jump around in your space&#x27;s chromaticity plane.</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>filename</th><th>size_bytes</th><th>category</th><th>lines</th></tr></thead><tbody><tr><td>chip.txt</td><td>4018</td><td>330 WCS Munsell chips (cnum, V, H, MunH)</td><td>330</td></tr><tr><td>cnum-vhcm-lab-new.txt</td><td>12528</td><td>Chip# → V/H/C + Munsell hue/value + CIELAB L*a*b*</td><td>331</td></tr><tr><td>dict.txt</td><td>39132</td><td>Color term dictionary: lang# × term# → transliteration + WCS code</td><td>2364</td></tr><tr><td>foci-exp.txt</td><td>1550056</td><td>Focal-color selections (per-experiment / individual responses)</td><td>110784</td></tr><tr><td>foci.txt</td><td>270402</td><td>Focal-color selections (aggregated): lang# × speaker# × term# → chip# or range</td><td>18172</td></tr></tbody></table></div>
+
+    
+
+    <h3>Raw files preserved</h3><div class='table-wrap'><table><thead><tr><th>File</th><th class='num'>Size</th></tr></thead><tbody><tr><td><code>raw/chip.txt</code></td><td class='num'>3.9 KB</td></tr><tr><td><code>raw/cnum-vhcm-lab-new.txt</code></td><td class='num'>12.2 KB</td></tr><tr><td><code>raw/dict.txt</code></td><td class='num'>38.2 KB</td></tr><tr><td><code>raw/foci-exp.txt</code></td><td class='num'>1.5 MB</td></tr><tr><td><code>raw/foci.txt</code></td><td class='num'>264.1 KB</td></tr><tr><td><code>raw/lang.txt</code></td><td class='num'>6.6 KB</td></tr><tr><td><code>raw/term.txt</code></td><td class='num'>9.7 MB</td></tr></tbody></table></div>
+
+    <h2>Source publications</h2>
+    <div class="citation">Berlin, B. &amp; Kay, P. (1969). Basic Color Terms: Their Universality and Evolution. University of California Press.</div><div class="citation">Kay, P., Berlin, B., Maffi, L., Merrifield, W. R. &amp; Cook, R. (2009). The World Color Survey. CSLI Publications.</div><div class="citation">Snapshot: linguistics.berkeley.edu/wcs/ (Berkeley host, March 2011 bundle WCS-Data-20110316.zip)</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">1981</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">mixed</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">compound_legacy</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">7</span></div><div class="aside-stat"><span class="k">JND data?</span><span class="v">no</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">2.6 MB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

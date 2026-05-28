@@ -1,0 +1,7 @@
+{
+    "urls" : {
+        "http://www.rit-mcsl.org/StudentResearch/YutaAsano/Data_1000MonteCarloObs.xls" : "md5:f510c3604e6521fd128ad5a3c4a87adb",
+        "http://www.rit-mcsl.org/StudentResearch/YutaAsano/Data_10CatObs.xls" : "md5:d10c9fcb92cb0fb8cfc0c7a899890671",
+        "http://www.rit-mcsl.org/StudentResearch/YutaAsano/Data_151Obs.xls" : "md5:1c8ea892045faa785ca29c80b7f7674e"
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MacAdam_1935_Optimal_Colors · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / MacAdam_1935_Optimal_Colors</div>
+  <h1>MacAdam (1935) optimal color stimuli — theoretical color-volume boundary</h1>
+  <p class="lede">theoretical maximum-reflectance color volume</p>
+  <div class="detail-tags"><span class="card-type" style="background:#7c3aed15;color:#7c3aed"><span class="dot"></span>gamut</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>Spectral boundary of the theoretical maximum-luminance-factor color stimuli derived by David MacAdam in 1935. Each point is a chromaticity on the boundary of what is physically realizable as a surface color under the named illuminant — the upper bound that no real ink, paint, or dye can exceed. Provided for illuminants A, C, and D65. Used as a theoretical ceiling for surface-color gamut coverage, distinct from Pointer&#x27;s empirical real-color gamut.</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">macadam1935_optimal.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">6.8 KB</span>
+      <a class="btn btn-primary" href="../downloads/macadam1935_optimal.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>Theoretical bound, not measured surface colors. Combine with Pointer 1980 to compare &#x27;what&#x27;s physically possible&#x27; vs &#x27;what&#x27;s been observed in real pigments&#x27;.</li><li>Three illuminants (A, C, D65). Filter by `illuminant` for a single set.</li><li>Boundary points are sparse; interpolation needs care near the yellow corner where the boundary is sharply curved.</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>point_id</th><th>illuminant</th><th>x</th><th>y</th><th>Y</th></tr></thead><tbody><tr><td>optimal_A_0001</td><td>A</td><td>0.112</td><td>0.1985</td><td>10.0</td></tr><tr><td>optimal_A_0002</td><td>A</td><td>0.0859</td><td>0.2957</td><td>10.0</td></tr><tr><td>optimal_A_0003</td><td>A</td><td>0.0549</td><td>0.4593</td><td>10.0</td></tr><tr><td>optimal_A_0004</td><td>A</td><td>0.0433</td><td>0.5548</td><td>10.0</td></tr><tr><td>optimal_A_0005</td><td>A</td><td>0.0386</td><td>0.6764</td><td>10.0</td></tr></tbody></table></div>
+
+    
+
+    
+
+    <h2>Source publications</h2>
+    <div class="citation">MacAdam, D. L. (1935). Maximum visual efficiency of colored materials. Journal of the Optical Society of America 25(11), 361–367.</div><div class="citation">Snapshot: colour.volume.datasets.OPTIMAL_COLOUR_STIMULI_ILLUMINANTS (BSD-3 licensed source data)</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">1935</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">A</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">gamut_boundary</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">657</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">6.8 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

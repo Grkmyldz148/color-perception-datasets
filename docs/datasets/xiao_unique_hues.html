@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xiao_2011_Unique_Hues · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / Xiao_2011_Unique_Hues</div>
+  <h1>Xiao, Wuerger, Fu &amp; Karatzas (2011) unique hue loci</h1>
+  <p class="lede">unique hue loci (CIECAM02 evaluation, 185 color-normal observers)</p>
+  <div class="detail-tags"><span class="card-type" style="background:#0891b215;color:#0891b2"><span class="dot"></span>constant-hue</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>Unique-hue loci (red, green, blue, yellow) plus neutral gray measured by Xiao, Wuerger, Fu &amp; Karatzas (2011) on a calibrated CRT with a large color-normal observer pool (n = 185). The data is the standard empirical anchor for evaluating where CIECAM02&#x27;s hue angles place the four unique hues, and a frequent counterexample for the assumption that CIECAM02&#x27;s NCS-based hue scale is correct. Useful as a hue-uniformity test that goes beyond constant-hue surfaces — it asks where the perceptually pure hues actually sit.</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">xiao_unique_hues.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">585.3 KB</span>
+      <a class="btn btn-primary" href="../downloads/xiao_unique_hues.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>★ Compound dataset — per-observer × per-session × per-hue nested arrays. `canonical.csv` is just an index; read the JSON files directly to use the data (see the original paper for the array layout).</li><li>n = 185 is among the largest unique-hue samples published; analyses on smaller datasets (Hering&#x27;s original 4, Kuehni&#x27;s ~12) often produce noisy unique-hue estimates.</li><li>The paper&#x27;s main finding: CIECAM02&#x27;s hue angles for unique red/green/blue/yellow are inconsistent with the NCS hues embedded in the model — useful for stress-testing any new color space&#x27;s hue assignment.</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>filename</th><th>size_bytes</th><th>category</th><th>lines</th></tr></thead><tbody><tr><td>README.md</td><td>1693</td><td>documentation</td><td></td></tr><tr><td>averages.json</td><td>2446</td><td>averages</td><td></td></tr><tr><td>averages.yaml</td><td>2725</td><td>averages</td><td></td></tr><tr><td>convert.py</td><td>1436</td><td>support script</td><td></td></tr><tr><td>neutral_gray.yaml</td><td>4916</td><td>neutral gray</td><td></td></tr></tbody></table></div>
+
+    
+
+    <h3>Raw files preserved</h3><div class='table-wrap'><table><thead><tr><th>File</th><th class='num'>Size</th></tr></thead><tbody><tr><td><code>raw/README.md</code></td><td class='num'>1.7 KB</td></tr><tr><td><code>raw/averages.json</code></td><td class='num'>2.4 KB</td></tr><tr><td><code>raw/averages.yaml</code></td><td class='num'>2.7 KB</td></tr><tr><td><code>raw/convert.py</code></td><td class='num'>1.4 KB</td></tr><tr><td><code>raw/neutral_gray.yaml</code></td><td class='num'>4.8 KB</td></tr><tr><td><code>raw/unique_blue.json</code></td><td class='num'>138.2 KB</td></tr><tr><td><code>raw/unique_green.json</code></td><td class='num'>145.2 KB</td></tr><tr><td><code>raw/unique_red.json</code></td><td class='num'>144.4 KB</td></tr><tr><td><code>raw/unique_yellow.json</code></td><td class='num'>144.3 KB</td></tr><tr><td><code>raw/xiao.xlsx</code></td><td class='num'>590.7 KB</td></tr></tbody></table></div>
+
+    <h2>Source publications</h2>
+    <div class="citation">Xiao, K., Wuerger, S., Fu, C. &amp; Karatzas, D. (2011). Unique Hue Data for Colour Appearance Models. Part I: Loci of Unique Hues and Hue Uniformity. Color Research &amp; Application 36(5), 316–323.</div><div class="citation">Snapshot: coloria-dev/color-data (retrieved by email from Kaida Xiao, per the coloria-dev README).</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">2011</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">mixed</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">compound_legacy</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">10</span></div><div class="aside-stat"><span class="k">Observers</span><span class="v">185</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">585.3 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

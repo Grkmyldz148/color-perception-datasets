@@ -1,0 +1,5 @@
+filename,size_bytes,category,lines
+Data_1000MonteCarloObs.xls,4278272,1000 Monte Carlo observers (simulated),
+Data_10CatObs.xls,281600,10 categorical observers (age × field-size groupings),
+Data_151Obs.xls,2716160,"151 individual observers (CMFs + cone fundamentals, 2° + 10°)",
+urls.txt,390,source URLs + checksums,

@@ -1,0 +1,52 @@
+name: Corresponding_Colours_Luo_Rhodes_1999
+full_name: Corresponding-Colour Datasets (Luo & Rhodes 1999 compilation)
+schema: corresponding_colors
+n_pairs: 746
+dataset_families:
+  Brene: 143
+  CSAJ: 107
+  Kuo: 81
+  RIT: 66
+  Steve: 19
+  helson: 59
+  lam: 58
+  lutchi: 128
+  mcan: 85
+color_space_native: CIE XYZ (whitepoint-referenced); canonical u'v' computed
+type: chromatic-adaptation corresponding-colors compilation
+is_jnd: false
+is_suprathreshold: false
+description: 'A compilation of corresponding-colors experiments curated by Luo & Rhodes
+  (1999) and republished on Zenodo, bundling nine independent studies into a single
+  comparable format: Breneman 1987 (12 phases), CSAJ (Color Science Association of
+  Japan), Helson 1938, Hunt-via-LUTCHI, Kuo, Lam, McCann mondrian (r/g/b/y/grey backgrounds),
+  RIT 1–4, and Stevens-style scaling experiments. Each row pairs a test stimulus (viewed
+  under one illuminant) with the matched stimulus (viewed under the reference illuminant).
+  The canonical export keeps both XYZ and u''v'' columns so users can choose their
+  working representation. This is the de facto training set for chromatic adaptation
+  transforms (CAT02, CAT16, Bradford) and color appearance models (CIECAM02, CIECAM16).'
+notes:
+- Multi-source compilation. Filter by `experiment_id` or `dataset_family` to recover
+  a single original experiment. CSAJ, Helson 1938, McCann mondrian and Stevens-style
+  scalings are otherwise hard to obtain.
+- Some experiments overlap with our standalone Breneman 1987 dataset (sourced via
+  colour); use whichever copy matches your downstream tooling. The numbers should
+  be identical.
+- 'Original Zenodo record (DOI: 10.5281/zenodo.3270903) lists license as ''notspecified''.
+  Included here on the same academic-use convention used by colour-science, AIM3,
+  ColorAIDE, and other downstream projects. Cite Luo & Rhodes (1999) when using the
+  data.'
+- Per-pair white-point XYZ for both test and reference is preserved in the last two
+  columns so you can rebuild the experiment's full radiometric context.
+sources:
+- paper: Luo, M. R. & Rhodes, P. A. (1999). Corresponding-colour datasets. Color Research
+    & Application 24(4), 295–296.
+- paper: Breneman, E. J. (1987). Corresponding chromaticities… JOSA A 4(6), 1115–1129.
+- paper: Helson, H. (1938). Fundamental problems in color vision I. JOSA 28(7), 252–264.
+- paper: McCann, J. J., McKee, S. P. & Taylor, T. H. (1976). Quantitative studies
+    in retinex theory. Vision Research 16(5), 445–458.
+- snapshot_source: Zenodo DOI 10.5281/zenodo.3270903 (Luo & Rhodes 1999 republished
+    compilation)
+license: License unspecified by uploader on Zenodo. Included for research convenience
+  under the academic-use convention. Cite Luo & Rhodes (1999) and the individual experiment
+  authors.

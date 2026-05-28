@@ -1,0 +1,26 @@
+name: MacAdam_1974
+full_name: MacAdam (1974) Uniform Color Scales — OSA UCS pair distances
+schema: pair_diff
+n_pairs: 128
+n_chips: 59
+illuminant: D65 / 2°
+color_space_native: OSA UCS chips specified in CIE xyY
+dv_units: OSA UCS visual-difference units (mean of two observer scalings per pair)
+type: suprathreshold color difference (OSA UCS spacing)
+is_jnd: false
+is_suprathreshold: true
+description: Suprathreshold visual-difference scalings between 59 OSA Uniform Color
+  Scales chips, reported by David MacAdam (1974) as part of the OSA effort to construct
+  a perceptually uniform color sample arrangement. Each of the 128 pairs was scaled
+  by two observers; the canonical dv is their mean. Used as a held-out test set for
+  color-space uniformity claims.
+notes:
+- ★ COMMONLY MISIDENTIFIED AS JND DATA. This is suprathreshold OSA UCS sample-pair
+  spacing, NOT the MacAdam (1942) threshold ellipses. If your code labels it `is_jnd=True`,
+  that's a bug — many papers in the literature carry this mistake.
+- Each pair has two observer scalings; both are preserved in raw/table1.yaml columns
+  4–5 and the canonical dv is their mean.
+sources:
+- paper: MacAdam, D. L. (1974). Uniform color scales. Journal of the Optical Society
+    of America 64(12), 1691–1702.
+license: CC BY 4.0 for this canonical export. Cite MacAdam (1974).

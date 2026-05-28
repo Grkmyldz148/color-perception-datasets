@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>He_2022_3D_printed · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / He_2022_3D_printed</div>
+  <h1>He et al. (2022) — 3D-printed spherical samples color-difference</h1>
+  <p class="lede">suprathreshold 3D-printed sample color difference</p>
+  <div class="detail-tags"><span class="card-type" style="background:#64748b15;color:#64748b"><span class="dot"></span>Δ-only</span><span class="card-type" style="background:#16a34a15;color:#16a34a"><span class="dot"></span>suprathreshold</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>Color-difference measurements on 45 3D-printed spherical samples by He et al. (2022). Two experiments (I: 42 pairs, II: 40 pairs) measured under D65 with the CIE 1964 10° observer. The unusual physical substrate (matte 3D-printed plastic) makes it a useful out-of-distribution test for color-difference formulae trained on flat paint chips.</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">he2022.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">26.5 KB</span>
+      <a class="btn btn-primary" href="../downloads/he2022.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>Source xlsx ships chips and pair-Δ values in separate sheets without a shared chip-pair index — the canonical layout therefore keeps chips in chips.csv and per-pair Δ values in canonical.csv with no direct link.</li><li>Known scale-compression bias: model fits trained on it underestimate large differences and overestimate small ones. Don&#x27;t fit a simple linear regression and call it done.</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>pair_id</th><th>experiment</th><th>pair_label</th><th>DE_ab10</th><th>DE_00_10</th><th>DL_10</th><th>DC_ab10</th><th>DH_ab10</th><th>dv_CLAB</th><th>dv_DE2000</th></tr></thead><tbody><tr><td>he2022_I_001</td><td>I</td><td>Pair 1</td><td>2.375139</td><td>1.873336</td><td>2.019853</td><td>1.190301</td><td>0.380343</td><td>0.5015</td><td>0.428197</td></tr><tr><td>he2022_I_002</td><td>I</td><td>Pair 2</td><td>3.066944</td><td>2.414008</td><td>2.993477</td><td>0.251548</td><td>0.618031</td><td>1.021344</td><td>0.92269</td></tr><tr><td>he2022_I_003</td><td>I</td><td>Pair 3</td><td>4.48276</td><td>3.810314</td><td>4.433384</td><td>0.488464</td><td>0.449046</td><td>1.506967</td><td>1.371563</td></tr><tr><td>he2022_I_004</td><td>I</td><td>Pair 4</td><td>5.512677</td><td>4.68544</td><td>4.777208</td><td>2.421654</td><td>1.305175</td><td>2.8729</td><td>2.69883</td></tr><tr><td>he2022_I_005</td><td>I</td><td>Pair 5</td><td>6.99443</td><td>5.886717</td><td>6.797061</td><td>1.231353</td><td>1.098084</td><td>3.236467</td><td>3.02485</td></tr></tbody></table></div>
+
+    
+
+    <h3>Raw files preserved</h3><div class='table-wrap'><table><thead><tr><th>File</th><th class='num'>Size</th></tr></thead><tbody><tr><td><code>raw/he2022_3d_printed.xlsx</code></td><td class='num'>23.6 KB</td></tr></tbody></table></div>
+
+    <h2>Source publications</h2>
+    <div class="citation">He, R., Xiao, K., Pointer, M., Bressler, Y., Liu, Z. &amp; Lu, Y. (2022). Development of an Image-Based Measurement System for Human Facial Skin Colour. Color Research &amp; Application.</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">2022</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">D65</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">delta_only</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">82</span></div><div class="aside-stat"><span class="k">Δv units</span><span class="v">Visual difference, two reporting convent…</span></div><div class="aside-stat"><span class="k">JND data?</span><span class="v">no</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">26.5 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

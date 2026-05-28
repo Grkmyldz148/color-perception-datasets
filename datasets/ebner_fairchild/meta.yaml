@@ -1,0 +1,19 @@
+name: Ebner_Fairchild_1998
+full_name: Ebner & Fairchild (1998) constant-perceived-hue surfaces
+schema: constant_hue
+n_chips: 306
+n_hue_centers: 15
+illuminant: D65 / 2° (per-experiment white in raw)
+type: constant-perceived-hue surfaces at 15 hue centers (0°–336° in 24° steps)
+description: Constant-perceived-hue surfaces collected by Ebner & Fairchild (1998)
+  at 15 hue centers spaced 24° apart around the hue circle. Provides denser hue-circle
+  coverage than Hung-Berns and is the standard secondary corroboration for hue-uniformity
+  claims in modern color appearance models.
+notes:
+- Not a color-difference dataset — used for hue-uniformity testing only.
+- Denser hue coverage than Hung-Berns (15 vs 5 hue families), but still chip-based
+  rather than continuous.
+sources:
+- paper: Ebner, F. & Fairchild, M. D. (1998). Finding constant hue surfaces in color
+    space. Proc. SPIE 3300, 107–117.
+license: CC BY 4.0 for this canonical export. Cite Ebner & Fairchild (1998).

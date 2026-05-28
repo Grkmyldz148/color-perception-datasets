@@ -1,0 +1,26 @@
+name: Munsell_renotation_real
+full_name: Munsell Renotation Data (real chips)
+schema: constant_hue
+n_chips: 2734
+illuminant: CIE Illuminant C / 2°
+type: Munsell renotation chips (hue × value × chroma grid)
+description: Snapshot of the Munsell Renotation (Newhall, Nickerson & Judd 1943) for
+  chips physically realizable in paint. Maps each Munsell notation (hue, value, chroma)
+  to CIE xyY under illuminant C. Munsell's hue × value × chroma arrangement is perceptually
+  uniform by construction, which makes this dataset the standard reference grid for
+  evaluating constant-hue lines, constant-value planes, and the lightness scale of
+  a candidate color space.
+notes:
+- Native illuminant is C (Munsell paper's standard). Apply chromatic adaptation before
+  comparing with D65-anchored data.
+- This is the `real` subset — chips that can actually be produced in paint. The full
+  `all` renotation includes extrapolated chips outside the realizable gamut; not included
+  here.
+- Snapshot from the `colour` Python library (MUNSELL_COLOURS_REAL) for offline reproducibility,
+  so the data is identical regardless of which version of `colour` you have installed.
+sources:
+- paper: Newhall, S. M., Nickerson, D. & Judd, D. B. (1943). Final report of the OSA
+    subcommittee on the spacing of the Munsell colors. Journal of the Optical Society
+    of America 33(7), 385–418.
+- paper: 'Munsell, A. H. (1905). A Color Notation. Boston: G. H. Ellis.'
+license: CC BY 4.0 for this canonical export. Underlying data is public-domain.

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fairchild_Chen_2010_HDR_Lightness · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / Fairchild_Chen_2010_HDR_Lightness</div>
+  <h1>Fairchild &amp; Chen (2010) brightness/lightness in HDR scenes</h1>
+  <p class="lede">lightness scaling for HDR scenes (luminance up to 3,000+ cd/m²)</p>
+  <div class="detail-tags"><span class="card-type" style="background:#ca8a0415;color:#ca8a04"><span class="dot"></span>lightness</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>Magnitude estimation of perceived lightness in high-dynamic-range scenes by Fairchild &amp; Chen (2010), spanning luminances up to ~3,000 cd/m² — well beyond the ~100 cd/m² range that CIELAB&#x27;s L* function was calibrated for. Each sample is an XYZ tristimulus value alongside an observer-evaluated lightness score. Used to test whether a color space&#x27;s lightness curve extrapolates correctly into HDR territory; CIELAB L* is the standard underperformer here.</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">fairchild_chen.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">3.6 KB</span>
+      <a class="btn btn-primary" href="../downloads/fairchild_chen.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>Not a color-difference dataset. Used only for lightness-curve validation in HDR.</li><li>Two experiments (SL1, SL2 = Sequential Lightness experiment 1, 2) at different viewing angles.</li><li>Critical for any color space claiming HDR support: a flat CIELAB-style L* curve underestimates perceived lightness above ~200 cd/m².</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>sample_id</th><th>experiment_id</th><th>viewing_angle_deg</th><th>evaluated_lightness</th><th>X</th><th>Y</th><th>Z</th></tr></thead><tbody><tr><td>fc_SL1_00</td><td>SL1</td><td>4.8</td><td>180.0</td><td>3262.32</td><td>3691.53</td><td>4025.74</td></tr><tr><td>fc_SL1_01</td><td>SL1</td><td>4.8</td><td>170.0</td><td>2268.98</td><td>2589.13</td><td>2816.54</td></tr><tr><td>fc_SL1_02</td><td>SL1</td><td>4.8</td><td>160.0</td><td>1992.23</td><td>2277.76</td><td>2479.07</td></tr><tr><td>fc_SL1_03</td><td>SL1</td><td>4.8</td><td>150.0</td><td>1693.03</td><td>1940.71</td><td>2121.46</td></tr><tr><td>fc_SL1_04</td><td>SL1</td><td>4.8</td><td>140.0</td><td>1529.33</td><td>1756.29</td><td>1922.14</td></tr></tbody></table></div>
+
+    
+
+    <h3>Raw files preserved</h3><div class='table-wrap'><table><thead><tr><th>File</th><th class='num'>Size</th></tr></thead><tbody><tr><td><code>raw/README.md</code></td><td class='num'>381 B</td></tr><tr><td><code>raw/fairchild_chen.json</code></td><td class='num'>1.4 KB</td></tr><tr><td><code>raw/fairchild_chen.yaml</code></td><td class='num'>1.5 KB</td></tr></tbody></table></div>
+
+    <h2>Source publications</h2>
+    <div class="citation">Fairchild, M. D. &amp; Chen, P.-H. (2010). Brightness, Lightness, and Specifying Color in High-Dynamic-Range Scenes and Images. Proc. SPIE 7867. DOI: 10.1117/12.872075</div><div class="citation">Snapshot: coloria-dev/color-data (community extraction).</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">2010</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">mixed</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">lightness_scaling</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">34</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">3.6 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+name: Luo_Rigg_1986_Ellipses
+full_name: Luo & Rigg (1986) chromaticity discrimination ellipses for surface colours
+schema: jnd_ellipses
+n_ellipses: 132
+by_set:
+  VVVR: 8
+  BFD: 42
+  MMB: 17
+  CISCC: 6
+  CIE: 5
+  STROCKA: 1
+  WITT: 1
+  DF: 12
+  MCD: 17
+  K: 3
+  KMET: 6
+  JK: 9
+  W: 5
+sets:
+- VVVR
+- BFD
+- MMB
+- CISCC
+- CIE
+- STROCKA
+- WITT
+- DF
+- MCD
+- K
+- KMET
+- JK
+- W
+illuminant: CIE Illuminant C
+type: JND chromaticity-discrimination ellipses from 10 different source studies, harmonized
+is_jnd: true
+is_suprathreshold: false
+description: 'A compilation of 132+ chromaticity-discrimination ellipses for surface
+  colours, gathered by M. R. Luo and B. Rigg (1986) from ten independent source studies
+  (VVVR, BFD, MMB, CISCC, CIE, STROCKA, WITT, DF, MCD, K) and harmonized via per-set
+  scaling factors. Larger and more diverse than the MacAdam 1942 set (which used a
+  single observer on isolated lights) — Luo-Rigg covers real surface-color conditions
+  and multiple observer pools. The paper''s headline finding: contrary to MacAdam
+  1942, the smallest discrimination ellipses lie in the blue-grey region for surface
+  colors. The standard JND dataset for any color space that claims to model real-world
+  textile/paint/dye color tolerances rather than just isolated stimuli.'
+notes:
+- 10 source sets with very different sample sizes — filter by `set_name` for a single
+  source. Don't pool naively; the `set_factor` column carries the per-set scaling
+  Luo & Rigg derived to bring sets onto a common scale.
+- ★ Surface-color JND — different from MacAdam 1942 (isolated lights). The blue-grey
+  minimum here vs MacAdam's blue maximum is a long-standing puzzle in the literature.
+- Ellipse semi-axes (a, b) stored in chromaticity units (a×10⁻⁴ scale already applied).
+  Use a/b ratio when comparing aspect ratios to MacAdam.
+- set_factor R̄ is the relative size factor per source set; multiply a and b by R̄
+  to recover the raw per-source size, or divide by R̄ to project onto the common scale.
+sources:
+- paper: Luo, M. R. & Rigg, B. (1986). Chromaticity Discrimination Ellipses for Surface
+    Colours. Color Research & Application 11(1), 25–42.
+- snapshot_source: coloria-dev/color-data (community extraction of Table 3)
+license: Underlying data 1986; extraction by coloria-dev (license unspecified). Included
+  under academic-use convention. Cite Luo & Rigg (1986).

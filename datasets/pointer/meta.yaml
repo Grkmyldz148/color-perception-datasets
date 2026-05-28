@@ -1,0 +1,21 @@
+name: Pointer_1980
+full_name: Pointer (1980) real surface-color gamut
+schema: gamut_boundary
+n_points: 576
+illuminant: CIE Illuminant SC / 2°
+type: real-world surface-color gamut boundary
+description: Maximum-chroma boundary of real-world surface colors compiled by Michael
+  Pointer (1980) from over 4,000 measured samples (paints, dyes, inks, natural materials).
+  Used as the de-facto reference for how much of a color space's chromaticity volume
+  corresponds to physically realizable surface colors — a wide-gamut display does
+  not need to reach outside this volume.
+notes:
+- Specified under CIE Illuminant SC, not D65. The canonical L,a,b is derived from
+  the LCH source without chromatic adaptation — apply your own CAT (Bradford or CAT02)
+  if you compare against D65-anchored data.
+- Sparse grid (lightness × hue); interpolate with care, especially near the saturated
+  yellows where the boundary curves sharply.
+sources:
+- paper: Pointer, M. R. (1980). The gamut of real surface colours. Color Research
+    & Application 5(3), 145–155.
+license: CC BY 4.0 for this canonical export. Cite Pointer (1980).

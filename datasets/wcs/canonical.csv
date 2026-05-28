@@ -1,0 +1,8 @@
+filename,size_bytes,category,lines
+chip.txt,4018,"330 WCS Munsell chips (cnum, V, H, MunH)",330
+cnum-vhcm-lab-new.txt,12528,Chip# → V/H/C + Munsell hue/value + CIELAB L*a*b*,331
+dict.txt,39132,Color term dictionary: lang# × term# → transliteration + WCS code,2364
+foci-exp.txt,1550056,Focal-color selections (per-experiment / individual responses),110784
+foci.txt,270402,Focal-color selections (aggregated): lang# × speaker# × term# → chip# or range,18172
+lang.txt,6709,110 languages with country + fieldworker metadata,110
+term.txt,10216919,"Color naming responses: lang# × speaker# × chip# → WCS code (THE main dataset, ~863k rows)",863280

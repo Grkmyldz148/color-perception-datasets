@@ -1,0 +1,129 @@
+Color Difference Datasets — Canonical Export
+================================================
+
+This canonical export is released under
+
+  Creative Commons Attribution 4.0 International (CC BY 4.0)
+  https://creativecommons.org/licenses/by/4.0/
+
+You are free to:
+  - Share: copy and redistribute in any medium or format
+  - Adapt: remix, transform, and build upon for any purpose, including
+    commercially
+
+Under the following terms:
+  - Attribution: You must give appropriate credit, provide a link to the
+    license, and indicate if changes were made.
+  - No additional restrictions: You may not apply legal terms or
+    technological measures that legally restrict others from doing
+    anything the license permits.
+
+
+Underlying datasets are aggregated from published academic papers
+======================================================================
+
+Each dataset directory contains a meta.yaml file with the primary
+citation(s). When using a specific dataset, please cite the original
+publication in addition to this canonical export. The exact references
+are reproduced below for convenience.
+
+COMBVD (Combined Visual Difference dataset)
+-------------------------------------------
+- Luo, M. R. & Rigg, B. (1987). BFD(l:c) colour-difference formula.
+  Color Research & Application 12, 154-158.
+- Kim, H. & Nobbs, J. (1997). New weighting functions for the weighted
+  CIELAB colour difference formula. AIC Color 97.
+- Berns, R. S., Alman, D. H., Reniff, L., Snyder, G. D. &
+  Balonon-Rosen, M. R. (1991). Visual determination of suprathreshold
+  color-difference tolerances using probit analysis. Color Research &
+  Application 16, 297-316.
+- Witt, K. (1999). Geometric relations between scales of small colour
+  differences. Color Research & Application 24, 78-92.
+
+MacAdam 1942 (Ellipses)
+-----------------------
+- MacAdam, D. L. (1942). Visual Sensitivities to Color Differences in
+  Daylight. Journal of the Optical Society of America 32(5), 247-274.
+- Snapshot from colour.DATA_MACADAM_1942_ELLIPSES (BSD-3 source data).
+
+MacAdam 1974 (OSA UCS)
+----------------------
+- MacAdam, D. L. (1974). Uniform color scales. Journal of the Optical
+  Society of America 64(12), 1691-1702.
+
+MacAdam 1935 (Optimal Color Stimuli)
+------------------------------------
+- MacAdam, D. L. (1935). Maximum visual efficiency of colored materials.
+  Journal of the Optical Society of America 25(11), 361-367.
+- Snapshot from colour.volume.datasets.OPTIMAL_COLOUR_STIMULI_ILLUMINANTS.
+
+Breneman 1987 (Corresponding Colors)
+------------------------------------
+- Breneman, E. J. (1987). Corresponding chromaticities for different
+  states of adaptation to complex visual fields. Journal of the Optical
+  Society of America A 4(6), 1115-1129.
+- Snapshot from colour.BRENEMAN_EXPERIMENTS (BSD-3 source data).
+
+Corresponding-Colour Datasets (Luo & Rhodes 1999)
+-------------------------------------------------
+- Luo, M. R. & Rhodes, P. A. (1999). Corresponding-colour datasets.
+  Color Research & Application 24(4), 295-296.
+- Bundle includes: Breneman 1987, CSAJ (Color Science Association of
+  Japan), Helson 1938, Hunt-via-LUTCHI, Kuo, Lam, McCann mondrian, RIT
+  1-4, Stevens-style scalings. Cite each experiment's original authors
+  when using its data.
+- Snapshot from Zenodo DOI 10.5281/zenodo.3270903 (license unspecified
+  by uploader; included for research convenience under the academic-use
+  convention).
+
+LUTCHI Colour Appearance Data (Luo & Rhodes 1997)
+-------------------------------------------------
+- Luo, M. R., Clarke, A. A., Rhodes, P. A., Schappo, A., Scrivener, S. A.
+  R. & Tait, C. J. (1991). Quantifying colour appearance. Part I.
+  LUTCHI colour appearance data. Color Research & Application 16(3),
+  166-180.
+- Snapshot from Zenodo DOI 10.5281/zenodo.4394536 (license unspecified
+  by uploader; included for research convenience under the academic-use
+  convention).
+
+xkcd Color Survey
+-----------------
+- Munroe, R. (2010). Color Survey Results.
+  https://blog.xkcd.com/2010/05/03/color-survey-results/
+- Curated 950-color list snapshot from https://xkcd.com/color/rgb.txt
+  (CC0 public domain dedication per file header).
+
+He 2022 (3D-printed samples)
+----------------------------
+- He, R., Xiao, K., Pointer, M., Bressler, Y., Liu, Z. & Lu, Y. (2022).
+  Development of an Image-Based Measurement System for Human Facial
+  Skin Colour. Color Research & Application.
+
+HelmlabFB (self-collected, pseudonymized)
+-----------------------------------------
+- helmlab (https://helmlab.space), 2026. Mobile-web color-difference
+  test, 71 observers, observer identities pseudonymized.
+
+Hung-Berns 1995
+---------------
+- Hung, P.-C. & Berns, R. S. (1995). Determination of constant hue loci
+  for a CRT gamut and their predictions using color appearance spaces.
+  Color Research & Application 20(5), 285-295.
+
+Ebner-Fairchild 1998
+--------------------
+- Ebner, F. & Fairchild, M. D. (1998). Finding constant hue surfaces in
+  color space. Proc. SPIE 3300, 107-117.
+
+Pointer 1980
+------------
+- Pointer, M. R. (1980). The gamut of real surface colours. Color
+  Research & Application 5(3), 145-155.
+
+Munsell Renotation
+------------------
+- Newhall, S. M., Nickerson, D. & Judd, D. B. (1943). Final report of
+  the OSA subcommittee on the spacing of the Munsell colors. Journal of
+  the Optical Society of America 33(7), 385-418.
+- Snapshot generated from the `colour` Python library
+  (MUNSELL_COLOURS_REAL).

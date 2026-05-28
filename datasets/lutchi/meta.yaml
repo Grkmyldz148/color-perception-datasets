@@ -1,0 +1,45 @@
+name: LUTCHI_1997
+full_name: LUTCHI Colour Appearance Data (Luo & Rhodes 1997)
+schema: compound_legacy
+n_files: 100
+categories:
+  BIT experiment: 10
+  colorimetric reference data: 33
+  Kuo experiment: 6
+  other: 4
+  mean variant: 5
+  weighted fit: 4
+  mean appearance estimates: 28
+  non-linear mean appearance estimates: 10
+type: color appearance — magnitude estimations across multiple experiments
+is_jnd: false
+is_suprathreshold: true
+description: The LUTCHI (Loughborough University of Technology, Computer Human Interface)
+  color-appearance dataset compiled by Luo & Rhodes (1997). 43,332 magnitude estimations
+  across multiple experiments (BIT, Kuo, mean appearance phases p1–p12) under varying
+  illuminants, surround conditions, and adaptation states. Standard empirical basis
+  for CAM02, CIECAM02 and CIECAM16 validation. The dataset ships as ~100 small plain-text
+  files with mixed schemas — this canonical export does NOT attempt to merge them
+  into a single table; instead, `canonical.csv` is an index of every raw file with
+  its category, and the original .dat files live unchanged in `raw/`.
+notes:
+- ★ Compound dataset — `canonical.csv` is just an index, not a flat table. To use
+  a specific experiment, read its raw file directly (e.g. `raw/mean.p1` for phase-1
+  mean appearance estimates). See the Luo & Rhodes 1997 paper for per-file schemas.
+- 'File naming convention: `mean.pN` = mean magnitude estimates for phase N; `col.pN`
+  = colorimetric reference data; `kuo.*` = Kuo experiment; `bit_pN.*` = BIT experiment
+  phase N; `nl*` = non-linear analysis variants.'
+- 'Original Zenodo record (DOI: 10.5281/zenodo.4394536) lists license as ''notspecified''.
+  Included here on the academic-use convention. Cite Luo, Clarke, Rhodes, Schappo,
+  Scrivener & Tait (1991) and Luo & Rhodes (1997).'
+- Some files in the bundle are appearance estimates without colorimetric anchoring
+  — useful only paired with the matching `col.*` file from the same phase.
+sources:
+- paper: Luo, M. R., Clarke, A. A., Rhodes, P. A., Schappo, A., Scrivener, S. A. R.
+    & Tait, C. J. (1991). Quantifying colour appearance. Part I. LUTCHI colour appearance
+    data. Color Research & Application 16(3), 166–180.
+- paper: 'Luo, M. R. & Rhodes, P. A. (1997). Using the LUTCHI Colour-Appearance Data.
+    In: Color Research & Application, Wiley.'
+- snapshot_source: Zenodo DOI 10.5281/zenodo.4394536
+license: License unspecified by uploader on Zenodo. Included for research convenience
+  under the academic-use convention. Cite the LUTCHI papers above.

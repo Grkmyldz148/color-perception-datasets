@@ -1,0 +1,46 @@
+name: Asano_2015_Observer_CMFs
+full_name: Asano (2015) Observer Function Database — 151 individual + 1000 Monte Carlo
+  observer CMFs
+schema: compound_legacy
+n_files: 4
+n_individual_observers: 151
+n_categorical_observers: 10
+n_monte_carlo_observers: 1000
+fields_of_view:
+- 2°
+- 10°
+type: observer color-matching functions (CMFs) and cone fundamentals — 151 color-normal
+  individuals
+description: 'Yuta Asano''s (2015) database of color-matching functions and cone fundamentals
+  from 151 individual color-normal observers measured at the RIT Munsell Color Science
+  Laboratory, plus 10 categorical observer averages stratified by age/field-of-view,
+  plus 1000 Monte-Carlo-simulated observers spanning the natural variation envelope.
+  Each observer has full CMFs (x̄, ȳ, z̄) and LMS cone fundamentals at both 2° and
+  10° fields, sampled at 1 nm. Useful for two questions: (1) how much does inter-observer
+  variation shift the position of any predicted ΔE? (2) what observer subgroups are
+  over- or under-represented in CIE 1931 / CIE 1964 standard observers? Important
+  for accessibility work — color-vision-deficient observers are not in this set, but
+  the natural variation among normal observers is itself ±5–10 nm in cone peak λ,
+  which affects ΔE predictions at low chroma.'
+notes:
+- ★ This is OBSERVER CHARACTERIZATION data, not color-difference data. It tells you
+  'observer N matches color X with these primaries', not 'observer N rated this difference
+  at level Y'.
+- 'Each Excel file has 5 sheets: xyz-02deg, xyz-10deg, lms-02deg, lms-10deg, parameters.
+  Read directly from raw/ — `canonical.csv` is just a file index.'
+- 'Use case for color-space work: compute an ''observer-uncertainty envelope'' around
+  any predicted ΔE by running it through all 1000 Monte Carlo observers and reporting
+  the IQR. Essential for showing that a champion''s STRESS advantage is not an artifact
+  of CIE 1931 standard observer choice.'
+- 151 individuals are a real demographic sample; 1000 Monte Carlo are model-generated
+  to span the natural envelope; 10 categorical are population means.
+- 'Original distribution: rit-mcsl.org/StudentResearch/YutaAsano/ (mirrored to Zenodo
+  DOI 10.5281/zenodo.3252742).'
+sources:
+- paper: Asano, Y. (2015). Individual Colorimetric Observers for Personalized Color
+    Imaging. PhD dissertation, Rochester Institute of Technology.
+- paper: 'Asano, Y., Fairchild, M. D. & Blondé, L. (2016). Individual Colorimetric
+    Observer Model. PLoS ONE 11(2): e0145671.'
+- snapshot_source: Zenodo DOI 10.5281/zenodo.3252742 (mirrored from rit-mcsl.org)
+license: License unspecified on Zenodo (original at RIT-MCSL was free-academic-use).
+  Included under academic-use convention. Cite Asano et al. (2016).

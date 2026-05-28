@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>xkcd_colors · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / xkcd_colors</div>
+  <h1>xkcd Color Survey — curated 950 named colors (Munroe 2010)</h1>
+  <p class="lede">color naming — most-popular color name → RGB swatch</p>
+  <div class="detail-tags"><span class="card-type" style="background:#47556915;color:#475569"><span class="dot"></span>naming</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>Curated 950 most-popular color names from the xkcd Color Survey conducted by Randall Munroe in 2010. Over 200,000 participants gave free-form names to randomly displayed RGB swatches; the published list keeps the most-agreed-upon name for each color region. The full raw survey contains ~5 million responses (not redistributed here — see Munroe&#x27;s original archive). Useful as a real-world naming corpus and as an out-of-distribution sanity check for color appearance models.</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">xkcd_colors.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">33.9 KB</span>
+      <a class="btn btn-primary" href="../downloads/xkcd_colors.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>Curated subset, not the full 5M-response survey. For the full raw dump see https://xkcd.com/color/colorsurvey.tar.gz (hundreds of MB, not included here).</li><li>English-language only; names reflect the cultural/linguistic vocabulary of the participant pool (mostly US/English-speaking internet users in 2010).</li><li>RGB values are sRGB display-space; the L*a*b* columns are added for convenience and may not match the participants&#x27; perceived color (their displays were uncalibrated).</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>name</th><th>hex</th><th>R</th><th>G</th><th>B</th><th>L</th><th>a</th><th>b</th></tr></thead><tbody><tr><td>cloudy blue</td><td>#acc2d9</td><td>172</td><td>194</td><td>217</td><td>77.4972</td><td>-2.5616</td><td>-13.9766</td></tr><tr><td>dark pastel green</td><td>#56ae57</td><td>86</td><td>174</td><td>87</td><td>64.1099</td><td>-44.5102</td><td>36.5019</td></tr><tr><td>dust</td><td>#b2996e</td><td>178</td><td>153</td><td>110</td><td>64.4631</td><td>3.0528</td><td>26.043</td></tr><tr><td>electric lime</td><td>#a8ff04</td><td>168</td><td>255</td><td>4</td><td>91.6183</td><td>-55.1162</td><td>87.5955</td></tr><tr><td>fresh green</td><td>#69d84f</td><td>105</td><td>216</td><td>79</td><td>77.6839</td><td>-56.7317</td><td>56.2309</td></tr></tbody></table></div>
+
+    
+
+    <h3>Raw files preserved</h3><div class='table-wrap'><table><thead><tr><th>File</th><th class='num'>Size</th></tr></thead><tbody><tr><td><code>raw/xkcd_rgb.txt</code></td><td class='num'>18.9 KB</td></tr></tbody></table></div>
+
+    <h2>Source publications</h2>
+    <div class="citation">Munroe, R. (2010). Color Survey Results. xkcd. https://blog.xkcd.com/2010/05/03/color-survey-results/</div><div class="citation">Snapshot: https://xkcd.com/color/rgb.txt (CC0 public domain dedication, see file header)</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">2010</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">mixed</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">color_names</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">949</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">33.9 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

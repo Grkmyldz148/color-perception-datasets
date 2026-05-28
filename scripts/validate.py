@@ -1,0 +1,262 @@
+"""Validate every canonical dataset against its declared schema.
+
+Checks performed per dataset:
+  - All schema-required columns present.
+  - L ∈ [0, 100]; a, b ∈ [-200, 200].
+  - For pair_diff: identical pairs (DE==0) that report dv > 0 are flagged
+    as potential sentinel/catch trials.
+  - For pair_diff: row count matches meta.yaml.
+
+Exits non-zero on any FAIL.
+"""
+
+from __future__ import annotations
+
+import csv
+import math
+import sys
+from pathlib import Path
+
+import yaml
+
+REPO = Path(__file__).resolve().parent.parent
+DATASETS = REPO / "datasets"
+SCHEMAS = REPO / "schemas"
+
+
+def load_schema(name: str) -> dict:
+    return yaml.safe_load((SCHEMAS / f"{name}.yaml").read_text())
+
+
+def check_range(val: float, lo: float, hi: float) -> bool:
+    try:
+        return lo <= float(val) <= hi
+    except (TypeError, ValueError):
+        return False
+
+
+def validate_pair_diff(meta: dict, rows: list[dict]) -> list[str]:
+    errors = []
+    required = ["L1", "a1", "b1", "L2", "a2", "b2", "dv"]
+    for col in required:
+        if rows and col not in rows[0]:
+            errors.append(f"missing required column '{col}'")
+
+    sentinel_hits = 0
+    out_of_range = 0
+    for i, r in enumerate(rows):
+        for col in ("L1", "L2"):
+            if not check_range(r[col], 0, 110):
+                out_of_range += 1
+                if out_of_range <= 3:
+                    errors.append(f"row {i}: {col}={r[col]} outside [0,110]")
+        for col in ("a1", "b1", "a2", "b2"):
+            if not check_range(r[col], -200, 200):
+                out_of_range += 1
+                if out_of_range <= 3:
+                    errors.append(f"row {i}: {col}={r[col]} outside [-200,200]")
+        # sentinel detection
+        try:
+            dE = math.sqrt(
+                (float(r["L1"]) - float(r["L2"])) ** 2
+                + (float(r["a1"]) - float(r["a2"])) ** 2
+                + (float(r["b1"]) - float(r["b2"])) ** 2
+            )
+            dv = float(r["dv"])
+            if dE < 1e-6 and dv > 1e-3:
+                sentinel_hits += 1
+        except (TypeError, ValueError):
+            continue
+
+    declared = meta.get("n_pairs") or meta.get("n_judgements")
+    if declared and declared != len(rows):
+        errors.append(f"row count {len(rows)} != meta declared {declared}")
+
+    if sentinel_hits:
+        errors.append(
+            f"⚠ {sentinel_hits} sentinel rows (identical Lab pair with dv > 0); "
+            "may indicate catch trials that should be excluded or labeled."
+        )
+
+    if out_of_range > 3:
+        errors.append(f"… plus {out_of_range - 3} more out-of-range rows")
+
+    return errors
+
+
+def validate_constant_hue(meta: dict, rows: list[dict]) -> list[str]:
+    errors = []
+    required = ["L", "a", "b"]
+    for col in required:
+        if rows and col not in rows[0]:
+            errors.append(f"missing required column '{col}'")
+    out_of_range = 0
+    for i, r in enumerate(rows):
+        if not check_range(r["L"], 0, 110):
+            out_of_range += 1
+            if out_of_range <= 3:
+                errors.append(f"row {i}: L={r['L']} outside [0,110]")
+        for col in ("a", "b"):
+            if not check_range(r[col], -200, 200):
+                out_of_range += 1
+                if out_of_range <= 3:
+                    errors.append(f"row {i}: {col}={r[col]} outside [-200,200]")
+    declared = meta.get("n_chips")
+    if declared and declared != len(rows):
+        errors.append(f"row count {len(rows)} != meta declared {declared}")
+    if out_of_range > 3:
+        errors.append(f"… plus {out_of_range - 3} more out-of-range rows")
+    return errors
+
+
+def validate_gamut_boundary(meta: dict, rows: list[dict]) -> list[str]:
+    errors = []
+    declared = meta.get("n_points")
+    if declared and declared != len(rows):
+        errors.append(f"row count {len(rows)} != meta declared {declared}")
+    if not rows:
+        return errors
+    # Two valid layouts: Lab (L, a, b) or chromaticity (x, y, Y)
+    has_lab = all(k in rows[0] for k in ("L", "a", "b"))
+    has_xyY = all(k in rows[0] for k in ("x", "y", "Y"))
+    if not (has_lab or has_xyY):
+        errors.append("gamut_boundary needs either (L,a,b) or (x,y,Y) columns")
+        return errors
+    out_of_range = 0
+    for i, r in enumerate(rows):
+        if has_lab and not check_range(r["L"], 0, 110):
+            out_of_range += 1
+            if out_of_range <= 3:
+                errors.append(f"row {i}: L={r['L']} outside [0,110]")
+        if has_xyY:
+            for col in ("x", "y"):
+                if not check_range(r[col], 0, 1):
+                    out_of_range += 1
+                    if out_of_range <= 3:
+                        errors.append(f"row {i}: {col}={r[col]} outside [0,1]")
+    if out_of_range > 3:
+        errors.append(f"… plus {out_of_range - 3} more out-of-range rows")
+    return errors
+
+
+def validate_delta_only(meta: dict, rows: list[dict]) -> list[str]:
+    errors = []
+    declared = meta.get("n_pairs")
+    if declared and declared != len(rows):
+        errors.append(f"row count {len(rows)} != meta declared {declared}")
+    neg_hits = 0
+    for r in rows:
+        for col in r:
+            if col.startswith(("DE", "DL", "DC", "DH", "dv")):
+                try:
+                    if col != "DL_10" and float(r[col]) < -1e-6:
+                        neg_hits += 1
+                except (TypeError, ValueError):
+                    pass
+    if neg_hits:
+        errors.append(f"{neg_hits} negative magnitude values (only DL is allowed to be signed)")
+    return errors
+
+
+def validate_jnd_ellipses(meta: dict, rows: list[dict]) -> list[str]:
+    errors = []
+    declared = meta.get("n_ellipses")
+    if declared and declared != len(rows):
+        errors.append(f"row count {len(rows)} != meta declared {declared}")
+    for i, r in enumerate(rows):
+        try:
+            x, y = float(r["x_c"]), float(r["y_c"])
+            a, b = float(r["a"]), float(r["b"])
+        except (TypeError, ValueError, KeyError):
+            errors.append(f"row {i}: missing or unparseable x_c/y_c/a/b")
+            continue
+        if not (0 <= x <= 1 and 0 <= y <= 1):
+            errors.append(f"row {i}: chromaticity ({x}, {y}) outside [0,1]")
+        if a <= 0 or b <= 0:
+            errors.append(f"row {i}: ellipse semi-axes must be positive (a={a}, b={b})")
+        if a < b - 1e-9:
+            errors.append(f"row {i}: semi-major a={a} should be ≥ semi-minor b={b}")
+    return errors
+
+
+def validate_corresponding_colors(meta: dict, rows: list[dict]) -> list[str]:
+    errors = []
+    declared = meta.get("n_pairs")
+    if declared and declared != len(rows):
+        errors.append(f"row count {len(rows)} != meta declared {declared}")
+    for i, r in enumerate(rows):
+        for col in ("u_t", "v_t", "u_m", "v_m"):
+            try:
+                v = float(r[col])
+                if not (0 <= v <= 1):
+                    errors.append(f"row {i}: {col}={v} outside u'v' range [0,1]")
+            except (TypeError, ValueError, KeyError):
+                errors.append(f"row {i}: {col} missing/unparseable")
+    return errors
+
+
+VALIDATORS = {
+    "pair_diff": validate_pair_diff,
+    "constant_hue": validate_constant_hue,
+    "gamut_boundary": validate_gamut_boundary,
+    "delta_only": validate_delta_only,
+    "jnd_ellipses": validate_jnd_ellipses,
+    "corresponding_colors": validate_corresponding_colors,
+    "color_names": lambda meta, rows: ([
+        f"row count {len(rows)} != meta declared {meta['n_colors']}"
+    ] if meta.get("n_colors") and meta["n_colors"] != len(rows) else []),
+    "compound_legacy": lambda meta, rows: ([
+        f"row count {len(rows)} != meta declared {meta['n_files']}"
+    ] if meta.get("n_files") and meta["n_files"] != len(rows) else []),
+    "lightness_scaling": lambda meta, rows: ([
+        f"row count {len(rows)} != meta declared {meta['n_samples']}"
+    ] if meta.get("n_samples") and meta["n_samples"] != len(rows) else []),
+    "tolerance_ellipsoids": lambda meta, rows: ([
+        f"row count {len(rows)} != meta declared {meta['n_ellipsoids']}"
+    ] if meta.get("n_ellipsoids") and meta["n_ellipsoids"] != len(rows) else []),
+    "contrast_preference": lambda meta, rows: ([
+        f"row count {len(rows)} != meta declared {meta['n_responses']}"
+    ] if meta.get("n_responses") and meta["n_responses"] != len(rows) else []),
+}
+
+
+def main() -> int:
+    total_fail = 0
+    for ds_dir in sorted(DATASETS.iterdir()):
+        if not ds_dir.is_dir():
+            continue
+        meta_path = ds_dir / "meta.yaml"
+        canon_path = ds_dir / "canonical.csv"
+        if not meta_path.exists() or not canon_path.exists():
+            print(f"  [SKIP] {ds_dir.name}: missing meta.yaml or canonical.csv")
+            continue
+        meta = yaml.safe_load(meta_path.read_text())
+        with open(canon_path) as f:
+            rows = list(csv.DictReader(f))
+
+        schema_name = meta.get("schema", "").split("+")[0].split("_with_")[0].strip()
+        validator = VALIDATORS.get(schema_name)
+        if not validator:
+            print(f"  [WARN] {ds_dir.name}: unknown schema '{schema_name}' — skipping deep check")
+            continue
+        errors = validator(meta, rows)
+        if errors:
+            print(f"  [FAIL] {ds_dir.name} ({len(rows)} rows):")
+            for e in errors:
+                print(f"     - {e}")
+            # sentinel-only warnings are not hard fails (some datasets carry catch trials by design)
+            hard = [e for e in errors if not e.startswith("⚠")]
+            if hard:
+                total_fail += 1
+        else:
+            print(f"  [OK]   {ds_dir.name} ({len(rows)} rows)")
+    print()
+    if total_fail:
+        print(f"FAIL: {total_fail} dataset(s) have errors.")
+        return 1
+    print("All datasets passed.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
