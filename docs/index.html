@@ -28,12 +28,12 @@
   <h1>Psychophysical color-perception datasets, cleaned and unified.</h1>
   <p class="lede">A single pool of 24 classic and modern datasets — JND ellipses, suprathreshold color difference, constant hue, gamut boundaries, corresponding colors, color naming and more — packaged in consistent schemas with provenance and caveats intact.</p>
   <div class="hero-actions">
-    <a class="btn btn-primary" href="downloads/all-datasets.zip" download>Download all (38.0 MB)</a>
+    <a class="btn btn-primary" href="downloads/all-datasets.zip" download>Download all (40.6 MB)</a>
     <a class="btn btn-ghost" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">View on GitHub</a>
   </div>
   <div class="hero-stats">
     <div class="hero-stat"><div class="num">24</div><div class="lbl">datasets</div></div>
-    <div class="hero-stat"><div class="num">25,571</div><div class="lbl">total rows</div></div>
+    <div class="hero-stat"><div class="num">110,441</div><div class="lbl">total rows</div></div>
     <div class="hero-stat"><div class="num">12</div><div class="lbl">categories</div></div>
     <div class="hero-stat"><div class="num">1935–2026</div><div class="lbl">year range</div></div>
     <div class="hero-stat"><div class="num">CC BY 4.0</div><div class="lbl">license</div></div>
@@ -376,25 +376,40 @@
   </div>
 </article><article class="card"
   data-tags="JND"
-  data-search="hong et al. (2025) modern isoluminant color-discrimination ellipsoids (brainard lab, upenn) modern replacement-class for macadam 1942 — wishart process ellipsoid fits in isoluminant plane the modern descendant of macadam 1942: dense color-discrimination ellipsoids measured by hong, yoon, yoo &amp; brainard (2025) at upenn using a 3afc oddity task with adaptive psychophysics (aepsych) on a calibrated display. ~6,000 adaptive + ~6,000 validation trials per observer × 8 color-normal observers, fitted with a wishart process psychophysical model that yields a smooth ellipsoid field across the isoluminant plane (rather than 25 isolated ellipses). published in elife 2025; code on github, raw + organized data on osf. the first jnd-class dataset that fixes macadam 1942&#x27;s two biggest problems: (1) a single observer and (2) sparse sampling. use this dataset to test whether your color space&#x27;s small-difference geometry generalizes beyond the historical 25 centers. jnd hong_2025_ellipsoids calibrated 2025"
+  data-search="hong, yoon, yoo &amp; brainard (2025) isoluminant jnd ellipsoid grid modern dense jnd ellipsoid grid (wishart process psychophysical model) dense per-subject jnd ellipsoid field fitted via the wishart process
+psychophysical model from hong, yoon, yoo &amp; brainard (elife 2025).
+eight color-normal observers completed ~12,000 trials each (mix of
+adaptive aepsych + mocs replications). the wishart process produces
+a smooth 2-d field of 2x2 covariance matrices σ(x, y) across the
+isoluminant plane (dkl-derived 2dw coordinates, range [-0.85, 0.85]).
+each subject&#x27;s fit is a 103×103 grid of σ, providing a jnd ellipsoid
+at every point — replacing macadam 1942&#x27;s 25 ellipses with 10,609
+per observer.
+
+this is the modern direct descendant of macadam 1942: fixes both of
+macadam&#x27;s chief limitations — single observer + sparse sampling — and
+uses contemporary adaptive psychophysics + bayesian smoothing.
+ jnd hong_2025_ellipsoids calibrated 2025"
   data-year="2025"
-  data-rows="2"
-  data-size="192933"
-  data-name="hong et al. (2025) modern isoluminant color-discrimination ellipsoids (brainard lab, upenn)">
+  data-rows="84872"
+  data-size="2872965"
+  data-name="hong, yoon, yoo &amp; brainard (2025) isoluminant jnd ellipsoid grid">
   <div class="card-top">
     <span class="card-type" style="background:#dc262615;color:#dc2626">
       <span class="dot"></span>JND
     </span>
     <span class="card-year">2025</span>
   </div>
-  <h3 class="card-title"><a href="datasets/hong_2025_ellipsoids.html">Hong et al. (2025) modern isoluminant color-discrimination ellipsoids (Brainard Lab, UPenn)</a></h3>
-  <p class="card-desc">The modern descendant of MacAdam 1942: dense color-discrimination ellipsoids measured by Hong, Yoon, Yoo &amp; Brainard (2025) at UPenn using a 3AFC oddity task with adaptive psychophysics (AEPsych) on a </p>
+  <h3 class="card-title"><a href="datasets/hong_2025_ellipsoids.html">Hong, Yoon, Yoo &amp; Brainard (2025) isoluminant JND ellipsoid grid</a></h3>
+  <p class="card-desc">Dense per-subject JND ellipsoid field fitted via the Wishart Process
+Psychophysical Model from Hong, Yoon, Yoo &amp; Brainard (eLife 2025).
+Eight color-normal observers completed ~12,000 trials each (mix </p>
   <div class="card-meta">
-    <span class="v">2 files indexed</span>
+    <span class="v">84,872 ellipses</span>
     <span class="sep">·</span>
     <span>Illum calibrated</span>
     <span class="sep">·</span>
-    <span>188.4 KB</span>
+    <span>2.7 MB</span>
   </div>
   <div class="card-actions">
     <a class="primary" href="datasets/hong_2025_ellipsoids.html">View details</a>
