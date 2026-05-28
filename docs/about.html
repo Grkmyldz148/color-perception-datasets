@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · color-perception-datasets</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="./">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="./">Datasets</a><a href="./schemas.html">Schemas</a><a href="./about.html" class="active">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <span class="eyebrow">About</span>
+  <h1>Why this pool exists.</h1>
+  <p class="lede">Color-science datasets live in many incompatible formats — paper-PDF tables, vendor xlsx, ad-hoc JSON, and code-only loaders that disappear when libraries change. Several widely-used datasets carry well-known but rarely-cited caveats (MacAdam 1974 is often mis-cited as the 1942 JND ellipses; COMBVD has three different reference whites; He 2022 ships chip and pair data in incompatible sheets). This pool normalizes the format, preserves the raw, and writes the caveats down where you'll actually see them.</p>
+</section>
+
+<h2>Maintainer &amp; related projects</h2>
+<p>Maintained by <a href="https://gorkemyildiz.com"><strong>Görkem Yıldız</strong></a> as part of the <a href="https://helmlab.space"><strong>helmlab</strong></a> research toolkit — a color-science library that uses these datasets for color-space training, evaluation, and perceptual benchmarking. If you want to do something with the data instead of just look at it, helmlab is the place to start.</p>
+
+<h2>Methodology</h2>
+<ul>
+  <li><strong>Canonical CSV</strong> per dataset, under one of 11 documented schemas (<a href="schemas.html">see schemas</a>).</li>
+  <li><strong>meta.yaml</strong> per dataset capturing: native illuminant + observer, native color space, what <code>dv</code> literally means, citation, and caveats.</li>
+  <li><strong>raw/</strong> per dataset — original files preserved unchanged.</li>
+  <li><strong>scripts/validate.py</strong> checks every canonical file against its declared schema (range checks, row counts, sentinel detection).</li>
+</ul>
+
+<h2>What this pool is not</h2>
+<ul>
+  <li>It is <em>not</em> a benchmark. It packages data; it does not define a leaderboard.</li>
+  <li>It is <em>not</em> exhaustive — paywalled / out-of-print datasets (Brown 1957, Wyszecki-Fielder 1971, Huang 2015 SCD/LCD, Sanders-Wyszecki 1958, Bartleson 1960, etc.) are listed as <em>Wanted</em> in the README. PRs welcome.</li>
+  <li>It is <em>not</em> a substitute for reading the original papers. The papers carry experimental conditions, observer briefing, and uncertainty estimates that no CSV row count can replace.</li>
+</ul>
+
+<h2>Privacy</h2>
+<p>The HelmlabFB dataset is self-collected and originally contained 71 named observers. All names have been replaced with deterministic pseudonyms (<code>observer_001</code>..<code>observer_071</code>) so per-observer grouping is preserved for analysis but no personal data is published.</p>
+
+<h2>How to contribute</h2>
+<p>Open an issue or a pull request on <a href="https://github.com/Grkmyldz148/color-perception-datasets">GitHub</a>. Useful contributions: missing datasets (especially the paywalled classics), corrections to caveats, additional metadata fields, schema extensions.</p>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

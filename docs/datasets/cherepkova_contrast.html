@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cherepkova_2025_Contrast_Preferences · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / Cherepkova_2025_Contrast_Preferences</div>
+  <h1>Cherepkova et al. (2025) Individual Contrast Preferences Database (NTNU)</h1>
+  <p class="lede">individual contrast preferences for natural images (accessibility-relevant)</p>
+  <div class="detail-tags"><span class="card-type" style="background:#9333ea15;color:#9333ea"><span class="dot"></span>contrast-pref</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>Per-observer preferred contrast adjustments for 500 natural images, gathered by Cherepkova and colleagues at the NTNU Colour and Visual Computing Lab (2025). 22 observers each rated their preferred contrast modification for every image; values are signed deltas (negative = less contrast preferred, positive = more contrast preferred). Useful as a perceptual ground-truth for image-adaptive contrast algorithms (APCA / WCAG-adjacent work), and as a sanity test for any color space that claims a perceptually meaningful lightness curve — preferred contrast should correlate with image L*-distribution properties in a well-calibrated space.</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">cherepkova_contrast.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">28.7 MB</span>
+      <a class="btn btn-primary" href="../downloads/cherepkova_contrast.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>★ This is a CONTRAST-PREFERENCE dataset, not a color-difference dataset. Adjacent to image quality assessment and accessibility (APCA/WCAG) research, not classical color-space evaluation.</li><li>22 observers, 500 images = 11,000 max responses (some cells empty in source).</li><li>Reference images (JPEGs at zero-contrast adjustment) are bundled in `raw/full_bundle.zip` if you need to compute image-level features. The canonical.csv only contains observer responses.</li><li>Stratifies well by image content (faces, landscapes, indoor) — see the original NTNU paper for image categorization.</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>image_id</th><th>observer_id</th><th>preferred_contrast_delta</th></tr></thead><tbody><tr><td>1086583</td><td>obs_1</td><td>-0.364379</td></tr><tr><td>1086583</td><td>obs_2</td><td>-0.068233</td></tr><tr><td>1086583</td><td>obs_4</td><td>0.108555</td></tr><tr><td>1086583</td><td>obs_5</td><td>-0.068589</td></tr><tr><td>1086583</td><td>obs_6</td><td>-0.125282</td></tr></tbody></table></div>
+
+    
+
+    <h3>Raw files preserved</h3><div class='table-wrap'><table><thead><tr><th>File</th><th class='num'>Size</th></tr></thead><tbody><tr><td><code>raw/22_observers_preferred_contrast.xlsx</code></td><td class='num'>164.7 KB</td></tr><tr><td><code>raw/full_bundle.zip</code></td><td class='num'>28.5 MB</td></tr></tbody></table></div>
+
+    <h2>Source publications</h2>
+    <div class="citation">Cherepkova, O. et al. (2025). Individual Contrast Preferences Database. NTNU Colour and Visual Computing Lab. Zenodo DOI 10.5281/zenodo.17430959</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">2025</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">mixed</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">contrast_preference</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">10,978</span></div><div class="aside-stat"><span class="k">Observers</span><span class="v">22</span></div><div class="aside-stat"><span class="k">JND data?</span><span class="v">no</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">28.7 MB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

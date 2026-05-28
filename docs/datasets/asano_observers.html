@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asano_2015_Observer_CMFs · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / Asano_2015_Observer_CMFs</div>
+  <h1>Asano (2015) Observer Function Database — 151 individual + 1000 Monte Carlo observer CMFs</h1>
+  <p class="lede">observer color-matching functions (CMFs) and cone fundamentals — 151 color-normal individuals</p>
+  <div class="detail-tags"><span class="card-type" style="background:#0284c715;color:#0284c7"><span class="dot"></span>observer-data</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>Yuta Asano&#x27;s (2015) database of color-matching functions and cone fundamentals from 151 individual color-normal observers measured at the RIT Munsell Color Science Laboratory, plus 10 categorical observer averages stratified by age/field-of-view, plus 1000 Monte-Carlo-simulated observers spanning the natural variation envelope. Each observer has full CMFs (x̄, ȳ, z̄) and LMS cone fundamentals at both 2° and 10° fields, sampled at 1 nm. Useful for two questions: (1) how much does inter-observer variation shift the position of any predicted ΔE? (2) what observer subgroups are over- or under-represented in CIE 1931 / CIE 1964 standard observers? Important for accessibility work — color-vision-deficient observers are not in this set, but the natural variation among normal observers is itself ±5–10 nm in cone peak λ, which affects ΔE predictions at low chroma.</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">asano_observers.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">3.7 MB</span>
+      <a class="btn btn-primary" href="../downloads/asano_observers.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>★ This is OBSERVER CHARACTERIZATION data, not color-difference data. It tells you &#x27;observer N matches color X with these primaries&#x27;, not &#x27;observer N rated this difference at level Y&#x27;.</li><li>Each Excel file has 5 sheets: xyz-02deg, xyz-10deg, lms-02deg, lms-10deg, parameters. Read directly from raw/ — `canonical.csv` is just a file index.</li><li>Use case for color-space work: compute an &#x27;observer-uncertainty envelope&#x27; around any predicted ΔE by running it through all 1000 Monte Carlo observers and reporting the IQR. Essential for showing that a champion&#x27;s STRESS advantage is not an artifact of CIE 1931 standard observer choice.</li><li>151 individuals are a real demographic sample; 1000 Monte Carlo are model-generated to span the natural envelope; 10 categorical are population means.</li><li>Original distribution: rit-mcsl.org/StudentResearch/YutaAsano/ (mirrored to Zenodo DOI 10.5281/zenodo.3252742).</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>filename</th><th>size_bytes</th><th>category</th><th>lines</th></tr></thead><tbody><tr><td>Data_1000MonteCarloObs.xls</td><td>4278272</td><td>1000 Monte Carlo observers (simulated)</td><td></td></tr><tr><td>Data_10CatObs.xls</td><td>281600</td><td>10 categorical observers (age × field-size groupings)</td><td></td></tr><tr><td>Data_151Obs.xls</td><td>2716160</td><td>151 individual observers (CMFs + cone fundamentals, 2° + 10°)</td><td></td></tr><tr><td>urls.txt</td><td>390</td><td>source URLs + checksums</td><td></td></tr></tbody></table></div>
+
+    
+
+    <h3>Raw files preserved</h3><div class='table-wrap'><table><thead><tr><th>File</th><th class='num'>Size</th></tr></thead><tbody><tr><td><code>raw/Data_1000MonteCarloObs.xls</code></td><td class='num'>4.1 MB</td></tr><tr><td><code>raw/Data_10CatObs.xls</code></td><td class='num'>275.0 KB</td></tr><tr><td><code>raw/Data_151Obs.xls</code></td><td class='num'>2.6 MB</td></tr><tr><td><code>raw/urls.txt</code></td><td class='num'>390 B</td></tr></tbody></table></div>
+
+    <h2>Source publications</h2>
+    <div class="citation">Asano, Y. (2015). Individual Colorimetric Observers for Personalized Color Imaging. PhD dissertation, Rochester Institute of Technology.</div><div class="citation">Asano, Y., Fairchild, M. D. &amp; Blondé, L. (2016). Individual Colorimetric Observer Model. PLoS ONE 11(2): e0145671.</div><div class="citation">Snapshot: Zenodo DOI 10.5281/zenodo.3252742 (mirrored from rit-mcsl.org)</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">2015</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">mixed</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">compound_legacy</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">4</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">3.7 MB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

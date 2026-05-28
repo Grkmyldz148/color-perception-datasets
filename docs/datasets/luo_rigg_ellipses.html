@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luo_Rigg_1986_Ellipses · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / Luo_Rigg_1986_Ellipses</div>
+  <h1>Luo &amp; Rigg (1986) chromaticity discrimination ellipses for surface colours</h1>
+  <p class="lede">JND chromaticity-discrimination ellipses from 10 different source studies, harmonized</p>
+  <div class="detail-tags"><span class="card-type" style="background:#dc262615;color:#dc2626"><span class="dot"></span>JND</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>A compilation of 132+ chromaticity-discrimination ellipses for surface colours, gathered by M. R. Luo and B. Rigg (1986) from ten independent source studies (VVVR, BFD, MMB, CISCC, CIE, STROCKA, WITT, DF, MCD, K) and harmonized via per-set scaling factors. Larger and more diverse than the MacAdam 1942 set (which used a single observer on isolated lights) — Luo-Rigg covers real surface-color conditions and multiple observer pools. The paper&#x27;s headline finding: contrary to MacAdam 1942, the smallest discrimination ellipses lie in the blue-grey region for surface colors. The standard JND dataset for any color space that claims to model real-world textile/paint/dye color tolerances rather than just isolated stimuli.</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">luo_rigg_ellipses.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">11.8 KB</span>
+      <a class="btn btn-primary" href="../downloads/luo_rigg_ellipses.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>10 source sets with very different sample sizes — filter by `set_name` for a single source. Don&#x27;t pool naively; the `set_factor` column carries the per-set scaling Luo &amp; Rigg derived to bring sets onto a common scale.</li><li>★ Surface-color JND — different from MacAdam 1942 (isolated lights). The blue-grey minimum here vs MacAdam&#x27;s blue maximum is a long-standing puzzle in the literature.</li><li>Ellipse semi-axes (a, b) stored in chromaticity units (a×10⁻⁴ scale already applied). Use a/b ratio when comparing aspect ratios to MacAdam.</li><li>set_factor R̄ is the relative size factor per source set; multiply a and b by R̄ to recover the raw per-source size, or divide by R̄ to project onto the common scale.</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>center_id</th><th>set_name</th><th>center_label</th><th>x_c</th><th>y_c</th><th>a</th><th>b</th><th>theta_deg</th><th>Y</th><th>set_factor</th><th>illuminant</th></tr></thead><tbody><tr><td>luorigg_VVVR_B</td><td>VVVR</td><td>B</td><td>0.1566</td><td>0.1819</td><td>0.0129</td><td>0.0022089</td><td>70.0</td><td>7.3</td><td>2.13</td><td>C</td></tr><tr><td>luorigg_VVVR_Y</td><td>VVVR</td><td>Y</td><td>0.4773</td><td>0.487</td><td>0.0078</td><td>0.00435754</td><td>3.0</td><td>62.8</td><td>2.28</td><td>C</td></tr><tr><td>luorigg_VVVR_PK</td><td>VVVR</td><td>PK</td><td>0.386</td><td>0.3077</td><td>0.0058</td><td>0.00324022</td><td>26.0</td><td>34.7</td><td>2.38</td><td>C</td></tr><tr><td>luorigg_VVVR_DG</td><td>VVVR</td><td>DG</td><td>0.2493</td><td>0.3767</td><td>0.0095</td><td>0.00637584</td><td>73.0</td><td>2.9</td><td>1.53</td><td>C</td></tr><tr><td>luorigg_VVVR_DP</td><td>VVVR</td><td>DP</td><td>0.3284</td><td>0.2311</td><td>0.0154</td><td>0.00754902</td><td>34.0</td><td>2.2</td><td>3.44</td><td>C</td></tr></tbody></table></div>
+
+    
+
+    <h3>Raw files preserved</h3><div class='table-wrap'><table><thead><tr><th>File</th><th class='num'>Size</th></tr></thead><tbody><tr><td><code>raw/README.md</code></td><td class='num'>1.8 KB</td></tr><tr><td><code>raw/luo-rigg.json</code></td><td class='num'>7.3 KB</td></tr><tr><td><code>raw/luo-rigg.yaml</code></td><td class='num'>7.0 KB</td></tr></tbody></table></div>
+
+    <h2>Source publications</h2>
+    <div class="citation">Luo, M. R. &amp; Rigg, B. (1986). Chromaticity Discrimination Ellipses for Surface Colours. Color Research &amp; Application 11(1), 25–42.</div><div class="citation">Snapshot: coloria-dev/color-data (community extraction of Table 3)</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">1986</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">CIE</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">jnd_ellipses</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">132</span></div><div class="aside-stat"><span class="k">JND data?</span><span class="v">yes</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">11.8 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

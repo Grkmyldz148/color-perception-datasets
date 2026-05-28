@@ -1,0 +1,46 @@
+schema_name: jnd_ellipses
+version: 1
+description: |
+  Just-noticeable-difference (JND) discrimination-threshold ellipse data.
+  Each row is one ellipse: a chromaticity center (x_c, y_c) plus the
+  semi-major axis (a), semi-minor axis (b), and rotation angle (theta)
+  of the discrimination ellipse around that center. Unlike pair_diff, the
+  data is one ellipse per chromaticity, not one pair per row — the ellipse
+  IS the JND distribution.
+
+columns:
+  center_id:
+    type: string
+    required: true
+    description: Stable identifier for the chromaticity center.
+  x_c:
+    type: float
+    required: true
+    description: CIE x chromaticity coordinate of the ellipse center.
+  y_c:
+    type: float
+    required: true
+    description: CIE y chromaticity coordinate of the ellipse center.
+  a:
+    type: float
+    required: true
+    description: Semi-major axis length (in the same chromaticity units as x, y, typically ×10⁻³).
+  b:
+    type: float
+    required: true
+    description: Semi-minor axis length.
+  theta_deg:
+    type: float
+    required: true
+    description: Rotation angle of the semi-major axis from the +x direction, in degrees.
+  Y:
+    type: float
+    required: false
+    description: Optional reference luminance factor (Y).
+  illuminant:
+    type: string
+    required: false
+
+invariants:
+  - "a >= b > 0"
+  - "0 <= theta_deg < 180 (modulo 180 — ellipse orientation is rotation-symmetric)"

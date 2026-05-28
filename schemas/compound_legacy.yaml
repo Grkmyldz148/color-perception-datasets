@@ -1,0 +1,33 @@
+schema_name: compound_legacy
+version: 1
+description: |
+  Compound legacy dataset — multiple original files with mixed per-file
+  schemas that are not merged into a single canonical table. The
+  `canonical.csv` is an INDEX of the raw files (filename, size, category)
+  rather than a flat data table. Users read individual raw files from
+  `raw/` according to their experimental needs.
+
+  This schema exists because some classic color-appearance datasets
+  (LUTCHI, certain CAM corpus data) ship as collections of small files
+  whose per-file schemas only make sense in the context of the source
+  paper. Merging them into one canonical CSV would erase the experimental
+  structure that gives each file its meaning.
+
+columns:
+  filename:
+    type: string
+    required: true
+  size_bytes:
+    type: int
+    required: true
+  category:
+    type: string
+    required: true
+    description: Coarse grouping (e.g. "mean appearance estimates", "colorimetric reference data").
+  lines:
+    type: int
+    required: false
+    description: Row count of the raw file, if applicable.
+
+invariants:
+  - "Every listed filename must exist in raw/."

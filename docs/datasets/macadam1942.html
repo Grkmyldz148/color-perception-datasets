@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MacAdam_1942_Ellipses · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / MacAdam_1942_Ellipses</div>
+  <h1>MacAdam (1942) discrimination ellipses (Observer PGN)</h1>
+  <p class="lede">JND threshold ellipses</p>
+  <div class="detail-tags"><span class="card-type" style="background:#dc262615;color:#dc2626"><span class="dot"></span>JND</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>The classic 25 just-noticeable-difference (JND) chromaticity ellipses measured by David MacAdam in 1942 under daylight illumination, using a single highly trained observer (Perley G. Nutting Jr., &#x27;PGN&#x27;). Each ellipse maps the locus of color matches around a fixed center — the inside of the ellipse is the threshold of perceptual indistinguishability. Foundational data for color discrimination thresholds, the inspiration for the entire &#x27;perceptually uniform color space&#x27; research line, and the reason CIELAB and CIELUV were developed.</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">macadam1942.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">1.7 KB</span>
+      <a class="btn btn-primary" href="../downloads/macadam1942.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>★ This is the REAL JND dataset — not to be confused with MacAdam (1974) OSA UCS which is suprathreshold. Many papers cite &#x27;1942&#x27; but use &#x27;1974&#x27; data, or vice versa. Always check.</li><li>Single observer (PGN). MacAdam later replicated with 2 more observers in 1949 but the 1942 PGN data is the canonical set used in every textbook.</li><li>Ellipse semi-axes (a, b) are stored in CIE chromaticity units, NOT the source paper&#x27;s ×10³ convention — divide-by-1000 already applied in canonical.csv.</li><li>Illuminant C (Munsell-era daylight standard); apply chromatic adaptation if using under D65.</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>center_id</th><th>x_c</th><th>y_c</th><th>a</th><th>b</th><th>theta_deg</th><th>illuminant</th></tr></thead><tbody><tr><td>macadam1942_01</td><td>0.16</td><td>0.057</td><td>0.00085</td><td>0.00035</td><td>62.5</td><td>C</td></tr><tr><td>macadam1942_02</td><td>0.187</td><td>0.118</td><td>0.0022</td><td>0.00055</td><td>77.0</td><td>C</td></tr><tr><td>macadam1942_03</td><td>0.253</td><td>0.125</td><td>0.0025</td><td>0.0005</td><td>55.5</td><td>C</td></tr><tr><td>macadam1942_04</td><td>0.15</td><td>0.68</td><td>0.0096</td><td>0.0023</td><td>105.0</td><td>C</td></tr><tr><td>macadam1942_05</td><td>0.131</td><td>0.521</td><td>0.0047</td><td>0.002</td><td>112.5</td><td>C</td></tr></tbody></table></div>
+
+    
+
+    
+
+    <h2>Source publications</h2>
+    <div class="citation">MacAdam, D. L. (1942). Visual Sensitivities to Color Differences in Daylight. Journal of the Optical Society of America 32(5), 247–274.</div><div class="citation">Wyszecki, G. &amp; Stiles, W. S. (2000). Color Science: Concepts and Methods, Quantitative Data and Formulae, Table 2(5.4.1). Wiley.</div><div class="citation">Snapshot: colour.DATA_MACADAM_1942_ELLIPSES (BSD-3 licensed source data)</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">1942</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">CIE</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">jnd_ellipses</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">25</span></div><div class="aside-stat"><span class="k">JND data?</span><span class="v">yes</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">1.7 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

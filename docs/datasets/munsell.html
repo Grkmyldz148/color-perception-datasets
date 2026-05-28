@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Munsell_renotation_real · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / Munsell_renotation_real</div>
+  <h1>Munsell Renotation Data (real chips)</h1>
+  <p class="lede">Munsell renotation chips (hue × value × chroma grid)</p>
+  <div class="detail-tags"><span class="card-type" style="background:#0891b215;color:#0891b2"><span class="dot"></span>constant-hue</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>Snapshot of the Munsell Renotation (Newhall, Nickerson &amp; Judd 1943) for chips physically realizable in paint. Maps each Munsell notation (hue, value, chroma) to CIE xyY under illuminant C. Munsell&#x27;s hue × value × chroma arrangement is perceptually uniform by construction, which makes this dataset the standard reference grid for evaluating constant-hue lines, constant-value planes, and the lightness scale of a candidate color space.</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">munsell.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">62.6 KB</span>
+      <a class="btn btn-primary" href="../downloads/munsell.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>Native illuminant is C (Munsell paper&#x27;s standard). Apply chromatic adaptation before comparing with D65-anchored data.</li><li>This is the `real` subset — chips that can actually be produced in paint. The full `all` renotation includes extrapolated chips outside the realizable gamut; not included here.</li><li>Snapshot from the `colour` Python library (MUNSELL_COLOURS_REAL) for offline reproducibility, so the data is identical regardless of which version of `colour` you have installed.</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>chip_id</th><th>hue_family</th><th>value</th><th>chroma</th><th>x</th><th>y</th><th>Y</th><th>L</th><th>a</th><th>b</th><th>illuminant</th></tr></thead><tbody><tr><td>10RP 1.0/2.0</td><td>10RP</td><td>1.0</td><td>2.0</td><td>0.3629</td><td>0.271</td><td>1.21</td><td>10.630937</td><td>12.557796</td><td>-2.086325</td><td>C</td></tr><tr><td>10RP 1.0/4.0</td><td>10RP</td><td>1.0</td><td>4.0</td><td>0.392</td><td>0.2423</td><td>1.21</td><td>10.630937</td><td>20.842193</td><td>-3.893148</td><td>C</td></tr><tr><td>10RP 1.0/6.0</td><td>10RP</td><td>1.0</td><td>6.0</td><td>0.4151</td><td>0.2169</td><td>1.21</td><td>10.630937</td><td>28.654104</td><td>-5.874228</td><td>C</td></tr><tr><td>10RP 1.0/8.0</td><td>10RP</td><td>1.0</td><td>8.0</td><td>0.4357</td><td>0.1921</td><td>1.21</td><td>10.630937</td><td>37.009891</td><td>-8.217718</td><td>C</td></tr><tr><td>10RP 1.0/10.0</td><td>10RP</td><td>1.0</td><td>10.0</td><td>0.4521</td><td>0.171</td><td>1.21</td><td>10.630937</td><td>44.968504</td><td>-10.59435</td><td>C</td></tr></tbody></table></div>
+
+    
+
+    
+
+    <h2>Source publications</h2>
+    <div class="citation">Newhall, S. M., Nickerson, D. &amp; Judd, D. B. (1943). Final report of the OSA subcommittee on the spacing of the Munsell colors. Journal of the Optical Society of America 33(7), 385–418.</div><div class="citation">Munsell, A. H. (1905). A Color Notation. Boston: G. H. Ellis.</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">1943</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">CIE</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">constant_hue</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">2,734</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">62.6 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+name: MacAdam_1935_Optimal_Colors
+full_name: MacAdam (1935) optimal color stimuli — theoretical color-volume boundary
+schema: gamut_boundary
+n_points: 657
+by_illuminant:
+  A: 220
+  C: 197
+  D65: 240
+illuminants:
+- A
+- C
+- D65
+type: theoretical maximum-reflectance color volume
+description: Spectral boundary of the theoretical maximum-luminance-factor color stimuli
+  derived by David MacAdam in 1935. Each point is a chromaticity on the boundary of
+  what is physically realizable as a surface color under the named illuminant — the
+  upper bound that no real ink, paint, or dye can exceed. Provided for illuminants
+  A, C, and D65. Used as a theoretical ceiling for surface-color gamut coverage, distinct
+  from Pointer's empirical real-color gamut.
+notes:
+- Theoretical bound, not measured surface colors. Combine with Pointer 1980 to compare
+  'what's physically possible' vs 'what's been observed in real pigments'.
+- Three illuminants (A, C, D65). Filter by `illuminant` for a single set.
+- Boundary points are sparse; interpolation needs care near the yellow corner where
+  the boundary is sharply curved.
+sources:
+- paper: MacAdam, D. L. (1935). Maximum visual efficiency of colored materials. Journal
+    of the Optical Society of America 25(11), 361–367.
+- snapshot_source: colour.volume.datasets.OPTIMAL_COLOUR_STIMULI_ILLUMINANTS (BSD-3
+    licensed source data)
+license: CC BY 4.0 for this canonical export. Underlying data public-domain.

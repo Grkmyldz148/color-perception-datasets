@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MacAdam_1974 · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / MacAdam_1974</div>
+  <h1>MacAdam (1974) Uniform Color Scales — OSA UCS pair distances</h1>
+  <p class="lede">suprathreshold color difference (OSA UCS spacing)</p>
+  <div class="detail-tags"><span class="card-type" style="background:#2563eb15;color:#2563eb"><span class="dot"></span>pair-diff</span><span class="card-type" style="background:#16a34a15;color:#16a34a"><span class="dot"></span>suprathreshold</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>Suprathreshold visual-difference scalings between 59 OSA Uniform Color Scales chips, reported by David MacAdam (1974) as part of the OSA effort to construct a perceptually uniform color sample arrangement. Each of the 128 pairs was scaled by two observers; the canonical dv is their mean. Used as a held-out test set for color-space uniformity claims.</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">macadam1974.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">7.0 KB</span>
+      <a class="btn btn-primary" href="../downloads/macadam1974.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>★ COMMONLY MISIDENTIFIED AS JND DATA. This is suprathreshold OSA UCS sample-pair spacing, NOT the MacAdam (1942) threshold ellipses. If your code labels it `is_jnd=True`, that&#x27;s a bug — many papers in the literature carry this mistake.</li><li>Each pair has two observer scalings; both are preserved in raw/table1.yaml columns 4–5 and the canonical dv is their mean.</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>pair_id</th><th>L1</th><th>a1</th><th>b1</th><th>L2</th><th>a2</th><th>b2</th><th>dv</th><th>sub_dataset</th><th>illuminant</th></tr></thead><tbody><tr><td>macadam_0001</td><td>62.08326</td><td>-51.667765</td><td>49.916702</td><td>61.619694</td><td>-44.909538</td><td>32.498809</td><td>2.3495</td><td>OSA_UCS</td><td>D65</td></tr><tr><td>macadam_0002</td><td>62.08326</td><td>-51.667765</td><td>49.916702</td><td>61.027951</td><td>-31.117671</td><td>43.262687</td><td>2.7585</td><td>OSA_UCS</td><td>D65</td></tr><tr><td>macadam_0003</td><td>61.619694</td><td>-44.909538</td><td>32.498809</td><td>61.027951</td><td>-31.117671</td><td>43.262687</td><td>2.193</td><td>OSA_UCS</td><td>D65</td></tr><tr><td>macadam_0004</td><td>61.619694</td><td>-44.909538</td><td>32.498809</td><td>61.290131</td><td>-44.603957</td><td>16.457284</td><td>2.2055</td><td>OSA_UCS</td><td>D65</td></tr><tr><td>macadam_0005</td><td>61.619694</td><td>-44.909538</td><td>32.498809</td><td>59.743912</td><td>-32.021164</td><td>23.688606</td><td>2.0035</td><td>OSA_UCS</td><td>D65</td></tr></tbody></table></div>
+
+    
+
+    <h3>Raw files preserved</h3><div class='table-wrap'><table><thead><tr><th>File</th><th class='num'>Size</th></tr></thead><tbody><tr><td><code>raw/table1.yaml</code></td><td class='num'>6.2 KB</td></tr><tr><td><code>raw/table2.yaml</code></td><td class='num'>3.3 KB</td></tr></tbody></table></div>
+
+    <h2>Source publications</h2>
+    <div class="citation">MacAdam, D. L. (1974). Uniform color scales. Journal of the Optical Society of America 64(12), 1691–1702.</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">1974</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">D65</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">pair_diff</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">128</span></div><div class="aside-stat"><span class="k">Δv units</span><span class="v">OSA UCS visual-difference units (mean of…</span></div><div class="aside-stat"><span class="k">JND data?</span><span class="v">no</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">7.0 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

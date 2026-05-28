@@ -1,0 +1,47 @@
+name: COMBVD
+full_name: Combined Visual Difference dataset
+schema: pair_diff
+n_pairs: 3813
+sub_datasets:
+  BFD-P: 2776
+  LEEDS: 307
+  RIT-DuPont: 312
+  WITT: 418
+illuminants:
+- ' C '
+- D65
+- M
+observer: CIE 1931 2°
+color_space_native: XYZ → CIELAB
+dv_units: ΔE_CMC-normalized (suprathreshold)
+type: suprathreshold color difference
+is_jnd: false
+is_suprathreshold: true
+description: 'Aggregated suprathreshold color-difference dataset combining four classic
+  visual experiments: BFD-P (Luo & Rigg 1987), LEEDS (Kim & Nobbs 1997), RIT-DuPont
+  (Berns et al. 1991), and WITT (Witt 1999). Compiled and used during the CIE TC1-47
+  work that produced CIEDE2000, and remains the standard training/validation pool
+  for new color-difference formulae and uniform color spaces.'
+notes:
+- Three distinct reference whites; canonical CIELAB is computed under each pair's
+  own white, not a common D65 — apply chromatic adaptation before mixing with D65-anchored
+  data.
+- Sub-dataset nstar (effective observer count) is heterogeneous; BFD-P alone spans
+  6 sub-experiments with mean DV varying ~58–69. Aggregate fits hide sub-dataset structure.
+- Original raw/combvd.xlsx preserved unchanged — it contains a WEIGHTED variant sheet
+  (COM_Corrected_WEIGHTED) and the original tristimulus columns if you need them.
+sources:
+- sub: BFD-P
+  paper: Luo, M. R. & Rigg, B. (1987). BFD(l:c) colour-difference formula. Color Research
+    & Application 12, 154–158.
+- sub: LEEDS
+  paper: Kim, H. & Nobbs, J. (1997). New weighting functions for the weighted CIELAB
+    colour difference formula. AIC Color 97.
+- sub: RIT-DuPont
+  paper: Berns, R. S., et al. (1991). Visual determination of suprathreshold color-difference
+    tolerances using probit analysis. Color Research & Application 16, 297–316.
+- sub: WITT
+  paper: Witt, K. (1999). Geometric relations between scales of small colour differences.
+    Color Research & Application 24, 78–92.
+license: CC BY 4.0 for this canonical export. Cite the sub-dataset papers above when
+  using the data.

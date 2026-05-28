@@ -1,0 +1,36 @@
+schema_name: gamut_boundary
+version: 1
+description: |
+  Standard schema for real-world gamut boundary datasets. Each row = one
+  boundary point in CIELAB (or sometimes xyY) marking the outer surface
+  of an empirical color volume (e.g. Pointer's real surface colors).
+
+columns:
+  point_id:
+    type: string
+    required: true
+  L:
+    type: float
+    required: true
+    range: [0, 100]
+  a:
+    type: float
+    required: true
+    range: [-200, 200]
+  b:
+    type: float
+    required: true
+    range: [-200, 200]
+  x:
+    type: float
+    required: false
+    description: CIE xyY x chromaticity (if dataset is xyY-native).
+  y:
+    type: float
+    required: false
+  Y:
+    type: float
+    required: false
+  illuminant:
+    type: string
+    required: false

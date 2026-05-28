@@ -1,0 +1,26 @@
+name: Fairchild_Chen_2010_HDR_Lightness
+full_name: Fairchild & Chen (2010) brightness/lightness in HDR scenes
+schema: lightness_scaling
+n_samples: 34
+experiments:
+- SL1
+- SL2
+type: lightness scaling for HDR scenes (luminance up to 3,000+ cd/m²)
+description: Magnitude estimation of perceived lightness in high-dynamic-range scenes
+  by Fairchild & Chen (2010), spanning luminances up to ~3,000 cd/m² — well beyond
+  the ~100 cd/m² range that CIELAB's L* function was calibrated for. Each sample is
+  an XYZ tristimulus value alongside an observer-evaluated lightness score. Used to
+  test whether a color space's lightness curve extrapolates correctly into HDR territory;
+  CIELAB L* is the standard underperformer here.
+notes:
+- Not a color-difference dataset. Used only for lightness-curve validation in HDR.
+- Two experiments (SL1, SL2 = Sequential Lightness experiment 1, 2) at different viewing
+  angles.
+- 'Critical for any color space claiming HDR support: a flat CIELAB-style L* curve
+  underestimates perceived lightness above ~200 cd/m².'
+sources:
+- paper: 'Fairchild, M. D. & Chen, P.-H. (2010). Brightness, Lightness, and Specifying
+    Color in High-Dynamic-Range Scenes and Images. Proc. SPIE 7867. DOI: 10.1117/12.872075'
+- snapshot_source: coloria-dev/color-data (community extraction).
+license: Underlying data 2010; extraction by coloria-dev. Included under academic-use
+  convention. Cite Fairchild & Chen (2010).

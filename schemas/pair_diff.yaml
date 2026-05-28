@@ -1,0 +1,69 @@
+schema_name: pair_diff
+version: 1
+description: |
+  Standard schema for color-difference pair datasets. One row = one pair of
+  colors with an associated visual-difference score from a psychophysical
+  experiment. All colors are in CIELAB under the dataset's declared
+  illuminant (see meta.yaml).
+
+columns:
+  pair_id:
+    type: string
+    required: true
+    description: Stable identifier for the pair, unique within the dataset.
+  L1:
+    type: float
+    required: true
+    range: [0, 100]
+    description: CIE L* of color 1.
+  a1:
+    type: float
+    required: true
+    range: [-200, 200]
+    description: CIE a* of color 1.
+  b1:
+    type: float
+    required: true
+    range: [-200, 200]
+    description: CIE b* of color 1.
+  L2:
+    type: float
+    required: true
+    range: [0, 100]
+  a2:
+    type: float
+    required: true
+    range: [-200, 200]
+  b2:
+    type: float
+    required: true
+    range: [-200, 200]
+  dv:
+    type: float
+    required: true
+    description: |
+      Visual difference score reported by observers. Units and scale are
+      dataset-specific (see meta.yaml `dv_units`). For most published
+      datasets this is in DE units; for HumanFB it is a 0-100 slider scale.
+  weight:
+    type: float
+    required: false
+    description: |
+      Per-pair weight. Typical sources: nstar (effective observer count) or
+      raw observer count. NaN means unweighted. See meta.yaml `weight_meaning`.
+  sub_dataset:
+    type: string
+    required: false
+    description: |
+      Sub-experiment label within a composite dataset, e.g. "BFD-P", "LEEDS",
+      "RIT-DuPont", "WITT" for COMBVD; "table1"/"table2" for MacAdam 1974.
+  illuminant:
+    type: string
+    required: false
+    description: |
+      Illuminant for THIS pair if it differs from the dataset-level default
+      (e.g. mixed-illuminant collections). Leave empty to inherit meta.yaml.
+
+invariants:
+  - "If dv is reported in ΔE units, |dv| should be within a few DE units for threshold experiments and within ~50 DE for suprathreshold."
+  - "Catch trials (identical colors) should have dv ≈ 0; pairs with L1==L2 and a1==a2 and b1==b2 but dv > 0 indicate sentinel issues."

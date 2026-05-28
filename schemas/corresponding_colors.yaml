@@ -1,0 +1,56 @@
+schema_name: corresponding_colors
+version: 1
+description: |
+  Corresponding-colors data for chromatic-adaptation research. Each row
+  pairs a "test" stimulus (viewed under one illuminant) with the "matched"
+  stimulus (viewed under another illuminant) that an observer reports as
+  the same color. Optional fields carry observer scatter and per-observer
+  deviations when reported in the source.
+
+columns:
+  pair_id:
+    type: string
+    required: true
+  experiment_id:
+    type: string
+    required: true
+    description: Identifier for the experimental condition (e.g. "Breneman_Exp_1").
+  color_name:
+    type: string
+    required: false
+    description: Sample label (Illuminant, Gray, Red, Skin, etc.).
+  u_t:
+    type: float
+    required: true
+    description: CIE u' chromaticity of the TEST stimulus (under test illuminant).
+  v_t:
+    type: float
+    required: true
+    description: CIE v' chromaticity of the TEST stimulus.
+  u_m:
+    type: float
+    required: true
+    description: CIE u' chromaticity of the MATCHED stimulus (under reference illuminant).
+  v_m:
+    type: float
+    required: true
+    description: CIE v' chromaticity of the MATCHED stimulus.
+  sigma_u:
+    type: float
+    required: false
+    description: Inter-observer scatter on u', if reported.
+  sigma_v:
+    type: float
+    required: false
+    description: Inter-observer scatter on v', if reported.
+  illuminant_test:
+    type: string
+    required: false
+    description: Illuminant under which the test stimulus was viewed.
+  illuminant_reference:
+    type: string
+    required: false
+    description: Illuminant under which the matched stimulus was viewed.
+
+invariants:
+  - "A perfectly accurate chromatic adaptation transform maps (u_t, v_t) → (u_m, v_m) under the given illuminant change."

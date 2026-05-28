@@ -1,0 +1,59 @@
+name: Alman_1989_Tolerance_Ellipsoids
+full_name: Alman, Berns, Snyder & Larsen (1989) RIT color tolerance ellipsoids
+schema: tolerance_ellipsoids
+n_ellipsoids: 45
+by_center:
+  Blue: 5
+  Blue-green: 5
+  Gray: 5
+  Green: 5
+  Orange: 5
+  Purple: 5
+  Red: 5
+  Yellow: 5
+  Yellow-green: 5
+color_centers:
+- Blue
+- Blue-green
+- Gray
+- Green
+- Orange
+- Purple
+- Red
+- Yellow
+- Yellow-green
+illuminant: D65 / 2°
+type: 3D color-tolerance ellipsoids in CIELAB (probit-fitted, with fiducial limits)
+is_jnd: false
+is_suprathreshold: true
+description: 'Per-direction color-tolerance ellipsoids in CIELAB space, fitted via
+  probit analysis from the RIT/DuPont visual color difference experiment by Alman,
+  Berns, Snyder & Larsen (1989). Unlike MacAdam-style 2D chromaticity ellipses, these
+  are 3D tolerance ellipsoids — for each color center, multiple probe directions report
+  a T50 tolerance (50% acceptability point), 95% fiducial limits, standard deviation,
+  and the chi-square fit probability. Used historically to develop the CIE94 and CIEDE2000
+  weighted formulas. Different geometry than Luo-Rigg / MacAdam / Alder ellipses:
+  those measure JND of light, this measures acceptability tolerance for printed-textile
+  color matches.'
+notes:
+- ★ Tolerance, not JND. Asks 'what color difference is still acceptable to industrial
+  QA?' rather than 'what color difference can be detected?'. T50 ≈ 1 in CIELAB roughly
+  corresponds to ΔE ≈ 1 acceptability.
+- Each row is a single probe direction at a color center, not a full 3D ellipsoid.
+  Multiple rows per center (typically 9) span the principal axes around the center.
+- Berns version (raw/berns.yaml) reports the same data with extra metadata (lighting
+  condition I/II, color appearance name) — read both if you need full provenance.
+- Critical for evaluating color spaces against industrial color-tolerance standards
+  (textile, paint, automotive) where 'acceptably close' matters more than 'perceptually
+  identical'.
+sources:
+- paper: Alman, D. H., Berns, R. S., Snyder, G. D. & Larsen, W. A. (1989). Performance
+    testing of color-difference metrics using a color tolerance dataset. Color Research
+    & Application 14(3), 139–151.
+- paper: Berns, R. S., Alman, D. H., Reniff, L., Snyder, G. D. & Balonon-Rosen, M.
+    R. (1991). Visual determination of suprathreshold color-difference tolerances
+    using probit analysis. Color Research & Application 16, 297–316.
+- snapshot_source: coloria-dev/color-data (extracted from Alman 1989 Table II and
+    Berns 1991 Table 4)
+license: Underlying data 1989/1991; extraction by coloria-dev. Included under academic-use
+  convention. Cite Alman et al. (1989) and Berns et al. (1991).

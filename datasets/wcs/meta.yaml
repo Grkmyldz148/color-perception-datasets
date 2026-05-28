@@ -1,0 +1,46 @@
+name: WCS
+full_name: World Color Survey (Kay, Berlin, Maffi, Merrifield & Cook)
+schema: compound_legacy
+n_files: 7
+n_languages: 110
+n_chips: 330
+n_naming_responses: 863280
+n_focal_responses: 110784
+color_space_native: Munsell Renotation chips; CIELAB under Illuminant C
+type: cross-cultural color naming (110 languages × ~24 speakers × 330 chips)
+is_jnd: false
+is_suprathreshold: false
+description: The World Color Survey, conducted by Paul Kay, Brent Berlin, Luisa Maffi,
+  William Merrifield and Richard Cook between 1976 and 1981. 110 unwritten languages,
+  ~24 speakers per language, each shown a standard 330-Munsell-chip grid and asked
+  to (a) name every chip in their own language and (b) pick the best example chip
+  for their basic color terms. Originally collected to test the Berlin-Kay hypothesis
+  of universal color-term evolution; now the de facto reference dataset for cross-cultural
+  color cognition and a powerful stress test for any color space that claims perceptual
+  uniformity (a uniform space's focal-color clusters across languages should land
+  in compact regions).
+notes:
+- ★ Compound dataset — chips.csv + languages.csv are flat tables; `canonical.csv`
+  is an index of every raw file. The actual naming data lives in raw/term.txt (~863k
+  rows) and raw/foci-exp.txt (~18k rows). Read those directly.
+- 'term.txt format: <lnum> <speaker> <cnum> <WCS_code>. Look up <WCS_code> in raw/dict.txt
+  to get the language-specific transliteration.'
+- 'foci.txt and foci-exp.txt: focal-color picks per speaker per basic-color-term.
+  Chip column may be a single cnum or a range (e.g. ''D9..12'') — strip and explode
+  for cleanest analysis.'
+- The 330-chip grid is Berlin & Kay's 'Mercator projection of color space' — Munsell
+  hue 1..40 × value 1..8 plus 10 neutrals. Coordinates in chips.csv are under Illuminant
+  C.
+- 'Test: if your color space is uniform, focal-color centroids per term (e.g. all
+  ''red'' picks across all languages) should form tight clusters. Cross-cultural variation
+  should sit along Munsell hue, not jump around in your space''s chromaticity plane.'
+sources:
+- paper: 'Berlin, B. & Kay, P. (1969). Basic Color Terms: Their Universality and Evolution.
+    University of California Press.'
+- paper: Kay, P., Berlin, B., Maffi, L., Merrifield, W. R. & Cook, R. (2009). The
+    World Color Survey. CSLI Publications.
+- snapshot_source: linguistics.berkeley.edu/wcs/ (Berkeley host, March 2011 bundle
+    WCS-Data-20110316.zip)
+license: WCS data has been publicly distributed by Berkeley since the early 2000s
+  for free academic use. Cite Kay et al. (2009) and the original Berlin & Kay (1969)
+  when using.

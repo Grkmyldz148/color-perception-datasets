@@ -1,0 +1,26 @@
+name: xkcd_colors
+full_name: xkcd Color Survey — curated 950 named colors (Munroe 2010)
+schema: color_names
+n_colors: 949
+color_space_native: sRGB hex; canonical CIELAB computed via IEC 61966-2-1 sRGB→XYZ(D65)→CIELAB(D65)
+type: color naming — most-popular color name → RGB swatch
+description: Curated 950 most-popular color names from the xkcd Color Survey conducted
+  by Randall Munroe in 2010. Over 200,000 participants gave free-form names to randomly
+  displayed RGB swatches; the published list keeps the most-agreed-upon name for each
+  color region. The full raw survey contains ~5 million responses (not redistributed
+  here — see Munroe's original archive). Useful as a real-world naming corpus and
+  as an out-of-distribution sanity check for color appearance models.
+notes:
+- Curated subset, not the full 5M-response survey. For the full raw dump see https://xkcd.com/color/colorsurvey.tar.gz
+  (hundreds of MB, not included here).
+- English-language only; names reflect the cultural/linguistic vocabulary of the participant
+  pool (mostly US/English-speaking internet users in 2010).
+- RGB values are sRGB display-space; the L*a*b* columns are added for convenience
+  and may not match the participants' perceived color (their displays were uncalibrated).
+sources:
+- paper: Munroe, R. (2010). Color Survey Results. xkcd. https://blog.xkcd.com/2010/05/03/color-survey-results/
+- snapshot_source: https://xkcd.com/color/rgb.txt (CC0 public domain dedication, see
+    file header)
+license: CC0 (xkcd colors are in the public domain via Munroe's explicit dedication).
+  This canonical export remains CC BY 4.0 for the schema and metadata; the underlying
+  data is unrestricted.

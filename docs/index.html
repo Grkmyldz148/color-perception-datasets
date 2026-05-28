@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datasets · color-perception-datasets</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="./">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="./" class="active">Datasets</a><a href="./schemas.html">Schemas</a><a href="./about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <span class="eyebrow">Open dataset pool</span>
+  <h1>Psychophysical color-perception datasets, cleaned and unified.</h1>
+  <p class="lede">A single pool of 24 classic and modern datasets — JND ellipses, suprathreshold color difference, constant hue, gamut boundaries, corresponding colors, color naming and more — packaged in consistent schemas with provenance and caveats intact.</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="downloads/all-datasets.zip" download>Download all (38.0 MB)</a>
+    <a class="btn btn-ghost" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">View on GitHub</a>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="num">24</div><div class="lbl">datasets</div></div>
+    <div class="hero-stat"><div class="num">25,571</div><div class="lbl">total rows</div></div>
+    <div class="hero-stat"><div class="num">12</div><div class="lbl">categories</div></div>
+    <div class="hero-stat"><div class="num">1935–2026</div><div class="lbl">year range</div></div>
+    <div class="hero-stat"><div class="num">CC BY 4.0</div><div class="lbl">license</div></div>
+  </div>
+</section>
+
+<section class="toolbar">
+  <div class="toolbar-row">
+    <div class="search-wrap">
+      <input type="search" id="q" placeholder="Search name, description, illuminant, year…" autocomplete="off" />
+    </div>
+    <div class="sort-wrap">
+      <select id="sort">
+        <option value="name">Sort: Name (A–Z)</option>
+        <option value="year-desc">Sort: Newest first</option>
+        <option value="year-asc">Sort: Oldest first</option>
+        <option value="rows-desc">Sort: Most rows</option>
+        <option value="size-desc">Sort: Largest file</option>
+      </select>
+    </div>
+    <span class="count-pill" id="count">24 shown</span>
+  </div>
+  <div class="chip-row" id="chips">
+    <span class="chip active" data-tag="">All <span class="n">24</span></span><span class="chip" data-tag="JND" style="--c:#dc2626"><span class="dot" style="background:#dc2626"></span>JND <span class="n">4</span></span><span class="chip" data-tag="pair-diff" style="--c:#2563eb"><span class="dot" style="background:#2563eb"></span>pair-diff <span class="n">3</span></span><span class="chip" data-tag="suprathreshold" style="--c:#16a34a"><span class="dot" style="background:#16a34a"></span>suprathreshold <span class="n">6</span></span><span class="chip" data-tag="constant-hue" style="--c:#0891b2"><span class="dot" style="background:#0891b2"></span>constant-hue <span class="n">5</span></span><span class="chip" data-tag="gamut" style="--c:#7c3aed"><span class="dot" style="background:#7c3aed"></span>gamut <span class="n">2</span></span><span class="chip" data-tag="corresponding-colors" style="--c:#d97706"><span class="dot" style="background:#d97706"></span>corresponding-colors <span class="n">3</span></span><span class="chip" data-tag="tolerance" style="--c:#ea580c"><span class="dot" style="background:#ea580c"></span>tolerance <span class="n">1</span></span><span class="chip" data-tag="naming" style="--c:#475569"><span class="dot" style="background:#475569"></span>naming <span class="n">2</span></span><span class="chip" data-tag="lightness" style="--c:#ca8a04"><span class="dot" style="background:#ca8a04"></span>lightness <span class="n">1</span></span><span class="chip" data-tag="contrast-pref" style="--c:#9333ea"><span class="dot" style="background:#9333ea"></span>contrast-pref <span class="n">1</span></span><span class="chip" data-tag="observer-data" style="--c:#0284c7"><span class="dot" style="background:#0284c7"></span>observer-data <span class="n">1</span></span><span class="chip" data-tag="Δ-only" style="--c:#64748b"><span class="dot" style="background:#64748b"></span>Δ-only <span class="n">1</span></span>
+  </div>
+</section>
+
+<section class="grid" id="grid">
+<article class="card"
+  data-tags="JND"
+  data-search="alder, chaing, chong, coates, khalili &amp; rigg (1982) chromaticity discrimination ellipses jnd chromaticity-discrimination ellipses under two illuminants chromaticity-discrimination ellipses measured by alder, chaing, chong, coates, khalili &amp; rigg (1982) at the society of dyers and colourists&#x27; uniform-chromaticity-scale study. replicates the macadam 1942 methodology with a different observer pool and reports ellipses under both illuminant d65 and illuminant a — useful for testing whether a color space&#x27;s small-difference geometry generalizes across illumination, not just across chromaticity. each row reports the ellipse center (x_c, y_c, y), the semi-major axis a, the semi-minor axis b (derived from the published a/b ratio), and the orientation theta. jnd alder1982 d65 1982"
+  data-year="1982"
+  data-rows="120"
+  data-size="6595"
+  data-name="alder, chaing, chong, coates, khalili &amp; rigg (1982) chromaticity discrimination ellipses">
+  <div class="card-top">
+    <span class="card-type" style="background:#dc262615;color:#dc2626">
+      <span class="dot"></span>JND
+    </span>
+    <span class="card-year">1982</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/alder1982.html">Alder, Chaing, Chong, Coates, Khalili &amp; Rigg (1982) chromaticity discrimination ellipses</a></h3>
+  <p class="card-desc">Chromaticity-discrimination ellipses measured by Alder, Chaing, Chong, Coates, Khalili &amp; Rigg (1982) at the Society of Dyers and Colourists&#x27; uniform-chromaticity-scale study. Replicates the MacAdam 19</p>
+  <div class="card-meta">
+    <span class="v">120 ellipses</span>
+    <span class="sep">·</span>
+    <span>Illum D65</span>
+    <span class="sep">·</span>
+    <span>6.4 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/alder1982.html">View details</a>
+    <a href="downloads/alder1982.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="tolerance,suprathreshold"
+  data-search="alman, berns, snyder &amp; larsen (1989) rit color tolerance ellipsoids 3d color-tolerance ellipsoids in cielab (probit-fitted, with fiducial limits) per-direction color-tolerance ellipsoids in cielab space, fitted via probit analysis from the rit/dupont visual color difference experiment by alman, berns, snyder &amp; larsen (1989). unlike macadam-style 2d chromaticity ellipses, these are 3d tolerance ellipsoids — for each color center, multiple probe directions report a t50 tolerance (50% acceptability point), 95% fiducial limits, standard deviation, and the chi-square fit probability. used historically to develop the cie94 and ciede2000 weighted formulas. different geometry than luo-rigg / macadam / alder ellipses: those measure jnd of light, this measures acceptability tolerance for printed-textile color matches. tolerance suprathreshold alman1989 d65 1989"
+  data-year="1989"
+  data-rows="45"
+  data-size="19143"
+  data-name="alman, berns, snyder &amp; larsen (1989) rit color tolerance ellipsoids">
+  <div class="card-top">
+    <span class="card-type" style="background:#ea580c15;color:#ea580c">
+      <span class="dot"></span>tolerance
+    </span>
+    <span class="card-year">1989</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/alman1989.html">Alman, Berns, Snyder &amp; Larsen (1989) RIT color tolerance ellipsoids</a></h3>
+  <p class="card-desc">Per-direction color-tolerance ellipsoids in CIELAB space, fitted via probit analysis from the RIT/DuPont visual color difference experiment by Alman, Berns, Snyder &amp; Larsen (1989). Unlike MacAdam-styl</p>
+  <div class="card-meta">
+    <span class="v">45 ellipsoids</span>
+    <span class="sep">·</span>
+    <span>Illum D65</span>
+    <span class="sep">·</span>
+    <span>18.7 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/alman1989.html">View details</a>
+    <a href="downloads/alman1989.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="observer-data"
+  data-search="asano (2015) observer function database — 151 individual + 1000 monte carlo observer cmfs observer color-matching functions (cmfs) and cone fundamentals — 151 color-normal individuals yuta asano&#x27;s (2015) database of color-matching functions and cone fundamentals from 151 individual color-normal observers measured at the rit munsell color science laboratory, plus 10 categorical observer averages stratified by age/field-of-view, plus 1000 monte-carlo-simulated observers spanning the natural variation envelope. each observer has full cmfs (x̄, ȳ, z̄) and lms cone fundamentals at both 2° and 10° fields, sampled at 1 nm. useful for two questions: (1) how much does inter-observer variation shift the position of any predicted δe? (2) what observer subgroups are over- or under-represented in cie 1931 / cie 1964 standard observers? important for accessibility work — color-vision-deficient observers are not in this set, but the natural variation among normal observers is itself ±5–10 nm in cone peak λ, which affects δe predictions at low chroma. observer-data asano_observers mixed 2015"
+  data-year="2015"
+  data-rows="4"
+  data-size="3861637"
+  data-name="asano (2015) observer function database — 151 individual + 1000 monte carlo observer cmfs">
+  <div class="card-top">
+    <span class="card-type" style="background:#0284c715;color:#0284c7">
+      <span class="dot"></span>observer-data
+    </span>
+    <span class="card-year">2015</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/asano_observers.html">Asano (2015) Observer Function Database — 151 individual + 1000 Monte Carlo observer CMFs</a></h3>
+  <p class="card-desc">Yuta Asano&#x27;s (2015) database of color-matching functions and cone fundamentals from 151 individual color-normal observers measured at the RIT Munsell Color Science Laboratory, plus 10 categorical obse</p>
+  <div class="card-meta">
+    <span class="v">4 files indexed</span>
+    <span class="sep">·</span>
+    <span>Illum mixed</span>
+    <span class="sep">·</span>
+    <span>3.7 MB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/asano_observers.html">View details</a>
+    <a href="downloads/asano_observers.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="corresponding-colors"
+  data-search="breneman (1987) corresponding-colors experiments chromatic-adaptation corresponding-colors data twelve memory-matching and haploscopic-matching experiments by edwin breneman (1987), pairing test stimuli viewed under one illuminant with the chromaticities observers reported as &#x27;looking the same&#x27; under the reference illuminant. used as the empirical ground truth for chromatic adaptation transforms — cat02 and ciecam02 were both validated against subsets of this data. each pair carries the matched chromaticities plus inter-observer scatter when reported. corresponding-colors breneman1987 mixed 1987"
+  data-year="1987"
+  data-rows="160"
+  data-size="3660"
+  data-name="breneman (1987) corresponding-colors experiments">
+  <div class="card-top">
+    <span class="card-type" style="background:#d9770615;color:#d97706">
+      <span class="dot"></span>corresponding-colors
+    </span>
+    <span class="card-year">1987</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/breneman1987.html">Breneman (1987) corresponding-colors experiments</a></h3>
+  <p class="card-desc">Twelve memory-matching and haploscopic-matching experiments by Edwin Breneman (1987), pairing test stimuli viewed under one illuminant with the chromaticities observers reported as &#x27;looking the same&#x27; </p>
+  <div class="card-meta">
+    <span class="v">160 pairs</span>
+    <span class="sep">·</span>
+    <span>Illum mixed</span>
+    <span class="sep">·</span>
+    <span>3.6 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/breneman1987.html">View details</a>
+    <a href="downloads/breneman1987.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="contrast-pref"
+  data-search="cherepkova et al. (2025) individual contrast preferences database (ntnu) individual contrast preferences for natural images (accessibility-relevant) per-observer preferred contrast adjustments for 500 natural images, gathered by cherepkova and colleagues at the ntnu colour and visual computing lab (2025). 22 observers each rated their preferred contrast modification for every image; values are signed deltas (negative = less contrast preferred, positive = more contrast preferred). useful as a perceptual ground-truth for image-adaptive contrast algorithms (apca / wcag-adjacent work), and as a sanity test for any color space that claims a perceptually meaningful lightness curve — preferred contrast should correlate with image l*-distribution properties in a well-calibrated space. contrast-pref cherepkova_contrast mixed 2025"
+  data-year="2025"
+  data-rows="10978"
+  data-size="30136861"
+  data-name="cherepkova et al. (2025) individual contrast preferences database (ntnu)">
+  <div class="card-top">
+    <span class="card-type" style="background:#9333ea15;color:#9333ea">
+      <span class="dot"></span>contrast-pref
+    </span>
+    <span class="card-year">2025</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/cherepkova_contrast.html">Cherepkova et al. (2025) Individual Contrast Preferences Database (NTNU)</a></h3>
+  <p class="card-desc">Per-observer preferred contrast adjustments for 500 natural images, gathered by Cherepkova and colleagues at the NTNU Colour and Visual Computing Lab (2025). 22 observers each rated their preferred co</p>
+  <div class="card-meta">
+    <span class="v">10,978 responses</span>
+    <span class="sep">·</span>
+    <span>Illum mixed</span>
+    <span class="sep">·</span>
+    <span>28.7 MB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/cherepkova_contrast.html">View details</a>
+    <a href="downloads/cherepkova_contrast.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="pair-diff,suprathreshold"
+  data-search="combined visual difference dataset suprathreshold color difference aggregated suprathreshold color-difference dataset combining four classic visual experiments: bfd-p (luo &amp; rigg 1987), leeds (kim &amp; nobbs 1997), rit-dupont (berns et al. 1991), and witt (witt 1999). compiled and used during the cie tc1-47 work that produced ciede2000, and remains the standard training/validation pool for new color-difference formulae and uniform color spaces. pair-diff suprathreshold combvd c 1995"
+  data-year="1995"
+  data-rows="3813"
+  data-size="1698085"
+  data-name="combined visual difference dataset">
+  <div class="card-top">
+    <span class="card-type" style="background:#2563eb15;color:#2563eb">
+      <span class="dot"></span>pair-diff
+    </span>
+    <span class="card-year">1995</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/combvd.html">Combined Visual Difference dataset</a></h3>
+  <p class="card-desc">Aggregated suprathreshold color-difference dataset combining four classic visual experiments: BFD-P (Luo &amp; Rigg 1987), LEEDS (Kim &amp; Nobbs 1997), RIT-DuPont (Berns et al. 1991), and WITT (Witt 1999). C</p>
+  <div class="card-meta">
+    <span class="v">3,813 pairs</span>
+    <span class="sep">·</span>
+    <span>Illum C</span>
+    <span class="sep">·</span>
+    <span>1.6 MB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/combvd.html">View details</a>
+    <a href="downloads/combvd.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="corresponding-colors"
+  data-search="corresponding-colour datasets (luo &amp; rhodes 1999 compilation) chromatic-adaptation corresponding-colors compilation a compilation of corresponding-colors experiments curated by luo &amp; rhodes (1999) and republished on zenodo, bundling nine independent studies into a single comparable format: breneman 1987 (12 phases), csaj (color science association of japan), helson 1938, hunt-via-lutchi, kuo, lam, mccann mondrian (r/g/b/y/grey backgrounds), rit 1–4, and stevens-style scaling experiments. each row pairs a test stimulus (viewed under one illuminant) with the matched stimulus (viewed under the reference illuminant). the canonical export keeps both xyz and u&#x27;v&#x27; columns so users can choose their working representation. this is the de facto training set for chromatic adaptation transforms (cat02, cat16, bradford) and color appearance models (ciecam02, ciecam16). corresponding-colors corresponding_colours mixed 1999"
+  data-year="1999"
+  data-rows="746"
+  data-size="46666"
+  data-name="corresponding-colour datasets (luo &amp; rhodes 1999 compilation)">
+  <div class="card-top">
+    <span class="card-type" style="background:#d9770615;color:#d97706">
+      <span class="dot"></span>corresponding-colors
+    </span>
+    <span class="card-year">1999</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/corresponding_colours.html">Corresponding-Colour Datasets (Luo &amp; Rhodes 1999 compilation)</a></h3>
+  <p class="card-desc">A compilation of corresponding-colors experiments curated by Luo &amp; Rhodes (1999) and republished on Zenodo, bundling nine independent studies into a single comparable format: Breneman 1987 (12 phases)</p>
+  <div class="card-meta">
+    <span class="v">746 pairs</span>
+    <span class="sep">·</span>
+    <span>Illum mixed</span>
+    <span class="sep">·</span>
+    <span>45.6 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/corresponding_colours.html">View details</a>
+    <a href="downloads/corresponding_colours.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="constant-hue"
+  data-search="ebner &amp; fairchild (1998) constant-perceived-hue surfaces constant-perceived-hue surfaces at 15 hue centers (0°–336° in 24° steps) constant-perceived-hue surfaces collected by ebner &amp; fairchild (1998) at 15 hue centers spaced 24° apart around the hue circle. provides denser hue-circle coverage than hung-berns and is the standard secondary corroboration for hue-uniformity claims in modern color appearance models. constant-hue ebner_fairchild d65 1998"
+  data-year="1998"
+  data-rows="306"
+  data-size="10409"
+  data-name="ebner &amp; fairchild (1998) constant-perceived-hue surfaces">
+  <div class="card-top">
+    <span class="card-type" style="background:#0891b215;color:#0891b2">
+      <span class="dot"></span>constant-hue
+    </span>
+    <span class="card-year">1998</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/ebner_fairchild.html">Ebner &amp; Fairchild (1998) constant-perceived-hue surfaces</a></h3>
+  <p class="card-desc">Constant-perceived-hue surfaces collected by Ebner &amp; Fairchild (1998) at 15 hue centers spaced 24° apart around the hue circle. Provides denser hue-circle coverage than Hung-Berns and is the standard </p>
+  <div class="card-meta">
+    <span class="v">306 chips</span>
+    <span class="sep">·</span>
+    <span>Illum D65</span>
+    <span class="sep">·</span>
+    <span>10.2 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/ebner_fairchild.html">View details</a>
+    <a href="downloads/ebner_fairchild.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="lightness"
+  data-search="fairchild &amp; chen (2010) brightness/lightness in hdr scenes lightness scaling for hdr scenes (luminance up to 3,000+ cd/m²) magnitude estimation of perceived lightness in high-dynamic-range scenes by fairchild &amp; chen (2010), spanning luminances up to ~3,000 cd/m² — well beyond the ~100 cd/m² range that cielab&#x27;s l* function was calibrated for. each sample is an xyz tristimulus value alongside an observer-evaluated lightness score. used to test whether a color space&#x27;s lightness curve extrapolates correctly into hdr territory; cielab l* is the standard underperformer here. lightness fairchild_chen mixed 2010"
+  data-year="2010"
+  data-rows="34"
+  data-size="3652"
+  data-name="fairchild &amp; chen (2010) brightness/lightness in hdr scenes">
+  <div class="card-top">
+    <span class="card-type" style="background:#ca8a0415;color:#ca8a04">
+      <span class="dot"></span>lightness
+    </span>
+    <span class="card-year">2010</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/fairchild_chen.html">Fairchild &amp; Chen (2010) brightness/lightness in HDR scenes</a></h3>
+  <p class="card-desc">Magnitude estimation of perceived lightness in high-dynamic-range scenes by Fairchild &amp; Chen (2010), spanning luminances up to ~3,000 cd/m² — well beyond the ~100 cd/m² range that CIELAB&#x27;s L* function</p>
+  <div class="card-meta">
+    <span class="v">34 samples</span>
+    <span class="sep">·</span>
+    <span>Illum mixed</span>
+    <span class="sep">·</span>
+    <span>3.6 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/fairchild_chen.html">View details</a>
+    <a href="downloads/fairchild_chen.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="constant-hue"
+  data-search="fairchild &amp; johnson (1999) constant-perceived-hue surfaces constant-perceived-hue surfaces (306 colors × 15 hue angles, 30 observers × 3 trials) constant-perceived-hue surfaces measured by fairchild &amp; johnson (1999) on a calibrated crt for the cross-medium matching task &#x27;which printed color corresponds to which crt color of the same perceived hue?&#x27;. 306 sampled colors across 15 equally spaced hue angles (24° step in cielab), 30 observers, 3 trials each. used to evaluate cielab and ciecam97s hue uniformity; the article is the standard reference for cross-medium (printed vs display) hue surfaces. constant-hue fairchild_johnson d65 1999"
+  data-year="1999"
+  data-rows="330"
+  data-size="13130"
+  data-name="fairchild &amp; johnson (1999) constant-perceived-hue surfaces">
+  <div class="card-top">
+    <span class="card-type" style="background:#0891b215;color:#0891b2">
+      <span class="dot"></span>constant-hue
+    </span>
+    <span class="card-year">1999</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/fairchild_johnson.html">Fairchild &amp; Johnson (1999) constant-perceived-hue surfaces</a></h3>
+  <p class="card-desc">Constant-perceived-hue surfaces measured by Fairchild &amp; Johnson (1999) on a calibrated CRT for the cross-medium matching task &#x27;which printed color corresponds to which CRT color of the same perceived </p>
+  <div class="card-meta">
+    <span class="v">330 chips</span>
+    <span class="sep">·</span>
+    <span>Illum D65</span>
+    <span class="sep">·</span>
+    <span>12.8 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/fairchild_johnson.html">View details</a>
+    <a href="downloads/fairchild_johnson.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="Δ-only,suprathreshold"
+  data-search="he et al. (2022) — 3d-printed spherical samples color-difference suprathreshold 3d-printed sample color difference color-difference measurements on 45 3d-printed spherical samples by he et al. (2022). two experiments (i: 42 pairs, ii: 40 pairs) measured under d65 with the cie 1964 10° observer. the unusual physical substrate (matte 3d-printed plastic) makes it a useful out-of-distribution test for color-difference formulae trained on flat paint chips. δ-only suprathreshold he2022 d65 2022"
+  data-year="2022"
+  data-rows="82"
+  data-size="27157"
+  data-name="he et al. (2022) — 3d-printed spherical samples color-difference">
+  <div class="card-top">
+    <span class="card-type" style="background:#64748b15;color:#64748b">
+      <span class="dot"></span>Δ-only
+    </span>
+    <span class="card-year">2022</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/he2022.html">He et al. (2022) — 3D-printed spherical samples color-difference</a></h3>
+  <p class="card-desc">Color-difference measurements on 45 3D-printed spherical samples by He et al. (2022). Two experiments (I: 42 pairs, II: 40 pairs) measured under D65 with the CIE 1964 10° observer. The unusual physica</p>
+  <div class="card-meta">
+    <span class="v">82 Δ entries</span>
+    <span class="sep">·</span>
+    <span>Illum D65</span>
+    <span class="sep">·</span>
+    <span>26.5 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/he2022.html">View details</a>
+    <a href="downloads/he2022.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="pair-diff,suprathreshold"
+  data-search="helmlab.space color-difference feedback test (pseudonymized) suprathreshold color difference (mobile-web designed test) self-collected mobile-web color-difference test run by helmlab (helmlab.space) over ~3.5 hours on 24–25 february 2026. 71 turkish-speaking observers gave 3,477 valid suprathreshold judgements on a 0–100 slider plus a 1–5 categorical rating. stimuli were not random — pairs are drawn from four designed zones (uniform, hk_boundary, achromatic_chromatic, blue_region) targeting specific perceptual regions. each pair carries the device/platform/gamut/duration metadata captured at submission time. useful as a real-world stress test for any color-difference formula or color space, especially for zone-specific failure modes. pair-diff suprathreshold helmlabfb srgb 2026"
+  data-year="2026"
+  data-rows="3477"
+  data-size="199708"
+  data-name="helmlab.space color-difference feedback test (pseudonymized)">
+  <div class="card-top">
+    <span class="card-type" style="background:#2563eb15;color:#2563eb">
+      <span class="dot"></span>pair-diff
+    </span>
+    <span class="card-year">2026</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/helmlabfb.html">helmlab.space color-difference feedback test (pseudonymized)</a></h3>
+  <p class="card-desc">Self-collected mobile-web color-difference test run by helmlab (helmlab.space) over ~3.5 hours on 24–25 February 2026. 71 Turkish-speaking observers gave 3,477 valid suprathreshold judgements on a 0–1</p>
+  <div class="card-meta">
+    <span class="v">3,477 pairs</span>
+    <span class="sep">·</span>
+    <span>Illum sRGB</span>
+    <span class="sep">·</span>
+    <span>195.0 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/helmlabfb.html">View details</a>
+    <a href="downloads/helmlabfb.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="JND"
+  data-search="hong et al. (2025) modern isoluminant color-discrimination ellipsoids (brainard lab, upenn) modern replacement-class for macadam 1942 — wishart process ellipsoid fits in isoluminant plane the modern descendant of macadam 1942: dense color-discrimination ellipsoids measured by hong, yoon, yoo &amp; brainard (2025) at upenn using a 3afc oddity task with adaptive psychophysics (aepsych) on a calibrated display. ~6,000 adaptive + ~6,000 validation trials per observer × 8 color-normal observers, fitted with a wishart process psychophysical model that yields a smooth ellipsoid field across the isoluminant plane (rather than 25 isolated ellipses). published in elife 2025; code on github, raw + organized data on osf. the first jnd-class dataset that fixes macadam 1942&#x27;s two biggest problems: (1) a single observer and (2) sparse sampling. use this dataset to test whether your color space&#x27;s small-difference geometry generalizes beyond the historical 25 centers. jnd hong_2025_ellipsoids calibrated 2025"
+  data-year="2025"
+  data-rows="2"
+  data-size="192933"
+  data-name="hong et al. (2025) modern isoluminant color-discrimination ellipsoids (brainard lab, upenn)">
+  <div class="card-top">
+    <span class="card-type" style="background:#dc262615;color:#dc2626">
+      <span class="dot"></span>JND
+    </span>
+    <span class="card-year">2025</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/hong_2025_ellipsoids.html">Hong et al. (2025) modern isoluminant color-discrimination ellipsoids (Brainard Lab, UPenn)</a></h3>
+  <p class="card-desc">The modern descendant of MacAdam 1942: dense color-discrimination ellipsoids measured by Hong, Yoon, Yoo &amp; Brainard (2025) at UPenn using a 3AFC oddity task with adaptive psychophysics (AEPsych) on a </p>
+  <div class="card-meta">
+    <span class="v">2 files indexed</span>
+    <span class="sep">·</span>
+    <span>Illum calibrated</span>
+    <span class="sep">·</span>
+    <span>188.4 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/hong_2025_ellipsoids.html">View details</a>
+    <a href="downloads/hong_2025_ellipsoids.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="constant-hue"
+  data-search="hung &amp; berns (1995) constant-hue loci constant-hue lines for hue-uniformity evaluation constant-hue chip loci collected by hung &amp; berns (1995) on a crt, used to evaluate how well a color space predicts perceptually constant hue lines. observers selected chips that appeared to be the same hue at different chroma and lightness levels. two variants are included: constant-lightness loci (table iii) and variable-lightness loci (table iv). constant-hue hung_berns d65 1995"
+  data-year="1995"
+  data-rows="156"
+  data-size="9431"
+  data-name="hung &amp; berns (1995) constant-hue loci">
+  <div class="card-top">
+    <span class="card-type" style="background:#0891b215;color:#0891b2">
+      <span class="dot"></span>constant-hue
+    </span>
+    <span class="card-year">1995</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/hung_berns.html">Hung &amp; Berns (1995) constant-hue loci</a></h3>
+  <p class="card-desc">Constant-hue chip loci collected by Hung &amp; Berns (1995) on a CRT, used to evaluate how well a color space predicts perceptually constant hue lines. Observers selected chips that appeared to be the sam</p>
+  <div class="card-meta">
+    <span class="v">156 chips</span>
+    <span class="sep">·</span>
+    <span>Illum D65</span>
+    <span class="sep">·</span>
+    <span>9.2 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/hung_berns.html">View details</a>
+    <a href="downloads/hung_berns.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="JND"
+  data-search="luo &amp; rigg (1986) chromaticity discrimination ellipses for surface colours jnd chromaticity-discrimination ellipses from 10 different source studies, harmonized a compilation of 132+ chromaticity-discrimination ellipses for surface colours, gathered by m. r. luo and b. rigg (1986) from ten independent source studies (vvvr, bfd, mmb, ciscc, cie, strocka, witt, df, mcd, k) and harmonized via per-set scaling factors. larger and more diverse than the macadam 1942 set (which used a single observer on isolated lights) — luo-rigg covers real surface-color conditions and multiple observer pools. the paper&#x27;s headline finding: contrary to macadam 1942, the smallest discrimination ellipses lie in the blue-grey region for surface colors. the standard jnd dataset for any color space that claims to model real-world textile/paint/dye color tolerances rather than just isolated stimuli. jnd luo_rigg_ellipses cie 1986"
+  data-year="1986"
+  data-rows="132"
+  data-size="12074"
+  data-name="luo &amp; rigg (1986) chromaticity discrimination ellipses for surface colours">
+  <div class="card-top">
+    <span class="card-type" style="background:#dc262615;color:#dc2626">
+      <span class="dot"></span>JND
+    </span>
+    <span class="card-year">1986</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/luo_rigg_ellipses.html">Luo &amp; Rigg (1986) chromaticity discrimination ellipses for surface colours</a></h3>
+  <p class="card-desc">A compilation of 132+ chromaticity-discrimination ellipses for surface colours, gathered by M. R. Luo and B. Rigg (1986) from ten independent source studies (VVVR, BFD, MMB, CISCC, CIE, STROCKA, WITT,</p>
+  <div class="card-meta">
+    <span class="v">132 ellipses</span>
+    <span class="sep">·</span>
+    <span>Illum CIE</span>
+    <span class="sep">·</span>
+    <span>11.8 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/luo_rigg_ellipses.html">View details</a>
+    <a href="downloads/luo_rigg_ellipses.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="corresponding-colors,suprathreshold"
+  data-search="lutchi colour appearance data (luo &amp; rhodes 1997) color appearance — magnitude estimations across multiple experiments the lutchi (loughborough university of technology, computer human interface) color-appearance dataset compiled by luo &amp; rhodes (1997). 43,332 magnitude estimations across multiple experiments (bit, kuo, mean appearance phases p1–p12) under varying illuminants, surround conditions, and adaptation states. standard empirical basis for cam02, ciecam02 and ciecam16 validation. the dataset ships as ~100 small plain-text files with mixed schemas — this canonical export does not attempt to merge them into a single table; instead, `canonical.csv` is an index of every raw file with its category, and the original .dat files live unchanged in `raw/`. corresponding-colors suprathreshold lutchi mixed 1997"
+  data-year="1997"
+  data-rows="100"
+  data-size="126822"
+  data-name="lutchi colour appearance data (luo &amp; rhodes 1997)">
+  <div class="card-top">
+    <span class="card-type" style="background:#d9770615;color:#d97706">
+      <span class="dot"></span>corresponding-colors
+    </span>
+    <span class="card-year">1997</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/lutchi.html">LUTCHI Colour Appearance Data (Luo &amp; Rhodes 1997)</a></h3>
+  <p class="card-desc">The LUTCHI (Loughborough University of Technology, Computer Human Interface) color-appearance dataset compiled by Luo &amp; Rhodes (1997). 43,332 magnitude estimations across multiple experiments (BIT, Ku</p>
+  <div class="card-meta">
+    <span class="v">100 files indexed</span>
+    <span class="sep">·</span>
+    <span>Illum mixed</span>
+    <span class="sep">·</span>
+    <span>123.8 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/lutchi.html">View details</a>
+    <a href="downloads/lutchi.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="gamut"
+  data-search="macadam (1935) optimal color stimuli — theoretical color-volume boundary theoretical maximum-reflectance color volume spectral boundary of the theoretical maximum-luminance-factor color stimuli derived by david macadam in 1935. each point is a chromaticity on the boundary of what is physically realizable as a surface color under the named illuminant — the upper bound that no real ink, paint, or dye can exceed. provided for illuminants a, c, and d65. used as a theoretical ceiling for surface-color gamut coverage, distinct from pointer&#x27;s empirical real-color gamut. gamut macadam1935_optimal a 1935"
+  data-year="1935"
+  data-rows="657"
+  data-size="6976"
+  data-name="macadam (1935) optimal color stimuli — theoretical color-volume boundary">
+  <div class="card-top">
+    <span class="card-type" style="background:#7c3aed15;color:#7c3aed">
+      <span class="dot"></span>gamut
+    </span>
+    <span class="card-year">1935</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/macadam1935_optimal.html">MacAdam (1935) optimal color stimuli — theoretical color-volume boundary</a></h3>
+  <p class="card-desc">Spectral boundary of the theoretical maximum-luminance-factor color stimuli derived by David MacAdam in 1935. Each point is a chromaticity on the boundary of what is physically realizable as a surface</p>
+  <div class="card-meta">
+    <span class="v">657 points</span>
+    <span class="sep">·</span>
+    <span>Illum A</span>
+    <span class="sep">·</span>
+    <span>6.8 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/macadam1935_optimal.html">View details</a>
+    <a href="downloads/macadam1935_optimal.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="JND"
+  data-search="macadam (1942) discrimination ellipses (observer pgn) jnd threshold ellipses the classic 25 just-noticeable-difference (jnd) chromaticity ellipses measured by david macadam in 1942 under daylight illumination, using a single highly trained observer (perley g. nutting jr., &#x27;pgn&#x27;). each ellipse maps the locus of color matches around a fixed center — the inside of the ellipse is the threshold of perceptual indistinguishability. foundational data for color discrimination thresholds, the inspiration for the entire &#x27;perceptually uniform color space&#x27; research line, and the reason cielab and cieluv were developed. jnd macadam1942 cie 1942"
+  data-year="1942"
+  data-rows="25"
+  data-size="1722"
+  data-name="macadam (1942) discrimination ellipses (observer pgn)">
+  <div class="card-top">
+    <span class="card-type" style="background:#dc262615;color:#dc2626">
+      <span class="dot"></span>JND
+    </span>
+    <span class="card-year">1942</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/macadam1942.html">MacAdam (1942) discrimination ellipses (Observer PGN)</a></h3>
+  <p class="card-desc">The classic 25 just-noticeable-difference (JND) chromaticity ellipses measured by David MacAdam in 1942 under daylight illumination, using a single highly trained observer (Perley G. Nutting Jr., &#x27;PGN</p>
+  <div class="card-meta">
+    <span class="v">25 ellipses</span>
+    <span class="sep">·</span>
+    <span>Illum CIE</span>
+    <span class="sep">·</span>
+    <span>1.7 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/macadam1942.html">View details</a>
+    <a href="downloads/macadam1942.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="pair-diff,suprathreshold"
+  data-search="macadam (1974) uniform color scales — osa ucs pair distances suprathreshold color difference (osa ucs spacing) suprathreshold visual-difference scalings between 59 osa uniform color scales chips, reported by david macadam (1974) as part of the osa effort to construct a perceptually uniform color sample arrangement. each of the 128 pairs was scaled by two observers; the canonical dv is their mean. used as a held-out test set for color-space uniformity claims. pair-diff suprathreshold macadam1974 d65 1974"
+  data-year="1974"
+  data-rows="128"
+  data-size="7127"
+  data-name="macadam (1974) uniform color scales — osa ucs pair distances">
+  <div class="card-top">
+    <span class="card-type" style="background:#2563eb15;color:#2563eb">
+      <span class="dot"></span>pair-diff
+    </span>
+    <span class="card-year">1974</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/macadam1974.html">MacAdam (1974) Uniform Color Scales — OSA UCS pair distances</a></h3>
+  <p class="card-desc">Suprathreshold visual-difference scalings between 59 OSA Uniform Color Scales chips, reported by David MacAdam (1974) as part of the OSA effort to construct a perceptually uniform color sample arrange</p>
+  <div class="card-meta">
+    <span class="v">128 pairs</span>
+    <span class="sep">·</span>
+    <span>Illum D65</span>
+    <span class="sep">·</span>
+    <span>7.0 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/macadam1974.html">View details</a>
+    <a href="downloads/macadam1974.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="constant-hue"
+  data-search="munsell renotation data (real chips) munsell renotation chips (hue × value × chroma grid) snapshot of the munsell renotation (newhall, nickerson &amp; judd 1943) for chips physically realizable in paint. maps each munsell notation (hue, value, chroma) to cie xyy under illuminant c. munsell&#x27;s hue × value × chroma arrangement is perceptually uniform by construction, which makes this dataset the standard reference grid for evaluating constant-hue lines, constant-value planes, and the lightness scale of a candidate color space. constant-hue munsell cie 1943"
+  data-year="1943"
+  data-rows="2734"
+  data-size="64117"
+  data-name="munsell renotation data (real chips)">
+  <div class="card-top">
+    <span class="card-type" style="background:#0891b215;color:#0891b2">
+      <span class="dot"></span>constant-hue
+    </span>
+    <span class="card-year">1943</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/munsell.html">Munsell Renotation Data (real chips)</a></h3>
+  <p class="card-desc">Snapshot of the Munsell Renotation (Newhall, Nickerson &amp; Judd 1943) for chips physically realizable in paint. Maps each Munsell notation (hue, value, chroma) to CIE xyY under illuminant C. Munsell&#x27;s h</p>
+  <div class="card-meta">
+    <span class="v">2,734 chips</span>
+    <span class="sep">·</span>
+    <span>Illum CIE</span>
+    <span class="sep">·</span>
+    <span>62.6 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/munsell.html">View details</a>
+    <a href="downloads/munsell.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="gamut"
+  data-search="pointer (1980) real surface-color gamut real-world surface-color gamut boundary maximum-chroma boundary of real-world surface colors compiled by michael pointer (1980) from over 4,000 measured samples (paints, dyes, inks, natural materials). used as the de-facto reference for how much of a color space&#x27;s chromaticity volume corresponds to physically realizable surface colors — a wide-gamut display does not need to reach outside this volume. gamut pointer cie 1980"
+  data-year="1980"
+  data-rows="576"
+  data-size="43006"
+  data-name="pointer (1980) real surface-color gamut">
+  <div class="card-top">
+    <span class="card-type" style="background:#7c3aed15;color:#7c3aed">
+      <span class="dot"></span>gamut
+    </span>
+    <span class="card-year">1980</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/pointer.html">Pointer (1980) real surface-color gamut</a></h3>
+  <p class="card-desc">Maximum-chroma boundary of real-world surface colors compiled by Michael Pointer (1980) from over 4,000 measured samples (paints, dyes, inks, natural materials). Used as the de-facto reference for how</p>
+  <div class="card-meta">
+    <span class="v">576 points</span>
+    <span class="sep">·</span>
+    <span>Illum CIE</span>
+    <span class="sep">·</span>
+    <span>42.0 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/pointer.html">View details</a>
+    <a href="downloads/pointer.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="naming"
+  data-search="world color survey (kay, berlin, maffi, merrifield &amp; cook) cross-cultural color naming (110 languages × ~24 speakers × 330 chips) the world color survey, conducted by paul kay, brent berlin, luisa maffi, william merrifield and richard cook between 1976 and 1981. 110 unwritten languages, ~24 speakers per language, each shown a standard 330-munsell-chip grid and asked to (a) name every chip in their own language and (b) pick the best example chip for their basic color terms. originally collected to test the berlin-kay hypothesis of universal color-term evolution; now the de facto reference dataset for cross-cultural color cognition and a powerful stress test for any color space that claims perceptual uniformity (a uniform space&#x27;s focal-color clusters across languages should land in compact regions). naming wcs mixed 1981"
+  data-year="1981"
+  data-rows="7"
+  data-size="2702761"
+  data-name="world color survey (kay, berlin, maffi, merrifield &amp; cook)">
+  <div class="card-top">
+    <span class="card-type" style="background:#47556915;color:#475569">
+      <span class="dot"></span>naming
+    </span>
+    <span class="card-year">1981</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/wcs.html">World Color Survey (Kay, Berlin, Maffi, Merrifield &amp; Cook)</a></h3>
+  <p class="card-desc">The World Color Survey, conducted by Paul Kay, Brent Berlin, Luisa Maffi, William Merrifield and Richard Cook between 1976 and 1981. 110 unwritten languages, ~24 speakers per language, each shown a st</p>
+  <div class="card-meta">
+    <span class="v">7 files indexed</span>
+    <span class="sep">·</span>
+    <span>Illum mixed</span>
+    <span class="sep">·</span>
+    <span>2.6 MB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/wcs.html">View details</a>
+    <a href="downloads/wcs.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="constant-hue"
+  data-search="xiao, wuerger, fu &amp; karatzas (2011) unique hue loci unique hue loci (ciecam02 evaluation, 185 color-normal observers) unique-hue loci (red, green, blue, yellow) plus neutral gray measured by xiao, wuerger, fu &amp; karatzas (2011) on a calibrated crt with a large color-normal observer pool (n = 185). the data is the standard empirical anchor for evaluating where ciecam02&#x27;s hue angles place the four unique hues, and a frequent counterexample for the assumption that ciecam02&#x27;s ncs-based hue scale is correct. useful as a hue-uniformity test that goes beyond constant-hue surfaces — it asks where the perceptually pure hues actually sit. constant-hue xiao_unique_hues mixed 2011"
+  data-year="2011"
+  data-rows="10"
+  data-size="599311"
+  data-name="xiao, wuerger, fu &amp; karatzas (2011) unique hue loci">
+  <div class="card-top">
+    <span class="card-type" style="background:#0891b215;color:#0891b2">
+      <span class="dot"></span>constant-hue
+    </span>
+    <span class="card-year">2011</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/xiao_unique_hues.html">Xiao, Wuerger, Fu &amp; Karatzas (2011) unique hue loci</a></h3>
+  <p class="card-desc">Unique-hue loci (red, green, blue, yellow) plus neutral gray measured by Xiao, Wuerger, Fu &amp; Karatzas (2011) on a calibrated CRT with a large color-normal observer pool (n = 185). The data is the stan</p>
+  <div class="card-meta">
+    <span class="v">10 files indexed</span>
+    <span class="sep">·</span>
+    <span>Illum mixed</span>
+    <span class="sep">·</span>
+    <span>585.3 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/xiao_unique_hues.html">View details</a>
+    <a href="downloads/xiao_unique_hues.zip" download>↓ Download</a>
+  </div>
+</article><article class="card"
+  data-tags="naming"
+  data-search="xkcd color survey — curated 950 named colors (munroe 2010) color naming — most-popular color name → rgb swatch curated 950 most-popular color names from the xkcd color survey conducted by randall munroe in 2010. over 200,000 participants gave free-form names to randomly displayed rgb swatches; the published list keeps the most-agreed-upon name for each color region. the full raw survey contains ~5 million responses (not redistributed here — see munroe&#x27;s original archive). useful as a real-world naming corpus and as an out-of-distribution sanity check for color appearance models. naming xkcd_colors mixed 2010"
+  data-year="2010"
+  data-rows="949"
+  data-size="34734"
+  data-name="xkcd color survey — curated 950 named colors (munroe 2010)">
+  <div class="card-top">
+    <span class="card-type" style="background:#47556915;color:#475569">
+      <span class="dot"></span>naming
+    </span>
+    <span class="card-year">2010</span>
+  </div>
+  <h3 class="card-title"><a href="datasets/xkcd_colors.html">xkcd Color Survey — curated 950 named colors (Munroe 2010)</a></h3>
+  <p class="card-desc">Curated 950 most-popular color names from the xkcd Color Survey conducted by Randall Munroe in 2010. Over 200,000 participants gave free-form names to randomly displayed RGB swatches; the published li</p>
+  <div class="card-meta">
+    <span class="v">949 colors</span>
+    <span class="sep">·</span>
+    <span>Illum mixed</span>
+    <span class="sep">·</span>
+    <span>33.9 KB</span>
+  </div>
+  <div class="card-actions">
+    <a class="primary" href="datasets/xkcd_colors.html">View details</a>
+    <a href="downloads/xkcd_colors.zip" download>↓ Download</a>
+  </div>
+</article>
+</section>
+
+<div class="empty-state hidden" id="empty">No datasets match these filters. <a href="#" id="clear">Clear all</a>.</div>
+
+<script>
+(function() {
+  const grid = document.getElementById('grid');
+  const cards = Array.from(grid.querySelectorAll('.card'));
+  const q = document.getElementById('q');
+  const sortSel = document.getElementById('sort');
+  const chips = Array.from(document.querySelectorAll('#chips .chip'));
+  const count = document.getElementById('count');
+  const empty = document.getElementById('empty');
+  const clearLink = document.getElementById('clear');
+  let activeTag = '';
+
+  function apply() {
+    const needle = (q.value || '').trim().toLowerCase();
+    let shown = 0;
+    cards.forEach(c => {
+      const tags = (c.dataset.tags || '').split(',');
+      const okText = !needle || (c.dataset.search || '').includes(needle);
+      const okTag  = !activeTag || tags.includes(activeTag);
+      const vis = okText && okTag;
+      c.classList.toggle('hidden', !vis);
+      if (vis) shown++;
+    });
+    count.textContent = (shown === cards.length)
+      ? `${shown} datasets`
+      : `${shown} of ${cards.length} shown`;
+    empty.classList.toggle('hidden', shown !== 0);
+  }
+
+  function applySort() {
+    const mode = sortSel.value;
+    const list = cards.slice();
+    list.sort((a, b) => {
+      switch (mode) {
+        case 'year-desc': return (b.dataset.year|0) - (a.dataset.year|0);
+        case 'year-asc':  return (a.dataset.year|0) - (b.dataset.year|0);
+        case 'rows-desc': return (b.dataset.rows|0) - (a.dataset.rows|0);
+        case 'size-desc': return (b.dataset.size|0) - (a.dataset.size|0);
+        default:          return (a.dataset.name || '').localeCompare(b.dataset.name || '');
+      }
+    });
+    list.forEach(c => grid.appendChild(c));
+  }
+
+  q.addEventListener('input', apply);
+  sortSel.addEventListener('change', applySort);
+  chips.forEach(chip => chip.addEventListener('click', () => {
+    chips.forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    activeTag = chip.dataset.tag;
+    apply();
+  }));
+  clearLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    q.value = '';
+    activeTag = '';
+    chips.forEach(c => c.classList.toggle('active', !c.dataset.tag));
+    apply();
+  });
+
+  applySort();
+})();
+</script>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

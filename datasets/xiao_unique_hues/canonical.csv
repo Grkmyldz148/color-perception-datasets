@@ -1,0 +1,11 @@
+filename,size_bytes,category,lines
+README.md,1693,documentation,
+averages.json,2446,averages,
+averages.yaml,2725,averages,
+convert.py,1436,support script,
+neutral_gray.yaml,4916,neutral gray,
+unique_blue.json,141474,unique-hue loci (per-observer arrays),
+unique_green.json,148639,unique-hue loci (per-observer arrays),
+unique_red.json,147830,unique-hue loci (per-observer arrays),
+unique_yellow.json,147735,unique-hue loci (per-observer arrays),
+xiao.xlsx,604892,original xlsx,

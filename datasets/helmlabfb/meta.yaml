@@ -1,0 +1,58 @@
+name: HelmlabFB
+full_name: helmlab.space color-difference feedback test (pseudonymized)
+schema: pair_diff
+n_judgements: 3477
+n_observers: 71
+n_catch_trials_excluded: 75
+collection_window:
+  first: '2026-02-24T20:48:34.775147'
+  last: '2026-02-25T00:07:18.176052'
+median_session_duration_sec: 187.7
+zones:
+  blue_region: 520
+  hk_boundary: 809
+  uniform: 1481
+  achromatic_chromatic: 667
+platforms:
+  Linux armv81: 1692
+  Linux aarch64: 234
+  Win32: 141
+  iPhone: 1222
+  MacIntel: 188
+color_gamuts:
+  srgb: 2020
+  p3: 1457
+illuminant: sRGB D65 (web display)
+color_space_native: sRGB hex; canonical CIELAB computed via IEC 61966-2-1 sRGB→XYZ(D65)→CIELAB(D65)
+dv_units: 0–100 slider scale, raw observer response (in practice observers used 5–90)
+type: suprathreshold color difference (mobile-web designed test)
+is_jnd: false
+is_suprathreshold: true
+description: Self-collected mobile-web color-difference test run by helmlab (helmlab.space)
+  over ~3.5 hours on 24–25 February 2026. 71 Turkish-speaking observers gave 3,477
+  valid suprathreshold judgements on a 0–100 slider plus a 1–5 categorical rating.
+  Stimuli were not random — pairs are drawn from four designed zones (uniform, hk_boundary,
+  achromatic_chromatic, blue_region) targeting specific perceptual regions. Each pair
+  carries the device/platform/gamut/duration metadata captured at submission time.
+  Useful as a real-world stress test for any color-difference formula or color space,
+  especially for zone-specific failure modes.
+notes:
+- ★ Self-collected by helmlab — not a published academic dataset. Cite as such.
+- Four designed zones (not random sampling). Aggregating across zones dilutes the
+  zone-specific signal — stratify by `zone` when fitting.
+- '`predicted_de` is the L2 Euclidean distance from the helmlab prototype space active
+  at stimulus-design time (formula in helmlab/feedback/generator.py). The prototype
+  predates the public helmlab repo and is not version-pinned, so `predicted_de` is
+  NOT exactly reproducible. r≈0.95 with CIEDE2000 but non-constant scaling. Use it
+  as a design tag, not ground truth.'
+- 75 catch trials (identical hex pairs) already excluded — these were designed-in
+  zero-difference pairs for reliability scoring.
+- No display calibration. Observer monitors and ambient light vary. Stratify by `color_gamut`
+  (sRGB vs P3) and `platform` if you need cleaner subsets.
+- All observers are Turkish-language users (tr-TR); cross-cultural generalization
+  is unverified.
+- Observer names → `observer_001`..`observer_071`. The real-name mapping (observer_mapping.local.json)
+  is NOT included in this repository.
+sources:
+- note: Collected by helmlab (https://helmlab.space), February 2026.
+license: CC BY 4.0. Cite helmlab (helmlab.space) and this repository.

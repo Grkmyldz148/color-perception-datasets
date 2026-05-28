@@ -1,0 +1,36 @@
+name: Xiao_2011_Unique_Hues
+full_name: Xiao, Wuerger, Fu & Karatzas (2011) unique hue loci
+schema: compound_legacy
+n_files: 10
+n_observers: 185
+hues:
+- red
+- green
+- blue
+- yellow
+- neutral-gray
+type: unique hue loci (CIECAM02 evaluation, 185 color-normal observers)
+description: Unique-hue loci (red, green, blue, yellow) plus neutral gray measured
+  by Xiao, Wuerger, Fu & Karatzas (2011) on a calibrated CRT with a large color-normal
+  observer pool (n = 185). The data is the standard empirical anchor for evaluating
+  where CIECAM02's hue angles place the four unique hues, and a frequent counterexample
+  for the assumption that CIECAM02's NCS-based hue scale is correct. Useful as a hue-uniformity
+  test that goes beyond constant-hue surfaces — it asks where the perceptually pure
+  hues actually sit.
+notes:
+- ★ Compound dataset — per-observer × per-session × per-hue nested arrays. `canonical.csv`
+  is just an index; read the JSON files directly to use the data (see the original
+  paper for the array layout).
+- n = 185 is among the largest unique-hue samples published; analyses on smaller datasets
+  (Hering's original 4, Kuehni's ~12) often produce noisy unique-hue estimates.
+- 'The paper''s main finding: CIECAM02''s hue angles for unique red/green/blue/yellow
+  are inconsistent with the NCS hues embedded in the model — useful for stress-testing
+  any new color space''s hue assignment.'
+sources:
+- paper: 'Xiao, K., Wuerger, S., Fu, C. & Karatzas, D. (2011). Unique Hue Data for
+    Colour Appearance Models. Part I: Loci of Unique Hues and Hue Uniformity. Color
+    Research & Application 36(5), 316–323.'
+- snapshot_source: coloria-dev/color-data (retrieved by email from Kaida Xiao, per
+    the coloria-dev README).
+license: Author-provided data, redistributed via coloria-dev. License unspecified;
+  included under academic-use convention. Cite Xiao et al. (2011).

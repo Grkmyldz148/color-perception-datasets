@@ -1,0 +1,22 @@
+name: Hung_Berns_1995
+full_name: Hung & Berns (1995) constant-hue loci
+schema: constant_hue
+n_chips: 156
+illuminant: D65 / 2°
+type: constant-hue lines for hue-uniformity evaluation
+description: 'Constant-hue chip loci collected by Hung & Berns (1995) on a CRT, used
+  to evaluate how well a color space predicts perceptually constant hue lines. Observers
+  selected chips that appeared to be the same hue at different chroma and lightness
+  levels. Two variants are included: constant-lightness loci (table III) and variable-lightness
+  loci (table IV).'
+notes:
+- Not a color-difference dataset — used for hue-uniformity testing only. A perceptually
+  uniform color space should map chips with the same hue label onto a straight line
+  passing through the achromatic axis.
+- Famous for revealing the blue-hue rotation problem in CIELAB and (later) the partial
+  improvement in CAM02-UCS and OKLab.
+sources:
+- paper: Hung, P.-C. & Berns, R. S. (1995). Determination of constant hue loci for
+    a CRT gamut and their predictions using color appearance spaces. Color Research
+    & Application 20(5), 285–295.
+license: CC BY 4.0 for this canonical export. Cite Hung & Berns (1995).

@@ -1,0 +1,40 @@
+name: Breneman_1987
+full_name: Breneman (1987) corresponding-colors experiments
+schema: corresponding_colors
+n_pairs: 160
+experiments:
+  Breneman_Exp_1: 13
+  Breneman_Exp_2: 13
+  Breneman_Exp_3: 13
+  Breneman_Exp_4: 13
+  Breneman_Exp_5: 12
+  Breneman_Exp_6: 13
+  Breneman_Exp_7: 12
+  Breneman_Exp_8: 13
+  Breneman_Exp_9: 20
+  Breneman_Exp_10: 12
+  Breneman_Exp_11: 13
+  Breneman_Exp_12: 13
+color_space_native: CIE 1976 u'v' chromaticity
+type: chromatic-adaptation corresponding-colors data
+is_jnd: false
+is_suprathreshold: false
+description: Twelve memory-matching and haploscopic-matching experiments by Edwin
+  Breneman (1987), pairing test stimuli viewed under one illuminant with the chromaticities
+  observers reported as 'looking the same' under the reference illuminant. Used as
+  the empirical ground truth for chromatic adaptation transforms — CAT02 and CIECAM02
+  were both validated against subsets of this data. Each pair carries the matched
+  chromaticities plus inter-observer scatter when reported.
+notes:
+- Twelve separate experiments under different illuminants and adaptation conditions;
+  filter by `experiment_id` if you want a single condition.
+- Some pairs include inter-observer scatter (sigma_u, sigma_v); others don't — empty
+  cells are real, not missing-data bugs.
+- Data is in u'v' chromaticity space (no luminance) — combine with the experiment's
+  stated white point and Y-level to recover full XYZ.
+sources:
+- paper: Breneman, E. J. (1987). Corresponding chromaticities for different states
+    of adaptation to complex visual fields. Journal of the Optical Society of America
+    A 4(6), 1115–1129.
+- snapshot_source: colour.BRENEMAN_EXPERIMENTS (BSD-3 licensed source data)
+license: CC BY 4.0 for this canonical export. Cite Breneman (1987).

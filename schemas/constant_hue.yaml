@@ -1,0 +1,40 @@
+schema_name: constant_hue
+version: 1
+description: |
+  Standard schema for constant-hue datasets. Each row = one chip on a
+  perceptually constant-hue line or surface. Used to test hue uniformity
+  of a color space (chips with the same hue_id should fall on a straight
+  line through the achromatic axis in a perceptually uniform space).
+
+columns:
+  chip_id:
+    type: string
+    required: true
+    description: Stable identifier for the chip.
+  hue_id:
+    type: string
+    required: true
+    description: Hue family label (e.g. "R", "Y", "10R" for Munsell-style).
+  L:
+    type: float
+    required: true
+    range: [0, 100]
+  a:
+    type: float
+    required: true
+    range: [-200, 200]
+  b:
+    type: float
+    required: true
+    range: [-200, 200]
+  C:
+    type: float
+    required: false
+    description: Chroma. Computed sqrt(a^2 + b^2) if absent.
+  h:
+    type: float
+    required: false
+    description: Hue angle in degrees [0, 360). Computed if absent.
+  illuminant:
+    type: string
+    required: false

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corresponding_Colours_Luo_Rhodes_1999 · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / Corresponding_Colours_Luo_Rhodes_1999</div>
+  <h1>Corresponding-Colour Datasets (Luo &amp; Rhodes 1999 compilation)</h1>
+  <p class="lede">chromatic-adaptation corresponding-colors compilation</p>
+  <div class="detail-tags"><span class="card-type" style="background:#d9770615;color:#d97706"><span class="dot"></span>corresponding-colors</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>A compilation of corresponding-colors experiments curated by Luo &amp; Rhodes (1999) and republished on Zenodo, bundling nine independent studies into a single comparable format: Breneman 1987 (12 phases), CSAJ (Color Science Association of Japan), Helson 1938, Hunt-via-LUTCHI, Kuo, Lam, McCann mondrian (r/g/b/y/grey backgrounds), RIT 1–4, and Stevens-style scaling experiments. Each row pairs a test stimulus (viewed under one illuminant) with the matched stimulus (viewed under the reference illuminant). The canonical export keeps both XYZ and u&#x27;v&#x27; columns so users can choose their working representation. This is the de facto training set for chromatic adaptation transforms (CAT02, CAT16, Bradford) and color appearance models (CIECAM02, CIECAM16).</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">corresponding_colours.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">45.6 KB</span>
+      <a class="btn btn-primary" href="../downloads/corresponding_colours.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>Multi-source compilation. Filter by `experiment_id` or `dataset_family` to recover a single original experiment. CSAJ, Helson 1938, McCann mondrian and Stevens-style scalings are otherwise hard to obtain.</li><li>Some experiments overlap with our standalone Breneman 1987 dataset (sourced via colour); use whichever copy matches your downstream tooling. The numbers should be identical.</li><li>Original Zenodo record (DOI: 10.5281/zenodo.3270903) lists license as &#x27;notspecified&#x27;. Included here on the same academic-use convention used by colour-science, AIM3, ColorAIDE, and other downstream projects. Cite Luo &amp; Rhodes (1999) when using the data.</li><li>Per-pair white-point XYZ for both test and reference is preserved in the last two columns so you can rebuild the experiment&#x27;s full radiometric context.</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>pair_id</th><th>experiment_id</th><th>dataset_family</th><th>color_name</th><th>u_t</th><th>v_t</th><th>u_m</th><th>v_m</th><th>X_t</th><th>Y_t</th><th>Z_t</th><th>X_r</th><th>Y_r</th><th>Z_r</th><th>whitepoint_test_xyz</th><th>whitepoint_reference_xyz</th></tr></thead><tbody><tr><td>Brene.p1_001</td><td>Brene.p1</td><td>Brene</td><td></td><td>0.198969</td><td>0.486992</td><td>0.258976</td><td>0.523997</td><td>25.85</td><td>28.12</td><td>24.01</td><td>31.27</td><td>28.12</td><td>9.97</td><td>94.74,100.00,100.00</td><td>110.79,100.00,33.41</td></tr><tr><td>Brene.p1_002</td><td>Brene.p1</td><td>Brene</td><td></td><td>0.420089</td><td>0.509024</td><td>0.459016</td><td>0.521961</td><td>20.89</td><td>11.25</td><td>3.09</td><td>22.26</td><td>11.25</td><td>0.99</td><td>94.74,100.00,100.00</td><td>110.79,100.00,33.41</td></tr><tr><td>Brene.p1_003</td><td>Brene.p1</td><td>Brene</td><td></td><td>0.249013</td><td>0.497005</td><td>0.307021</td><td>0.526001</td><td>31.7</td><td>28.12</td><td>18.57</td><td>36.93</td><td>28.12</td><td>7.47</td><td>94.74,100.00,100.00</td><td>110.79,100.00,33.41</td></tr><tr><td>Brene.p1_004</td><td>Brene.p1</td><td>Brene</td><td></td><td>0.302016</td><td>0.547994</td><td>0.359994</td><td>0.543989</td><td>34.87</td><td>28.12</td><td>1.72</td><td>41.87</td><td>28.12</td><td>0.52</td><td>94.74,100.00,100.00</td><td>110.79,100.00,33.41</td></tr><tr><td>Brene.p1_005</td><td>Brene.p1</td><td>Brene</td><td></td><td>0.290018</td><td>0.537021</td><td>0.350056</td><td>0.540952</td><td>13.67</td><td>11.25</td><td>2.04</td><td>16.38</td><td>11.25</td><td>0.68</td><td>94.74,100.00,100.00</td><td>110.79,100.00,33.41</td></tr></tbody></table></div>
+
+    
+
+    <h3>Raw files preserved</h3><div class='table-wrap'><table><thead><tr><th>File</th><th class='num'>Size</th></tr></thead><tbody><tr><td><code>raw/Brene.p1.dat</code></td><td class='num'>643 B</td></tr><tr><td><code>raw/Brene.p10.dat</code></td><td class='num'>643 B</td></tr><tr><td><code>raw/Brene.p11.dat</code></td><td class='num'>643 B</td></tr><tr><td><code>raw/Brene.p12.dat</code></td><td class='num'>643 B</td></tr><tr><td><code>raw/Brene.p2.dat</code></td><td class='num'>643 B</td></tr><tr><td><code>raw/Brene.p3.dat</code></td><td class='num'>643 B</td></tr><tr><td><code>raw/Brene.p4.dat</code></td><td class='num'>643 B</td></tr><tr><td><code>raw/Brene.p5.dat</code></td><td class='num'>643 B</td></tr><tr><td><code>raw/Brene.p6.dat</code></td><td class='num'>594 B</td></tr><tr><td><code>raw/Brene.p7.dat</code></td><td class='num'>643 B</td></tr><tr><td><code>raw/Brene.p8.dat</code></td><td class='num'>643 B</td></tr><tr><td><code>raw/Brene.p9.dat</code></td><td class='num'>643 B</td></tr><tr><td><code>raw/CSAJ.10.dat</code></td><td class='num'>299 B</td></tr><tr><td><code>raw/CSAJ.1000.dat</code></td><td class='num'>299 B</td></tr><tr><td><code>raw/CSAJ.3000.dat</code></td><td class='num'>299 B</td></tr><tr><td><code>raw/CSAJ.50.dat</code></td><td class='num'>299 B</td></tr><tr><td><code>raw/CSAJ.da.dat</code></td><td class='num'>4.2 KB</td></tr><tr><td><code>raw/Kuo.da.dat</code></td><td class='num'>2.0 KB</td></tr><tr><td><code>raw/Kuo.dt.dat</code></td><td class='num'>2.0 KB</td></tr><tr><td><code>raw/RIT.1.dat</code></td><td class='num'>1.2 KB</td></tr><tr><td><code>raw/RIT.2.dat</code></td><td class='num'>1.1 KB</td></tr><tr><td><code>raw/RIT.3.dat</code></td><td class='num'>1.2 KB</td></tr><tr><td><code>raw/RIT.4.dat</code></td><td class='num'>1.1 KB</td></tr><tr><td><code>raw/Steve.10.dat</code></td><td class='num'>299 B</td></tr><tr><td><code>raw/Steve.1000.dat</code></td><td class='num'>299 B</td></tr><tr><td><code>raw/Steve.3000.dat</code></td><td class='num'>250 B</td></tr><tr><td><code>raw/Steve.50.dat</code></td><td class='num'>299 B</td></tr><tr><td><code>raw/helson.ca.dat</code></td><td class='num'>2.9 KB</td></tr><tr><td><code>raw/lam.da.dat</code></td><td class='num'>2.8 KB</td></tr><tr><td><code>raw/lutchi.da.dat</code></td><td class='num'>2.1 KB</td></tr><tr><td><code>raw/lutchi.dd.dat</code></td><td class='num'>2.2 KB</td></tr><tr><td><code>raw/lutchi.dw.dat</code></td><td class='num'>2.0 KB</td></tr><tr><td><code>raw/mcan.b.dat</code></td><td class='num'>888 B</td></tr><tr><td><code>raw/mcan.g.dat</code></td><td class='num'>888 B</td></tr><tr><td><code>raw/mcan.grey.dat</code></td><td class='num'>888 B</td></tr><tr><td><code>raw/mcan.r.dat</code></td><td class='num'>889 B</td></tr><tr><td><code>raw/mcan.y.dat</code></td><td class='num'>888 B</td></tr></tbody></table></div>
+
+    <h2>Source publications</h2>
+    <div class="citation">Luo, M. R. &amp; Rhodes, P. A. (1999). Corresponding-colour datasets. Color Research &amp; Application 24(4), 295–296.</div><div class="citation">Breneman, E. J. (1987). Corresponding chromaticities… JOSA A 4(6), 1115–1129.</div><div class="citation">Helson, H. (1938). Fundamental problems in color vision I. JOSA 28(7), 252–264.</div><div class="citation">McCann, J. J., McKee, S. P. &amp; Taylor, T. H. (1976). Quantitative studies in retinex theory. Vision Research 16(5), 445–458.</div><div class="citation">Snapshot: Zenodo DOI 10.5281/zenodo.3270903 (Luo &amp; Rhodes 1999 republished compilation)</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">1999</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">mixed</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">corresponding_colors</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">746</span></div><div class="aside-stat"><span class="k">JND data?</span><span class="v">no</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">45.6 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

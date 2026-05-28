@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HelmlabFB · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / HelmlabFB</div>
+  <h1>helmlab.space color-difference feedback test (pseudonymized)</h1>
+  <p class="lede">suprathreshold color difference (mobile-web designed test)</p>
+  <div class="detail-tags"><span class="card-type" style="background:#2563eb15;color:#2563eb"><span class="dot"></span>pair-diff</span><span class="card-type" style="background:#16a34a15;color:#16a34a"><span class="dot"></span>suprathreshold</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>Self-collected mobile-web color-difference test run by helmlab (helmlab.space) over ~3.5 hours on 24–25 February 2026. 71 Turkish-speaking observers gave 3,477 valid suprathreshold judgements on a 0–100 slider plus a 1–5 categorical rating. Stimuli were not random — pairs are drawn from four designed zones (uniform, hk_boundary, achromatic_chromatic, blue_region) targeting specific perceptual regions. Each pair carries the device/platform/gamut/duration metadata captured at submission time. Useful as a real-world stress test for any color-difference formula or color space, especially for zone-specific failure modes.</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">helmlabfb.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">195.0 KB</span>
+      <a class="btn btn-primary" href="../downloads/helmlabfb.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>★ Self-collected by helmlab — not a published academic dataset. Cite as such.</li><li>Four designed zones (not random sampling). Aggregating across zones dilutes the zone-specific signal — stratify by `zone` when fitting.</li><li>`predicted_de` is the L2 Euclidean distance from the helmlab prototype space active at stimulus-design time (formula in helmlab/feedback/generator.py). The prototype predates the public helmlab repo and is not version-pinned, so `predicted_de` is NOT exactly reproducible. r≈0.95 with CIEDE2000 but non-constant scaling. Use it as a design tag, not ground truth.</li><li>75 catch trials (identical hex pairs) already excluded — these were designed-in zero-difference pairs for reliability scoring.</li><li>No display calibration. Observer monitors and ambient light vary. Stratify by `color_gamut` (sRGB vs P3) and `platform` if you need cleaner subsets.</li><li>All observers are Turkish-language users (tr-TR); cross-cultural generalization is unverified.</li><li>Observer names → `observer_001`..`observer_071`. The real-name mapping (observer_mapping.local.json) is NOT included in this repository.</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>pair_id</th><th>L1</th><th>a1</th><th>b1</th><th>L2</th><th>a2</th><th>b2</th><th>dv</th><th>category_rating</th><th>predicted_de</th><th>observer_id</th><th>hex1</th><th>hex2</th><th>zone</th><th>color_gamut</th><th>platform</th><th>duration_sec</th><th>timestamp</th></tr></thead><tbody><tr><td>helmlabfb_00000</td><td>15.623131</td><td>8.162798</td><td>-31.474176</td><td>21.534658</td><td>-3.680939</td><td>-22.689652</td><td>25.0</td><td>2</td><td>0.045861</td><td>observer_053</td><td>#002654</td><td>#003755</td><td>blue_region</td><td>srgb</td><td>Linux armv81</td><td>207.89</td><td>2026-02-24T20:48:34.775147</td></tr><tr><td>helmlabfb_00001</td><td>32.532301</td><td>19.078538</td><td>-43.080639</td><td>36.142045</td><td>-5.980558</td><td>-15.82053</td><td>50.0</td><td>3</td><td>0.159383</td><td>observer_053</td><td>#3a4691</td><td>#37596e</td><td>hk_boundary</td><td>srgb</td><td>Linux armv81</td><td>207.89</td><td>2026-02-24T20:48:34.780928</td></tr><tr><td>helmlabfb_00003</td><td>35.705475</td><td>25.091194</td><td>-0.149988</td><td>47.737902</td><td>-1.556543</td><td>52.613455</td><td>90.0</td><td>5</td><td>0.562181</td><td>observer_053</td><td>#794455</td><td>#857006</td><td>uniform</td><td>srgb</td><td>Linux armv81</td><td>207.89</td><td>2026-02-24T20:48:34.782255</td></tr><tr><td>helmlabfb_00004</td><td>15.496352</td><td>-19.376283</td><td>16.153498</td><td>67.851813</td><td>-20.247688</td><td>35.308952</td><td>70.0</td><td>4</td><td>0.652807</td><td>observer_053</td><td>#0e2d0e</td><td>#97ae64</td><td>uniform</td><td>srgb</td><td>Linux armv81</td><td>207.89</td><td>2026-02-24T20:48:34.782910</td></tr><tr><td>helmlabfb_00005</td><td>49.310284</td><td>-7.024718</td><td>-16.662767</td><td>45.978656</td><td>-6.554432</td><td>-11.64933</td><td>70.0</td><td>4</td><td>0.141604</td><td>observer_053</td><td>#547a91</td><td>#547180</td><td>achromatic_chromatic</td><td>srgb</td><td>Linux armv81</td><td>207.89</td><td>2026-02-24T20:48:34.784040</td></tr></tbody></table></div>
+
+    
+
+    <h3>Raw files preserved</h3><div class='table-wrap'><table><thead><tr><th>File</th><th class='num'>Size</th></tr></thead><tbody><tr><td><code>raw/helmlabfb_pseudonymized.json</code></td><td class='num'>2.9 MB</td></tr></tbody></table></div>
+
+    <h2>Source publications</h2>
+    <div class="citation">Collected by helmlab (https://helmlab.space), February 2026.</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">2026</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">sRGB</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">pair_diff</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">3,477</span></div><div class="aside-stat"><span class="k">Observers</span><span class="v">71</span></div><div class="aside-stat"><span class="k">Δv units</span><span class="v">0–100 slider scale, raw observer respons…</span></div><div class="aside-stat"><span class="k">JND data?</span><span class="v">no</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">195.0 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

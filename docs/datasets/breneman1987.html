@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Breneman_1987 · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / Breneman_1987</div>
+  <h1>Breneman (1987) corresponding-colors experiments</h1>
+  <p class="lede">chromatic-adaptation corresponding-colors data</p>
+  <div class="detail-tags"><span class="card-type" style="background:#d9770615;color:#d97706"><span class="dot"></span>corresponding-colors</span></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    <h2>Description</h2><p>Twelve memory-matching and haploscopic-matching experiments by Edwin Breneman (1987), pairing test stimuli viewed under one illuminant with the chromaticities observers reported as &#x27;looking the same&#x27; under the reference illuminant. Used as the empirical ground truth for chromatic adaptation transforms — CAT02 and CIECAM02 were both validated against subsets of this data. Each pair carries the matched chromaticities plus inter-observer scatter when reported.</p>
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">breneman1987.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">3.6 KB</span>
+      <a class="btn btn-primary" href="../downloads/breneman1987.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>Twelve separate experiments under different illuminants and adaptation conditions; filter by `experiment_id` if you want a single condition.</li><li>Some pairs include inter-observer scatter (sigma_u, sigma_v); others don&#x27;t — empty cells are real, not missing-data bugs.</li><li>Data is in u&#x27;v&#x27; chromaticity space (no luminance) — combine with the experiment&#x27;s stated white point and Y-level to recover full XYZ.</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>pair_id</th><th>experiment_id</th><th>color_name</th><th>u_t</th><th>v_t</th><th>u_m</th><th>v_m</th><th>sigma_u</th><th>sigma_v</th></tr></thead><tbody><tr><td>breneman_0001</td><td>Breneman_Exp_1</td><td>Illuminant</td><td>0.259</td><td>0.526</td><td>0.2</td><td>0.475</td><td></td><td></td></tr><tr><td>breneman_0002</td><td>Breneman_Exp_1</td><td>Gray</td><td>0.259</td><td>0.524</td><td>0.199</td><td>0.487</td><td>4.0</td><td>4.0</td></tr><tr><td>breneman_0003</td><td>Breneman_Exp_1</td><td>Red</td><td>0.459</td><td>0.522</td><td>0.42</td><td>0.509</td><td>19.0</td><td>4.0</td></tr><tr><td>breneman_0004</td><td>Breneman_Exp_1</td><td>Skin</td><td>0.307</td><td>0.526</td><td>0.249</td><td>0.497</td><td>7.0</td><td>4.0</td></tr><tr><td>breneman_0005</td><td>Breneman_Exp_1</td><td>Orange</td><td>0.36</td><td>0.544</td><td>0.302</td><td>0.548</td><td>12.0</td><td>1.0</td></tr></tbody></table></div>
+
+    
+
+    
+
+    <h2>Source publications</h2>
+    <div class="citation">Breneman, E. J. (1987). Corresponding chromaticities for different states of adaptation to complex visual fields. Journal of the Optical Society of America A 4(6), 1115–1129.</div><div class="citation">Snapshot: colour.BRENEMAN_EXPERIMENTS (BSD-3 licensed source data)</div>
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">1987</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">mixed</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">corresponding_colors</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">160</span></div><div class="aside-stat"><span class="k">JND data?</span><span class="v">no</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">3.6 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+filename,size_bytes,category,lines
+bit_p1.col,3720,BIT experiment,120
+bit_p1.vis,3720,BIT experiment,120
+bit_p2.col,3720,BIT experiment,120
+bit_p2.vis,3720,BIT experiment,120
+bit_p3.col,3720,BIT experiment,120
+bit_p3.vis,4800,BIT experiment,120
+bit_p4.col,2790,BIT experiment,90
+bit_p4.vis,2790,BIT experiment,90
+bit_p5.col,2790,BIT experiment,90
+bit_p5.vis,2790,BIT experiment,90
+col.35.p1,2734,colorimetric reference data,99
+col.35.p2,2736,colorimetric reference data,99
+col.35.p3,2735,colorimetric reference data,99
+col.35.p5,2620,colorimetric reference data,95
+col.35.p6,993,colorimetric reference data,36
+col.p1,2701,colorimetric reference data,98
+col.p10,2701,colorimetric reference data,98
+col.p1t,2620,colorimetric reference data,95
+col.p2,2701,colorimetric reference data,98
+col.p3,2699,colorimetric reference data,98
+col.p4,2702,colorimetric reference data,98
+col.p5t,2670,colorimetric reference data,97
+col.p6t,2587,colorimetric reference data,94
+col.p7t,2557,colorimetric reference data,93
+col.p8,2702,colorimetric reference data,98
+col.rf.p1,1142,colorimetric reference data,41
+col.rf.p2,1143,colorimetric reference data,41
+col.rf.p3,1143,colorimetric reference data,41
+col.rf.p4,1142,colorimetric reference data,41
+col.rf.p5,1141,colorimetric reference data,41
+col.rf.p6,1142,colorimetric reference data,41
+colah,2415,colorimetric reference data,105
+colal,2415,colorimetric reference data,105
+colal.l,1403,colorimetric reference data,61
+cold50gb,3570,colorimetric reference data,105
+cold50gbl,3400,colorimetric reference data,100
+cold50wl,3196,colorimetric reference data,94
+cold50wnl,3570,colorimetric reference data,105
+cold65,2415,colorimetric reference data,105
+cold65.l,2369,colorimetric reference data,103
+cold65wnl,1,colorimetric reference data,1
+colwf,2415,colorimetric reference data,105
+colwf.l,1978,colorimetric reference data,86
+kuo.a.col,5944,Kuo experiment,239
+kuo.a.vis,5975,Kuo experiment,239
+kuo.d65.col,5919,Kuo experiment,240
+kuo.d65.vis,6000,Kuo experiment,240
+kuo.tl84.col,5825,Kuo experiment,239
+kuo.tl84.vis,5975,Kuo experiment,239
+la.gg,2309,other,61
+la.gw,2309,other,61
+ld65.gg,3909,other,103
+ld65.gw,3909,other,103
+lmean.bb,3792,mean variant,100
+lmean.gb,3792,mean variant,100
+lmean.gg,3792,mean variant,100
+lmean.gw,3792,mean variant,100
+lmean.ww,3563,mean variant,94
+lwf.gg,3259,weighted fit,86
+lwf.gw,3259,weighted fit,86
+mean.35.p1,3760,mean appearance estimates,99
+mean.35.p2,3760,mean appearance estimates,99
+mean.35.p3,3765,mean appearance estimates,99
+mean.35.p4,3753,mean appearance estimates,99
+mean.35.p5,3614,mean appearance estimates,95
+mean.35.p6,1367,mean appearance estimates,36
+mean.p1,3750,mean appearance estimates,98
+mean.p10,3723,mean appearance estimates,98
+mean.p1t,3629,mean appearance estimates,95
+mean.p2,3727,mean appearance estimates,98
+mean.p3,3750,mean appearance estimates,98
+mean.p4,3750,mean appearance estimates,98
+mean.p5t,3691,mean appearance estimates,97
+mean.p6t,3570,mean appearance estimates,94
+mean.p7t,3532,mean appearance estimates,93
+mean.p8,3729,mean appearance estimates,98
+mean4.p1,1525,mean appearance estimates,40
+mean4.p10,1524,mean appearance estimates,40
+mean4.p11,1520,mean appearance estimates,40
+mean4.p12,1512,mean appearance estimates,40
+mean4.p2,1525,mean appearance estimates,40
+mean4.p3,1524,mean appearance estimates,40
+mean4.p4,1516,mean appearance estimates,40
+mean4.p5,1527,mean appearance estimates,40
+mean4.p6,1516,mean appearance estimates,40
+mean4.p7,1531,mean appearance estimates,40
+mean4.p8,1524,mean appearance estimates,40
+mean4.p9,1524,mean appearance estimates,40
+nla.gh,3987,non-linear mean appearance estimates,105
+nla.gl,3987,non-linear mean appearance estimates,105
+nld65.gh,3987,non-linear mean appearance estimates,105
+nld65.gl,3987,non-linear mean appearance estimates,105
+nlmean.bh,3987,non-linear mean appearance estimates,105
+nlmean.bl,3987,non-linear mean appearance estimates,105
+nlmean.gh,3987,non-linear mean appearance estimates,105
+nlmean.gl,3987,non-linear mean appearance estimates,105
+nlmean.wh,3987,non-linear mean appearance estimates,105
+nlmean.wl,3987,non-linear mean appearance estimates,105
+nlwf.gh,3987,weighted fit,105
+nlwf.gl,3987,weighted fit,105

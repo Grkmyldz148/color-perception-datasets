@@ -1,0 +1,39 @@
+name: Alder_1982_Ellipses
+full_name: Alder, Chaing, Chong, Coates, Khalili & Rigg (1982) chromaticity discrimination
+  ellipses
+schema: jnd_ellipses
+n_ellipses: 120
+by_illuminant:
+  D65: 81
+  A: 39
+illuminants:
+- D65
+- A
+type: JND chromaticity-discrimination ellipses under two illuminants
+is_jnd: true
+is_suprathreshold: false
+description: Chromaticity-discrimination ellipses measured by Alder, Chaing, Chong,
+  Coates, Khalili & Rigg (1982) at the Society of Dyers and Colourists' uniform-chromaticity-scale
+  study. Replicates the MacAdam 1942 methodology with a different observer pool and
+  reports ellipses under both Illuminant D65 and Illuminant A — useful for testing
+  whether a color space's small-difference geometry generalizes across illumination,
+  not just across chromaticity. Each row reports the ellipse center (x_c, y_c, Y),
+  the semi-major axis a, the semi-minor axis b (derived from the published a/b ratio),
+  and the orientation theta.
+notes:
+- Two illuminants (D65 and A) — filter by `illuminant` for a single condition. Comparing
+  D65 vs A ellipse fields tells you how well a chromatic adaptation transform preserves
+  discrimination performance.
+- Each ellipse summarizes n trials (the original `n` column in raw/table*.dat); 7–15
+  trials per center.
+- Semi-axes were published as `a×10^4` and `a/b` ratio; canonical csv stores a (already
+  divided by 10^4) and b (= a / ratio).
+sources:
+- paper: Alder, C., Chaing, K. P., Chong, T. F., Coates, E., Khalili, A. A. & Rigg,
+    B. (1982). Uniform Chromaticity Scales — New Experimental Data. Journal of the
+    Society of Dyers and Colourists 98, 14–20.
+- snapshot_source: coloria-dev/color-data on GitHub (community extraction of the published
+    tables).
+license: Underlying data published in 1982; extraction by coloria-dev. License at
+  the coloria-dev repo unspecified; included here under the academic-use convention.
+  Cite Alder et al. (1982).
