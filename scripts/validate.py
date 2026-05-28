@@ -163,6 +163,7 @@ def validate_jnd_ellipses(meta: dict, rows: list[dict]) -> list[str]:
     declared = meta.get("n_ellipses")
     if declared and declared != len(rows):
         errors.append(f"row count {len(rows)} != meta declared {declared}")
+    out_of_range = 0
     for i, r in enumerate(rows):
         try:
             x, y = float(r["x_c"]), float(r["y_c"])
@@ -170,12 +171,17 @@ def validate_jnd_ellipses(meta: dict, rows: list[dict]) -> list[str]:
         except (TypeError, ValueError, KeyError):
             errors.append(f"row {i}: missing or unparseable x_c/y_c/a/b")
             continue
-        if not (0 <= x <= 1 and 0 <= y <= 1):
-            errors.append(f"row {i}: chromaticity ({x}, {y}) outside [0,1]")
+        # Accept either CIE chromaticity [0,1] or DKL-style 2DW [-1,1]
+        if not (-1.0 <= x <= 1.0 and -1.0 <= y <= 1.0):
+            out_of_range += 1
+            if out_of_range <= 3:
+                errors.append(f"row {i}: coordinates ({x}, {y}) outside [-1,1]")
         if a <= 0 or b <= 0:
             errors.append(f"row {i}: ellipse semi-axes must be positive (a={a}, b={b})")
         if a < b - 1e-9:
             errors.append(f"row {i}: semi-major a={a} should be ≥ semi-minor b={b}")
+    if out_of_range > 3:
+        errors.append(f"… plus {out_of_range - 3} more out-of-range rows")
     return errors
 
 

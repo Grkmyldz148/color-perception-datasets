@@ -24,42 +24,55 @@
 <main>
 <div class="detail-header">
   <div class="crumbs"><a href="../">Datasets</a> / Hong_2025_Ellipsoids</div>
-  <h1>Hong et al. (2025) modern isoluminant color-discrimination ellipsoids (Brainard Lab, UPenn)</h1>
-  <p class="lede">modern replacement-class for MacAdam 1942 — Wishart Process ellipsoid fits in isoluminant plane</p>
+  <h1>Hong, Yoon, Yoo &amp; Brainard (2025) isoluminant JND ellipsoid grid</h1>
+  <p class="lede">modern dense JND ellipsoid grid (Wishart Process Psychophysical Model)</p>
   <div class="detail-tags"><span class="card-type" style="background:#dc262615;color:#dc2626"><span class="dot"></span>JND</span></div>
 </div>
 
 <div class="detail-grid">
   <div>
-    <h2>Description</h2><p>The modern descendant of MacAdam 1942: dense color-discrimination ellipsoids measured by Hong, Yoon, Yoo &amp; Brainard (2025) at UPenn using a 3AFC oddity task with adaptive psychophysics (AEPsych) on a calibrated display. ~6,000 adaptive + ~6,000 validation trials per observer × 8 color-normal observers, fitted with a Wishart Process Psychophysical Model that yields a smooth ellipsoid field across the isoluminant plane (rather than 25 isolated ellipses). Published in eLife 2025; code on GitHub, raw + organized data on OSF. The first JND-class dataset that fixes MacAdam 1942&#x27;s two biggest problems: (1) a single observer and (2) sparse sampling. Use this dataset to test whether your color space&#x27;s small-difference geometry generalizes beyond the historical 25 centers.</p>
+    <h2>Description</h2><p>Dense per-subject JND ellipsoid field fitted via the Wishart Process
+Psychophysical Model from Hong, Yoon, Yoo &amp; Brainard (eLife 2025).
+Eight color-normal observers completed ~12,000 trials each (mix of
+adaptive AEPsych + MOCS replications). The Wishart Process produces
+a SMOOTH 2-D field of 2x2 covariance matrices Σ(x, y) across the
+isoluminant plane (DKL-derived 2DW coordinates, range [-0.85, 0.85]).
+Each subject&#x27;s fit is a 103×103 grid of Σ, providing a JND ellipsoid
+at every point — replacing MacAdam 1942&#x27;s 25 ellipses with 10,609
+per observer.
+
+This is the modern direct descendant of MacAdam 1942: fixes both of
+MacAdam&#x27;s chief limitations — single observer + sparse sampling — and
+uses contemporary adaptive psychophysics + Bayesian smoothing.
+</p>
 
     <div class="download-block">
       <div class="info">
         <div class="name">hong_2025_ellipsoids.zip</div>
         <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
       </div>
-      <span class="size">188.4 KB</span>
+      <span class="size">2.7 MB</span>
       <a class="btn btn-primary" href="../downloads/hong_2025_ellipsoids.zip" download>Download</a>
     </div>
 
-    <h2>Notes</h2><ul class='notes-list'><li>★ The actual data lives on OSF (https://osf.io/k27js/) and is too large for this repo. raw/ contains only the dataset README.pdf and a pointer file with download instructions.</li><li>Wishart Process fits give a smooth ellipsoid field, not discrete ellipses — use the OSF &#x27;Organized data&#x27; folder for the model predictions, &#x27;Raw experimental data&#x27; for the trial-level data.</li><li>Adaptive psychophysics (AEPsych framework) means trial placements are non-uniform; standard JND comparisons against MacAdam 1942 require care.</li><li>8 color-normal observers — much smaller than WCS&#x27;s 24/lang but much larger than MacAdam&#x27;s 1. Each observer has individual ellipsoids + the paper reports a group-level fit.</li></ul>
+    <h2>Notes</h2><ul class='notes-list'><li>★ Each row gives a fitted ellipsoid as both the raw 2x2 covariance (sigma_xx, sigma_xy, sigma_yy) and the derived ellipse semi-axes (a, b) plus rotation theta_deg. Both representations are equivalent.</li><li>Grid coordinates (x, y) are in DKL-derived 2DW units, NOT CIELAB. Use the calibration matrices in raw/ (M_2DWToRGB, M_2DWToDKLPlane) to map to RGB or DKL.</li><li>Wishart Process smoothing means adjacent grid points are not independent. Don&#x27;t treat the 84,872 ellipses as 84,872 independent measurements; effective DOF per subject ≈ ~100.</li><li>Bootstrap iterations (120 per grid point) are NOT included in this canonical export to keep size reasonable. The original Zenodo CSV has all 120 bootstraps if you need confidence intervals.</li><li>★ This is the gold-standard JND dataset published in the project&#x27;s diagnostic era; supersedes MacAdam 1942 for isoluminant JND evaluation. MacAdam 1942 remains in the pool for historical comparison only.</li></ul>
 
     <h2>Sample rows</h2>
     <p>First 5 rows of <code>canonical.csv</code>:</p>
-    <div class='table-wrap'><table><thead><tr><th>filename</th><th>size_bytes</th><th>category</th><th>lines</th></tr></thead><tbody><tr><td>DATA_LOCATION.md</td><td>1082</td><td>OSF data pointer</td><td></td></tr><tr><td>README.pdf</td><td>332153</td><td>official dataset README</td><td></td></tr></tbody></table></div>
+    <div class='table-wrap'><table><thead><tr><th>ellipse_id</th><th>subject</th><th>x_c</th><th>y_c</th><th>sigma_xx</th><th>sigma_xy</th><th>sigma_yy</th><th>a</th><th>b</th><th>theta_deg</th><th>illuminant</th></tr></thead><tbody><tr><td>hong2025_sub1_000000</td><td>sub1</td><td>-0.85</td><td>-0.85</td><td>0.0012195</td><td>0.00056786</td><td>0.00105287</td><td>4.135365e-02</td><td>2.371172e-02</td><td>40.827</td><td>calibrated display</td></tr><tr><td>hong2025_sub1_000001</td><td>sub1</td><td>-0.83333333</td><td>-0.85</td><td>0.00122452</td><td>0.00056427</td><td>0.00102245</td><td>4.119137e-02</td><td>2.345722e-02</td><td>39.924</td><td>calibrated display</td></tr><tr><td>hong2025_sub1_000002</td><td>sub1</td><td>-0.81666667</td><td>-0.85</td><td>0.00122787</td><td>0.00056022</td><td>0.00099445</td><td>4.102935e-02</td><td>2.321448e-02</td><td>39.116</td><td>calibrated display</td></tr><tr><td>hong2025_sub1_000003</td><td>sub1</td><td>-0.8</td><td>-0.85</td><td>0.00122956</td><td>0.0005557</td><td>0.00096875</td><td>4.086503e-02</td><td>2.298606e-02</td><td>38.397</td><td>calibrated display</td></tr><tr><td>hong2025_sub1_000004</td><td>sub1</td><td>-0.78333333</td><td>-0.85</td><td>0.0012296</td><td>0.00055069</td><td>0.00094526</td><td>4.069614e-02</td><td>2.277464e-02</td><td>37.762</td><td>calibrated display</td></tr></tbody></table></div>
 
     
 
-    <h3>Raw files preserved</h3><div class='table-wrap'><table><thead><tr><th>File</th><th class='num'>Size</th></tr></thead><tbody><tr><td><code>raw/DATA_LOCATION.md</code></td><td class='num'>1.1 KB</td></tr><tr><td><code>raw/README.pdf</code></td><td class='num'>324.4 KB</td></tr></tbody></table></div>
+    <h3>Raw files preserved</h3><div class='table-wrap'><table><thead><tr><th>File</th><th class='num'>Size</th></tr></thead><tbody><tr><td><code>raw/M_2DWToDKLPlane_DELL_02242025_copy.csv</code></td><td class='num'>73 B</td></tr><tr><td><code>raw/M_2DWToRGB_DELL_02242025_copy.csv</code></td><td class='num'>55 B</td></tr><tr><td><code>raw/M_DKLPlaneTo2DW_DELL_02242025_copy.csv</code></td><td class='num'>71 B</td></tr><tr><td><code>raw/M_RGBTo2DW_DELL_02242025_copy.csv</code></td><td class='num'>103 B</td></tr><tr><td><code>raw/README.pdf</code></td><td class='num'>324.4 KB</td></tr><tr><td><code>raw/single_2d_colorDiscrimination_EAVC_4strats_new.ini</code></td><td class='num'>863 B</td></tr><tr><td><code>raw/single_4d_colorDiscrimination_EAVC_4strats_new.ini</code></td><td class='num'>1.0 KB</td></tr></tbody></table></div>
 
     <h2>Source publications</h2>
-    <div class="citation">Hong, F. F., Yoon, J., Yoo, Y. &amp; Brainard, D. H. (2025). Comprehensive characterization of color discrimination thresholds with a Wishart Process Psychophysical Model. eLife reviewed preprint 108943.</div><div class="citation">Snapshot: OSF project https://osf.io/k27js/ (CC-BY); code https://github.com/fh862/ellipsoids_eLife2025</div>
+    <div class="citation">Hong, F. F., Yoon, J., Yoo, Y. &amp; Brainard, D. H. (2025). Comprehensive characterization of color discrimination thresholds with a Wishart Process Psychophysical Model. eLife reviewed preprint 108943.</div>
   </div>
 
   <aside>
     <div class="aside-card">
       <h4>At a glance</h4>
-      <div class="aside-stat"><span class="k">Year</span><span class="v">2025</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">calibrated</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">compound_legacy</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">2</span></div><div class="aside-stat"><span class="k">Observers</span><span class="v">8</span></div><div class="aside-stat"><span class="k">JND data?</span><span class="v">yes</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">188.4 KB</span></div>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">2025</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">calibrated</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">jnd_ellipses</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">84,872</span></div><div class="aside-stat"><span class="k">JND data?</span><span class="v">yes</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">2.7 MB</span></div>
     </div>
   </aside>
 </div>
