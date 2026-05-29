@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>spcd_2023_photographic_color_difference · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / spcd_2023_photographic_color_difference</div>
+  <h1>spcd_2023_photographic_color_difference</h1>
+  <p class="lede"></p>
+  <div class="detail-tags"></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">spcd_2023_photographic_color_difference.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">892.9 KB</span>
+      <a class="btn btn-primary" href="../downloads/spcd_2023_photographic_color_difference.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>The actual IMAGE files are NOT in this CSV folder; they require separate download from Google Drive or Baidu Netdisk (large file, ~10+ GB)</li><li>Without the images, the scores alone are not directly usable for metric evaluation; they serve as labels for an image-pair dataset that the user must download separately</li><li>Cross-validation splits 1-10 exist in the CD-Flow repo; this folder only has fold 1. Other folds are at https://github.com/haoychen3/CD-Flow/tree/main/data/2 through /10</li><li>Each pair was rated by multiple observers in the original Wang 2023 experiment; the CSV scores are observer-averaged Δ_V</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>image_pair_id</th><th>image_1</th><th>image_2</th><th>n_observations</th><th>mean_perceptual_CD</th><th>split</th></tr></thead><tbody><tr><td>1</td><td>I0001_01_01.png</td><td>I0001_01_02.png</td><td>2</td><td>2.5403</td><td>train</td></tr><tr><td>2</td><td>I0001_01_01.png</td><td>I0001_01_03.png</td><td>2</td><td>3.7991</td><td>train</td></tr><tr><td>3</td><td>I0001_01_01.png</td><td>I0001_01_04.png</td><td>2</td><td>4.5906</td><td>train</td></tr><tr><td>4</td><td>I0001_01_01.png</td><td>I0001_01_05.png</td><td>2</td><td>5.8340</td><td>train</td></tr><tr><td>5</td><td>I0001_01_01.png</td><td>I0001_01_06.png</td><td>2</td><td>4.8853</td><td>train</td></tr></tbody></table></div>
+
+    
+
+    
+
+    <h2>Source publications</h2>
+    
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">—</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">mixed</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">—</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">30,000</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">892.9 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

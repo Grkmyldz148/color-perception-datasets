@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>koenderink_2026_3d_metric_field · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / koenderink_2026_3d_metric_field</div>
+  <h1>koenderink_2026_3d_metric_field</h1>
+  <p class="lede"></p>
+  <div class="detail-tags"></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">koenderink_2026_3d_metric_field.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">3.9 KB</span>
+      <a class="btn btn-primary" href="../downloads/koenderink_2026_3d_metric_field.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>This CSV contains the MEDIAN field across 8 observers (Appendix A2). Per-observer ellipsoid sets are NOT in this CSV. Contact authors or check bioRxiv supplementary if per-observer data is required for inter-observer variability analysis.</li><li>Scale factors are × 1000 for RGB (range 0-1000) and × 10^7 for Σ entries. Apply inverse scaling before use in formulas.</li><li>Σ is RAW symmetric positive-definite matrix; to obtain the standard ellipsoid representation use the eigendecomposition: Σ = U D U^T where D contains squared semi-axes.</li><li>Display assumed γ-encoded standard sRGB (per paper Appendix A1); for CIELAB or other space comparisons, transform RGB → display luminance → XYZ → target space.</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>center_id</th><th>R_x1000</th><th>G_x1000</th><th>B_x1000</th><th>Sigma_11_x1e7</th><th>Sigma_12_x1e7</th><th>Sigma_13_x1e7</th><th>Sigma_22_x1e7</th><th>Sigma_23_x1e7</th><th>Sigma_33_x1e7</th></tr></thead><tbody><tr><td>1</td><td>200</td><td>200</td><td>200</td><td>5921</td><td>1948</td><td>928</td><td>3886</td><td>1021</td><td>4749</td></tr><tr><td>2</td><td>200</td><td>200</td><td>500</td><td>9215</td><td>1360</td><td>4103</td><td>11861</td><td>1386</td><td>15525</td></tr><tr><td>3</td><td>200</td><td>200</td><td>800</td><td>21690</td><td>-3347</td><td>10627</td><td>48696</td><td>-3215</td><td>36789</td></tr><tr><td>4</td><td>200</td><td>500</td><td>200</td><td>35342</td><td>1900</td><td>2635</td><td>14007</td><td>3373</td><td>27777</td></tr><tr><td>5</td><td>200</td><td>500</td><td>500</td><td>24694</td><td>3463</td><td>1482</td><td>12425</td><td>5167</td><td>14643</td></tr></tbody></table></div>
+
+    
+
+    
+
+    <h2>Source publications</h2>
+    
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">—</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">mixed</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">[{&#x27;center_id&#x27;: &#x27;integer 1-35&#x27;}, {&#x27;R_x1000, G_x1000, B_x1000&#x27;: &#x27;RGB location of ellipsoid center (× 1000)&#x27;}, {&#x27;Sigma_11_x1e7&#x27;: &#x27;3×3 covariance matrix entry [0,0] (× 10^7)&#x27;}, {&#x27;Sigma_12_x1e7&#x27;: &#x27;covariance entry [0,1] = [1,0] (× 10^7)&#x27;}, {&#x27;Sigma_13_x1e7&#x27;: &#x27;covariance entry [0,2] = [2,0] (× 10^7)&#x27;}, {&#x27;Sigma_22_x1e7&#x27;: &#x27;covariance entry [1,1] (× 10^7)&#x27;}, {&#x27;Sigma_23_x1e7&#x27;: &#x27;covariance entry [1,2] = [2,1] (× 10^7)&#x27;}, {&#x27;Sigma_33_x1e7&#x27;: &#x27;covariance entry [2,2] (× 10^7)&#x27;}]</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">35</span></div><div class="aside-stat"><span class="k">Observers</span><span class="v">8</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">3.9 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

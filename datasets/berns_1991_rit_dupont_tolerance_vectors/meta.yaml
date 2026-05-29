@@ -74,7 +74,7 @@ vector_directions:
 schema:
   - color_center: name of the color center (1 of 19)
   - vector_direction: A | B | C | D | E | F | G | H | I
-  - phase: "I" (phase I observations) or "II" (phase II observations)
+  - phase: '"I" (phase I observations) or "II" (phase II observations)'
   - T50: median tolerance — the color difference (ΔE*ab) judged equally often greater or less than the anchor pair
   - LFL: lower fiducial limit (95% confidence lower bound on T50)
   - UFL: upper fiducial limit (95% confidence upper bound on T50)

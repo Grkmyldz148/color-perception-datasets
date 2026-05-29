@@ -63,7 +63,7 @@ schema_canonical:
   - b_star_sd: SD of b*
 
 schema_local_skin_color_DE:
-  - comparison: "vs_average_pixel" or "vs_matched_color"
+  - comparison: '"vs_average_pixel" or "vs_matched_color"'
   - population: Overall | CA | CN
   - Forehead, Cheek, Nose, Chin, Periorbital: ΔE*ab values
 

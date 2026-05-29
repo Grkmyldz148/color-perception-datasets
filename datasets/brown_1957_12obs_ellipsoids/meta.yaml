@@ -57,7 +57,7 @@ cross_section:
 schema:
   - center_id: integer 1-22, identifies the chromatic test center
   - viewing_field_deg: 10 or 2 (only center 13 has both)
-  - averaging: "straight" or "weighted"
+  - averaging: '"straight" or "weighted"'
   - x_0, y_0: CIE 1931 chromaticity of test center
   - Y_0_ftL: luminance of test center in foot-lamberts
   - g11_x1e4, g12_x1e4, g22_x1e4, g23_x1e4, g33_x1e4, g13_x1e4: ellipsoid coefficients × 10^4

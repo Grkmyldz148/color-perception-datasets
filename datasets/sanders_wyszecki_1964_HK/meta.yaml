@@ -55,10 +55,10 @@ coord_system:
   chromaticity: "CIE 1964 10° supplementary observer (x_10, y_10)"
 
 schema:
-  - stimulus_id: full stimulus name like "601/1" or "556B/3"
+  - stimulus_id: 'full stimulus name like "601/1" or "556B/3"'
   - wavelength_nm: integer wavelength of series in nm
   - index: integer position within series (1 closest to white)
-  - direction: "positive" (toward green/yellow gamut boundary) or "negative" (toward purple)
+  - direction: '"positive" (toward green/yellow gamut boundary) or "negative" (toward purple)'
   - x10, y10: CIE 1964 10° chromaticity coordinates
   - BL_ratio_mean: mean Brightness/Luminance ratio across 20 observers
 
