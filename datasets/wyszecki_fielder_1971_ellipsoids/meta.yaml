@@ -1,0 +1,94 @@
+name: wyszecki_fielder_1971_ellipsoids
+title: "Wyszecki & Fielder (1971) Color-Matching Ellipsoids"
+short_description: >
+  28 chromatic test centers × 3 expert observers (GF, AR, GW) measured with the
+  Wyszecki 7-field bipartite colorimeter (1.3° vs 4° fields, 40° white surround,
+  Y0 = 12 cd/m^2). Provides 3-D color-matching ellipsoid coefficients in
+  (x, y, l3) space — the most carefully calibrated normal-trichromat ellipsoid
+  dataset before modern wishart-process work.
+
+citation: >
+  Wyszecki, G., & Fielder, G. H. (1971). New color-matching ellipses.
+  Journal of the Optical Society of America, 61(9), 1135-1152.
+  https://doi.org/10.1364/JOSA.61.001135
+
+source_book: >
+  Wyszecki, G., & Stiles, W. S. (1982). Color Science: Concepts and Methods,
+  Quantitative Data and Formulae (2nd ed.). New York: Wiley.
+  Table I(5.4.3), pp. 801-803 (Appendix). Transcribed from PDF pages 823-825.
+
+provenance:
+  extraction_method: "Tesseract 5.5.0 OCR on 400 DPI rendered pages + manual cross-check"
+  extraction_date: 2026-05-29
+  source_pdf: color.pdf (Wyszecki-Stiles 1982 2nd ed)
+  verification_status: "verified — all 84 rows manually re-checked against high-res renders of Wyszecki-Stiles (1982) Appendix Table I(5.4.3) on 2026-05-29. 0 errors found."
+  known_caveats:
+    - "Footer states third coord l_3 = 0.2 * log10(Y_0) = 0.2156 (constant, L_0 = Y_0 = 12 cd/m^2 for all 28 test centers)."
+
+n_test_centers: 28
+n_observers: 3
+n_ellipsoids: 84
+observers:
+  - id: GF
+    full_name: G. H. Fielder (NRC Canada)
+  - id: AR
+    full_name: A. R. Robertson (NRC Canada)
+  - id: GW
+    full_name: G. Wyszecki (NRC Canada)
+
+experiment:
+  apparatus: "Wyszecki 7-field bipartite colorimeter"
+  field_geometry: "1.3 deg test field vs 4 deg comparison field"
+  surround: "40 deg white surround"
+  luminance: "Y_0 = 12 cd/m^2 (constant across all 28 test centers)"
+  primaries: "tungsten + filters; spectrally identical match required"
+  task: "small color-difference matching (suprathreshold)"
+  n_matches_per_ellipsoid: "30-90 (see n_obs_points column)"
+
+coord_system:
+  chromaticity: "CIE 1931 (x, y)"
+  luminance_coord: "l_3 = 0.2 * log10(Y_0), constant = 0.2156"
+  ellipsoid_equation: |
+    (ds)^2 = g11*(dx)^2 + 2*g12*(dx)(dy) + g22*(dy)^2 + 2*g13*(dx)(dl_3) + 2*g23*(dy)(dl_3) + g33*(dl_3)^2
+  ellipsoid_normalization: "g coefficients in CSV are stored as integer × 10^-2 (multiply column by 0.01 to get actual g_ij)"
+
+schema:
+  - center_id: integer 1-28, identifies the test color center
+  - observer: GF | AR | GW
+  - x_0, y_0: CIE 1931 chromaticity of test center
+  - g11_x1e2, g12_x1e2, g22_x1e2, g23_x1e2, g33_x1e2, g13_x1e2: ellipsoid coefficients × 10^-2
+  - theta_deg: orientation of cross-section ellipse (in (x,y) plane at dl_3 = 0) measured from positive x-axis, degrees
+  - a_x1e4, b_x1e4: cross-section ellipse semi-axes × 10^4
+  - a_over_b: cross-section ellipse axis ratio
+  - log10_y_a: log10 of cross-section minor semi-axis (companion diagnostic)
+  - n_obs_points: number of observed matches contributing to this ellipsoid
+
+usage_notes: >
+  Each row defines a 3-D color-matching ellipsoid in (x, y, l_3) space centered
+  at (x_0, y_0, 0.2156). The ellipsoid equation above gives ds^2 = 1 for the
+  "standard deviation locus" (single-σ). The cross-section ellipse columns
+  (theta, a, b, a/b) describe the orientation and axes of the (x, y)-projection
+  at fixed l_3 = 0.2156.
+
+  Inter-observer variability: ellipsoid coefficients vary substantially between
+  GF, AR, GW even at the same center (factor 2-3× typical). Per Wyszecki &
+  Fielder's analysis (1971, JOSA pp. 1141-1147), this variability cannot be
+  reduced to instrumental noise — it reflects real observer-level differences
+  in metameric matches and small color-difference perception.
+
+license: "Public domain (data first published 1971 in JOSA; original measurements predate any modern publisher copyright on the analysis. Book reproduction in Wyszecki & Stiles 1982 is for reference; data itself is reportable scientific measurement.)"
+
+related_datasets:
+  - macadam1942 — 25 single-observer (PGN) ellipses
+  - brown_macadam_1949 — 38 stimuli × 2 observers (WRJB, DLM)
+  - brown_1957 — 22 centers × 12-observer averages
+  - luo_rigg_ellipses — modern 132-center ellipses
+  - hong_2025_ellipsoids — wishart process per-observer JND fields
+
+tags:
+  - jnd
+  - ellipsoids
+  - chromaticity
+  - 3D
+  - normal-trichromat
+  - classic-psychophysics

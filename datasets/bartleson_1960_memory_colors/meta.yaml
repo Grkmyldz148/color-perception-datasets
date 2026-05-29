@@ -1,0 +1,89 @@
+name: bartleson_1960_memory_colors
+title: "Bartleson (1960) Memory Colors of 10 Familiar Objects"
+short_description: >
+  Memory colors of ten familiar natural objects (red brick, green grass, dry grass,
+  blue sky, flesh, tan flesh, green foliage, evergreens, inland soil, beach sand)
+  determined by 50 observers choosing from 931 Munsell color patches. The first
+  large-scale memory color study and the historical predecessor to Smet et al. (2010).
+  Means in Munsell H/V/C and CIE tristimulus + chromaticity under Illuminants A and C.
+
+citation: >
+  Bartleson, C. J. (1960). Memory colors of familiar objects.
+  Journal of the Optical Society of America, 50(1), 73-77.
+  https://doi.org/10.1364/JOSA.50.000073
+
+source_pdf: "/Volumes/harici_ssd/color-space/bartleson1960.pdf — Tables I, II, III"
+
+provenance:
+  extraction_method: "Direct text extraction from JOSA paper Tables I, II, III"
+  extraction_date: 2026-05-29
+  verification_status: "verified — direct copy from publisher PDF, no OCR involved"
+
+n_memory_colors: 10
+n_observers: 50
+n_color_patches_available: 931 (Munsell chips on 7 mounts, 1×0.5 in each)
+
+experiment:
+  apparatus: "Munsell color chip array on cardboard mounts, value V=5 neutral background"
+  task: "Observers chose patches matching their memory of each familiar object"
+  illumination: "Daylight (approximating Illuminant C); Illuminant A specifications also computed"
+  munsell_hue_step_in_array: "2.5 hue steps between adjacent patches"
+
+coord_systems:
+  munsell:
+    description: "Original observer judgments in Munsell H/V/C — hue, value (lightness), chroma (saturation)"
+  CIE_A:
+    description: "CIE 1931 tristimulus + chromaticity values under Illuminant A (incandescent ~2856 K)"
+  CIE_C:
+    description: "CIE 1931 tristimulus + chromaticity values under Illuminant C (average daylight ~6774 K)"
+
+schema:
+  - memory_color: object name (10 categories)
+  - illuminant: "A" or "C"
+  - X, Y, Z: CIE 1931 tristimulus values (× 10000 in original table, scaled here)
+  - x, y: CIE 1931 chromaticity coordinates
+  - munsell_hue_mean: mean Munsell hue notation (e.g., "6.81R", "0.40G")
+  - munsell_chroma_mean: mean Munsell chroma (1-15 scale typical)
+  - munsell_value_mean: mean Munsell value (0-10 lightness scale)
+  - sigma_hue_steps: SD of hue choice in Munsell steps (1 step = 2.5 hue notation units)
+  - sigma_chroma: SD of chroma choice
+  - sigma_value: SD of value choice
+
+usage_notes: >
+  Bartleson's data is the OLDEST quantitative memory-color reference. Key
+  findings reproduced by later studies (Smet 2010, etc.):
+  - All 10 memory colors significantly differ from their "natural" object colors
+  - Memory colors tend to be MORE SATURATED and LIGHTER than natural colors
+  - The dominant chromatic attribute is amplified ("grass more green, bricks more red")
+  - Inter-observer variability is highest for "flesh" (8.21 hue sigma) and lowest for
+    achromatic-adjacent objects
+
+  For comparing with Smet et al. 2010:
+  - Bartleson uses 10 objects, Smet uses 10 (overlap: skin/flesh, foliage/grass)
+  - Bartleson is Munsell-anchored, Smet is IPT-anchored
+  - Bartleson's data is under Illuminant A or C; Smet's is under D65
+  - Convert via CAT02 chromatic adaptation for direct comparison
+
+  Bartleson + Smet together span 50 years of memory color research and provide
+  cross-validation that memory color is a stable perceptual phenomenon.
+
+caveats:
+  - "Original tristimulus values in the paper are scaled (e.g., 2871 represents X=0.2871). I've preserved the conventional decimal form."
+  - "Munsell mean hues use original Bartleson notation (e.g., '6.81R' = 6.81 in the Red sector). Some implementations expect 'R6.81' instead."
+  - "Sigma values are for Illuminant A specifications only (per original Table I); not separately reported for Illuminant C."
+
+license: "Public domain (1960 publication, copyright expired/lapsed)"
+
+related_datasets:
+  - smet_2010_memory_colors — modern 10-object IPT distributions (50 years later)
+  - munsell — Munsell renotation chips for direct lookup
+  - corresponding_colours — chromatic adaptation reference data
+
+tags:
+  - memory-colour
+  - munsell
+  - preferred-colour
+  - historical-baseline
+  - classic-psychophysics
+  - illuminant-A
+  - illuminant-C

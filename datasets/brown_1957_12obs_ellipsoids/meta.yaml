@@ -1,0 +1,94 @@
+name: brown_1957_12obs_ellipsoids
+title: "Brown (1957) Average Color-Matching Ellipsoids — Twelve Observers"
+short_description: >
+  22 chromatic test centers (one also at 2° viewing) averaged across 12 normal-trichromat
+  observers. Provides 3-D color-matching ellipsoid coefficients in (x, y, Y)-space.
+  For each center, both straight (unweighted) and inverse-variance weighted observer
+  averages are given. The first large-N psychophysical color-matching study and a
+  foundation reference for later JND ellipsoid databases.
+
+citation: >
+  Brown, W. R. J. (1957). Color discrimination of twelve observers.
+  Journal of the Optical Society of America, 47(2), 137-143.
+  https://doi.org/10.1364/JOSA.47.000137
+
+source_book: >
+  Wyszecki, G., & Stiles, W. S. (1982). Color Science: Concepts and Methods,
+  Quantitative Data and Formulae (2nd ed.). New York: Wiley.
+  Table II(5.4.2), pp. 799-800 (Appendix). Transcribed from PDF pages 821-822.
+
+provenance:
+  extraction_method: "Tesseract 5.5.0 OCR on 400 DPI rendered pages + manual cross-check"
+  extraction_date: 2026-05-29
+  source_pdf: color.pdf (Wyszecki-Stiles 1982 2nd ed)
+  verification_status: "verified — all 46 rows manually re-checked against high-res renders of Wyszecki-Stiles (1982) Appendix Table II(5.4.2) on 2026-05-29. 0 errors found."
+
+n_test_centers_unique_chromaticity: 22
+n_viewing_field_variants: 23  # 22 at 10°, 1 (#13) also at 2°
+n_averaging_methods: 2          # straight (unweighted), weighted (inverse variance)
+n_ellipsoid_rows: 46            # 23 configs × 2 averagings
+n_observers_averaged: 12
+
+experiment:
+  apparatus: "MacAdam binocular colorimeter"
+  field_geometry: "10° bipartite field (one center also at 2°)"
+  surround: "white"
+  luminance: "Y_0 in foot-lamberts (column Y_0_ftL); approx 3-6 ft-L = 10-20 cd/m^2"
+  primaries: "tungsten + filters; spectrally identical match required"
+  task: "trichromatic color matching standard deviation"
+  averaging:
+    straight: "unweighted mean of 12 observers' individual ellipsoids"
+    weighted: "inverse-variance weighted mean — observer-level confidence weights"
+
+coord_system:
+  chromaticity: "CIE 1931 (x, y)"
+  luminance_coord: "l = 0.2 * log10(Y), Y in foot-lamberts"
+  ellipsoid_equation: |
+    g_11*(Δx)^2 + 2*g_12*ΔxΔy + g_22*(Δy)^2 + 2*g_23*ΔyΔl + g_33*(Δl)^2 + 2*g_13*ΔxΔl = 1
+    where l = 0.2 * log10(Y), Δx = x - x_0, Δy = y - y_0, Δl = l - l_0
+  ellipsoid_normalization: "g coefficients in CSV are stored as g_ij × 10^4 (divide column by 10^4 to get actual g_ij)"
+
+cross_section:
+  description: "Ellipse formed by intersection of 3-D ellipsoid with plane ΔY = 0 (constant luminance)."
+  theta_deg: "Inclination of major semi-axis from positive x-axis, anticlockwise (degrees)"
+  a_x1e4: "Major semi-axis × 10^4 (in CIE xy units)"
+  b_x1e4: "Minor semi-axis × 10^4 (in CIE xy units)"
+
+schema:
+  - center_id: integer 1-22, identifies the chromatic test center
+  - viewing_field_deg: 10 or 2 (only center 13 has both)
+  - averaging: "straight" or "weighted"
+  - x_0, y_0: CIE 1931 chromaticity of test center
+  - Y_0_ftL: luminance of test center in foot-lamberts
+  - g11_x1e4, g12_x1e4, g22_x1e4, g23_x1e4, g33_x1e4, g13_x1e4: ellipsoid coefficients × 10^4
+  - theta_deg, a_x1e4, b_x1e4: cross-section ellipse parameters at ΔY = 0
+
+usage_notes: >
+  Brown (1957) is the first large-N (n=12) ellipsoid measurement and predates the
+  modern statistical wishart-process modeling by 60+ years. The straight-vs-weighted
+  averaging methods correspond to different assumptions about between-observer
+  variance — the weighted method assumes inverse-variance weights from individual
+  observer fits, while the straight method gives equal weight to each observer.
+
+  Brown's data is typically used as a 12-observer-average benchmark for:
+  - Cross-validating per-observer ellipsoid studies (MacAdam 1942, W-F 1971, Hong 2025)
+  - Testing claims about observer-population color-difference behavior
+  - Calibrating chromatic adaptation transforms
+
+license: "Public domain (1957 publication, copyright expired/lapsed; original Wyszecki & Stiles 1982 reproduction is for reference)"
+
+related_datasets:
+  - macadam1942 — 25 ellipses, single observer PGN
+  - brown_macadam_1949 — 38 stimuli × 2 observers (WRJB, DLM)
+  - wyszecki_fielder_1971 — 28 centers × 3 observers (GF, AR, GW)
+  - luo_rigg_ellipses — modern 132-center ellipses
+  - hong_2025_ellipsoids — wishart process per-observer JND fields
+
+tags:
+  - jnd
+  - ellipsoids
+  - chromaticity
+  - 3D
+  - 12-observer-average
+  - classic-psychophysics
+  - normal-trichromat

@@ -1,0 +1,116 @@
+name: natural_objects_2024_southern_cone_spectra
+title: "Bigogno et al. (2025) Spectral Reflectance of Natural Objects from the Southern Cone of South America"
+short_description: >
+  Spectral reflectance measurements of 532 natural objects (Plants, Animals,
+  Stones) from Northwestern Argentina, each measured at multiple incidence
+  angles. Wavelength range 400-1000 nm in 4 nm increments. The largest publicly
+  available spectral dataset of natural objects from the Southern hemisphere,
+  including 242 plant species, 63 animal taxa, and 60 rocky natural objects.
+
+  Particularly valuable because most spectral databases (Munsell, Kohonen,
+  Universities of Eastern Finland, etc.) are Northern hemisphere biased.
+  Includes spectra in the visible AND near-infrared range — useful for both
+  human color perception research AND for hyperspectral imaging applications.
+
+citation: >
+  Bigogno, V., Ulla, J., Bullrich, D., Magrelli, M. F., Cogo, A., De Magalhaes, G.,
+  De La Torre, M., Beckmann, F., Bauer, M., Acuña, F. J., Ricci, L. & Sara, D. (2025).
+  Spectral dataset of natural objects' reflectance from the Southern cone of South America.
+  Scientific Data (Nature) and figshare.
+  DOI: https://doi.org/10.6084/m9.figshare.25705380
+  Paper: https://www.nature.com/articles/s41597-025-04675-9
+
+provenance:
+  extraction_method: "Direct download from figshare; semicolon-delimited CSV converted to UTF-8 comma-delimited"
+  extraction_date: 2026-05-29
+  verification_status: "verified — direct download from authoritative source"
+  download_urls:
+    Plants: "https://ndownloader.figshare.com/files/51761975"
+    Animals: "https://ndownloader.figshare.com/files/51761978"
+    Stones: "https://ndownloader.figshare.com/files/51761981"
+    File_name_structure: "https://ndownloader.figshare.com/files/45997353"
+
+n_objects: 532
+breakdown:
+  Plants: "302 samples from 242 plant species"
+  Animals: "167 samples from 63 animal taxa"
+  Stones: "63 samples from 60 rocky natural objects"
+n_measurements_total: "~1580 (multiple angles per object)"
+collection_period: "June 2023 - October 2024"
+location: "Northwestern Argentina, Southern cone of South America"
+
+experiment:
+  apparatus: "Spectroradiometer (specific model in paper)"
+  wavelength_range: "400-1000 nm"
+  wavelength_step: "4 nm"
+  measurement_angles: "Multiple per object (0°, ±X°, etc.)"
+  reference_standard: "PTFE white reference"
+
+files:
+  - Plants.csv: "302 plant samples × spectra"
+  - Animals.csv: "167 animal samples × spectra"
+  - Stones.csv: "63 stone samples × spectra"
+  - File_name_structure.txt: "Naming convention for sample IDs"
+
+schema:
+  - File name: "Object code (e.g., 'Ba_JmimDBr')"
+  - Measurement date: "When the measurement was taken"
+  - Measurement angle: "0 degrees, or other angles"
+  - Main domain: "Plants | Animals | Stones"
+  - Secondary domain: "Barks (Ba), Leaves (Lf), Fruits (Fr), Feathers (Ft), etc."
+  - Object name: "Common or scientific name"
+  - Family, Genus, Species: "Taxonomic classification (for plants/animals)"
+  - Perceived patch color: "Subjective color description of the sample"
+  - Status: "Native | Naturalised | Exotic"
+  - Source [Global], Source [Argentina]: "Reference URLs"
+  - Other metadata
+  - "Reflectance values" — separate columns from 400 nm to 1000 nm at 4 nm steps (151 wavelength bins)
+
+usage_notes: >
+  This dataset enables important color science research:
+
+  1. NATURAL OBJECT COLOR GAMUT: Sample the full chromatic envelope of natural
+     scene reflectances, distinct from synthetic Munsell patches or manufactured
+     pigments.
+
+  2. EVOLUTIONARY COLOR: Animal/plant taxa give phylogenetic signal — for
+     studies of color evolution, mimicry, camouflage.
+
+  3. COLOR CONSTANCY VALIDATION: Use natural reflectances as ground truth
+     stimuli for testing color constancy / chromatic adaptation models.
+
+  4. SOUTHERN HEMISPHERE BIAS CORRECTION: Most spectral databases are Northern
+     hemisphere; this dataset reduces that bias for global color research.
+
+  5. NIR EXTENSION: 400-1000 nm range supports both visible AND near-infrared
+     analysis, useful for hyperspectral and remote sensing.
+
+  For perceptia/measurement space testing:
+  - Project these spectra through your space (via CIE 10° observer + D65)
+  - Test whether natural object color distribution is "uniform" in your space
+  - Compare with synthetic spectral distributions for evolutionary insight
+
+caveats:
+  - "Some non-UTF-8 characters in original CSV (Spanish accents in object names) — converted to UTF-8 with latin-1 source encoding."
+  - "Photographs of all samples are in 'Samples_Photographs.rar' on figshare — not included here due to size (~325 MB)."
+  - "Stones data is small (63 samples); for large-scale stone spectral studies, supplementary databases (e.g., USGS spectral library) may be needed."
+
+license: "CC BY 4.0 (figshare standard for Scientific Data publications)"
+
+related_datasets:
+  - cie_224_2017_tm30_ces — synthetic 99 CES samples for fidelity testing
+  - munsell — Munsell renotation chips (synthetic, traditional)
+
+tags:
+  - spectral
+  - reflectance
+  - natural-objects
+  - plants
+  - animals
+  - stones
+  - hyperspectral
+  - argentina
+  - southern-hemisphere
+  - taxonomy
+  - color-evolution
+  - modern-collection

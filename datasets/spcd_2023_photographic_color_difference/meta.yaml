@@ -1,0 +1,125 @@
+name: spcd_2023_photographic_color_difference
+title: "SPCD (Wang et al. 2023) — Smartphone Photographic Color Difference Dataset"
+short_description: >
+  30,000 image-pair perceptual color difference measurements on real-world
+  photographic images captured by smartphones. By far the LARGEST color
+  difference dataset in the pool — 1000+× larger than any traditional
+  uniformly-colored-patch dataset. Each pair has a human-rated perceptual
+  CD score reflecting the dominant difference in color appearance between
+  two photographs of the same scene.
+
+  This is the modern image-level extension of classical patch-based color
+  difference datasets (COMBVD, RIT-DuPont, BFD-P). Used to train and validate
+  deep learning color difference metrics (CD-Net, CD-Flow) that handle the
+  spatial complexity of natural images.
+
+citation: >
+  Wang, Z., Xu, K., Yang, Y., Dong, J., Gu, S., Xu, L., Fang, Y., & Ma, K. (2023).
+  Measuring perceptual color differences of smartphone photography.
+  IEEE Transactions on Pattern Analysis and Machine Intelligence.
+  https://doi.org/10.1109/TPAMI.2023.3257173
+  (IEEE Xplore: https://ieeexplore.ieee.org/document/9897498)
+
+  Companion CVPR paper for the deep metric:
+  Chen, H., Wang, Z., Yang, Y., Sun, Q., & Ma, K. (2023). Learning a Deep Color
+  Difference Metric for Photographic Images. CVPR 2023.
+
+source: >
+  Image scores: https://github.com/haoychen3/CD-Flow/tree/main/data/1
+  (CD-Flow repository, fold 1 train/val/test splits)
+
+  Full image data (requires separate download):
+  - Google Drive: https://drive.google.com/drive/folders/1Wh9fcDPviZcYWqCpXvnsJux1mnZ5WkCf
+  - Baidu Netdisk: https://pan.baidu.com/s/18bzu-qhpMW3PqLTlVdoZRQ?pwd=txeh
+
+provenance:
+  extraction_method: "Direct download from CD-Flow GitHub repo, then dedup/merge of train+val+test splits to canonical pair list"
+  extraction_date: 2026-05-29
+  verification_status: "verified — direct copy from authoritative source"
+
+n_unique_image_pairs: 30000
+n_unique_images: 15273
+n_observations_total: "37,003 (some pairs rated twice)"
+ratings_scale: "Perceptual color difference (Δ_V), continuous unit; sample mean = 4.67, range 0.93–16.22"
+images_scale: "Natural photographic images, smartphone-captured, ~1000×750 px"
+
+experiment:
+  apparatus: "Web-based crowdsourced rating interface"
+  task: "Observers rate the perceptual color difference between two photographs of the same scene captured under different conditions (e.g., different camera, lighting, day vs. night, different filters)"
+  scene_diversity: "Diverse: portraits, products, landscapes, food, etc. captured with different smartphone cameras and processing pipelines"
+  observation_pairs: "30000 unique pairs from 15273 source images"
+
+file_format:
+  canonical.csv:
+    description: "Unique image pairs with mean perceptual CD score"
+    columns:
+      - image_pair_id: integer 1-30000
+      - image_1: filename (e.g., I0001_01_01.png)
+      - image_2: filename (e.g., I0001_01_02.png)
+      - n_observations: number of times this pair was rated (1 or 2)
+      - mean_perceptual_CD: averaged Δ_V score
+      - split: train|val|test (which CV split this pair belongs to; fold 1 of 10 cross-validation folds)
+
+  train_split.csv, val_split.csv, test_split.csv, test_aligned_split.csv, test_notaligned_split.csv, train_balance_split.csv:
+    description: "Original CD-Flow split files for direct ML training/testing"
+    columns: "image_1, image_2, perceptual_CD (raw, may contain duplicates)"
+
+image_naming:
+  format: "I[XXXX]_[YY]_[ZZ].png"
+  XXXX: "Image set ID (4 digits)"
+  YY: "Capture condition ID (2 digits)"
+  ZZ: "Within-condition sample (2 digits)"
+  example: "I0001_01_03 = image set 1, condition 1, sample 3"
+
+usage_notes: >
+  This dataset is the **paradigm shift** in color science: from patch-based
+  uniform-color difference to natural-image perceptual color difference.
+
+  Why it matters:
+  - Classical CD datasets use flat uniformly-colored patches (e.g., BFD-P,
+    RIT-DuPont, Luo-Rigg). Color difference predictions from CIE94/CIE2000
+    correlate well with patch ratings.
+  - But in natural images, color differences are mediated by spatial context,
+    object identity, illumination structure. Patch-based metrics fail.
+  - SPCD provides 30K real-world pair ratings to develop and validate
+    image-aware color difference metrics.
+
+  For perceptia/measurement-space research:
+  - Use canonical.csv as the held-out perceptual CD benchmark
+  - Compare your measurement space's predicted ΔE on each pair against the
+    mean_perceptual_CD score
+  - Track STRESS, PLCC, SRCC like Chen et al. 2023 reported
+  - Note: this is IMAGE-level; you'll need a spatial pooling/aggregation
+    step to apply patch-trained metrics to image pairs
+
+  Reference performance on SPCD test set (per Chen 2023 Table 1):
+  - CIE94: STRESS 21.8, PLCC 0.811, SRCC 0.796
+  - CIEDE2000: STRESS 21.0, PLCC 0.821, SRCC 0.804
+  - CIEDE2000-based image: STRESS 20.5, PLCC 0.830, SRCC 0.815
+  - CD-Net (Wang 2023): STRESS 19.3, PLCC 0.853, SRCC 0.841
+  - CD-Flow (Chen 2023, current SOTA): STRESS 18.5, PLCC 0.871, SRCC 0.865
+
+caveats:
+  - "The actual IMAGE files are NOT in this CSV folder; they require separate download from Google Drive or Baidu Netdisk (large file, ~10+ GB)"
+  - "Without the images, the scores alone are not directly usable for metric evaluation; they serve as labels for an image-pair dataset that the user must download separately"
+  - "Cross-validation splits 1-10 exist in the CD-Flow repo; this folder only has fold 1. Other folds are at https://github.com/haoychen3/CD-Flow/tree/main/data/2 through /10"
+  - "Each pair was rated by multiple observers in the original Wang 2023 experiment; the CSV scores are observer-averaged Δ_V"
+
+license: "Research-only access. The published score data is available under fair use for academic research. Cite Wang et al. 2023 IEEE TPAMI for any use."
+
+related_datasets:
+  - combvd — classic uniformly-colored patch ΔE (BFD-P + LEEDS + RIT-DuPont + Witt)
+  - he2022 — moderate-size suprathreshold patch ΔE
+  - helmlabfb — modern crowdsourced patch ΔE
+
+tags:
+  - color-difference
+  - photographic-images
+  - smartphone
+  - large-scale
+  - deep-learning
+  - natural-images
+  - perceptual-cd
+  - image-quality
+  - cd-flow
+  - cd-net

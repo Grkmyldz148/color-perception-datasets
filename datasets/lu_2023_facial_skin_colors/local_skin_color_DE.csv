@@ -1,0 +1,7 @@
+comparison,population,Forehead,Cheek,Nose,Chin,Periorbital
+vs_average_pixel,Overall,3.22,4.82,3.55,2.39,5.11
+vs_average_pixel,CA,3.88,3.67,3.98,2.25,6.63
+vs_average_pixel,CN,2.56,5.97,3.12,2.53,3.60
+vs_matched_color,Overall,2.09,3.31,5.23,3.76,7.89
+vs_matched_color,CA,1.48,2.79,6.25,3.78,9.41
+vs_matched_color,CN,2.70,3.83,4.22,3.74,6.36

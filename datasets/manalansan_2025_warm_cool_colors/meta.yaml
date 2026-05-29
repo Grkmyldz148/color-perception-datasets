@@ -1,0 +1,113 @@
+name: manalansan_2025_warm_cool_colors
+title: "Manalansan, Whitehead & Webster (2025) Warm-Cool Color Dimension Locations"
+short_description: >
+  Hue angles for warm-cool color category peaks and boundaries, plus unique
+  (red, green, yellow, blue) and binary (orange, purple, blue-green, yellow-green)
+  hue loci, measured across 3 luminance levels (10, 20, 40 cd/m^2) by 19
+  observers (out of 25 total). The first systematic mapping of the warm-cool
+  perceptual dimension and its relation to cardinal LvsM/SvsLM axes, opponent
+  red-green/blue-yellow axes, and CIELAB chroma.
+
+  Settles a long-standing question: warm-cool is a real perceptual dimension
+  (not just an aesthetic association), aligned with an orangish-red to
+  greenish-blue axis intermediate to both cardinal and red-green/blue-yellow
+  axes. Peak warm/cool locations track CIELAB chroma maxima, not chroma minima.
+
+citation: >
+  Manalansan, J., Whitehead, L. A., & Webster, M. A. (2025).
+  Warm versus cool colors and their relation to color perception.
+  Journal of Vision, 25(4), 13.
+  https://doi.org/10.1167/jov.25.4.13
+
+source_pdf: "/Volumes/harici_ssd/color-space/manalansan2025.pdf — Tables 1, 2, 3"
+
+provenance:
+  extraction_method: "Direct text extraction from JoV paper PDF Tables 1-3"
+  extraction_date: 2026-05-29
+  verification_status: "verified — direct copy from publisher PDF"
+
+n_observers_included: 19
+n_observers_total: 25
+n_hue_angles: 36
+n_luminance_levels: 3
+
+experiment:
+  apparatus: "Calibrated CRT display (linearized gun outputs) with chromaticity equivalent to illuminant C"
+  stimulus: "10° circular patches of varying chromatic angle, fixed chromatic contrast"
+  task_1: "Warm-cool rating: 7-point scale (very cold to very warm) for each of 36 hue angles × 3 luminance levels × 4 repetitions"
+  task_2: "Unique hue selection: choose angle for purest red, green, yellow, blue (only at 20 cd/m^2)"
+  task_3: "Binary hue selection: choose angle for prototypical orange, purple, blue-green, yellow-green"
+  color_space: "Cone-opponent (LvsM × SvsLM) scaled to perceived chromatic equality"
+  background_luminance: 100 cd/m^2 neutral
+
+files:
+  - canonical.csv: "Mean hue angles + SD for warm-cool peaks/boundaries and 8 hue loci"
+  - correlations_across_luminance.csv: "Stability of warm-cool dimension across the 3 luminances (Table 2)"
+  - correlations_within_luminance.csv: "Independence of warm/cool/boundary measurements (Table 3)"
+
+coord_system:
+  primary: "Hue angle in cone-opponent space (LvsM, SvsLM) — degrees, where 0° = +LvsM (red-purple direction), 90° = +S (blue), etc."
+  conversion_to_CIELAB: "Authors find the warm-cool peaks align closely with CIELAB chroma peaks — see paper Figure 7 and 8 for stimulus mapping"
+
+schema_canonical:
+  - measurement: name of measured quantity (Warm_peak, Cool_peak, Boundary_1, Boundary_2, or hue name)
+  - luminance_cd_m2: 10, 20, or 40 cd/m^2
+  - mean_hue_angle_deg: mean across observers in degrees
+  - sd_hue_angle_deg: standard deviation in degrees
+  - category: "warm_cool", "unique_hue", or "binary_hue"
+
+usage_notes: >
+  Key findings from Manalansan-Whitehead-Webster 2025:
+
+  Warm-cool axis location:
+  - Warm peak: ~340° (orangish-red, slightly redder than +LvsM pole)
+  - Cool peak: ~145° (greenish-blue, slightly bluer than -LvsM pole)
+  - Warm-cool boundary 1: ~58° (between red and yellow)
+  - Warm-cool boundary 2: ~252° (between green and blue)
+
+  Stability across luminance:
+  - Warm peak SD: 25-28° (high inter-observer variability)
+  - Cool peak SD: 30-36°
+  - But strong correlations across luminance for warm peak (~0.93)
+  - Boundary 2 less stable across luminance
+
+  Relation to other categories:
+  - Warm peak ≈ Red unique hue location (correlated)
+  - Cool peak ≈ Blue unique hue location (correlated)
+  - But warm/cool varies INDEPENDENTLY (not yoked, just like red-green
+    and blue-yellow are independent processes)
+
+  Relation to cardinal axes (LvsM, SvsLM):
+  - Warm-cool axis is NOT aligned with cardinal axes
+  - Significantly different from +LvsM, +S poles (t > 2.4, p < 0.025)
+  - Suggests warm-cool is encoded by higher-order color mechanisms
+
+  Implications for measurement space research:
+  - A perceptually uniform color space should have the warm-cool axis
+    as a natural axis, not require rotation
+  - The warm peak (~340°) and cool peak (~145°) ≠ red/blue cardinal
+  - This affects metrics that assume cardinal-aligned uniform color space
+
+caveats:
+  - "Per-observer data NOT in this CSV — would require digitizing Figure 4 (representative observers shown)"
+  - "Full 36-hue × 19-observer × 3-luminance × 4-rep data is in journal supplementary materials (not included)"
+  - "Hue angles use the Webster-style cone-opponent definition (LvsM, SvsLM) — different from DKL angle conventions used in some other studies"
+
+license: "Open Access (CC BY 4.0) per Journal of Vision (ARVO) open-access policy"
+
+related_datasets:
+  - hung_berns — perceived hue uniformity reference
+  - ebner_fairchild — constant-hue surface mapping
+  - smet_2010_memory_colors — memory color dimensions
+  - hong_2025_ellipsoids — modern JND ellipsoids
+
+tags:
+  - warm-cool
+  - hue-perception
+  - color-category
+  - opponent-color
+  - cone-opponent
+  - cielab
+  - cardinal-axes
+  - modern-psychophysics
+  - webster

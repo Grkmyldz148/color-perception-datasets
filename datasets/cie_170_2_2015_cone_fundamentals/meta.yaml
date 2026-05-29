@@ -1,0 +1,100 @@
+name: cie_170_2_2015_cone_fundamentals
+title: "CIE 170-2:2015 / Stockman-Sharpe (2000) Cone Fundamentals (2° and 10°)"
+short_description: >
+  Human cone spectral sensitivities (L, M, S photoreceptor responses) derived
+  from physiological measurements by Stockman & Sharpe (2000). Used as the
+  basis for CIE 170-1:2006 (2° observer) and CIE 170-2:2015 (10° observer),
+  the modern physiologically-relevant alternative to the 1931 CIE Standard
+  Observer color matching functions.
+
+citation: >
+  Stockman, A., & Sharpe, L. T. (2000). The spectral sensitivities of the
+  middle- and long-wavelength-sensitive cones derived from measurements in
+  observers of known genotype. Vision Research, 40(13), 1711-1737.
+  https://doi.org/10.1016/S0042-6989(00)00021-3
+
+  CIE 170-1:2006. Fundamental chromaticity diagram with physiological axes —
+  Part 1. International Commission on Illumination.
+
+  CIE 170-2:2015. Fundamental chromaticity diagram with physiological axes —
+  Part 2: Spectral luminous efficiency functions and chromaticity diagrams.
+
+source: >
+  - Files linssXX.csv: Color and Vision Research Laboratory (CVRL)
+    http://cvrl.ucl.ac.uk/cones.htm
+  - File cie_cfb_stv_10deg_official.csv: Official CIE publication via
+    https://files.cie.co.at/CIE_cfb_stv_10deg.csv
+
+provenance:
+  extraction_method: "Direct download from authoritative scientific archives"
+  extraction_date: 2026-05-29
+  verification_status: "verified — multiple authoritative sources cross-check"
+
+files:
+  - filename: linss2_10e_1nm.csv
+    description: "Stockman-Sharpe 2-deg fundamentals based on Stiles-Burch 10-deg CMFs (adjusted to 2-deg). Linear energy units, 1 nm step."
+    columns: "wavelength_nm, L(λ), M(λ), S(λ)"
+    wavelength_range: "390-830 nm"
+
+  - filename: linss10e_1nm.csv
+    description: "Stockman-Sharpe 10-deg fundamentals. Linear energy units, 1 nm step."
+    columns: "wavelength_nm, L(λ), M(λ), S(λ)"
+    wavelength_range: "390-830 nm"
+
+  - filename: linss2_10e_5nm.csv
+    description: "Same as linss2_10e_1nm.csv but at 5 nm step (smaller file for legacy applications)"
+
+  - filename: linss10e_5nm.csv
+    description: "Same as linss10e_1nm.csv but at 5 nm step"
+
+  - filename: cie_cfb_stv_10deg_official.csv
+    description: "Official CIE-distributed 10-deg cone fundamentals from files.cie.co.at"
+    columns: "wavelength_nm, L(λ), M(λ), S(λ)"
+    wavelength_range: "390-830 nm"
+    note: "Should be numerically equivalent to linss10e_1nm.csv (both derive from Stockman-Sharpe 2000)"
+
+usage_notes: >
+  Cone fundamentals are the foundation for:
+  - Modern (CAM02, CAM16, CIECAM-style) color appearance models
+  - LMS color space transformations (DKL, OKLab, IPT)
+  - Color vision deficiency simulations
+  - Physiologically-meaningful color difference metrics
+  - Hyperspectral and multispectral imaging analysis
+
+  Compared to the CIE 1931 2° Standard Observer color matching functions:
+  - CIE 1931 was measured psychophysically in the 1920s with ~17 observers
+  - CIE 170-1/170-2 is derived from cone-level measurements with known
+    genetic profiles (>>1000 observers indirectly)
+  - The "S" cone has lower peak wavelength in Stockman-Sharpe (~445 nm vs
+    ~440 nm in older CIE 1964 derivation)
+  - Suitable as input to CAT02 chromatic adaptation when paired with the
+    matching primaries
+
+  CIE 170-1:2006 covers the 2-deg observer with fovea-typical observation
+  (smaller field with central fixation).
+  CIE 170-2:2015 covers the 10-deg observer for typical extended-stimulus
+  observation (paint, fabric, full chromatic surfaces).
+
+cone_normalization:
+  - "L (long-wavelength cone): peaks around 565 nm"
+  - "M (medium-wavelength cone): peaks around 535 nm"
+  - "S (short-wavelength cone): peaks around 445 nm"
+  - "Linear energy units (linss prefix): L,M,S normalized such that sum equals luminous efficiency"
+  - "Log quantal units (logssquantal prefix, not included here): used in some legacy applications"
+
+license: >
+  Stockman & Sharpe (2000) data is publicly distributed by CVRL and CIE for
+  scientific use. CIE 170-1/170-2 standards documents are paywalled, but the
+  underlying numerical data is reproducible from CVRL and CIE web archives.
+
+related_datasets:
+  - asano_observers — observer CMF databases incorporating cone variations
+
+tags:
+  - cone-fundamentals
+  - stockman-sharpe
+  - cmf
+  - physiological
+  - cie-170
+  - lms
+  - color-matching-functions

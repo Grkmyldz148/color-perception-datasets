@@ -1,0 +1,108 @@
+name: smet_2010_memory_colors
+title: "Smet et al. (2010/2011) Memory Colours of 10 Familiar Objects in IPT Space"
+short_description: >
+  Memory-colour centres and similarity-distribution parameters for 10 familiar
+  natural and man-made objects (green apple, ripe banana, orange, dried lavender,
+  Smurf figurine, strawberry yoghurt, sliced cucumber, cauliflower, Caucasian
+  skin hand, Munsell N4 grey sphere) in IPT colour space. Each object is
+  characterized by a 2D Gaussian similarity distribution in (P, T) coordinates,
+  parameterized by (a3, a4) for the centre and (a5, a6, a7) for the shape.
+
+  These are the canonical reference distributions for Smet's memory-colour
+  quality metric (Sa), widely used to evaluate the colour rendering quality of
+  light sources beyond CIE Ra. The distributions were fit from ~250 observer
+  ratings of similarity between rendered chromaticities and the observer's
+  internal memory of each object.
+
+citation: >
+  Smet, K. A. G., Ryckaert, W. R., Pointer, M. R., Deconinck, G., & Hanselaer, P. (2010).
+  Memory colours and colour quality evaluation of conventional and solid-state lamps.
+  Optics Express, 18(25), 26229-26244.
+  https://doi.org/10.1364/OE.18.026229
+
+source_pdf: "/Volumes/harici_ssd/color-space/smet2010_memory.pdf — Table 1 (p. 26233)"
+
+provenance:
+  extraction_method: "Direct text extraction from Optics Express paper Table 1"
+  extraction_date: 2026-05-29
+  verification_status: "verified — direct copy from publisher PDF Table 1, no OCR involved"
+
+n_objects: 10
+n_observers_used_to_fit: "approximately 250 (per Smet et al. 2009 [25])"
+n_chromaticity_samples_per_object: "approximately 100"
+
+experiment:
+  apparatus: "Spectrally-calibrated reflective object panel under multiple light sources"
+  task: "5-point similarity rating between perceived object colour and observer's memory of the object"
+  reference_publications:
+    - "Smet et al. 2009 (Color Res. Appl.) — original observer data"
+    - "Smet et al. 2010 (Opt. Express) — distribution fits and Sa metric definition"
+
+coord_system:
+  space: "IPT colour space (Ebner & Fairchild 1998)"
+  white_point: "Illuminant D65"
+  scope: "Memory colours are 2D chromaticity (P, T) at constant lightness I; assumed to be at the natural lightness of each object."
+
+memory_color_model:
+  description: |
+    For each object i, the similarity of a test chromaticity (P, T) to the
+    object's memory colour is given by a 2D Gaussian:
+
+    S_i(P, T) = exp(-0.5 * [(X - a_i3)^T * M_i * (X - a_i4)])
+
+    where X = (P, T), M_i is a 2x2 symmetric positive-definite matrix defined by:
+
+    M_i = [[a_i5, a_i7],
+           [a_i7, a_i6]]
+
+  a3: "P-coordinate of memory colour centre"
+  a4: "T-coordinate of memory colour centre"
+  a5: "Diagonal P-axis shape coefficient (larger = tighter distribution along P)"
+  a6: "Diagonal T-axis shape coefficient"
+  a7: "Off-diagonal coefficient (orientation/correlation)"
+
+schema:
+  - object_name: human-readable name
+  - symbol: short code (e.g., S-ap for green apple) used in Smet's papers
+  - P_center: memory colour P-coordinate in IPT (≈ red-green opponent dimension)
+  - T_center: memory colour T-coordinate in IPT (≈ blue-yellow opponent dimension)
+  - a5_shape: diagonal P-axis shape parameter
+  - a6_size: diagonal T-axis size parameter
+  - a7_orientation: off-diagonal orientation/correlation parameter
+
+usage_notes: >
+  This dataset is the foundation of the memory-colour quality metric (Sa) used
+  for evaluating LED and other modern light sources. To assess a test light:
+
+  1. Render each of the 10 objects under the test source (using object
+     reflectance × source SPD × CIE 10° observer)
+  2. Apply CAT02 chromatic adaptation to D65
+  3. Convert to IPT
+  4. Evaluate each S_i(P, T) using the Gaussian formula
+  5. Sa = geometric mean of all 10 S_i values
+
+  Higher Sa = better match between rendered object colours and observers'
+  remembered/expected colours. Sa is found to correlate r=0.88 with
+  visual preference, significantly better than CIE Ra (r ~0.55).
+
+  In contrast to suprathreshold colour-difference datasets (COMBVD,
+  Wyszecki-Fielder, etc.), memory colours encode the OBSERVER'S INTERNAL
+  REFERENCE — they let us probe whether a colour space's "natural" or
+  "preferred" reproduction matches human perceptual expectations.
+
+license: "Open Access (CC BY) per Optics Express terms"
+
+related_datasets:
+  - hung_berns — perceived hue uniformity
+  - alman1989 — observer variability
+  - corresponding_colours — chromatic adaptation reference data
+  - wyszecki_1967_osa_tiles — heterochromatic brightness data
+
+tags:
+  - memory-colour
+  - quality-metric
+  - preferred-colour
+  - light-source-evaluation
+  - ipt
+  - classic-psychophysics
+  - cct-extension

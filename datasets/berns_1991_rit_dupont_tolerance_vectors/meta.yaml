@@ -1,0 +1,130 @@
+name: berns_1991_rit_dupont_tolerance_vectors
+title: "Berns et al. (1991) RIT-DuPont Suprathreshold Color-Difference Tolerance Vectors"
+short_description: >
+  156 color-difference tolerance vectors from the RIT-DuPont study, derived
+  from over 64000 color-difference judgments by 50+ observers (combined phases
+  I and II). 19 color centers × 7-14 vector directions each, with median
+  tolerance (T50), fiducial limits, eigenvectors, and L*a*b* center coordinates.
+
+  This is the SUMMARY (vector-level) form of the RIT-DuPont data. Pair-level
+  ΔE data is in the COMBVD dataset under the RIT-DuPont sub-dataset.
+
+citation: >
+  Berns, R. S., Alman, D. H., Reniff, L., Snyder, G. D., & Balonon-Rosen, M. R. (1991).
+  Visual determination of suprathreshold color-difference tolerances using probit analysis.
+  Color Research & Application, 16(5), 297-316.
+  https://doi.org/10.1002/col.5080160505
+
+source_pdf: "/Volumes/harici_ssd/color-space/berns1991.pdf — Table IV (Appendix, pp. 312-315)"
+
+provenance:
+  extraction_method: "Programmatic parsing of OCR text extracted via pdftotext, with manual fix for 4 rows missing LFL/UFL"
+  extraction_date: 2026-05-29
+  verification_status: "verified — 156 rows match paper statistics; all T50 values within reported LFL/UFL bounds (where reported); 4 rows with missing fiducial limits corrected"
+
+n_color_centers: 19
+n_vectors_total: 156
+n_observers: "50 in phase I + 50 in phase II (subset overlap)"
+
+experiment:
+  apparatus: "Specially fabricated probit-comparison apparatus (Macbeth SpectraLight light booth with controlled chromaticity samples)"
+  field_geometry: "Bipartite field of adjacent color patches"
+  illumination: "D65 simulator, 1000 lux"
+  task: "Pair-comparison probit analysis — observer judges whether the test pair has a greater or smaller color difference than the reference anchor pair"
+  reference_anchor_de: "1.0 CIELAB ΔE*ab"
+  experiment_phases:
+    - phase_I: "9 color centers, 45 vectors total, 5 vector directions (A-E) each"
+    - phase_II: "Additional vector directions (F-I) per center + new color centers"
+    - phase_II_S: "Supplementary observations on 1 color center to assess time effects"
+
+color_centers:
+  format: "Common color name from Kelly-Judd 1976 NBS color naming system"
+  list:
+    - "Moderate blue"
+    - "Moderate greenish blue"
+    - "Medium gray"
+    - "Moderate bluish green"
+    - "Light brown"
+    - "Grayish purple"
+    - "Dark reddish orange"
+    - "Moderate yellow"
+    - "Grayish yellow green"
+    - "Black"
+    - "Light bluish green"
+    - "Moderate reddish brown"
+    - "Dark bluish green"
+    - "Brilliant greenish blue"
+    - "Very dark red"
+    - "Moderate purplish pink"
+    - "Dark blue"
+    - "Light gray"
+    - "Strong orange yellow"
+
+vector_directions:
+  A: "lightness-only direction (along L*)"
+  B: "a* direction"
+  C: "b* direction"
+  D: "a*-b* diagonal (chromaticness 45°)"
+  E: "b*-a* anti-diagonal (chromaticness 135°)"
+  F: "L*-a* lightness+chromaticness diagonal"
+  G: "L*-a* anti-diagonal"
+  H: "L*-b* diagonal"
+  I: "L*-b* anti-diagonal"
+
+schema:
+  - color_center: name of the color center (1 of 19)
+  - vector_direction: A | B | C | D | E | F | G | H | I
+  - phase: "I" (phase I observations) or "II" (phase II observations)
+  - T50: median tolerance — the color difference (ΔE*ab) judged equally often greater or less than the anchor pair
+  - LFL: lower fiducial limit (95% confidence lower bound on T50)
+  - UFL: upper fiducial limit (95% confidence upper bound on T50)
+  - S: probit slope estimate (related to inter-observer disagreement)
+  - P_chisq: chi-square goodness-of-fit p-value
+  - L_star: CIELAB L* coordinate of color center
+  - a_star: CIELAB a* coordinate
+  - b_star: CIELAB b* coordinate
+  - delta_L: tolerance vector direction component on L* axis (first eigenvector)
+  - delta_a: tolerance vector direction component on a* axis
+  - delta_b: tolerance vector direction component on b* axis
+  - eigenvalue: first eigenvalue (∈ [0, 1], proxy for vector axis dominance)
+
+usage_notes: >
+  This dataset is the canonical RIT-DuPont suprathreshold tolerance reference.
+  Each row defines a 3-D color-difference vector with:
+  - Origin: (L*, a*, b*) center
+  - Direction: (ΔL*, Δa*, Δb*) first eigenvector
+  - Magnitude: T50 (with confidence bounds LFL, UFL)
+
+  For each color center, the 7-9 vectors span the 3-D L*a*b* tolerance ellipsoid,
+  permitting reconstruction of the tolerance ellipsoid via singular value
+  decomposition or covariance fitting.
+
+  Comparison with COMBVD's RIT-DuPont sub-dataset:
+  - COMBVD provides ~150 pair-level ΔE judgments per color center
+  - This vector-level table provides 7-9 aggregated median tolerances (T50)
+  - The Berns 1991 supplementary data (not in this CSV) has pair-level data
+  - Use COMBVD for ΔE training; use this table for tolerance ellipsoid analysis
+
+caveats:
+  - "Three rows (Moderate blue G, Dark reddish orange G, Light bluish green A, Dark bluish green H — all in phase II) lack fiducial limits because the maximum-likelihood estimator could not converge well. T50 and slope are still reported."
+  - "Row alignment is based on the documented color center order from the paper (Section 4 of Berns 1991). The 'Moderate bluish green' center has 14 vectors because both phase I and phase II measurements were performed for vectors A-E."
+  - "Negative S values (probit slope) indicate inconsistent observer responses."
+  - "P_chisq < 0.05 indicates poor fit of the probit model (e.g., heterogeneous response distributions)."
+
+license: "Public domain (1991 publication)"
+
+related_datasets:
+  - combvd — pair-level RIT-DuPont judgments within COMBVD's RIT_DuPont sub-dataset
+  - alman1989 — predecessor 3D tolerance ellipsoids
+  - wyszecki_fielder_1971_ellipsoids — classical 3D color-matching ellipsoids
+  - luo_rigg_ellipses — modern multi-source chromaticity ellipses
+
+tags:
+  - tolerance
+  - color-difference
+  - suprathreshold
+  - probit
+  - rit-dupont
+  - tolerance-vector
+  - cielab
+  - industrial-color-matching

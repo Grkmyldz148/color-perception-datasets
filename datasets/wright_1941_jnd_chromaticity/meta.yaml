@@ -1,0 +1,118 @@
+name: wright_1941_jnd_chromaticity
+title: "Wright (1941) Sensitivity of the Eye to Small Colour Differences — JND Chromaticity Steps"
+short_description: >
+  Just-noticeable chromaticity steps measured along 35+ lines on the CIE 1931
+  chromaticity diagram by W.D. Wright (author) plus 6 lines re-measured by 3
+  additional observers (H.V.W., R.A.L., T.-H.W.). The position l along each
+  line at which each step was measured, and the size of the step (delta_l)
+  in CIE chromaticity coordinates, define the "Wright dashes" — the principal
+  experimental basis for early uniform chromaticity scale development.
+
+citation: >
+  Wright, W. D. (1941). The sensitivity of the eye to small colour differences.
+  Proceedings of the Physical Society of London, 53(2), 93-112.
+  https://doi.org/10.1088/0959-5309/53/2/301
+
+source_pdf: "/Volumes/harici_ssd/color-space/wright1941.pdf — Tables 1-7 (pp. 109-111)"
+
+provenance:
+  extraction_method: "Visual transcription from 300+ DPI page renders of Wright 1941 PDF, with row-by-row verification pass"
+  extraction_date: 2026-05-29
+  verification_status: "verified-with-caveats — initial transcription had ~30 missing/incorrect cells across Tables 1, 5, 6; CSV was rebuilt from scratch with row-by-row reading of high-res page renders. Tables 1, 2, 3, 4, 5, 6, 7 + spectrum loci all transcribed. Some cells in dense P3-0.4x / P3-0.5x rows of Table 6 (author RUCS) remain low-confidence due to typeface artifacts in the 1941 typesetting; treat individual P3 RUCS rows as approximate."
+  errors_found_during_verification:
+    - "Many lines in Tables 1, 5, 6 originally truncated at l=0.30 or 0.40 when the published tables actually extended to l=0.50, 0.60, or 0.70"
+    - "Several spectrum-locus rows in Tables 2, 3 only captured the first 5-6 wavelengths instead of all 9 per row"
+    - "Table 6 (Author RUCS) row P1-0.60: original CSV had 5 entries; published table has 2 (l=0.05, 0.10)"
+    - "Multiple cells in 0.495-0.65 row across Tables 1, 5, 6 had position-misalignment errors"
+
+experiment:
+  apparatus: "Wright's trichromatic colorimeter (foveal 2° field, dark surround)"
+  observers:
+    - id: author
+      full_name: "W. D. Wright (Imperial College of Science and Technology, London)"
+      n_lines: 35
+    - id: HVW
+      full_name: "H. V. Walters"
+      n_lines: 5
+    - id: RAL
+      full_name: "R. A. Linfoot (uncertain initials)"
+      n_lines: 5
+    - id: THW
+      full_name: "T.-H. (likely Thomson, L. C., Wright's collaborator)"
+      n_lines: 5
+  task: "Bipartite-field matching: observer adjusted halves to differ by a constant small chromaticity step (slightly larger than JND) while keeping brightness equal"
+  retinal_illuminance: "~100 td"
+  visual_field: "2° foveal"
+  surround: "dark"
+
+cie_purple_endpoints:
+  description: "CIE 1931 coordinates of the three purple stimuli used as line endpoints (P1, P2, P3) in Wright's apparatus."
+  P1: "x=0.550, y=0.206, z=0.244"
+  P2: "x=0.395, y=0.155, z=0.450"
+  P3: "x=0.304, y=0.074, z=0.622"
+
+charts:
+  CIE: "CIE 1931 (x, y) chromaticity diagram"
+  RUCS: "Breckenridge-Schaub Rectangular Uniform Chromaticity Scale (1939) — Wright transformed his CIE results to test for uniformity improvement"
+
+line_id_conventions:
+  format: "ENDPOINT_A-ENDPOINT_B"
+  ENDPOINT_A: "Either a wavelength in micrometers (e.g., 0.46) or a purple point (P1, P2, P3)"
+  ENDPOINT_B: "Either a wavelength in micrometers (e.g., 0.65) or a purple point"
+  position: "Distance l along the line from the shorter-wavelength endpoint (or from the purple endpoint Pi for purple-to-wavelength lines), expressed as a fraction"
+  spectrum: "Special line_id; position is the wavelength itself (in micrometers); delta_step is the wavelength interval just-noticeable at that wavelength"
+
+schema:
+  - observer: author | HVW | RAL | THW | mean
+  - chart: CIE | RUCS
+  - line_id: identifier of the chromaticity line, e.g., "0.46-0.53", "P1-0.55", "spectrum"
+  - position: position l along the line (fraction 0-1) OR wavelength in μm (for spectrum)
+  - delta_step: just-noticeable chromaticity step size at that position
+
+usage_notes: >
+  Wright's data is the founding empirical evidence for the non-uniformity of the
+  CIE 1931 (x, y) chromaticity diagram. The dramatic variation in delta_step
+  values across the diagram (factor 10× between the "green" region and the
+  "bluish-purple" region) directly motivated the search for uniform color
+  spaces — leading to CIE 1976 u'v', CIELAB, OKLab, and modern measurement-space
+  research.
+
+  Each row represents one perceptually-equal chromaticity interval. The
+  per-observer tables (Tables 1-4 in Wright's original) can be used to assess
+  inter-observer variance; the mean tables (5, 7) give the canonical reference
+  curve.
+
+  The RUCS chart (Breckenridge-Schaub 1939) was an early uniform-chromaticity
+  attempt. Wright showed the steps are more uniform in RUCS than CIE 1931
+  but still vary substantially in the red corner — motivating later work
+  (MacAdam 1942, Brown-MacAdam 1949, etc.).
+
+  This dataset is THE original "Wright dashes" reproduced graphically in
+  Wyszecki-Stiles (1982) Fig. 1(7.10.5) but extracted here in numerical form
+  from the original 1941 paper.
+
+caveats:
+  - "Wright reports 35 lines tested by the author; this CSV transcribes the 33 published in Table 1 plus 18 transformed in Table 6 (some are subsets of the author's full 35-line set with auxiliary information lost in publication)."
+  - "Observer initials RAL and THW were not fully expanded in Wright's published acknowledgment; identified observers include H.V. Walters and L.C. Thomson per Wright's earlier collaborations."
+  - "The 'spectrum locus' rows are perceptually equal wavelength steps along the spectral curve itself (where l is the wavelength in micrometers, not a fractional position along a straight line)."
+  - "Some cells in Wright's original tables were blank or had auxiliary internal positions (e.g., P1-0.60 has a special l=0.15 point); these are preserved as additional rows in the CSV."
+  - "RUCS transformation was applied by Wright himself; the canonical CSV preserves both representations for direct comparison."
+
+license: "Public domain (1941 publication, copyright expired; original scientific data)"
+
+related_datasets:
+  - macadam1942 — 25 ellipses, single observer PGN
+  - brown_macadam_1949 — 38 stimuli × 2 observers
+  - wyszecki_fielder_1971 — 28 centers × 3 observers
+  - luo_rigg_ellipses — modern 132-center ellipses
+  - hong_2025_ellipsoids — wishart process per-observer JND fields
+
+tags:
+  - jnd
+  - chromaticity
+  - 1d-steps
+  - wavelength-discrimination
+  - classic-psychophysics
+  - normal-trichromat
+  - cie-1931
+  - uniform-chromaticity-scale

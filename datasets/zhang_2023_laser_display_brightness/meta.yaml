@@ -1,0 +1,91 @@
+name: zhang_2023_laser_display_brightness
+title: "Zhang et al. (2023) Wide-Gamut Laser Display Brightness Matching"
+short_description: >
+  Heterochromatic brightness matching of 30 highly-saturated color stimuli
+  against achromatic white on a BT.2020 wide-gamut laser projection display
+  by 16 observers. Modern (2023) extension of the classic Sanders-Wyszecki
+  (1964) and Wyszecki (1967) H-K studies — provides H-K effect data for
+  the much wider gamut achievable with laser display technology, including
+  stimuli outside CIE 1931 sRGB.
+
+citation: >
+  Zhang, S., He, X., Cui, J., Wang, B., & Zhang, M. (2023).
+  Brightness Prediction of Large Color Gamut Laser Display Devices.
+  Micromachines, 14(10), 1850.
+  https://doi.org/10.3390/mi14101850
+
+source: >
+  PubMed Central article PMC10609144
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC10609144/
+
+provenance:
+  extraction_method: "Direct text extraction from PMC HTML, Tables 2 and 3"
+  extraction_date: 2026-05-29
+  verification_status: "verified — direct HTML parsing"
+
+n_stimuli: 30
+n_observers: 16
+
+experiment:
+  apparatus: "Laser projection display (BT.2020 gamut coverage 67.91%)"
+  field_geometry: "Bipartite field"
+  reference_stimulus: "Achromatic white"
+  task: "Heterochromatic brightness matching — adjust reference brightness until equally bright to chromatic test"
+  display_chromaticity:
+    Red: "x=0.7077, y=0.2834"
+    Green: "x=0.105, y=0.8181"
+    Blue: "x=0.1547, y=0.0247"
+  bt2020_coverage_percent: 67.91
+
+coord_system:
+  chromaticity: "CIE 1931 (x, y) on the laser display"
+  luminance: "L in cd/m^2 (display-measured luminance)"
+
+schema:
+  canonical_csv:
+    - stimulus_id: integer 1-30
+    - L_cd_m2: stimulus luminance in cd/m^2 (the L Wyszecki refers to)
+    - x, y: CIE 1931 chromaticity of stimulus
+    - avg_perceived_brightness_cd_m2: mean of 16 observer brightness matches in cd/m^2
+  observer_cv_csv:
+    - observer_id: 1-16 + "mean" row
+    - cv_percent: coefficient of variation in % (lower = more consistent)
+
+usage_notes: >
+  This is the most modern H-K (Helmholtz-Kohlrausch) effect dataset in the pool.
+  Key findings:
+  - Most chromatic stimuli have perceived brightness 1.5-2.5× higher than their
+    luminance L (huge H-K effect)
+  - Mean observer CV = 15.9% (good agreement, similar to Wyszecki 1967 results)
+  - Authors find that no existing color appearance model (CAM02, CAM16) predicts
+    the H-K effect on wide gamut adequately — they propose a modified CAM16
+    correction.
+
+  For comparison with Sanders-Wyszecki 1964 (95 stimuli, 10° field):
+  - Zhang uses 30 stimuli on a much wider gamut (BT.2020 vs CIE 1931)
+  - Zhang at higher peak luminance (up to 189 cd/m^2 vs Wyszecki's 20 cd/m^2)
+  - Modern observers and display technology
+
+  Direct test ratio: avg_perceived_brightness / L approximates the B/L ratio
+  Sanders-Wyszecki uses. Values >2.5 indicate extreme H-K effect.
+
+caveats:
+  - "Stimulus 5 has L=189.2 cd/m^2 (much higher than others); the average brightness 209.76 reflects an unusual condition near the green gamut edge."
+  - "Per-observer brightness matches are NOT included in canonical.csv. Original supplementary data may contain the full 30 × 16 matrix; not accessible without paper supplementary download."
+
+license: "Open Access CC BY 4.0 (MDPI Micromachines)"
+
+related_datasets:
+  - sanders_wyszecki_1964_HK — 95 stimuli classic H-K data
+  - wyszecki_1967_osa_tiles — 43 OSA tile H-K
+  - smet_2010_memory_colors — modern preferred colour reference
+
+tags:
+  - helmholtz-kohlrausch
+  - brightness
+  - laser-display
+  - bt-2020
+  - wide-color-gamut
+  - hdr
+  - modern-psychophysics
+  - cam16
