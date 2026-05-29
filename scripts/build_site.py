@@ -1028,7 +1028,7 @@ def build() -> None:
         (DOCS / "datasets" / f"{slug}.html").write_text(page_subdir(m.get("name", slug), body, ""))
 
     # ----- About page -----
-    schemas_in_use = sorted({m.get("schema", "").split("+")[0].split("_with_")[0].strip() for m in datasets if m.get("schema")})
+    schemas_in_use = sorted({m.get("schema", "").split("+")[0].split("_with_")[0].strip() for m in datasets if m.get("schema") and isinstance(m.get("schema"), str)})
     about_body = f"""<section class="hero">
   <span class="eyebrow">About</span>
   <h1>Why this pool exists.</h1>

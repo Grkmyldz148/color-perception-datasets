@@ -54,7 +54,7 @@ schema_canonical:
   - luminance_cd_m2: 10, 20, or 40 cd/m^2
   - mean_hue_angle_deg: mean across observers in degrees
   - sd_hue_angle_deg: standard deviation in degrees
-  - category: "warm_cool", "unique_hue", or "binary_hue"
+  - category: '"warm_cool", "unique_hue", or "binary_hue"'
 
 usage_notes: >
   Key findings from Manalansan-Whitehead-Webster 2025:

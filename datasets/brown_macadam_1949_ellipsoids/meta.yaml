@@ -70,11 +70,11 @@ cross_section:
 schema:
   - center_id: integer 1-39 (no 10)
   - observer: WRJB | DLM | PGN
-  - dim: "3D" (WRJB, DLM) or "2D" (PGN)
+  - dim: '"3D" (WRJB, DLM) or "2D" (PGN)'
   - x_0, y_0: CIE 1931 chromaticity of test center
   - Y_0_ftL: luminance of test center in foot-lamberts
   - l_0: l-coordinate = 0.2 * log10(Y_0_ftL)
-  - g11_x1e4, g12_x1e4, g22_x1e4, g23_x1e4, g33_x1e4, g13_x1e4: ellipsoid coefficients × 10^4 (null for PGN: g_23, g_33, g_13)
+  - g11_x1e4, g12_x1e4, g22_x1e4, g23_x1e4, g33_x1e4, g13_x1e4: 'ellipsoid coefficients × 10^4 (null for PGN: g_23, g_33, g_13)'
   - theta_deg, a_x1e3, b_x1e3: cross-section ellipse parameters at Δl = 0
 
 usage_notes: >

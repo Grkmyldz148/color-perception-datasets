@@ -39,7 +39,7 @@ coord_systems:
 
 schema:
   - memory_color: object name (10 categories)
-  - illuminant: "A" or "C"
+  - illuminant: '"A" or "C"'
   - X, Y, Z: CIE 1931 tristimulus values (× 10000 in original table, scaled here)
   - x, y: CIE 1931 chromaticity coordinates
   - munsell_hue_mean: mean Munsell hue notation (e.g., "6.81R", "0.40G")

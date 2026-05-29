@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>berns_1991_rit_dupont_tolerance_vectors · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / berns_1991_rit_dupont_tolerance_vectors</div>
+  <h1>berns_1991_rit_dupont_tolerance_vectors</h1>
+  <p class="lede"></p>
+  <div class="detail-tags"></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">berns_1991_rit_dupont_tolerance_vectors.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">7.8 KB</span>
+      <a class="btn btn-primary" href="../downloads/berns_1991_rit_dupont_tolerance_vectors.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>Three rows (Moderate blue G, Dark reddish orange G, Light bluish green A, Dark bluish green H — all in phase II) lack fiducial limits because the maximum-likelihood estimator could not converge well. T50 and slope are still reported.</li><li>Row alignment is based on the documented color center order from the paper (Section 4 of Berns 1991). The &#x27;Moderate bluish green&#x27; center has 14 vectors because both phase I and phase II measurements were performed for vectors A-E.</li><li>Negative S values (probit slope) indicate inconsistent observer responses.</li><li>P_chisq &lt; 0.05 indicates poor fit of the probit model (e.g., heterogeneous response distributions).</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>color_center</th><th>vector_direction</th><th>phase</th><th>T50</th><th>LFL</th><th>UFL</th><th>S</th><th>P_chisq</th><th>L_star</th><th>a_star</th><th>b_star</th><th>delta_L</th><th>delta_a</th><th>delta_b</th><th>eigenvalue</th></tr></thead><tbody><tr><td>Moderate blue</td><td>A</td><td>I</td><td>0.96</td><td>0.88</td><td>1.04</td><td>0.43</td><td>0.04</td><td>36.11</td><td>-1.35</td><td>-27.30</td><td>0.985</td><td>0.173</td><td>-0.013</td><td>0.9987</td></tr><tr><td>Moderate blue</td><td>B</td><td>I</td><td>1.37</td><td>1.28</td><td>1.44</td><td>0.40</td><td>0.01</td><td>35.85</td><td>-1.40</td><td>-27.12</td><td>-0.017</td><td>0.997</td><td>-0.078</td><td>0.9989</td></tr><tr><td>Moderate blue</td><td>C</td><td>I</td><td>1.55</td><td>1.45</td><td>1.61</td><td>0.38</td><td>0.69</td><td>35.86</td><td>-1.51</td><td>-26.93</td><td>-0.134</td><td>0.295</td><td>0.946</td><td>0.9990</td></tr><tr><td>Moderate blue</td><td>D</td><td>II</td><td>1.01</td><td>0.93</td><td>1.08</td><td>0.34</td><td>0.30</td><td>35.92</td><td>-1.62</td><td>-28.36</td><td>-0.003</td><td>0.691</td><td>0.723</td><td>0.9953</td></tr><tr><td>Moderate blue</td><td>E</td><td>II</td><td>3.22</td><td>3.08</td><td>3.39</td><td>0.73</td><td>0.06</td><td>36.29</td><td>-1.66</td><td>-28.44</td><td>-0.027</td><td>-0.356</td><td>0.934</td><td>0.9980</td></tr></tbody></table></div>
+
+    
+
+    
+
+    <h2>Source publications</h2>
+    
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">—</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">mixed</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">[{&#x27;color_center&#x27;: &#x27;name of the color center (1 of 19)&#x27;}, {&#x27;vector_direction&#x27;: &#x27;A | B | C | D | E | F | G | H | I&#x27;}, {&#x27;phase&#x27;: &#x27;&quot;I&quot; (phase I observations) or &quot;II&quot; (phase II observations)&#x27;}, {&#x27;T50&#x27;: &#x27;median tolerance — the color difference (ΔE*ab) judged equally often greater or less than the anchor pair&#x27;}, {&#x27;LFL&#x27;: &#x27;lower fiducial limit (95% confidence lower bound on T50)&#x27;}, {&#x27;UFL&#x27;: &#x27;upper fiducial limit (95% confidence upper bound on T50)&#x27;}, {&#x27;S&#x27;: &#x27;probit slope estimate (related to inter-observer disagreement)&#x27;}, {&#x27;P_chisq&#x27;: &#x27;chi-square goodness-of-fit p-value&#x27;}, {&#x27;L_star&#x27;: &#x27;CIELAB L* coordinate of color center&#x27;}, {&#x27;a_star&#x27;: &#x27;CIELAB a* coordinate&#x27;}, {&#x27;b_star&#x27;: &#x27;CIELAB b* coordinate&#x27;}, {&#x27;delta_L&#x27;: &#x27;tolerance vector direction component on L* axis (first eigenvector)&#x27;}, {&#x27;delta_a&#x27;: &#x27;tolerance vector direction component on a* axis&#x27;}, {&#x27;delta_b&#x27;: &#x27;tolerance vector direction component on b* axis&#x27;}, {&#x27;eigenvalue&#x27;: &#x27;first eigenvalue (∈ [0, 1], proxy for vector axis dominance)&#x27;}]</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">156</span></div><div class="aside-stat"><span class="k">Observers</span><span class="v">50 in phase I + 50 in phase II (subset overlap)</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">7.8 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -64,7 +64,7 @@ schema:
   - Status: "Native | Naturalised | Exotic"
   - Source [Global], Source [Argentina]: "Reference URLs"
   - Other metadata
-  - "Reflectance values" — separate columns from 400 nm to 1000 nm at 4 nm steps (151 wavelength bins)
+  - '"Reflectance values" — separate columns from 400 nm to 1000 nm at 4 nm steps (151 wavelength bins)'
 
 usage_notes: >
   This dataset enables important color science research:

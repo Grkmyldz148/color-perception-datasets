@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>huang_2012_cielab_ellipses · color-perception-datasets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../">
+      <span class="brand-dot"></span>
+      color-perception-datasets
+    </a>
+    <nav class="nav">
+      <a href="../">Datasets</a><a href="../schemas.html">Schemas</a><a href="../about.html">About</a>
+      <a href="https://helmlab.space" target="_blank" rel="noopener">helmlab ↗</a>
+      <a class="cta" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="detail-header">
+  <div class="crumbs"><a href="../">Datasets</a> / huang_2012_cielab_ellipses</div>
+  <h1>huang_2012_cielab_ellipses</h1>
+  <p class="lede"></p>
+  <div class="detail-tags"></div>
+</div>
+
+<div class="detail-grid">
+  <div>
+    
+
+    <div class="download-block">
+      <div class="info">
+        <div class="name">huang_2012_cielab_ellipses.zip</div>
+        <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
+      </div>
+      <span class="size">3.8 KB</span>
+      <a class="btn btn-primary" href="../downloads/huang_2012_cielab_ellipses.zip" download>Download</a>
+    </div>
+
+    <h2>Notes</h2><ul class='notes-list'><li>OCR of the original paper sometimes read &#x27;-&#x27; as &#x27;2&#x27; (e.g., -11.0 → 211.0). All negative-sign anomalies have been manually corrected against the figures/text. Spot-check before high-stakes use.</li><li>Per-pair raw data (446 pairs × 27 judgments × 9 observers) is NOT in this CSV. The supplementary tables in the paper or contact the authors.</li><li>Ellipse parameters in Table VII may have slight rounding differences vs the original measurement; the values here are as published.</li></ul>
+
+    <h2>Sample rows</h2>
+    <p>First 5 rows of <code>canonical.csv</code>:</p>
+    <div class='table-wrap'><table><thead><tr><th>color_center_id</th><th>color_name</th><th>L10_target</th><th>a10_target</th><th>b10_target</th><th>L10_measured</th><th>a10_measured</th><th>b10_measured</th><th>delta_E_ab10</th><th>A_semimajor</th><th>A_over_B</th><th>theta_deg</th><th>C_third_axis</th><th>ellipse_size</th><th>ellipsoid_volume</th></tr></thead><tbody><tr><td>1</td><td>Grey</td><td>62.0</td><td>0.0</td><td>0.0</td><td>63.2</td><td>-0.3</td><td>0.3</td><td>1.3</td><td>0.89</td><td>1.15</td><td>112.05</td><td>0.31</td><td>1.47</td><td>0.96</td></tr><tr><td>2</td><td>Red</td><td>44.0</td><td>37.0</td><td>23.0</td><td>46.6</td><td>37.8</td><td>23.0</td><td>2.7</td><td>2.54</td><td>2.85</td><td>71.85</td><td>0.35</td><td>2.67</td><td>1.49</td></tr><tr><td>3</td><td>Red high chroma</td><td>44.0</td><td>58.0</td><td>36.0</td><td>44.8</td><td>58.2</td><td>36.9</td><td>1.2</td><td>3.06</td><td>2.29</td><td>59.69</td><td>3.44</td><td>3.58</td><td>3.89</td></tr><tr><td>4</td><td>Orange</td><td>63.0</td><td>13.0</td><td>21.0</td><td>64.4</td><td>13.5</td><td>22.4</td><td>2.0</td><td>2.26</td><td>2.39</td><td>58.68</td><td>0.39</td><td>2.58</td><td>1.52</td></tr><tr><td>5</td><td>Orange high chroma</td><td>63.0</td><td>36.0</td><td>63.0</td><td>61.6</td><td>34.2</td><td>63.5</td><td>2.3</td><td>3.67</td><td>3.05</td><td>82.23</td><td>1.17</td><td>3.73</td><td>2.79</td></tr></tbody></table></div>
+
+    
+
+    
+
+    <h2>Source publications</h2>
+    
+  </div>
+
+  <aside>
+    <div class="aside-card">
+      <h4>At a glance</h4>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">—</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">mixed</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">[{&#x27;color_center_id&#x27;: &#x27;integer 1-17&#x27;}, {&#x27;color_name&#x27;: &#x27;descriptive name (e.g., &quot;Red&quot;, &quot;Green high chroma&quot;)&#x27;}, {&#x27;L10_target, a10_target, b10_target&#x27;: &#x27;intended CIELAB10 center&#x27;}, {&#x27;L10_measured, a10_measured, b10_measured&#x27;: &#x27;actual measured CIELAB10 center of the printed sample group&#x27;}, {&#x27;delta_E_ab10&#x27;: &#x27;deviation between target and measured center (ΔE*ab,10)&#x27;}, {&#x27;A_semimajor&#x27;: &#x27;semi-major axis of fitted ellipse&#x27;}, {&#x27;A_over_B&#x27;: &#x27;ratio of semi-axes (1 = circle, &gt;1 = elongated)&#x27;}, {&#x27;theta_deg&#x27;: &#x27;orientation of major axis (degrees, anticlockwise from a*-axis)&#x27;}, {&#x27;C_third_axis&#x27;: &#x27;third semi-axis (in ellipsoid sense, ΔL* axis)&#x27;}, {&#x27;ellipse_size&#x27;: &#x27;square root of ellipse area (proxy for size)&#x27;}, {&#x27;ellipsoid_volume&#x27;: &#x27;volume of 3D ellipsoid&#x27;}]</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">17</span></div><div class="aside-stat"><span class="k">Observers</span><span class="v">9</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">3.8 KB</span></div>
+    </div>
+  </aside>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
