@@ -1,0 +1,5 @@
+measurement,corr_10vs20,corr_10vs40,corr_20vs40,significant
+Warm_peak,0.91,0.95,0.94,yes
+Cool_peak,0.89,0.82,0.96,yes
+Boundary_1,0.79,0.96,0.76,yes
+Boundary_2,0.84,0.22,0.30,partial

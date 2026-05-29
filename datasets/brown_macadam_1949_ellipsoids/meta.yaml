@@ -1,0 +1,113 @@
+name: brown_macadam_1949_ellipsoids
+title: "Brown & MacAdam (1949) Color-Matching Ellipsoids — Two-Degree Field"
+short_description: >
+  38 chromatic test centers × 3 observers (WRJB and DLM with full 3-D ellipsoids;
+  PGN with 2-D chromaticity ellipses from MacAdam 1942 mapped to same centers).
+  First measurement of 3-D color-matching variance including luminance dimension —
+  observer-specific covariance structure across (x, y, l) where l = 0.2 log10 Y.
+  Foundational dataset for color-discrimination Riemannian metrics.
+
+citation: >
+  Brown, W. R. J., & MacAdam, D. L. (1949). Visual sensitivities to combined
+  chromaticity and luminance differences.
+  Journal of the Optical Society of America, 39(10), 808-834.
+  https://doi.org/10.1364/JOSA.39.000808
+
+source_book: >
+  Wyszecki, G., & Stiles, W. S. (1982). Color Science: Concepts and Methods,
+  Quantitative Data and Formulae (2nd ed.). New York: Wiley.
+  Table I(5.4.2), pp. 793-798 (Appendix). Transcribed from PDF pages 815-820.
+
+provenance:
+  extraction_method: "Tesseract 5.5.0 OCR on 400 DPI rendered pages + manual cross-check"
+  extraction_date: 2026-05-29
+  source_pdf: color.pdf (Wyszecki-Stiles 1982 2nd ed)
+  verification_status: "verified — all 114 rows manually re-checked against high-res renders of Wyszecki-Stiles (1982) Appendix Table I(5.4.2) on 2026-05-29. 8 OCR errors found and corrected: row 14 DLM (g22, g23, g33, g13), row 15 DLM (a, b), row 17 WRJB (g11), row 33 DLM (g23), row 36 DLM (a), row 38 WRJB (theta), row 38 DLM (g12), row 39 WRJB (g12)."
+
+  data_notes:
+    - "Color number 10 is missing (Brown & MacAdam used numbering with a gap)."
+    - "Color 33 has the same chromaticity as color 32 but different luminance (0.313 vs 5.71 ft-L)."
+    - "Values corrected per Brown (1952) per the book's footer Note 3."
+    - "Observer PGN data (from MacAdam 1942) is 2-D only: chromaticity ellipses at constant luminance. PGN rows therefore have null g_23, g_33, g_13 in this canonical CSV."
+
+n_test_centers: 38                # 39 numbered but no color 10
+n_observers: 3                    # WRJB, DLM (3D), PGN (2D)
+n_ellipsoid_rows: 114             # 38 × 3
+observers:
+  - id: WRJB
+    full_name: W. R. J. Brown
+    dim: 3D (chromaticity + luminance)
+  - id: DLM
+    full_name: D. L. MacAdam
+    dim: 3D (chromaticity + luminance)
+  - id: PGN
+    full_name: "Pinkneey (MacAdam's original observer from 1942 study)"
+    dim: 2D (chromaticity only at constant Y)
+    note: "PGN data reproduced from MacAdam 1942 ellipses (25 colors), extended to match Brown-MacAdam color centers. Only g_11, g_12, g_22 are defined; luminance dimension is absent."
+
+experiment:
+  apparatus: "MacAdam binocular colorimeter"
+  field_geometry: "2° bipartite field"
+  surround: "dark"
+  luminance: "Y_0 in foot-lamberts (column Y_0_ftL); 0.5-10 ft-L = 2-35 cd/m^2"
+  primaries: "tungsten + filters; spectrally identical match required"
+  task: "trichromatic color matching standard deviation in (x, y, Y) space"
+
+coord_system:
+  chromaticity: "CIE 1931 (x, y)"
+  luminance_coord: "l = 0.2 * log10(Y), Y in foot-lamberts"
+  ellipsoid_equation: |
+    g_11*(Δx)^2 + 2*g_12*ΔxΔy + g_22*(Δy)^2 + 2*g_23*ΔyΔl + g_33*(Δl)^2 + 2*g_13*ΔxΔl = 1
+    where Δx = x - x_0, Δy = y - y_0, Δl = l - l_0
+  ellipsoid_normalization: "g coefficients in CSV are stored as g_ij × 10^4 (divide column by 10^4 to get actual g_ij)"
+
+cross_section:
+  description: "Ellipse formed by intersection of 3-D ellipsoid with plane Δl = 0 (constant luminance)."
+  theta_deg: "Inclination of major semi-axis from positive x-axis, anticlockwise (degrees)"
+  a_x1e3: "Major semi-axis × 10^3 (in CIE xy units)"
+  b_x1e3: "Minor semi-axis × 10^3 (in CIE xy units)"
+
+schema:
+  - center_id: integer 1-39 (no 10)
+  - observer: WRJB | DLM | PGN
+  - dim: "3D" (WRJB, DLM) or "2D" (PGN)
+  - x_0, y_0: CIE 1931 chromaticity of test center
+  - Y_0_ftL: luminance of test center in foot-lamberts
+  - l_0: l-coordinate = 0.2 * log10(Y_0_ftL)
+  - g11_x1e4, g12_x1e4, g22_x1e4, g23_x1e4, g33_x1e4, g13_x1e4: ellipsoid coefficients × 10^4 (null for PGN: g_23, g_33, g_13)
+  - theta_deg, a_x1e3, b_x1e3: cross-section ellipse parameters at Δl = 0
+
+usage_notes: >
+  Brown & MacAdam (1949) extended MacAdam's 1942 2-D chromaticity-only ellipses
+  into the full 3-D color space by adding luminance dimension. The 6 unique
+  coefficients g_ij define the symmetric positive-definite metric tensor of the
+  local Riemannian color space at each test center.
+
+  This dataset is foundational for:
+  - 3-D color-discrimination metrics (CIE94, CIE2000 development trace back here)
+  - Observer-specific covariance modeling
+  - Cross-observer comparison (WRJB vs DLM disagreement is itself informative)
+  - Validation of modern wishart-process and per-observer JND models
+
+  Inter-observer variability between WRJB and DLM is substantial (factor 2-3×
+  in some g coefficients). Brown & MacAdam noted this disagreement persists
+  even with careful instrument calibration — it reflects real metameric and
+  perceptual differences between observers.
+
+license: "Public domain (1949 publication, copyright expired; data is reportable scientific measurement.)"
+
+related_datasets:
+  - macadam1942 — PGN 25 ellipses, single observer original
+  - brown_1957 — 22 centers × 12-observer averages
+  - wyszecki_fielder_1971 — 28 centers × 3 observers
+  - luo_rigg_ellipses — modern 132-center ellipses
+  - hong_2025_ellipsoids — wishart process per-observer JND fields
+
+tags:
+  - jnd
+  - ellipsoids
+  - chromaticity
+  - 3D
+  - luminance
+  - classic-psychophysics
+  - normal-trichromat

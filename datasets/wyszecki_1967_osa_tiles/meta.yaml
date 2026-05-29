@@ -1,0 +1,84 @@
+name: wyszecki_1967_osa_tiles
+title: "Wyszecki (1967) Heterochromatic Brightness Match — 43 Colored Tiles"
+short_description: >
+  43 colored ceramic tiles compared in lightness against a graded set of 10 gray
+  tiles by 76 observers across multiple US/Canadian labs. Each colored tile is
+  paired with the gray tile of equal perceived brightness; the ratio Y_gray/Y_colored
+  is a direct measure of the Helmholtz-Kohlrausch effect (chroma's contribution
+  to apparent brightness beyond luminance).
+
+citation: >
+  Wyszecki, G. (1967). Color matches at moderate to high levels of retinal
+  illuminance. Reference work by the OSA Committee on Uniform Color Scales.
+  See also Section 6.6.4 of Wyszecki & Stiles (1982).
+
+source_book: >
+  Wyszecki, G., & Stiles, W. S. (1982). Color Science: Concepts and Methods,
+  Quantitative Data and Formulae (2nd ed.). New York: Wiley.
+  Table 2(5.8.1), p. 416. Transcribed from PDF page 438.
+
+provenance:
+  extraction_method: "Tesseract 5.5.0 OCR on 400 DPI rendered page + manual cross-check"
+  extraction_date: 2026-05-29
+  source_pdf: color.pdf (Wyszecki-Stiles 1982 2nd ed)
+  verification_status: "verified — all 43 tiles manually re-checked against high-res render of Wyszecki-Stiles (1982) Table 2(5.8.1) on 2026-05-29. 1 group-label error fixed (tile 9 B -> A; asterisk-marked in original)."
+
+n_tiles: 43
+n_observers_total: 76
+observer_groups:
+  - id: A
+    description: "39 observers viewing 23 tiles marked with single asterisk (*)"
+  - id: B
+    description: "37 observers viewing 20 tiles (no asterisk)"
+  - id: AB
+    description: "Tiles marked with double asterisk (**) viewed by both groups (76 observers total)"
+
+experiment:
+  viewing_geometry: "Hexagonal ceramic tiles 5 cm inside diameter, on matte gray Munsell-V6 sheet"
+  illumination: "artificial or natural daylight, ≥500 lm/m^2 illuminance on table"
+  viewing_distance: "40-50 cm at 20-45° from vertical"
+  task: "Heterochromatic brightness matching: pair each colored tile with the equally-bright gray tile"
+  reference_chromaticity: "x_N = 0.315, y_N = 0.322 (gray-tile chromaticity, near illuminant C)"
+  gray_tile_range: "Y_N = 28.12 to 52.46 in 10 perceptually-equal steps"
+
+coord_system:
+  chromaticity: "CIE 1931 (x, y) under CIE Standard Illuminant C"
+  luminance_factor: "Y relative to MgO (98%)"
+
+schema:
+  - tile_id: integer 1-43
+  - observer_group: A | B | AB
+  - x, y: CIE 1931 chromaticity coords under Illuminant C
+  - Y_colored: luminance factor of the colored tile
+  - Y_gray: luminance factor of the equally-bright gray tile (mean across observer group)
+  - Y_gray_over_Y_colored: ratio = (Y_N/Y_T) — the Helmholtz-Kohlrausch coefficient
+
+usage_notes: >
+  The ratio Y_N/Y_T quantifies how much "extra brightness" each colored tile has
+  beyond what its luminance Y predicts. Values >1 mean the colored tile appears
+  BRIGHTER than its luminance suggests (the H-K effect). Values close to 1
+  mean luminance is a good predictor.
+
+  Observations: ratios range 1.05 (near-neutral tiles 20, 27) to 1.39 (extreme
+  blue tiles in the 450 series). The blue corner shows the strongest H-K effect,
+  consistent with Sanders-Wyszecki 1964 and modern Hunt-Pointer-Estevez models.
+
+  This dataset is primarily for:
+  - Validating lightness models (CIELAB L*, CAM02 J, CAM16 J vs. measured)
+  - Testing chromatic luminance corrections
+  - Studying H-K effect as function of chromaticity location
+
+license: "Public domain"
+
+related_datasets:
+  - sanders_wyszecki_1964 — 95-stimulus B/L heterochromatic matching, single direction
+  - hung_berns — perceived hue uniformity
+  - alman1989 — observer variability for color matching
+
+tags:
+  - helmholtz-kohlrausch
+  - lightness
+  - brightness
+  - chromatic-luminance
+  - osa
+  - classic-psychophysics

@@ -1,0 +1,121 @@
+name: lu_2023_facial_skin_colors
+title: "Lu (2023) Facial Skin Color Appearance — Caucasian and Chinese Faces"
+short_description: >
+  Facial colour appearance and skin colour characteristics for 80 facial images
+  (40 Caucasian + 40 Chinese), with measurements across 4 facial regions
+  (overall, eyes, brows, mouth) and 5 local skin areas (forehead, cheek, nose,
+  chin, periorbital). Includes observer matching experiments with 80+ Caucasian
+  and Chinese observers comparing matched vs. average pixel colours.
+
+  The most comprehensive academic skin tone dataset in the pool — fills a
+  critical gap for skin-tone color reproduction research that no other public
+  dataset addresses.
+
+citation: >
+  Lu, Y. (2023). Model Facial Colour Appearance and Facial Attractiveness for
+  Human Complexions [Doctoral dissertation, University of Leeds].
+  White Rose eTheses Online.
+  https://etheses.whiterose.ac.uk/id/eprint/32931/
+
+  Lu, Y., Yang, J., Xiao, K., Pointer, M., Li, C., & Wuerger, S. (2021).
+  Skin coloration is a culturally-specific cue for attractiveness, healthiness,
+  and youthfulness in observers of Chinese and western European descent.
+  PLOS ONE, 16(10), e0259276.
+
+source_pdf: "/Volumes/harici_ssd/color-space/lu2023_thesis.pdf — Tables 5.1, 7.3, 7.4 (Chapters 5 and 7)"
+
+provenance:
+  extraction_method: "Direct text extraction from PDF tables"
+  extraction_date: 2026-05-29
+  verification_status: "verified — direct copy from publisher PDF"
+
+n_faces: 80
+ethnic_groups: ["CA: Caucasian (n=40)", "CN: Chinese (n=40)"]
+n_observers_per_experiment: "~80 (mixed CA/CN observers across experiments)"
+
+experiment:
+  apparatus: "Calibrated BenQ LCD display (D65 white point, sRGB profile)"
+  field_geometry: "Frontal facial images, 1024×768 px on display"
+  illumination: "Simulated D65, 250 cd/m^2"
+  task_1: "Preference rating: attractiveness, healthiness, age"
+  task_2: "Colour appearance matching: observer adjusts test patch to match perceived face skin tone"
+  task_3: "Whiteness/redness/yellowness scaling"
+  reference: "Calibrated face images standardized for pose, expression, makeup"
+
+files:
+  - canonical.csv: "Mean L*a*b* by ethnicity × facial region (Table 7.4) — 8 rows"
+  - facial_color_characteristics.csv: "Descriptive statistics for 19 facial color metrics (Table 5.1)"
+  - local_skin_color_DE.csv: "ΔE*ab between local skin colors and average/matched colors (Table 7.3)"
+
+coord_system:
+  chromaticity: "CIE 1976 (L*, a*, b*)"
+  illuminant: "D65"
+  observer: "CIE 1931 standard observer"
+
+schema_canonical:
+  - ethnicity: CA (Caucasian) or CN (Chinese)
+  - region: Average | Eyes | Brows | Mouth
+  - L_star_mean: mean L* across 40 faces
+  - L_star_sd: SD of L*
+  - a_star_mean: mean a*
+  - a_star_sd: SD of a*
+  - b_star_mean: mean b*
+  - b_star_sd: SD of b*
+
+schema_local_skin_color_DE:
+  - comparison: "vs_average_pixel" or "vs_matched_color"
+  - population: Overall | CA | CN
+  - Forehead, Cheek, Nose, Chin, Periorbital: ΔE*ab values
+
+usage_notes: >
+  Lu (2023) data is the most modern and culturally-diverse facial skin tone
+  dataset publicly available. Key findings:
+
+  Ethnic differences in facial color:
+  - Caucasian faces: lighter (L*=60.6) and less yellow (b*=15.3) than Chinese
+  - Chinese faces: darker (L*=55.9) and more yellow (b*=18.6)
+  - Similar a* (redness) across ethnicities
+
+  Observer ethnic differences in perception:
+  - Caucasian observers tend to increase lightness when matching face tone
+  - Chinese observers tend to decrease yellowness more
+  - Both observer groups show "other-ethnicity effect": more colour
+    adjustment for own-ethnicity faces
+
+  For skin tone reproduction research, the data provides:
+  - Reference L*a*b* for skin (Average row)
+  - Variability bounds (SD)
+  - Local skin color variations
+  - Cross-cultural matching biases
+
+  For perceptia/measurement space research, the data tests:
+  - Whether a uniform color space handles skin tone variations consistently
+  - Whether the "natural skin tone region" (around L*=58, a*=8, b*=17) is
+    perceptually homogeneous in the candidate space
+
+  Note: This dataset is HIGHLY underused — most modern color appearance
+  research uses synthetic skin patches rather than real facial measurements
+  with cross-cultural observer variance.
+
+caveats:
+  - "Raw per-face data (80 faces × multiple measurements) is in the thesis appendix but not included in this CSV. Contact Lu/Xiao for full dataset."
+  - "Observer ratings (attractiveness, healthiness, age) are described in the thesis but require digitization of figures to extract numerically."
+  - "Color characteristics (Table 5.1) include some IDs (MCDM = Mean Color Difference from Mean, a chromatic variability measure)."
+
+license: "Open Access (PhD thesis, public University of Leeds repository)"
+
+related_datasets:
+  - smet_2010_memory_colors — includes 'Caucasian skin (hand)' memory color
+  - bartleson_1960_memory_colors — includes 'Flesh' and 'Tan flesh' Bartleson memory colors
+  - hung_berns — perceived hue uniformity reference
+
+tags:
+  - skin-tone
+  - facial-appearance
+  - cross-cultural
+  - cielab
+  - real-world-stimuli
+  - asian-faces
+  - caucasian-faces
+  - modern-psychophysics
+  - color-appearance

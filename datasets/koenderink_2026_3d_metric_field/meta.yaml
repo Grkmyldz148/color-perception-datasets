@@ -1,0 +1,125 @@
+name: koenderink_2026_3d_metric_field
+title: "Koenderink, van Doorn, Braun & Gegenfurtner (2026) 3D Color Discrimination Metric Field"
+short_description: >
+  Empirical 3D color-discrimination metric field over RGB space. 35 reference
+  colors arranged on a body-centered cubic (BCC) lattice within the RGB cube,
+  measured by 8 observers, with discrimination probed along 7 orientations
+  yielding 14 directional extents per location. Each location's region was fit
+  with a minimum-volume ellipsoid (3×3 symmetric positive-definite matrix),
+  yielding the FIRST spatially-dense, internally-consistent 3D color
+  discrimination map.
+
+  This is THE modern reference for 3D color metric research — fills the gap
+  between MacAdam 1942 (2D, single observer) / Brown-MacAdam 1949 (38 stimuli)
+  and Hong 2025 (2D isoluminant, 8 observers). Cited as primary ground truth
+  by Menke 2026 V1 Population Fisher Information Metric paper.
+
+citation: >
+  Koenderink, J., van Doorn, A., Braun, D. I., & Gegenfurtner, K. R. (2026).
+  An empirical three-dimensional metric field for color space.
+  bioRxiv preprint.
+  https://doi.org/10.64898/2026.03.09.710376
+
+source_pdf: "/Volumes/harici_ssd/color-space/koenderink2026.pdf — Appendix A2 (p. 32)"
+
+provenance:
+  extraction_method: "Direct text extraction from bioRxiv preprint Appendix A2"
+  extraction_date: 2026-05-29
+  verification_status: "verified — direct copy from preprint table; 35 rows × 9 columns"
+
+n_ellipsoids: 35
+n_observers: 8
+n_orientations_per_location: 7
+n_directional_extents_per_location: 14
+
+experiment:
+  apparatus: "Calibrated display, central disk surrounded by annulus in dark room (binocular viewing)"
+  stimulus_geometry: "Disk + annulus, comparison adjusted relative to reference"
+  task: "Notable Qualitative Difference (NQD) measurement: observer adjusts disk to first notable difference from annulus"
+  sampling: "BCC (body-centered cubic) lattice within the RGB cube — 35 reference locations"
+  ellipsoid_fitting: "Minimum-volume ellipsoid (MVE) fit to 14 directional extents per location"
+  representation: "Symmetric positive-definite 3×3 matrix Σ; ellipsoid surface = {x : x^T Σ^-1 x = 1}"
+
+coord_system:
+  space: "Display RGB (linear / γ-encoded as specified in paper)"
+  scale: "RGB locations scaled × 1000 in CSV; Σ matrix entries scaled × 10^7 in CSV"
+  conversion_to_actual_units:
+    R_actual: "R_x1000 / 1000 (range 0.0-1.0 typically)"
+    G_actual: "G_x1000 / 1000"
+    B_actual: "B_x1000 / 1000"
+    Sigma_actual: "Sigma_*_x1e7 / 10^7"
+
+schema:
+  - center_id: integer 1-35
+  - R_x1000, G_x1000, B_x1000: RGB location of ellipsoid center (× 1000)
+  - Sigma_11_x1e7: 3×3 covariance matrix entry [0,0] (× 10^7)
+  - Sigma_12_x1e7: covariance entry [0,1] = [1,0] (× 10^7)
+  - Sigma_13_x1e7: covariance entry [0,2] = [2,0] (× 10^7)
+  - Sigma_22_x1e7: covariance entry [1,1] (× 10^7)
+  - Sigma_23_x1e7: covariance entry [1,2] = [2,1] (× 10^7)
+  - Sigma_33_x1e7: covariance entry [2,2] (× 10^7)
+
+usage_notes: >
+  This dataset is the modern empirical reference for 3D color metric field
+  research. Key findings reported in Koenderink et al. 2026:
+
+  1. SPATIAL SMOOTHNESS: The field is highly spatially smooth — adjacent BCC
+     lattice points have well-correlated covariance structure.
+
+  2. SCALE STRUCTURE: Grain size (mean ellipsoid radius) increases monotonically
+     along the achromatic axis from black toward white. The black corner (0,0,0)
+     has the SMALLEST discrimination thresholds; the white corner (1,1,1) has
+     larger thresholds.
+
+  3. CHROMATIC ASYMMETRIES: Systematic axis-aligned chromatic asymmetries are
+     present — green direction has distinctive scale, blue direction has
+     different shape.
+
+  4. OBSERVER CONSISTENCY: Up to a per-observer global scale factor, the
+     ellipsoid shapes are remarkably consistent across 8 observers (Frobenius
+     geometry normalization).
+
+  5. CIEDE2000 COMPARISON: CIEDE2000 captures overall scale variation well
+     (correlation ~0.85) but systematically MIS-SPECIFIES local anisotropy,
+     especially in saturated chromatic regions.
+
+  For perceptia/sheaf measurement space research:
+  - This is the ideal validation dataset for any 3D color metric claim
+  - Sheaf-of-charts construction can use this BCC lattice directly
+  - Wishart Process Psychophysical Model could be applied (extend Hong 2025
+    to 3D using this data)
+  - Compare your space's predicted ellipsoid against the empirical Σ at each
+    BCC location and report STRESS
+
+  Frobenius geometry note:
+  - Σ matrices are compared via Frobenius inner product: <A, B>_F = tr(A^T B)
+  - Per-observer normalization removes global scale: Σ_norm = Σ / sqrt(<Σ,Σ>_F)
+  - Compare Σ matrices in this normalized space
+
+caveats:
+  - "This CSV contains the MEDIAN field across 8 observers (Appendix A2). Per-observer ellipsoid sets are NOT in this CSV. Contact authors or check bioRxiv supplementary if per-observer data is required for inter-observer variability analysis."
+  - "Scale factors are × 1000 for RGB (range 0-1000) and × 10^7 for Σ entries. Apply inverse scaling before use in formulas."
+  - "Σ is RAW symmetric positive-definite matrix; to obtain the standard ellipsoid representation use the eigendecomposition: Σ = U D U^T where D contains squared semi-axes."
+  - "Display assumed γ-encoded standard sRGB (per paper Appendix A1); for CIELAB or other space comparisons, transform RGB → display luminance → XYZ → target space."
+
+license: "CC-BY 4.0 (bioRxiv standard preprint license)"
+
+related_datasets:
+  - macadam1942 — single observer 2D ellipses
+  - brown_macadam_1949_ellipsoids — 38 stimuli × 2 observers 3D ellipsoids
+  - wyszecki_fielder_1971_ellipsoids — 28 centers × 3 observers
+  - hong_2025_ellipsoids — modern 2D Wishart Process JND field
+  - huang_2012_cielab_ellipses — 17 CIELAB10 centers
+
+tags:
+  - jnd
+  - ellipsoids
+  - 3d
+  - bcc-lattice
+  - rgb
+  - color-metric
+  - modern-psychophysics
+  - frobenius-geometry
+  - koenderink
+  - gegenfurtner
+  - 2026

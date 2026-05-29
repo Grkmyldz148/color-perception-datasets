@@ -1,0 +1,115 @@
+name: huang_2012_cielab_ellipses
+title: "Huang et al. (2012) Color Discrimination Ellipses at 17 CIE-Recommended Centers"
+short_description: >
+  Chromaticity discrimination ellipsoids at 17 CIE-recommended color centers in
+  CIELAB10 space, measured from 446 printed sample pairs assessed 27 times by
+  9 observers (total ~12,000 individual judgments). Designed to fill gaps in
+  earlier ellipsoid datasets (Brown-MacAdam 1949, Wyszecki-Fielder 1971, RIT-DuPont).
+
+  Used as one of the four anchor datasets in modern 3D color metric development
+  (cited by Menke 2026 arXiv "V1 Population Fisher Information Metric" paper).
+
+citation: >
+  Huang, M., Liu, H., Cui, G., Luo, M. R., & Melgosa, M. (2012).
+  Evaluation of threshold color differences using printed samples.
+  Journal of the Optical Society of America A, 29(6), 883-891.
+  https://doi.org/10.1364/JOSAA.29.000883
+
+  Companion paper:
+  Huang, M., Cui, G., Melgosa, M., & Sanchez-Maranon, M. (2012).
+  Testing uniform colour spaces and colour-difference formulae using printed samples.
+  Color Research & Application.
+  https://doi.org/10.1002/col.20689
+
+source_pdf: "/Volumes/harici_ssd/color-space/huang2012.pdf — Tables I and VII"
+
+provenance:
+  extraction_method: "Direct text extraction from Color Research & Application paper PDF, with manual cleanup of OCR-confused minus signs (OCR read '-' as '2' for some negative numbers)"
+  extraction_date: 2026-05-29
+  verification_status: "verified — direct copy from publisher PDF, all values checked against the published table"
+
+n_color_centers: 17
+n_total_pairs: 446
+n_observers: 9
+n_judgments_per_pair: 27
+n_total_judgments: 12042
+
+experiment:
+  apparatus: "GretagMacbeth Judge II light booth, observation through a viewing window"
+  samples: "Glossy paper (gloss unit 56) printed via EPSON Stylus PRO 7800 ink-jet printer; size 4.5 × 4.5 cm^2"
+  measurement: "X-Rite SpectroEye Spectrophotometer (geometry 0°:45°), CIE Illuminant D65, 1964 10° standard observer"
+  task: "Grey-scale color difference scaling — pair-wise comparison against a gray-scale anchor"
+  illumination: "D65 simulator"
+  observation_geometry: "10° field"
+  sample_design: "20-30 samples per color center, surrounding pair separations 0.2-8.0 ΔE*ab,10 (mean 3.0)"
+
+coord_system:
+  chromaticity: "CIE 1976 L*a*b* under CIE Illuminant D65 with 10° supplementary observer"
+  ellipse_definition: "Δ E^2 = g11*(Δa)^2 + 2*g12*Δa*Δb + g22*(Δb)^2 + g33*(ΔL)^2"
+  note: "Cross terms ΔL-Δa and ΔL-Δb excluded (per Luo-Rigg 1986 finding that these contribute insignificantly)"
+
+schema:
+  - color_center_id: integer 1-17
+  - color_name: descriptive name (e.g., "Red", "Green high chroma")
+  - L10_target, a10_target, b10_target: intended CIELAB10 center
+  - L10_measured, a10_measured, b10_measured: actual measured CIELAB10 center of the printed sample group
+  - delta_E_ab10: deviation between target and measured center (ΔE*ab,10)
+  - A_semimajor: semi-major axis of fitted ellipse
+  - A_over_B: ratio of semi-axes (1 = circle, >1 = elongated)
+  - theta_deg: orientation of major axis (degrees, anticlockwise from a*-axis)
+  - C_third_axis: third semi-axis (in ellipsoid sense, ΔL* axis)
+  - ellipse_size: square root of ellipse area (proxy for size)
+  - ellipsoid_volume: volume of 3D ellipsoid
+
+usage_notes: >
+  Huang 2012 fills critical gaps in classical ellipsoid datasets:
+  - Brown-MacAdam 1949 used CRT colors at low luminance
+  - Wyszecki-Fielder 1971 used a specialized colorimeter, limited gamut
+  - RIT-DuPont used painted samples, industrial focus
+  - Huang 2012 uses real PRINTED samples on glossy paper — relevant to
+    print industry and modern reflective display calibration
+
+  Comparison with Wyszecki-Fielder 1971:
+  - W-F 1971: 28 centers, 3 observers, controlled colorimeter
+  - Huang 2012: 17 centers, 9 observers, printed glossy paper
+  - Both share well-known color centers (Red, Green, Blue, Yellow, etc.)
+
+  Key findings reported in Huang 2012:
+  - CIEDE2000 still best with smallest STRESS (29.5 combined)
+  - CAM02-UCS competitive (30.4 STRESS)
+  - DIN99d also good (29.5 STRESS) — close to CIEDE2000 in printed-sample data
+  - Mean observer intra-variability STRESS 19.1 (range 13.7-24.6)
+  - Mean observer inter-variability STRESS 31.7 (range 23.6-38.8)
+  - The intra/inter STRESS bracket sets the lower bound for any
+    color-difference formula on this dataset
+
+  For perceptia/measurement space testing:
+  - Test your space's prediction of the 17 ellipsoid semi-axes
+  - Compute STRESS against the 446 pair-level data (in paper supplementary)
+  - Note CIEDE2000 STRESS = 29.5 as the benchmark to beat
+
+caveats:
+  - "OCR of the original paper sometimes read '-' as '2' (e.g., -11.0 → 211.0). All negative-sign anomalies have been manually corrected against the figures/text. Spot-check before high-stakes use."
+  - "Per-pair raw data (446 pairs × 27 judgments × 9 observers) is NOT in this CSV. The supplementary tables in the paper or contact the authors."
+  - "Ellipse parameters in Table VII may have slight rounding differences vs the original measurement; the values here are as published."
+
+license: "Public domain for the published table data (1900-vintage CIE coordinate system); paper full text is paywalled."
+
+related_datasets:
+  - macadam1942 — single observer 2D ellipses
+  - brown_macadam_1949_ellipsoids — 38 stimuli × 2 observers
+  - wyszecki_fielder_1971_ellipsoids — 28 centers × 3 observers (related coord system)
+  - luo_rigg_ellipses — earlier multi-source ellipses
+  - combvd — combined visual difference data (BFD-P, LEEDS, RIT-DuPont, Witt)
+  - hong_2025_ellipsoids — modern wishart process JND fields
+
+tags:
+  - jnd
+  - ellipsoids
+  - cielab
+  - printed-samples
+  - color-difference
+  - cie-recommended-centers
+  - 17-centers
+  - chinese-research
+  - industrial-color

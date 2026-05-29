@@ -1,0 +1,91 @@
+name: cie_224_2017_tm30_ces
+title: "CIE 224:2017 / ANSI/IES TM-30 — 99 Color Evaluation Samples (CES)"
+short_description: >
+  Reflectance spectra of 99 Color Evaluation Samples (CES01-CES99) used by the
+  CIE 224:2017 Colour Fidelity Index (R_f) and ANSI/IES TM-30-18/20 colour
+  rendering evaluation methods. These 99 carefully-selected reflectance spectra
+  span a wide gamut and represent natural and man-made objects (saturated
+  reflectances, skin, foliage, textiles) and are the modern standardized
+  replacement for the 14 TCS samples used in CIE Ra (1965).
+
+citation: >
+  CIE 224:2017. CIE 2017 Colour Fidelity Index for accurate scientific use.
+  International Commission on Illumination, Vienna.
+  https://doi.org/10.25039/TR.224.2017
+
+  ANSI/IES TM-30-20. IES Method for Evaluating Light Source Color Rendition.
+  Illuminating Engineering Society, New York.
+  https://www.ies.org/standards/
+
+  David, A. et al. (2015). Development of the IES method for evaluating the
+  color rendition of light sources. Optics Express, 23(12), 15888.
+  https://doi.org/10.1364/OE.23.015888
+
+source: >
+  Reflectance spectra reproduced from colour-science Python library
+  (https://github.com/colour-science/colour),
+  file colour/quality/datasets/tcs_cfi2017_1_nm.csv.gz, which mirrors the
+  CIE-published spectra. Same data is distributed by NIST in their TM-30
+  calculator workbook.
+
+provenance:
+  extraction_method: "Direct download from colour-science repository"
+  extraction_date: 2026-05-29
+  verification_status: "verified — mirrored from authoritative open implementation"
+  download_url: "https://raw.githubusercontent.com/colour-science/colour/develop/colour/quality/datasets/tcs_cfi2017_1_nm.csv.gz"
+
+n_samples: 99
+n_wavelengths: 400  # 380-779 nm at 1 nm step
+wavelength_range_nm: [380, 779]
+wavelength_step_nm: 1
+
+format: "wide — one row per wavelength, one column per CES sample"
+
+schema:
+  - wavelength_nm: wavelength in nanometers (380-779)
+  - CES01 through CES99: spectral reflectance factor at this wavelength (0.0 to 1.0+) for sample CES_i
+
+usage_notes: >
+  CES samples are the modern standard for color rendering evaluation. To compute
+  TM-30 R_f (fidelity) or R_g (gamut) for a test light source:
+
+  1. Multiply each CES reflectance spectrum by the test source SPD
+  2. Compute CIE 10° tristimulus values for each
+  3. Apply CAT02 chromatic adaptation to D65
+  4. Convert to a uniform color space (CAM02-UCS)
+  5. Compute color differences against a matched reference (Planckian for
+     CCT < 5000 K, D-series otherwise)
+  6. R_f = 100 - 7.54 × mean(ΔE')
+  7. R_g = 100 × (gamut area / reference gamut area)
+
+  The 99 CES were selected from a database of ~100,000 real-world reflectances
+  to span the maximum gamut while satisfying constraints on saturation,
+  brightness, and hue uniformity. See David et al. (2015) for selection
+  methodology.
+
+  This is THE modern reference for light source color quality. It replaces
+  CIE Ra (8 + 6 = 14 TCS samples from 1965) which is now considered obsolete
+  but still widely cited.
+
+  In our pool, TM-30 CES samples enable:
+  - Computing modern fidelity scores for any test light SPD
+  - Calibration of color-space color difference metrics on a broad sample set
+  - Validation that a perceptual uniformity claim covers the real-world gamut
+
+license: "CIE 224:2017 data is reproducible per CIE permission for noncommercial scientific use. colour-science Python library is BSD-3-Clause."
+
+related_datasets:
+  - munsell — Munsell renotation chips (older reference)
+  - hung_berns — constant-hue lines
+  - smet_2010_memory_colors — preferred/memory colour reference
+
+tags:
+  - tm-30
+  - cri
+  - color-rendering
+  - fidelity
+  - reflectance
+  - spectral
+  - lighting
+  - ies
+  - cie-224

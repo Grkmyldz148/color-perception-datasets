@@ -1,0 +1,134 @@
+name: klabes_2024_color_preference_lighting
+title: "Klabes et al. (2024) Color Preference Rendition in White Lighting"
+short_description: >
+  Aggregated psychophysical database of color preference evaluation across 890
+  lighting scenarios from many independent studies. For each scenario:
+  - Radiometric/photometric measures (CCT, illuminance, Duv)
+  - Z-score color preference rating (aggregated across participants)
+  - 50+ standard color quality metrics computed (Qf, Rf, Ra, Qa, Rg, MCRI, etc.)
+  - 16 per-CES sample chroma/hue shift metrics (Rcsh1-16, Rhsh1-16)
+  - Full spectral power distribution (SPD) at 1 nm from 380-780 nm in separate file
+
+  The MOST COMPREHENSIVE collation of light-source color quality / color preference
+  data ever assembled. Replaces individual studies that each have ~50 lighting
+  conditions with one harmonized 890-scenario set.
+
+citation: >
+  Klabes, J., Fobugwe, V., Tran, T., & Liu, Y. (2024).
+  Dataset on Color Preference Rendition in White Lighting Applications.
+  TU Darmstadt Data Library.
+  https://doi.org/10.48328/tudatalib-1591.3
+
+provenance:
+  extraction_method: "Direct download from TU Darmstadt Data Library; semicolon-delimited CSV converted to comma-delimited canonical"
+  extraction_date: 2026-05-29
+  verification_status: "verified — direct download from authoritative source"
+  download_urls:
+    canonical: "https://tudatalib.ulb.tu-darmstadt.de/bitstreams/580831ac-ab9d-4f4c-88c5-f3652939a288/download"
+    spectral_power_distributions: "https://tudatalib.ulb.tu-darmstadt.de/bitstreams/52e34ac9-db0c-496d-b40d-65eb0bae2b0b/download"
+
+n_lighting_scenarios: 890
+n_unique_source_studies: "Wei 2014, Rea 2010, Lin 2017, Royer 2018, Smet 2014, Houser 2013, etc. (~20+ original studies aggregated)"
+n_metrics_calculated: 67  # Qf, Rf, Ra, Qa, Rg, GAI, etc.
+
+experiment:
+  apparatus: "Various — controlled light booths, room-sized lighting chambers, immersive scenes per source study"
+  task: "Various preference rating tasks — magnitude estimation, paired comparison, semantic differential scales"
+  aggregation: "Z-score normalization within each source study, then concatenation across studies"
+
+files:
+  - canonical.csv: "890 scenarios × 67 columns (lighting parameters + Z-score + color metrics)"
+  - canonical_semicolon_separated.csv: "Original raw CSV format (semicolon delimited as published)"
+  - spectral_power_distributions.csv: "SPDs for each scenario at 1 nm resolution (380-780 nm)"
+
+primary_columns:
+  - Experiment ID: "Source study identifier (e.g., 'Wei2014', 'Rea2010', 'Royer2018')"
+  - Z-Score: "Aggregated z-score color preference rating"
+  - Participants: "Number of observers in the source study"
+  - Experiment Setup: "'room' or 'booth' or 'chamber'"
+  - CCT Design: "'constant CCT' or 'mixed CCT'"
+  - Ev Design: "'constant Ev' or 'mixed Ev'"
+  - Illuminance in lx: "Light intensity"
+  - CCT in K: "Correlated color temperature in Kelvin"
+  - Duv: "Distance from blackbody locus in u'v' space"
+
+color_quality_metrics_included:
+  fidelity_metrics:
+    - Qf, Qf_v7.5, Rf: "Color fidelity (TM-30 R_f, Qf metric)"
+    - Ra: "CIE CRI Ra (older, 14 samples)"
+    - Qa, Qa_v7.5: "NIST CQS Qa"
+    - dcfi: "Discriminator-Constrained Fidelity Index"
+    - CQI, CQI-: "Color Quality Index"
+    - CRI2012: "Smet 2012 CRI"
+
+  preference_metrics:
+    - CP, Qp, Qp_v7.5: "Color preference indices"
+    - MCRI: "Memory Color Rendition Index (Smet)"
+    - MCPI Babilon, MCPI Huang: "Memory Color Preference Index variants"
+
+  gamut_metrics:
+    - GAI, GAI-CRI, GVI: "Gamut Area Index variants"
+    - Rg: "TM-30 R_g gamut metric"
+    - DC-star: "DC* gamut metric"
+    - Qg, Royer2016, Royer2019: "Gamut-based preference metrics"
+    - CPI, FCI: "Color Plot Index, Feeling of Contrast Index"
+
+  per_sample_metrics:
+    - Rcsh1-16: "Per-CES sample chroma shift metrics (TM-30)"
+    - Rhsh1-16: "Per-CES sample hue shift metrics (TM-30)"
+
+usage_notes: >
+  This is the MOST COMPREHENSIVE color preference benchmark for lighting research.
+
+  Key features:
+  1. AGGREGATION: 890 scenarios from ~20 source studies, harmonized via z-score
+     within each study (so cross-study comparison is meaningful within studies
+     but z-score 1 in study A ≠ z-score 1 in study B)
+
+  2. COMPREHENSIVE METRICS: All major color quality metrics computed for every
+     SPD — researchers can compare metrics' predictive power on this single set
+
+  3. PER-CES BREAKDOWN: Rcsh1-16 and Rhsh1-16 give per-evaluation-sample chroma
+     and hue shifts under each light, enabling sample-level analysis
+
+  4. SPD MATCHING: Companion spectral_power_distributions.csv provides the full
+     SPD at 1nm resolution for each scenario, enabling computation of ADDITIONAL
+     metrics not pre-included
+
+  For perceptia/measurement space testing:
+  - Apply your measurement space to compute color appearance under each SPD
+  - Compute custom color difference metric on the CES samples
+  - Correlate with the Z-Score column to test how well your space predicts
+    preference across the 890 scenarios
+
+  Best practices:
+  - Filter by "Experiment Setup" first (room vs booth has different observer
+    populations)
+  - Z-scores within a study are meaningful; across studies, normalize again
+
+caveats:
+  - "Individual observer-level data is NOT in this dataset — only aggregated z-scores per scenario."
+  - "Some metrics (Qa_v7.5, Qf_v7.5, Qp_v7.5) use a 'v7.5' variant — check the source paper for the specific formula version."
+  - "The Z-score aggregation may differ across original studies in normalization detail; treat the Z-scores as approximate preferences."
+  - "CSV uses semicolon delimiter in raw form; canonical.csv has comma-delimited form."
+
+license: "CC BY 4.0 (TU Darmstadt Data Library standard)"
+
+related_datasets:
+  - cie_224_2017_tm30_ces — the 99 CES samples evaluated under each Klabes SPD
+  - smet_2010_memory_colors — memory color preference (Sa metric)
+  - bartleson_1960_memory_colors — historical memory color reference
+
+tags:
+  - color-preference
+  - lighting
+  - white-lighting
+  - tm-30
+  - cri
+  - mcri
+  - z-score
+  - large-aggregation
+  - spectral
+  - cct
+  - duv
+  - modern-psychophysics
