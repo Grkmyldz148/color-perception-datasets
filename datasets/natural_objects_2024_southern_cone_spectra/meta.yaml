@@ -35,7 +35,7 @@ breakdown:
   Plants: "302 samples from 242 plant species"
   Animals: "167 samples from 63 animal taxa"
   Stones: "63 samples from 60 rocky natural objects"
-n_measurements_total: "~1580 (multiple angles per object)"
+n_measurements_total: 1576  # Plants 887 + Animals 501 + Stones 188 (multiple angles per object)
 collection_period: "June 2023 - October 2024"
 location: "Northwestern Argentina, Southern cone of South America"
 
@@ -114,3 +114,9 @@ tags:
   - taxonomy
   - color-evolution
   - modern-collection
+
+canonical_note: >
+  2026-07-08 rebuild: canonical.csv previously contained ONLY the Plants
+  domain (byte-copy of Plants.csv, with the raw two-row header). It is now
+  the union of Plants + Animals + Stones (1576 rows) with a single proper
+  header row; the "Main domain" column distinguishes the three domains.

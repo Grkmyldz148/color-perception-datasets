@@ -111,3 +111,10 @@ tags:
   - luminance
   - classic-psychophysics
   - normal-trichromat
+audit_note_2026_07_08: >
+  Center 8, observer DLM is entirely blank for all ellipsoid columns
+  (only x_0, y_0, Y_0, l_0 present) — the source table itself reports
+  no ellipsoid fit for that cell; row kept for completeness, judges
+  must skip it. Also note the PGN cross-section a,b values derive from
+  MacAdam 1942 (2D), not from the 3D g-fit, so g-matrix vs a,b
+  consistency is loose (up to 1.6x) for PGN rows by provenance.

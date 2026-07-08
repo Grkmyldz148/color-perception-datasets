@@ -39,7 +39,7 @@ provenance:
 
 n_unique_image_pairs: 30000
 n_unique_images: 15273
-n_observations_total: "37,003 (some pairs rated twice)"
+n_observations_total: "37,005 (some pairs rated twice)"
 ratings_scale: "Perceptual color difference (Δ_V), continuous unit; sample mean = 4.67, range 0.93–16.22"
 images_scale: "Natural photographic images, smartphone-captured, ~1000×750 px"
 

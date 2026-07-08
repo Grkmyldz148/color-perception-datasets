@@ -29,3 +29,8 @@ sources:
     of an Image-Based Measurement System for Human Facial Skin Colour. Color Research
     & Application.
 license: CC BY 4.0 for this canonical export. Cite He et al. (2022).
+canonical_note_2026_07_08: >
+  Added the "group" column (Grey/Red/Green/Yellow/Blue) recovered from
+  the raw xlsx block structure — pair_label alone was ambiguous ("Pair
+  1" repeats per group). Endpoints remain unpublished even in the raw
+  xlsx (delta-only dataset); cannot be used as pair_diff.

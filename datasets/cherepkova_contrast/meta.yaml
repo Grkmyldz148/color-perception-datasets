@@ -29,3 +29,4 @@ sources:
 - paper: Cherepkova, O. et al. (2025). Individual Contrast Preferences Database. NTNU
     Colour and Visual Computing Lab. Zenodo DOI 10.5281/zenodo.17430959
 license: CC BY 4.0 (declared on Zenodo). Cite Cherepkova et al. (2025).
+audit_note_2026_07_08: "Shipped canonical is a COMPLETE 22-observer x 499-image grid (10,978 cells, no sparsity); one image of the source 500 was dropped entirely during canonicalization."
