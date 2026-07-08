@@ -44,3 +44,14 @@ sources:
 license: WCS data has been publicly distributed by Berkeley since the early 2000s
   for free academic use. Cite Kay et al. (2009) and the original Berlin & Kay (1969)
   when using.
+
+decoded_structure_2026_07_08: >
+  Parsing traps (2026-07-08 audit): (1) foci-exp.txt uses classic-Mac CR-only
+  line endings - normalize \r before reading; (2) 'NA' is a REAL WCS term code
+  (6,187 rows, 17 languages) - pandas needs keep_default_na=False; (3) dict.txt
+  is UTF-8; (4) in foci-exp, neutral-row cells A1..A40/J1..J40 must collapse to
+  A0 (cnum 141) / J0 (cnum 89). Genuine dict-resolution failure only 0.20%
+  (codes TSA/TSO in language 45). Every one of the 2,616 speakers named all 330
+  chips. Canonical spec: naming_long.csv (863,280 rows: lang, speaker, chip,
+  term_code, translit, + chip Munsell/Lab-under-C join) + foci_long.csv (~31,072
+  deduped focal picks, built from foci-exp.txt NOT foci.txt).

@@ -27,6 +27,7 @@ provenance:
     - "Dark reddish orange phase-I direction '6' -> 'B' (OCR misread)"
     - "Grayish yellow green D I b* 73.45 -> 13.45 (OCR digit error)"
     - "3 lowercase 'c' direction letters normalized to 'C' (Moderate yellow I, Dark blue II, Light gray II)"
+    - "Second-pass full-table verification (all 156 rows vs 300-DPI renders): the 7 repairs CONFIRMED independently; 3 further fixes — Moderate bluish green B I a* -27.1 -> -27.11; Moderate reddish brown B and F phase I -> II. P_chisq of Moderate yellow C I settled as 0.90 (0.80 is the row above). Paper-internal oddity (not a CSV bug): printed statistics row claims LFL min -1.060 but no negative LFL exists in the table body."
 
 n_color_centers: 19
 n_vectors_total: 156

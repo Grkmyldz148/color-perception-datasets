@@ -118,3 +118,15 @@ audit_note_2026_07_08: >
   must skip it. Also note the PGN cross-section a,b values derive from
   MacAdam 1942 (2D), not from the 3D g-fit, so g-matrix vs a,b
   consistency is loose (up to 1.6x) for PGN rows by provenance.
+verification_2026_07_08: >
+  Full-table re-verification vs Wyszecki-Stiles (1982) Table I(5.4.2), book pp.
+  793-798: 5 transcription errors found and FIXED — 11/WRJB g12 +2 -> -2;
+  15/WRJB g23 -1 -> -6; 32/DLM g23 -22 -> -70; 34/WRJB g23 -22 -> -32;
+  33/DLM a 3.3 -> 3.5 (the earlier claimed OCR 'correction' to 3.3 went the
+  wrong way). RESOLVED QUESTIONS: (1) center 8 DLM is blank IN THE BOOK —
+  nothing lost in transcription; (2) the PGN a,b vs g-matrix inconsistency is
+  BOOK-INTERNAL: PGN rows carry only g11/g12/g22 plus printed theta/a/b, and
+  per the book's Note 3 the a,b were corrected per Brown (1952) while the g's
+  were not adjusted consistently (same pattern hits some WRJB/DLM rows too:
+  c5, c9, c16, c18, c27). GUIDANCE: judges should trust the g-matrix, not the
+  printed a,b, for this dataset.

@@ -44,3 +44,15 @@ sources:
 - snapshot_source: Zenodo DOI 10.5281/zenodo.3252742 (mirrored from rit-mcsl.org)
 license: License unspecified on Zenodo (original at RIT-MCSL was free-academic-use).
   Included under academic-use convention. Cite Asano et al. (2016).
+
+decoded_structure_2026_07_08: >
+  Sheets per file: xyz-02deg / xyz-10deg / lms-02deg / lms-10deg (+ parameters;
+  151-file also Other Info). Grid 390-780 nm step 5 (79 samples x 3 primaries =
+  237 rows); observers across columns. CRITICAL: Data_1000MonteCarloObs.xls
+  holds only 254 observers, NOT 1000 - the legacy BIFF8 .xls format caps at 256
+  columns (2 label + 254 data). The filename is aspirational; any "1000-observer
+  envelope" is really a 254-observer envelope. All 3 MD5 checksums verified.
+  Requires xlrd (openpyxl cannot read legacy .xls). Canonical spec: long format
+  (dataset, observer_id, fov_deg, function_type xyz|lms, primary, wavelength_nm,
+  value) ~ 393,420 rows + observer_parameters.csv. Enables an observer-metamerism
+  judge IF paired with spectral stimuli (e.g. natural_objects_2024) + illuminant SPD.

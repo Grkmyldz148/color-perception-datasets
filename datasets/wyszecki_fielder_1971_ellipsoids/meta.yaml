@@ -21,7 +21,7 @@ provenance:
   extraction_method: "Tesseract 5.5.0 OCR on 400 DPI rendered pages + manual cross-check"
   extraction_date: 2026-05-29
   source_pdf: color.pdf (Wyszecki-Stiles 1982 2nd ed)
-  verification_status: "verified — all 84 rows manually re-checked against high-res renders of Wyszecki-Stiles (1982) Appendix Table I(5.4.3) on 2026-05-29. 0 errors found."
+  verification_status: "re-verified 2026-07-08 at zoom against the book — the 2026-05-29 '0 errors' claim was FALSE: 7 transcription errors found and FIXED (see corrections_2026_07_08). Post-fix: all 84 rows digit-exact."
   known_caveats:
     - "Footer states third coord l_3 = 0.2 * log10(Y_0) = 0.2156 (constant, L_0 = Y_0 = 12 cd/m^2 for all 28 test centers)."
 
