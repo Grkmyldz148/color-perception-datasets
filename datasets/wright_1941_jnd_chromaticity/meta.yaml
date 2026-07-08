@@ -16,15 +16,46 @@ citation: >
 
 source_pdf: "/Volumes/harici_ssd/color-space/wright1941.pdf — Tables 1-7 (pp. 109-111)"
 
+n_rows: 533
+n_rows_by_table:
+  table_1_author_CIE: 215
+  table_2_HVW_CIE: 49
+  table_3_RAL_CIE: 48
+  table_4_THW_CIE: 29
+  table_5_mean_CIE: 49
+  table_6_author_RUCS: 96
+  table_7_mean_RUCS: 47
+
 provenance:
-  extraction_method: "Visual transcription from 300+ DPI page renders of Wright 1941 PDF, with row-by-row verification pass"
+  extraction_method: "Visual transcription from 300+ DPI page renders of Wright 1941 PDF, with row-by-row verification pass; canonical repair 2026-07-09 re-verified every cell against 400 DPI renders of extracted_pages/07_Wright_1941_Tables-1-7.pdf"
   extraction_date: 2026-05-29
-  verification_status: "verified-with-caveats — initial transcription had ~30 missing/incorrect cells across Tables 1, 5, 6; CSV was rebuilt from scratch with row-by-row reading of high-res page renders. Tables 1, 2, 3, 4, 5, 6, 7 + spectrum loci all transcribed. Some cells in dense P3-0.4x / P3-0.5x rows of Table 6 (author RUCS) remain low-confidence due to typeface artifacts in the 1941 typesetting; treat individual P3 RUCS rows as approximate."
+  verification_status: "fully-verified — 2026-07-09 canonical repair: complete two-way cell-level diff of all 533 CSV rows against 400 DPI renders of Tables 1-7 shows 100% agreement in both directions (every paper cell present in CSV, every CSV row present in the paper). The earlier low-confidence caveat on Table 6 P3 RUCS rows is resolved: those rows were structurally scrambled and have been rebuilt from the paper (see corrections_2026_07_09)."
   errors_found_during_verification:
     - "Many lines in Tables 1, 5, 6 originally truncated at l=0.30 or 0.40 when the published tables actually extended to l=0.50, 0.60, or 0.70"
     - "Several spectrum-locus rows in Tables 2, 3 only captured the first 5-6 wavelengths instead of all 9 per row"
     - "Table 6 (Author RUCS) row P1-0.60: original CSV had 5 entries; published table has 2 (l=0.05, 0.10)"
     - "Multiple cells in 0.495-0.65 row across Tables 1, 5, 6 had position-misalignment errors"
+  corrections_2026_07_09:
+    summary: "Digit-level audit against 400 DPI renders found 39 wrong/missing cells and 3 phantom lines, concentrated in Table 6 (author RUCS); CSV regenerated from a fully verified transcription (540 lines -> 534 incl. header; 533 data rows)."
+    table_3_RAL_CIE:
+      - "0.495-0.65: l=0.40/0.50 corrected 0.040/0.045 -> 0.035/0.040; missing l=0.60 = 0.045 added"
+    table_5_mean_CIE:
+      - "0.46-0.65 l=0.30: 0.046 -> 0.045"
+      - "0.495-0.65 l=0.20: 0.026 -> 0.025"
+    table_6_author_RUCS:
+      - "0.46-0.60: spurious 0.016 at l=0.20 removed and spurious l=0.60 row deleted; line is 0.016, 0.016, 0.018, 0.027, 0.030, 0.030 at l=0.05-0.50"
+      - "0.48-0.58 l=0.05: 0.013 -> 0.015"
+      - "phantom line P1-0.485 removed (not in the paper; its values were the paper's P2-0.485)"
+      - "missing line P1-0.495 restored: 0.033, 0.030, 0.027, 0.027, 0.030, 0.034 at l=0.05-0.50"
+      - "P2-0.485 set to paper values: 0.024, 0.021, 0.018, 0.022, 0.026 at l=0.05-0.40"
+      - "phantom line P2-0.50 removed (not in the paper)"
+      - "P2-0.53 corrected to 0.020, 0.016, 0.017, 0.026, 0.028 at l=0.05-0.40"
+      - "P2-0.585 and P3-0.48 were swapped; un-swapped: P2-0.585 = 0.024, 0.018 (l=0.05, 0.10) + special l=0.15 = 0.021; P3-0.48 = 0.025, 0.022, 0.019, 0.017 at l=0.05-0.30"
+      - "P3-0.495: missing l=0.40 = 0.042 added"
+      - "phantom line P3-0.52 removed (not in the paper)"
+    table_7_mean_RUCS:
+      - "first spectrum row was right-shifted with a duplicated 0.019; corrected to 0.46=0.019, 0.47=0.028, 0.48=0.032, 0.49=0.033, 0.50=0.031, 0.51=0.024, 0.52=0.027, 0.53=0.028, 0.54=0.024"
+    post_repair_diff: "Full two-way re-diff of the repaired CSV against all of Tables 1-7 (400 DPI renders): 533/533 rows match, 0 mismatches in either direction (100%)."
 
 experiment:
   apparatus: "Wright's trichromatic colorimeter (foveal 2° field, dark surround)"
@@ -93,7 +124,7 @@ usage_notes: >
   from the original 1941 paper.
 
 caveats:
-  - "Wright reports 35 lines tested by the author; this CSV transcribes the 33 published in Table 1 plus 18 transformed in Table 6 (some are subsets of the author's full 35-line set with auxiliary information lost in publication)."
+  - "Wright reports 35 lines tested by the author; this CSV transcribes the 34 published in Table 1 (plus the spectrum locus) and the 17 transformed in Table 6 (plus its spectrum locus) — some are subsets of the author's full 35-line set with auxiliary information lost in publication."
   - "Observer initials RAL and THW were not fully expanded in Wright's published acknowledgment; identified observers include H.V. Walters and L.C. Thomson per Wright's earlier collaborations."
   - "The 'spectrum locus' rows are perceptually equal wavelength steps along the spectral curve itself (where l is the wavelength in micrometers, not a fractional position along a straight line)."
   - "Some cells in Wright's original tables were blank or had auxiliary internal positions (e.g., P1-0.60 has a special l=0.15 point); these are preserved as additional rows in the CSV."

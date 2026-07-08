@@ -59,3 +59,12 @@ sources:
 - snapshot_source: coloria-dev/color-data (community extraction of Table 3)
 license: Underlying data 1986; extraction by coloria-dev (license unspecified). Included
   under academic-use convention. Cite Luo & Rigg (1986).
+
+verification_2026_07_09: >
+  Digit-level verification against the ORIGINAL paper (Luo & Rigg 1986, CRA
+  11(1), Table III "Ellipse parameters after adjustment", journal pp. 33-34;
+  scan at /Volumes/harici_ssd/color-space/luo_rigg1986.pdf): all 132 rows x
+  8 fields CONFIRMED-CLEAN, 0 mismatches. Convention verified: csv a =
+  paper a*1e-4; csv b = a/(paper a/b) (round-trips exactly); set_factor =
+  the per-ellipse R-bar column. The paper's table skips BFD RCK6 and the
+  csv skips it identically.
