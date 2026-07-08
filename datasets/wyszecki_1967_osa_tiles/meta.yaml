@@ -83,3 +83,9 @@ tags:
   - chromatic-luminance
   - osa
   - classic-psychophysics
+corrections_2026_07_09: >
+  Tile 9 observer_group corrected A -> AB: the book (Table 2(5.8.1), p. 416)
+  prints a DOUBLE asterisk on tile 9 (same marking as tiles 5 and 43), and the
+  text (p. 411) states exactly three overlap tiles were judged by both groups.
+  The earlier recorded "fix" (B -> A) was itself wrong. All 43 numeric cells
+  verified digit-exact against the book.

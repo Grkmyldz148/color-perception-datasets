@@ -107,3 +107,13 @@ tags:
   - ipt
   - classic-psychophysics
   - cct-extension
+corrections_2026_07_09: >
+  16 of 50 values had the WRONG SIGN: the publisher PDF (Optics Express
+  18(25):26229 Table 1) encodes minus signs as the private-use glyph U+F02D,
+  which plain text extraction silently drops. All absolute digit strings were
+  correct; signs restored from the PDF and independently confirmed against
+  Smet's own luxpy mcri.py (50/50 cells) and physical sanity (green objects
+  P<0, blue objects T<0). Affected: Green apple (P, a7), Ripe banana (a7),
+  Orange (a7), Dried lavender (T, a7), Smurf (P, T, a7), Strawberry yoghurt
+  (a7), Sliced Cucumber (P), Cauliflower (a7), Caucasian skin (a7),
+  N4 grey (P, T, a7). Any Sa-metric computed from the pre-fix file is invalid.

@@ -24,12 +24,12 @@ provenance:
   extraction_method: "Tesseract 5.5.0 OCR on 400 DPI rendered page + manual cross-check"
   extraction_date: 2026-05-29
   source_pdf: color.pdf (Wyszecki-Stiles 1982 2nd ed)
-  verification_status: "verified — all rows manually re-checked against high-res render of Wyszecki-Stiles (1982) Table 1(5.8.1) on 2026-05-29. 1 digit error fixed (450/4 y_10 0.226 -> 0.227); 1 missing stimulus added (556B/6). Final count 88 stimuli."
+  verification_status: "re-verified 2026-07-09 at 800 DPI vs Table 1(5.8.1) (book p. 412): 7 MISSING printed rows recovered (487/2-5, 492B/6-8) -> final count 95 stimuli, matching the book's stated 95. 450/4 y10: the book PRINTS 0.277, but 0.227 restores the series' monotone progression (0.330, 0.296, 0.261, ?, 0.192) — kept as 0.227 with the print flagged as a probable book typo (settle against the original 1964 paper if ever needed). Earlier fixes (556B/6 addition) confirmed."
   caveats:
-    - "Book text references 95 stimuli total; tabulated rows account for 89 after re-verification (single-direction 487 series may have unprinted extra entries; not derivable from page)."
+    - "2026-07-09: the earlier claim that only 89 rows are tabulated was wrong — all 95 are plainly printed; the 7 missing ones are now included. Book also prints Ref.(W) and Sur.(S) rows (not test stimuli; intentionally excluded)."
     - "Direction labels (positive/negative) inferred from y-direction relative to white reference, not explicit in original table."
 
-n_stimuli: 88
+n_stimuli: 95
 n_observers: 20
 
 experiment:

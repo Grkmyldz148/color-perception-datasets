@@ -2,9 +2,9 @@ name: Alder_1982_Ellipses
 full_name: Alder, Chaing, Chong, Coates, Khalili & Rigg (1982) chromaticity discrimination
   ellipses
 schema: jnd_ellipses
-n_ellipses: 120
+n_ellipses: 81
 by_illuminant:
-  D65: 81
+  D65: 42
   A: 39
 illuminants:
 - D65
@@ -37,3 +37,13 @@ sources:
 license: Underlying data published in 1982; extraction by coloria-dev. License at
   the coloria-dev repo unspecified; included here under the academic-use convention.
   Cite Alder et al. (1982).
+corrections_2026_07_09: >
+  UPSTREAM DATA BUG fixed: raw/table4.dat ("Illuminant D65", 81 rows) has its
+  rows 43-81 byte-identical to ALL of table5.dat (Illuminant A) — an upstream
+  duplication in coloria-dev/color-data (2018 commit). Three independent
+  proofs: exact diff; the paper's own abstract structure ("42 sets, 536 sample
+  pairs under D65" + 39 under A = 81 unique ellipses); the suspect rows' mean
+  chromaticity (0.424, 0.409) sits at the Illuminant-A white, not D65.
+  canonical.csv now carries the 81 unique ellipses (42 D65 + 39 A); the
+  pre-fix file double-weighted the A data and mislabeled its illuminant.
+  raw/ left as the upstream snapshot (bug preserved for provenance).
