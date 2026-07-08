@@ -88,3 +88,13 @@ tags:
   - classic-psychophysics
   - illuminant-A
   - illuminant-C
+
+verification_2026_07_09: >
+  Digit-level verification against the original paper (bartleson1960.pdf,
+  Tables I-III at 350 DPI): all 20 rows x all cells CONFIRMED-CLEAN
+  (tristimulus stored as paper value x 1e-4 as documented). Two doc notes:
+  (1) sigma_hue_steps stores the paper's "Munsell hue" SD column in
+  hue-notation units (the meta phrase "1 step = 2.5 units" is the paper's
+  own loose usage, not a conversion applied to the data); (2) the paper's
+  fourth SD column "Hue patches" (1.335 ... 3.857) is not carried in the
+  csv — add it if per-patch SDs are ever needed.
