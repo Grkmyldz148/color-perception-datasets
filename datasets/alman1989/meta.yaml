@@ -57,3 +57,4 @@ sources:
     Berns 1991 Table 4)
 license: Underlying data 1989/1991; extraction by coloria-dev. Included under academic-use
   convention. Cite Alman et al. (1989) and Berns et al. (1991).
+audit_note_2026_07_08: "canonical has exactly 5 vector directions per center (9 centers x 5 = 45); the 7-14-direction rows live in berns_1991_rit_dupont_tolerance_vectors."

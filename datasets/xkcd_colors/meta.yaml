@@ -1,10 +1,10 @@
 name: xkcd_colors
-full_name: xkcd Color Survey — curated 950 named colors (Munroe 2010)
+full_name: xkcd Color Survey — curated 949 named colors (Munroe 2010)
 schema: color_names
 n_colors: 949
 color_space_native: sRGB hex; canonical CIELAB computed via IEC 61966-2-1 sRGB→XYZ(D65)→CIELAB(D65)
 type: color naming — most-popular color name → RGB swatch
-description: Curated 950 most-popular color names from the xkcd Color Survey conducted
+description: Curated 949 most-popular color names from the xkcd Color Survey conducted
   by Randall Munroe in 2010. Over 200,000 participants gave free-form names to randomly
   displayed RGB swatches; the published list keeps the most-agreed-upon name for each
   color region. The full raw survey contains ~5 million responses (not redistributed

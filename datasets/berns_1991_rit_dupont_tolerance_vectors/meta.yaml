@@ -20,7 +20,13 @@ source_pdf: "/Volumes/harici_ssd/color-space/berns1991.pdf — Table IV (Appendi
 provenance:
   extraction_method: "Programmatic parsing of OCR text extracted via pdftotext, with manual fix for 4 rows missing LFL/UFL"
   extraction_date: 2026-05-29
-  verification_status: "verified — 156 rows match paper statistics; all T50 values within reported LFL/UFL bounds (where reported); 4 rows with missing fiducial limits corrected"
+  verification_status: "re-verified 2026-07-08 — full-table audit + repair against Table IV renders. T50/LFL/UFL columns were correct all along (0 bound violations); center/eigenvector columns had 7 OCR-corrupted rows, now fixed (see corrections_2026_07_08). Post-fix invariants: all 156 direction vectors unit-norm (|n-1| <= 0.05), all L* in [0,100], all directions A-I, no empty eigenvalues."
+  corrections_2026_07_08:
+    - "5 column-shift rows repaired (a dropped L*/a* cell shifted everything left, leaving eigenvalue empty and impossible values like L*=-33.43): Dark bluish green B II + C II (L* 31.59/31.60 restored), Dark reddish orange C II (L* 41.56 restored), Moderate purplish pink B II (a* 31.59 restored), Grayish purple G II (a* 11.45 restored)"
+    - "Dark bluish green B II delta_a* -0.1 -> -0.113 (truncated by the shift)"
+    - "Dark reddish orange phase-I direction '6' -> 'B' (OCR misread)"
+    - "Grayish yellow green D I b* 73.45 -> 13.45 (OCR digit error)"
+    - "3 lowercase 'c' direction letters normalized to 'C' (Moderate yellow I, Dark blue II, Light gray II)"
 
 n_color_centers: 19
 n_vectors_total: 156
@@ -106,7 +112,7 @@ usage_notes: >
   - Use COMBVD for ΔE training; use this table for tolerance ellipsoid analysis
 
 caveats:
-  - "Three rows (Moderate blue G, Dark reddish orange G, Light bluish green A, Dark bluish green H — all in phase II) lack fiducial limits because the maximum-likelihood estimator could not converge well. T50 and slope are still reported."
+  - "Four rows (Moderate blue G, Dark reddish orange G, Light bluish green A, Dark bluish green H — all in phase II) lack fiducial limits because the maximum-likelihood estimator could not converge well. T50 and slope are still reported."
   - "Row alignment is based on the documented color center order from the paper (Section 4 of Berns 1991). The 'Moderate bluish green' center has 14 vectors because both phase I and phase II measurements were performed for vectors A-E."
   - "Negative S values (probit slope) indicate inconsistent observer responses."
   - "P_chisq < 0.05 indicates poor fit of the probit model (e.g., heterogeneous response distributions)."

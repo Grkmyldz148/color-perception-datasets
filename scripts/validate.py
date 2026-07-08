@@ -190,14 +190,31 @@ def validate_corresponding_colors(meta: dict, rows: list[dict]) -> list[str]:
     declared = meta.get("n_pairs")
     if declared and declared != len(rows):
         errors.append(f"row count {len(rows)} != meta declared {declared}")
-    for i, r in enumerate(rows):
-        for col in ("u_t", "v_t", "u_m", "v_m"):
+    cols = rows[0].keys() if rows else set()
+    if {"u_t", "v_t", "u_m", "v_m"}.issubset(cols):
+        # u'v' pair layout (breneman-style)
+        for i, r in enumerate(rows):
+            for col in ("u_t", "v_t", "u_m", "v_m"):
+                try:
+                    v = float(r[col])
+                    if not (0 <= v <= 1):
+                        errors.append(f"row {i}: {col}={v} outside u'v' range [0,1]")
+                except (TypeError, ValueError, KeyError):
+                    errors.append(f"row {i}: {col} missing/unparseable")
+    elif {"L", "a", "b"}.issubset(cols):
+        # CIELAB per-medium layout (fairchild_johnson-style: one row per
+        # medium per color, matched across media by a shared color id)
+        for i, r in enumerate(rows):
             try:
-                v = float(r[col])
-                if not (0 <= v <= 1):
-                    errors.append(f"row {i}: {col}={v} outside u'v' range [0,1]")
+                L = float(r["L"])
+                float(r["a"]); float(r["b"])
+                if not (0 <= L <= 100.5):
+                    errors.append(f"row {i}: L={L} outside [0,100]")
             except (TypeError, ValueError, KeyError):
-                errors.append(f"row {i}: {col} missing/unparseable")
+                errors.append(f"row {i}: L/a/b missing/unparseable")
+    else:
+        errors.append("neither u'v' (u_t,v_t,u_m,v_m) nor CIELAB (L,a,b) "
+                      "corresponding-colors layout found")
     return errors
 
 
@@ -236,11 +253,26 @@ def main() -> int:
         if not meta_path.exists() or not canon_path.exists():
             print(f"  [SKIP] {ds_dir.name}: missing meta.yaml or canonical.csv")
             continue
-        meta = yaml.safe_load(meta_path.read_text())
+        try:
+            meta = yaml.safe_load(meta_path.read_text())
+        except yaml.YAMLError as e:
+            print(f"  [FAIL] {ds_dir.name}: meta.yaml does not parse — {str(e).splitlines()[0]}")
+            total_fail += 1
+            continue
         with open(canon_path) as f:
             rows = list(csv.DictReader(f))
 
-        schema_name = meta.get("schema", "").split("+")[0].split("_with_")[0].strip()
+        # `schema:` may be a string, a list (multi-schema sets), null, or a
+        # dict — normalize to the FIRST schema name; non-string leftovers
+        # route to the unknown-schema WARN branch instead of crashing.
+        schema_raw = meta.get("schema")
+        if isinstance(schema_raw, list) and schema_raw:
+            schema_raw = schema_raw[0]
+        if isinstance(schema_raw, dict) and schema_raw:
+            schema_raw = next(iter(schema_raw))
+        if not isinstance(schema_raw, str):
+            schema_raw = ""
+        schema_name = schema_raw.split("+")[0].split("_with_")[0].strip()
         validator = VALIDATORS.get(schema_name)
         if not validator:
             print(f"  [WARN] {ds_dir.name}: unknown schema '{schema_name}' — skipping deep check")

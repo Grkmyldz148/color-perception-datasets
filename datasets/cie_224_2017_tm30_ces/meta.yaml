@@ -35,7 +35,7 @@ provenance:
   download_url: "https://raw.githubusercontent.com/colour-science/colour/develop/colour/quality/datasets/tcs_cfi2017_1_nm.csv.gz"
 
 n_samples: 99
-n_wavelengths: 400  # 380-779 nm at 1 nm step
+n_wavelengths: 401  # 380-779 nm at 1 nm step
 wavelength_range_nm: [380, 779]
 wavelength_step_nm: 1
 
