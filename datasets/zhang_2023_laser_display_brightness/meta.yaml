@@ -89,3 +89,10 @@ tags:
   - hdr
   - modern-psychophysics
   - cam16
+audit_note_2026_07_08: >
+  BT.2020 coverage discrepancy: this meta says 67.91%, but the paper (PMC10609144)
+  reports 93.3% for the experimental laser projector and 66.36% for a separate 8K
+  prototype TV. The primaries stored here (R 0.7077,0.2834 / G 0.105,0.8181 /
+  B 0.1547,0.0247) match the EXPERIMENTAL projector and imply ~93% coverage, so
+  67.91% likely came from the wrong device. Primaries and stimulus data verified
+  correct; only the coverage figure is suspect.

@@ -113,3 +113,10 @@ tags:
   - 17-centers
   - chinese-research
   - industrial-color
+corrections_2026_07_08: >
+  Full 17-row verification against the paper PDF (Tables I and VII, 300 DPI):
+  16/17 rows digit-exact incl. all negative values; ONE error fixed — row 6
+  (Yellow): a10_target 27.0 -> -7.0 and a10_measured 26.3 -> -6.3 (OCR
+  minus-sign corruption the original manual fix missed; the CIE yellow center
+  is a* ~ -7, and a +27/+47 point would be orange-red). Table VII ellipse
+  parameters verified exact for all 17 rows.

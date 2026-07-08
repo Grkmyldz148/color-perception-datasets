@@ -43,3 +43,14 @@ sources:
 - snapshot_source: Zenodo DOI 10.5281/zenodo.4394536
 license: License unspecified by uploader on Zenodo. Included for research convenience
   under the academic-use convention. Cite the LUTCHI papers above.
+
+decoded_structure_2026_07_08: >
+  .col / col.* files = CIE x, y, Y colorimetry (some with a leading index
+  column). .vis / mean.* files = Lightness, Colourfulness, Hue-composition
+  (LUTCHI 0-400 hue-quadrature scale; sentinel 999.0 = missing hue -> NaN).
+  Illuminant/condition is encoded in the FILENAME (d65/d50/a-high/a-low/wf/
+  tl84); phases p1-p12 = Luo-Rhodes experiment phases. cold65wnl is EMPTY
+  (1 byte) - exclude. col.rf (41 rows) vs mean4 (40 rows) off-by-one: col.rf
+  carries an extra reference-white row. Canonical spec: paired stimulus <->
+  appearance long format (~5,000-5,500 mean rows; paper aggregates 43,332 raw
+  estimations).

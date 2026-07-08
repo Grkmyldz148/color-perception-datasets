@@ -1,5 +1,5 @@
 filename,size_bytes,category,lines
-Data_1000MonteCarloObs.xls,4278272,1000 Monte Carlo observers (simulated),
+Data_1000MonteCarloObs.xls,4278272,254 Monte Carlo observers (simulated; file named 1000 but BIFF8 256-column cap truncates to 254),
 Data_10CatObs.xls,281600,10 categorical observers (age × field-size groupings),
 Data_151Obs.xls,2716160,"151 individual observers (CMFs + cone fundamentals, 2° + 10°)",
 urls.txt,390,source URLs + checksums,

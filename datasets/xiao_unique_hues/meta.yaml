@@ -34,3 +34,13 @@ sources:
     the coloria-dev README).
 license: Author-provided data, redistributed via coloria-dev. License unspecified;
   included under academic-use convention. Cite Xiao et al. (2011).
+
+decoded_structure_2026_07_08: >
+  unique_{hue}.json arrays are (185 observers, 3 sessions/repetitions, 9
+  luminance-chroma settings, XYZ tristimulus) - values are XYZ, NOT Lab
+  (Xiao et al. 2011, CRA 36(5):316-323). averages.json = mean over
+  (observer, session) -> (9, XYZ) per hue. neutral_gray = (185, XYZ), Y=59.86.
+  Viewing: CRT, dark room, background xy [0.2897, 0.2977], adapting luminance
+  114.6 cd/m2. Canonical spec: observer_id x hue x session x level x XYZ =
+  19,980 rows (+185 neutral-gray rows); exact L*/C* labels of the 9 settings
+  need the paper's stimulus table.

@@ -1,4 +1,4 @@
-center_id,viewing_field_deg,averaging,x_0,y_0,Y_0_ftL,g11_x1e4,g12_x1e4,g22_x1e4,g23_x1e4,g33_x1e4,g13_x1e4,theta_deg,a_x1e4,b_x1e4
+center_id,viewing_field_deg,averaging,x_0,y_0,Y_0_ftL,g11_x1e4,g12_x1e4,g22_x1e4,g23_x1e4,g33_x1e4,g13_x1e4,theta_deg,a_x1e3,b_x1e3
 1,10,straight,0.308,0.280,4.6,44.17,-16.33,18.44,0.15,1.72,-0.92,64,3.03,1.39
 1,10,weighted,0.308,0.280,4.6,87.59,-27.34,33.97,-3.28,11.18,-2.27,67,2.11,1.08
 2,10,straight,0.339,0.493,6.4,23.19,-2.15,3.81,0.78,4.13,3.16,84,5.30,2.09

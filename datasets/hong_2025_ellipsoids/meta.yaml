@@ -1,18 +1,18 @@
 name: Hong_2025_Ellipsoids
-full_name: Hong, Yoon, Yoo & Brainard (2025) isoluminant JND ellipsoid grid
+full_name: Hong et al. (2025) isoluminant JND ellipsoid grid (Hong, Bouhassira, Chow, Sanders, Shvartsman, Guan, Williams & Brainard)
 schema: jnd_ellipses
 n_ellipses: 84872
 n_subjects: 8
 n_grid_points_per_subject: 10609
 grid_size: "103 × 103 (isoluminant 2-D)"
 plane: "isoluminant (DKL-derived 2D Wishart Process plane)"
-illuminant: "calibrated DELL OLED display, ≈300 cd/m² white"
+illuminant: "calibrated DELL U2723QE (IPS Black, 3840×2160@60Hz), ≈300 cd/m² white"
 type: "modern dense JND ellipsoid grid (Wishart Process Psychophysical Model)"
 is_jnd: true
 is_suprathreshold: false
 description: |
   Dense per-subject JND ellipsoid field fitted via the Wishart Process
-  Psychophysical Model from Hong, Yoon, Yoo & Brainard (eLife 2025).
+  Psychophysical Model from Hong et al. (eLife 2025).
   Eight color-normal observers completed ~12,000 trials each (mix of
   adaptive AEPsych + MOCS replications). The Wishart Process produces
   a SMOOTH 2-D field of 2x2 covariance matrices Σ(x, y) across the
@@ -31,7 +31,11 @@ notes:
   - "Bootstrap iterations (120 per grid point) are NOT included in this canonical export to keep size reasonable. The original Zenodo CSV has all 120 bootstraps if you need confidence intervals."
   - "★ This is the gold-standard JND dataset published in the project's diagnostic era; supersedes MacAdam 1942 for isoluminant JND evaluation. MacAdam 1942 remains in the pool for historical comparison only."
 sources:
-  - paper: "Hong, F. F., Yoon, J., Yoo, Y. & Brainard, D. H. (2025). Comprehensive characterization of color discrimination thresholds with a Wishart Process Psychophysical Model. eLife reviewed preprint 108943."
+  - paper: "Hong, F. F., Bouhassira, N., Chow, D., Sanders, K., Shvartsman, M., Guan, L., Williams, D. & Brainard, D. H. (2025). Comprehensive characterization of color discrimination thresholds with a Wishart Process Psychophysical Model. eLife reviewed preprint 108943."
   - data: "OSF project k27js (https://osf.io/k27js/) — 525 raw files, 1.36 GB. This canonical export is the per-subject Σ_org grid only (~7 MB)."
   - code: "https://github.com/fh862/ellipsoids_eLife2025"
 license: "CC BY 4.0 (OSF project license). Cite Hong et al. (2025)."
+corrections_2026_07_08:
+  - "Author list fixed: 'Yoon, Yoo' do not exist; real list is Hong, Bouhassira, Chow, Sanders, Shvartsman, Guan, Williams, Brainard (verified against eLife RP108943 / bioRxiv)."
+  - "Display fixed: DELL U2723QE is an IPS Black panel, not OLED."
+  - "TODO (high value): the paper measured the monitor primaries + gamma with a PR-670; the 'Monitor primaries' data is on OSF k27js but was not copied into raw/. Pulling it enables a true device-RGB->XYZ transform, replacing the device-RGB~sRGB approximation that currently keeps the ColorBench hong judge in the diagnostic tier."

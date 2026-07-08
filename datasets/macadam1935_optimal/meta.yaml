@@ -29,3 +29,9 @@ sources:
 - snapshot_source: colour.volume.datasets.OPTIMAL_COLOUR_STIMULI_ILLUMINANTS (BSD-3
     licensed source data)
 license: CC BY 4.0 for this canonical export. Underlying data public-domain.
+attribution_note_2026_07_08: >
+  D65 was standardized in 1967, so MacAdam (1935) could not have computed the D65
+  shell. The tabulated A/C/D65 optimal-colour boundary points come from Wyszecki &
+  Stiles (1982) Color Science pp. 179-184 Table I(3.7), via the colour-science
+  snapshot (verified identical, 0.0 max diff). MacAdam 1935 is the METHOD citation;
+  the numbers are the Wyszecki-Stiles tabulation.
