@@ -1,3 +1,4 @@
+schema: cielab_ellipsoids
 name: huang_2012_cielab_ellipses
 title: "Huang et al. (2012) Color Discrimination Ellipses at 17 CIE-Recommended Centers"
 short_description: >
@@ -48,7 +49,7 @@ coord_system:
   ellipse_definition: "Δ E^2 = g11*(Δa)^2 + 2*g12*Δa*Δb + g22*(Δb)^2 + g33*(ΔL)^2"
   note: "Cross terms ΔL-Δa and ΔL-Δb excluded (per Luo-Rigg 1986 finding that these contribute insignificantly)"
 
-schema:
+columns:
   - color_center_id: integer 1-17
   - color_name: descriptive name (e.g., "Red", "Green high chroma")
   - L10_target, a10_target, b10_target: intended CIELAB10 center

@@ -1,3 +1,4 @@
+schema: jnd_ellipsoids_g
 name: brown_1957_12obs_ellipsoids
 title: "Brown (1957) Average Color-Matching Ellipsoids — Twelve Observers"
 short_description: >
@@ -54,7 +55,7 @@ cross_section:
   a_x1e3: "Major semi-axis × 10^3 (in CIE xy units; book header 10³a — the old ×10^4 name was wrong by 10×)"
   b_x1e3: "Minor semi-axis × 10^3 (in CIE xy units)"
 
-schema:
+columns:
   - center_id: integer 1-22, identifies the chromatic test center
   - viewing_field_deg: 10 or 2 (only center 13 has both)
   - averaging: '"straight" or "weighted"'

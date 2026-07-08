@@ -1,3 +1,4 @@
+schema: jnd_ellipsoids_rgb_sigma
 name: koenderink_2026_3d_metric_field
 title: "Koenderink, van Doorn, Braun & Gegenfurtner (2026) 3D Color Discrimination Metric Field"
 short_description: >
@@ -49,7 +50,7 @@ coord_system:
     B_actual: "B_x1000 / 1000"
     Sigma_actual: "Sigma_*_x1e7 / 10^7"
 
-schema:
+columns:
   - center_id: integer 1-35
   - R_x1000, G_x1000, B_x1000: RGB location of ellipsoid center (× 1000)
   - Sigma_11_x1e7: 3×3 covariance matrix entry [0,0] (× 10^7)

@@ -1,3 +1,4 @@
+schema: hk_brightness
 name: wyszecki_1967_osa_tiles
 title: "Wyszecki (1967) Heterochromatic Brightness Match — 43 Colored Tiles"
 short_description: >
@@ -45,7 +46,7 @@ coord_system:
   chromaticity: "CIE 1931 (x, y) under CIE Standard Illuminant C"
   luminance_factor: "Y relative to MgO (98%)"
 
-schema:
+columns:
   - tile_id: integer 1-43
   - observer_group: A | B | AB
   - x, y: CIE 1931 chromaticity coords under Illuminant C

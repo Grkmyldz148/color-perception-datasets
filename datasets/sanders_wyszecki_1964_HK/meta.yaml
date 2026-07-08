@@ -1,3 +1,4 @@
+schema: hk_brightness
 name: sanders_wyszecki_1964_HK
 title: "Sanders & Wyszecki (1964) Heterochromatic Brightness Matching — 20 Observers"
 short_description: >
@@ -54,7 +55,7 @@ stimulus_naming:
 coord_system:
   chromaticity: "CIE 1964 10° supplementary observer (x_10, y_10)"
 
-schema:
+columns:
   - stimulus_id: 'full stimulus name like "601/1" or "556B/3"'
   - wavelength_nm: integer wavelength of series in nm
   - index: integer position within series (1 closest to white)

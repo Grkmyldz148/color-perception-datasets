@@ -1,3 +1,4 @@
+schema: memory_colors
 name: bartleson_1960_memory_colors
 title: "Bartleson (1960) Memory Colors of 10 Familiar Objects"
 short_description: >
@@ -37,7 +38,7 @@ coord_systems:
   CIE_C:
     description: "CIE 1931 tristimulus + chromaticity values under Illuminant C (average daylight ~6774 K)"
 
-schema:
+columns:
   - memory_color: object name (10 categories)
   - illuminant: '"A" or "C"'
   - X, Y, Z: CIE 1931 tristimulus values (× 10000 in original table, scaled here)

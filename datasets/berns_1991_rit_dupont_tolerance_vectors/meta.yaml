@@ -1,3 +1,4 @@
+schema: tolerance_vectors
 name: berns_1991_rit_dupont_tolerance_vectors
 title: "Berns et al. (1991) RIT-DuPont Suprathreshold Color-Difference Tolerance Vectors"
 short_description: >
@@ -78,7 +79,7 @@ vector_directions:
   H: "L*-b* diagonal"
   I: "L*-b* anti-diagonal"
 
-schema:
+columns:
   - color_center: name of the color center (1 of 19)
   - vector_direction: A | B | C | D | E | F | G | H | I
   - phase: '"I" (phase I observations) or "II" (phase II observations)'

@@ -1,3 +1,4 @@
+schema: spectral_reflectance
 name: natural_objects_2024_southern_cone_spectra
 title: "Bigogno et al. (2025) Spectral Reflectance of Natural Objects from the Southern Cone of South America"
 short_description: >
@@ -52,7 +53,7 @@ files:
   - Stones.csv: "63 stone samples × spectra"
   - File_name_structure.txt: "Naming convention for sample IDs"
 
-schema:
+columns:
   - File name: "Object code (e.g., 'Ba_JmimDBr')"
   - Measurement date: "When the measurement was taken"
   - Measurement angle: "0 degrees, or other angles"

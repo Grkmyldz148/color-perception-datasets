@@ -1,3 +1,4 @@
+schema: image_pair_difference
 name: spcd_2023_photographic_color_difference
 title: "SPCD (Wang et al. 2023) — Smartphone Photographic Color Difference Dataset"
 short_description: >

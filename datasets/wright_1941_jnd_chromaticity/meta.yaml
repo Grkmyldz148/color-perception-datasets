@@ -1,3 +1,4 @@
+schema: jnd_steps
 name: wright_1941_jnd_chromaticity
 title: "Wright (1941) Sensitivity of the Eye to Small Colour Differences — JND Chromaticity Steps"
 short_description: >
@@ -62,7 +63,7 @@ line_id_conventions:
   position: "Distance l along the line from the shorter-wavelength endpoint (or from the purple endpoint Pi for purple-to-wavelength lines), expressed as a fraction"
   spectrum: "Special line_id; position is the wavelength itself (in micrometers); delta_step is the wavelength interval just-noticeable at that wavelength"
 
-schema:
+columns:
   - observer: author | HVW | RAL | THW | mean
   - chart: CIE | RUCS
   - line_id: identifier of the chromaticity line, e.g., "0.46-0.53", "P1-0.55", "spectrum"
