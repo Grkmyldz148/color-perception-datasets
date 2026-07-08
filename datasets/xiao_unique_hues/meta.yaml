@@ -44,3 +44,16 @@ decoded_structure_2026_07_08: >
   114.6 cd/m2. Canonical spec: observer_id x hue x session x level x XYZ =
   19,980 rows (+185 neutral-gray rows); exact L*/C* labels of the 9 settings
   need the paper's stimulus table.
+
+canonical_files_2026_07_08:
+  built: 2026-07-08
+  cross_check: mean over (observer,session) reproduces raw/averages.json; max deviation 7.46e-14 (float noise)
+  files:
+    unique_hues_long.csv:
+      rows: 19980
+      columns: observer_id (0-184), hue (red|green|blue|yellow), session (0-2), level (0-8), X, Y, Z
+      note: decoded from raw/unique_{hue}.json arrays shape (185,3,9,3); values are XYZ tristimulus
+    neutral_gray.csv:
+      rows: 185
+      columns: observer_id (0-184), X, Y, Z
+      note: from raw/neutral_gray.yaml (per-observer neutral gray, Y=59.86); mean matches averages.json neutral-gray exactly

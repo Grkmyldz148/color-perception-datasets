@@ -46,12 +46,37 @@ license: WCS data has been publicly distributed by Berkeley since the early 2000
   when using.
 
 decoded_structure_2026_07_08: >
+  STATUS: BUILT (2026-07-08) — see canonical_files below.
   Parsing traps (2026-07-08 audit): (1) foci-exp.txt uses classic-Mac CR-only
   line endings - normalize \r before reading; (2) 'NA' is a REAL WCS term code
   (6,187 rows, 17 languages) - pandas needs keep_default_na=False; (3) dict.txt
   is UTF-8; (4) in foci-exp, neutral-row cells A1..A40/J1..J40 must collapse to
   A0 (cnum 141) / J0 (cnum 89). Genuine dict-resolution failure only 0.20%
-  (codes TSA/TSO in language 45). Every one of the 2,616 speakers named all 330
-  chips. Canonical spec: naming_long.csv (863,280 rows: lang, speaker, chip,
-  term_code, translit, + chip Munsell/Lab-under-C join) + foci_long.csv (~31,072
-  deduped focal picks, built from foci-exp.txt NOT foci.txt).
+  (codes TSA/TSO in language 45, plus 2 '?' rows in language 87). Every one of
+  the 2,616 speakers named all 330 chips. Built lean (ids only, no denormalized
+  joins — chips.csv/languages.csv are the join tables).
+
+canonical_files:
+  naming_long.csv:
+    built_from: raw/term.txt (resolution checked against raw/dict.txt)
+    rows: 863280
+    columns:
+      lang_id: language number, joins languages.csv lnum (110 languages)
+      speaker_id: speaker number within language (2,616 speakers, each names all 330 chips)
+      chip_id: WCS chip number 1..330, joins chips.csv cnum
+      term_code: literal WCS term abbreviation from term.txt ('NA' is a real code,
+        never a null; '*' = no response, 24,035 rows)
+      resolved: 1 if (lang_id, term_code) has a dict.txt entry, else 0
+        ('*' rows are 0; genuine unresolved = 1,747 rows = 0.202%)
+  foci_long.csv:
+    built_from: raw/foci-exp.txt (NOT foci.txt; CR-only endings normalized)
+    rows: 31072
+    note: deduped on (lang, speaker, term_id, term_code, chip) from 110,784 raw
+      lines; neutral cells A1..A40/J1..J40 collapsed to A0 (141) / J0 (89) via
+      raw/chip.txt; 0 unresolvable chips
+    columns:
+      lang_id: language number, joins languages.csv lnum
+      speaker_id: speaker number within language
+      term_id: dict.txt term number within language (TNUM)
+      term_code: WCS term abbreviation (WCSC)
+      chip_id: WCS chip number 1..330, joins chips.csv cnum

@@ -56,3 +56,18 @@ decoded_structure_2026_07_08: >
   (dataset, observer_id, fov_deg, function_type xyz|lms, primary, wavelength_nm,
   value) ~ 393,420 rows + observer_parameters.csv. Enables an observer-metamerism
   judge IF paired with spectral stimuli (e.g. natural_objects_2024) + illuminant SPD.
+
+canonical_files_2026_07_08:
+  built: 2026-07-08
+  requires: xlrd==1.2.0 (legacy BIFF .xls)
+  files:
+    observer_fundamentals_long.csv:
+      rows: 393420
+      size: ~15.5MB (under 30MB; not gzipped)
+      breakdown: 948 rows/observer x (10 cat + 151 ind + 254 montecarlo) = 9480 + 143148 + 240792
+      columns: dataset (10cat|151ind|montecarlo), observer_id, field_of_view_deg (2|10), function_type (xyz|lms), primary (x/y/z or l/m/s), wavelength_nm (390-780 step 5), value
+      note: montecarlo file capped at 254 observers by BIFF8 256-column limit (not 1000)
+    observer_parameters.csv:
+      rows: 3412
+      columns: dataset (10cat|151ind), observer_id, sheet (parameters|Other Info), parameter, value
+      note: parameters sheet for 10cat+151ind; Other Info (demographics + intra-observer match dE00) for 151ind only; montecarlo has no parameters sheet
