@@ -35,6 +35,27 @@ def check_range(val: float, lo: float, hi: float) -> bool:
         return False
 
 
+def _generic_validator(n_keys: tuple, numeric_cols: tuple):
+    """Row-count vs the first declared n_* meta key + numeric parseability of
+    key columns (empty cells allowed — some sources carry legitimate blanks)."""
+    def validate(meta: dict, rows: list[dict]) -> list[str]:
+        errors = []
+        declared = next((meta[k] for k in n_keys if isinstance(meta.get(k), int)), None)
+        if declared is not None and declared != len(rows):
+            errors.append(f"row count {len(rows)} != meta declared {declared}")
+        for i, r in enumerate(rows):
+            for c in numeric_cols:
+                v = (r.get(c) or "").strip()
+                if not v:
+                    continue
+                try:
+                    float(v)
+                except ValueError:
+                    errors.append(f"row {i}: {c}={v!r} not numeric")
+        return errors
+    return validate
+
+
 def validate_pair_diff(meta: dict, rows: list[dict]) -> list[str]:
     errors = []
     required = ["L1", "a1", "b1", "L2", "a2", "b2", "dv"]
@@ -234,6 +255,29 @@ VALIDATORS = {
     "lightness_scaling": lambda meta, rows: ([
         f"row count {len(rows)} != meta declared {meta['n_samples']}"
     ] if meta.get("n_samples") and meta["n_samples"] != len(rows) else []),
+    # 2026-07-08 — generic validators for the remaining schema families:
+    # declared-row-count check + numeric parseability of key columns
+    # (empty cells allowed: some sources legitimately carry blanks, e.g. the
+    # brown_macadam_1949 center-8/DLM row that is blank in the book itself).
+    "jnd_ellipsoids_g": _generic_validator(
+        ("n_ellipsoid_rows", "n_ellipsoids", "n_rows"),
+        ("x_0", "y_0", "theta_deg")),
+    "jnd_ellipsoids_rgb_sigma": _generic_validator(
+        ("n_ellipsoids", "n_centers"), ("R_x1000", "Sigma_11_x1e7")),
+    "cielab_ellipsoids": _generic_validator(
+        ("n_color_centers",), ("L10_measured", "A_semimajor", "theta_deg")),
+    "tolerance_vectors": _generic_validator(
+        ("n_vectors_total", "n_ellipsoids"), ("T50", "L_star", "delta_L")),
+    "jnd_steps": _generic_validator(("n_rows", "n_steps"), ("delta_step",)),
+    "memory_colors": _generic_validator(("n_rows", "n_objects"), ()),
+    "hk_brightness": _generic_validator(("n_rows", "n_stimuli"), ()),
+    "spectral_reflectance": _generic_validator(
+        ("n_measurements_total", "n_wavelengths"), ()),
+    "cone_fundamentals": _generic_validator(("n_rows",), ("wavelength_nm",)),
+    "preference_rating": _generic_validator(("n_rows", "n_ratings"), ()),
+    "color_summary": _generic_validator(("n_rows",), ()),
+    "image_pair_difference": _generic_validator(
+        ("n_pairs",), ("mean_perceptual_CD", "n_observations")),
     "tolerance_ellipsoids": lambda meta, rows: ([
         f"row count {len(rows)} != meta declared {meta['n_ellipsoids']}"
     ] if meta.get("n_ellipsoids") and meta["n_ellipsoids"] != len(rows) else []),

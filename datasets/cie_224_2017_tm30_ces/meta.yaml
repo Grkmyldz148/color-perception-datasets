@@ -1,3 +1,4 @@
+schema: spectral_reflectance
 name: cie_224_2017_tm30_ces
 title: "CIE 224:2017 / ANSI/IES TM-30 — 99 Color Evaluation Samples (CES)"
 short_description: >
@@ -41,7 +42,7 @@ wavelength_step_nm: 1
 
 format: "wide — one row per wavelength, one column per CES sample"
 
-schema:
+columns:
   - wavelength_nm: wavelength in nanometers (380-779)
   - CES01 through CES99: spectral reflectance factor at this wavelength (0.0 to 1.0+) for sample CES_i
 

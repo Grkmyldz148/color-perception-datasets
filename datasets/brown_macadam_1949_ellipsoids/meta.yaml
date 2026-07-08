@@ -1,3 +1,4 @@
+schema: jnd_ellipsoids_g
 name: brown_macadam_1949_ellipsoids
 title: "Brown & MacAdam (1949) Color-Matching Ellipsoids — Two-Degree Field"
 short_description: >
@@ -67,7 +68,7 @@ cross_section:
   a_x1e3: "Major semi-axis × 10^3 (in CIE xy units)"
   b_x1e3: "Minor semi-axis × 10^3 (in CIE xy units)"
 
-schema:
+columns:
   - center_id: integer 1-39 (no 10)
   - observer: WRJB | DLM | PGN
   - dim: '"3D" (WRJB, DLM) or "2D" (PGN)'

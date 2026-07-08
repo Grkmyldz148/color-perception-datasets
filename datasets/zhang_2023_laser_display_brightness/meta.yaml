@@ -1,3 +1,4 @@
+schema: hk_brightness
 name: zhang_2023_laser_display_brightness
 title: "Zhang et al. (2023) Wide-Gamut Laser Display Brightness Matching"
 short_description: >
@@ -41,7 +42,7 @@ coord_system:
   chromaticity: "CIE 1931 (x, y) on the laser display"
   luminance: "L in cd/m^2 (display-measured luminance)"
 
-schema:
+columns:
   canonical_csv:
     - stimulus_id: integer 1-30
     - L_cd_m2: stimulus luminance in cd/m^2 (the L Wyszecki refers to)

@@ -1,3 +1,4 @@
+schema: memory_colors
 name: smet_2010_memory_colors
 title: "Smet et al. (2010/2011) Memory Colours of 10 Familiar Objects in IPT Space"
 short_description: >
@@ -61,7 +62,7 @@ memory_color_model:
   a6: "Diagonal T-axis shape coefficient"
   a7: "Off-diagonal coefficient (orientation/correlation)"
 
-schema:
+columns:
   - object_name: human-readable name
   - symbol: short code (e.g., S-ap for green apple) used in Smet's papers
   - P_center: memory colour P-coordinate in IPT (≈ red-green opponent dimension)

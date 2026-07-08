@@ -1,3 +1,4 @@
+schema: jnd_ellipsoids_g
 name: wyszecki_fielder_1971_ellipsoids
 title: "Wyszecki & Fielder (1971) Color-Matching Ellipsoids"
 short_description: >
@@ -52,7 +53,7 @@ coord_system:
     (ds)^2 = g11*(dx)^2 + 2*g12*(dx)(dy) + g22*(dy)^2 + 2*g13*(dx)(dl_3) + 2*g23*(dy)(dl_3) + g33*(dl_3)^2
   ellipsoid_normalization: "g coefficients in CSV are stored as integer × 10^-2 (multiply column by 0.01 to get actual g_ij)"
 
-schema:
+columns:
   - center_id: integer 1-28, identifies the test color center
   - observer: GF | AR | GW
   - x_0, y_0: CIE 1931 chromaticity of test center
