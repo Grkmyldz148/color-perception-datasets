@@ -43,6 +43,10 @@ stimulus_id,wavelength_nm,index,direction,x10,y10,BL_ratio_mean
 492/3,492,3,positive,0.229,0.406,1.19
 492/4,492,4,positive,0.206,0.415,1.21
 487/1,487,1,positive,0.322,0.365,1.04
+487/2,487,2,positive,0.282,0.365,1.10
+487/3,487,3,positive,0.242,0.365,1.18
+487/4,487,4,positive,0.202,0.365,1.24
+487/5,487,5,positive,0.174,0.365,1.27
 482/1,482,1,negative,0.304,0.351,1.05
 482/2,482,2,negative,0.266,0.338,1.12
 482/3,482,3,negative,0.229,0.324,1.21
@@ -87,3 +91,6 @@ stimulus_id,wavelength_nm,index,direction,x10,y10,BL_ratio_mean
 492B/3,492,3,negative,0.436,0.331,1.26
 492B/4,492,4,negative,0.473,0.317,1.32
 492B/5,492,5,negative,0.511,0.303,1.46
+492B/6,492,6,negative,0.548,0.290,1.61
+492B/7,492,7,negative,0.586,0.276,1.71
+492B/8,492,8,negative,0.620,0.264,1.75

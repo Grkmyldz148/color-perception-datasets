@@ -28,7 +28,7 @@ n_stimuli: 30
 n_observers: 16
 
 experiment:
-  apparatus: "Laser projection display (BT.2020 gamut coverage 67.91%)"
+  apparatus: "Laser projection display (BT.2020 gamut coverage 93.3%)"
   field_geometry: "Bipartite field"
   reference_stimulus: "Achromatic white"
   task: "Heterochromatic brightness matching — adjust reference brightness until equally bright to chromatic test"
@@ -36,7 +36,7 @@ experiment:
     Red: "x=0.7077, y=0.2834"
     Green: "x=0.105, y=0.8181"
     Blue: "x=0.1547, y=0.0247"
-  bt2020_coverage_percent: 67.91
+  bt2020_coverage_percent: 93.3
 
 coord_system:
   chromaticity: "CIE 1931 (x, y) on the laser display"
@@ -90,10 +90,11 @@ tags:
   - hdr
   - modern-psychophysics
   - cam16
-audit_note_2026_07_08: >
-  BT.2020 coverage discrepancy: this meta says 67.91%, but the paper (PMC10609144)
-  reports 93.3% for the experimental laser projector and 66.36% for a separate 8K
-  prototype TV. The primaries stored here (R 0.7077,0.2834 / G 0.105,0.8181 /
-  B 0.1547,0.0247) match the EXPERIMENTAL projector and imply ~93% coverage, so
-  67.91% likely came from the wrong device. Primaries and stimulus data verified
-  correct; only the coverage figure is suspect.
+audit_note_2026_07_09: >
+  BT.2020 coverage SETTLED against the paper (PMC10609144): the experimental
+  projector covers 93.3% OF BT.2020 (paper quote). The old 67.91% was a
+  QUANTITY mixup, not a device mixup: it is the projector gamut's fraction of
+  the total visible chromaticity-diagram area (BT.2020 itself = 63.72% on that
+  scale; 66.36% = the separate 8K Laser TV, same area scale). All 30 stimuli +
+  17 observer-CV values verified digit-exact vs Tables 2/3; primaries match
+  Table 1.

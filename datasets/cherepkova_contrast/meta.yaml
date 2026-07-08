@@ -29,4 +29,4 @@ sources:
 - paper: Cherepkova, O. et al. (2025). Individual Contrast Preferences Database. NTNU
     Colour and Visual Computing Lab. Zenodo DOI 10.5281/zenodo.17430959
 license: CC BY 4.0 (declared on Zenodo). Cite Cherepkova et al. (2025).
-audit_note_2026_07_08: "Shipped canonical is a COMPLETE 22-observer x 499-image grid (10,978 cells, no sparsity); one image of the source 500 was dropped entirely during canonicalization."
+audit_note_2026_07_09: "Verified bit-for-bit against the official Zenodo record (10.5281/zenodo.17430959; zip md5 0d813cac09bc4d44fe586fd2f4be1b6d = raw/full_bundle.zip): the SOURCE itself contains exactly 499 images — nothing was dropped in canonicalization. Complete 22x499 grid; 10,975/10,978 values exact at 6 decimals, 3 are half-way rounding ties (5e-7)."
