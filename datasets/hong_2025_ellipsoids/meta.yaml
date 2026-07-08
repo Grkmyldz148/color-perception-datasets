@@ -38,4 +38,4 @@ license: "CC BY 4.0 (OSF project license). Cite Hong et al. (2025)."
 corrections_2026_07_08:
   - "Author list fixed: 'Yoon, Yoo' do not exist; real list is Hong, Bouhassira, Chow, Sanders, Shvartsman, Guan, Williams, Brainard (verified against eLife RP108943 / bioRxiv)."
   - "Display fixed: DELL U2723QE is an IPS Black panel, not OLED."
-  - "TODO (high value): the paper measured the monitor primaries + gamma with a PR-670; the 'Monitor primaries' data is on OSF k27js but was not copied into raw/. Pulling it enables a true device-RGB->XYZ transform, replacing the device-RGB~sRGB approximation that currently keeps the ColorBench hong judge in the diagnostic tier."
+  - "DONE 2026-07-08: calibration matrices pulled from OSF k27js into raw/ (M_RGBToXYZ1931 + inverses + LMS variants + TransformMatrices_README). Key facts from the calibration README: 2DW->RGB output is LINEAR monitor RGB (no gamma); M_RGBToXYZ1931 is from PR-670-measured primaries, Y in cd/m2, white ~190 cd/m2. The ColorBench hong judge now runs fully colorimetric (linear RGB -> XYZ1931 -> relative -> Bradford monitor-white->D65) and is promoted to the validated tier."

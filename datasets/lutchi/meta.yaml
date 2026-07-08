@@ -54,3 +54,83 @@ decoded_structure_2026_07_08: >
   carries an extra reference-white row. Canonical spec: paired stimulus <->
   appearance long format (~5,000-5,500 mean rows; paper aggregates 43,332 raw
   estimations).
+
+canonical_files:
+  canonical.csv: index of all 100 raw files (schema compound_legacy, unchanged).
+  appearance_long.csv: >
+    BUILT 2026-07-08. Long-format paired appearance table: 5,147 rows from 52
+    verified (vis, col) file pairs. Columns: experiment, phase_or_group,
+    illuminant, variant, sample_index, x, y, Y, lightness, colourfulness,
+    hue_composition. Missing hue (raw sentinel 999.0 in kuo.a.vis/kuo.d65.vis,
+    5 rows; literal 'NaN' token in mean.p2/mean.p10/mean.35.p6, 7 rows) ->
+    empty cell (12 total). Every pairing verified by corr(lightness, Y^(1/3))
+    >= 0.94 on the paired rows. bit_p3.vis has FIVE columns
+    (index, lightness, brightness, colourfulness, hue); the brightness column
+    (col 3) is DROPPED in appearance_long.csv (lightness chosen as col 2 —
+    marginally better corr with Y^(1/3), 0.951 vs 0.946, and consistent with
+    the 4-column bit phases). Lightness occasionally exceeds 100 (magnitude
+    estimation, 32 rows, max 117.9); hue occasionally wraps slightly outside
+    [0,400] (117 rows, range -6.0 .. 427.0) — both left as-is.
+
+appearance_long_pairing_2026_07_08:
+  alignment_rules:
+    - >-
+      vis-side files carry a leading sample-index column; col-side files are
+      index-free (except bit_*.col, whose leading index is stripped). All
+      pairs align POSITIONALLY row-by-row (line i of vis <-> line i of col).
+    - >-
+      col.rf.pN reference-white row is the LAST row (row 41, Y=100.000000 in
+      all six files) and is dropped; rows 1-40 then align positionally with
+      mean4.pN, whose out-of-order index column (1-16,19-39,17,18,40) matches
+      col.rf row ORDER, not row number. Verified: positional corr ~0.95 vs
+      0.43 for index-join and 0.04 for a white-FIRST hypothesis.
+    - >-
+      t-phases (mean.p1t/p5t/p6t/p7t) have index gaps (subsets of a 97-98
+      sample master set) but col.pNt files carry exactly the same subset, so
+      positional alignment holds (corr 0.95-0.97).
+    - >-
+      l*/nl* experiments: '.l'-suffixed and cold50* colorimetry files are the
+      per-experiment sample subsets; pairing by illuminant token + surround
+      letter (b/g/w = black/grey/white, h/l = high/low luminance) + exact row
+      count. Every colorimetry file in the bundle is consumed by exactly one
+      family (counts are a perfect partition); note colah/colal and
+      cold50gb/cold50wnl are chromatically near-identical, so the h<->ah,
+      l<->al and w<->wnl, bg<->gb assignments rest on filename semantics
+      (correlation cannot discriminate them).
+  pairs:
+    - {vis: bit_p1.vis, col: bit_p1.col, n: 120, experiment: bit, illuminant: unknown, variant: raw}
+    - {vis: bit_p2.vis, col: bit_p2.col, n: 120, experiment: bit, illuminant: unknown, variant: raw}
+    - {vis: bit_p3.vis, col: bit_p3.col, n: 120, experiment: bit, illuminant: unknown, variant: raw, note: 5-col vis (brightness col dropped)}
+    - {vis: bit_p4.vis, col: bit_p4.col, n: 90, experiment: bit, illuminant: unknown, variant: raw}
+    - {vis: bit_p5.vis, col: bit_p5.col, n: 90, experiment: bit, illuminant: unknown, variant: raw}
+    - {vis: kuo.a.vis, col: kuo.a.col, n: 239, experiment: kuo, illuminant: a, variant: raw, note: high/low level not encoded in filename}
+    - {vis: kuo.d65.vis, col: kuo.d65.col, n: 240, experiment: kuo, illuminant: d65, variant: raw}
+    - {vis: kuo.tl84.vis, col: kuo.tl84.col, n: 239, experiment: kuo, illuminant: tl84, variant: raw}
+    - {vis: 'mean.p{1,2,3,4,8,10}', col: 'col.p{1,2,3,4,8,10}', n: 98 each, experiment: phase, illuminant: unknown, variant: mean}
+    - {vis: 'mean.p{1t,5t,6t,7t}', col: 'col.p{1t,5t,6t,7t}', n: 95/97/94/93, experiment: phase, illuminant: unknown, variant: mean}
+    - {vis: 'mean.35.p{1,2,3,5,6}', col: 'col.35.p{1,2,3,5,6}', n: 99/99/99/95/36, experiment: 35mm, illuminant: unknown, variant: mean}
+    - {vis: 'mean4.p{1..6}', col: 'col.rf.p{1..6}', n: 40 each, experiment: ref, illuminant: unknown, variant: mean4, note: col.rf row 41 (reference white) dropped}
+    - {vis: 'la.{gg,gw}', col: colal.l, n: 61 each, experiment: lightness, illuminant: a_low, variant: la}
+    - {vis: 'ld65.{gg,gw}', col: cold65.l, n: 103 each, experiment: lightness, illuminant: d65, variant: ld65}
+    - {vis: 'lwf.{gg,gw}', col: colwf.l, n: 86 each, experiment: lightness, illuminant: wf, variant: lwf}
+    - {vis: 'lmean.{bb,gb,gg,gw}', col: cold50gbl, n: 100 each, experiment: lightness, illuminant: d50, variant: lmean}
+    - {vis: lmean.ww, col: cold50wl, n: 94, experiment: lightness, illuminant: d50, variant: lmean}
+    - {vis: nla.gh, col: colah, n: 105, experiment: nonlinear, illuminant: a_high, variant: nl}
+    - {vis: nla.gl, col: colal, n: 105, experiment: nonlinear, illuminant: a_low, variant: nl}
+    - {vis: 'nld65.{gh,gl}', col: cold65, n: 105 each, experiment: nonlinear, illuminant: d65, variant: nl}
+    - {vis: 'nlwf.{gh,gl}', col: colwf, n: 105 each, experiment: nonlinear, illuminant: wf, variant: nl}
+    - {vis: 'nlmean.{bh,bl,gh,gl}', col: cold50gb, n: 105 each, experiment: nonlinear, illuminant: d50, variant: nl}
+    - {vis: 'nlmean.{wh,wl}', col: cold50wnl, n: 105 each, experiment: nonlinear, illuminant: d50, variant: nl}
+  orphans_excluded:
+    - 'mean4.p7 .. mean4.p12 (240 rows): no col.rf.p7-p12 exist; the six
+      col.rf files are mutually near-identical so correlation cannot select a
+      partner (rf.p4 trivially "wins" for ALL 12 phases). Pairing p7-12 to
+      rf.p1-6 cyclically is plausible (low-luminance repeat phases) but
+      unverifiable from the data alone - SKIPPED rather than guessed.'
+    - 'mean.35.p4 (99 rows): col.35.p4 does not exist; col.35.p1/p2/p3 are
+      near-identical (corr 0.951-0.954 for all three) so no confident
+      partner - SKIPPED.'
+    - 'cold65wnl: empty file (1 byte).'
+    - 'colah/colal/cold65/colwf full 105-row sets are consumed by the nl*
+      pairs; their .l subsets by the l* pairs - no unused colorimetry
+      remains except cold65wnl.'

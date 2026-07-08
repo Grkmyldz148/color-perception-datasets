@@ -1,0 +1,3413 @@
+dataset,observer_id,sheet,parameter,value
+10cat,1,parameters,Age,38
+10cat,2,parameters,Age,30
+10cat,3,parameters,Age,56
+10cat,4,parameters,Age,33
+10cat,5,parameters,Age,38
+10cat,6,parameters,Age,45
+10cat,7,parameters,Age,31
+10cat,8,parameters,Age,51
+10cat,9,parameters,Age,35
+10cat,10,parameters,Age,68
+10cat,1,parameters,Lens [%],0
+10cat,2,parameters,Lens [%],-22.93222627
+10cat,3,parameters,Lens [%],17.00795756
+10cat,4,parameters,Lens [%],-8.340002495
+10cat,5,parameters,Lens [%],1.602521874
+10cat,6,parameters,Lens [%],7.014940575
+10cat,7,parameters,Lens [%],-33.96024786
+10cat,8,parameters,Lens [%],15.03832669
+10cat,9,parameters,Lens [%],-18.25564091
+10cat,10,parameters,Lens [%],10.85868301
+10cat,1,parameters,Macula [%],0
+10cat,2,parameters,Macula [%],6.962191825
+10cat,3,parameters,Macula [%],-10.9947934
+10cat,4,parameters,Macula [%],-43.58029486
+10cat,5,parameters,Macula [%],54.7328797
+10cat,6,parameters,Macula [%],-35.31193258
+10cat,7,parameters,Macula [%],36.26361433
+10cat,8,parameters,Macula [%],30.83508015
+10cat,9,parameters,Macula [%],-11.93214792
+10cat,10,parameters,Macula [%],-15.99733179
+10cat,1,parameters,OD in L [%],0
+10cat,2,parameters,OD in L [%],-11.10653472
+10cat,3,parameters,OD in L [%],0.591105848
+10cat,4,parameters,OD in L [%],5.872093409
+10cat,5,parameters,OD in L [%],3.709006239
+10cat,6,parameters,OD in L [%],4.783942642
+10cat,7,parameters,OD in L [%],7.288647348
+10cat,8,parameters,OD in L [%],2.397270797
+10cat,9,parameters,OD in L [%],-2.432612941
+10cat,10,parameters,OD in L [%],0.6930381
+10cat,1,parameters,OD in M [%],0
+10cat,2,parameters,OD in M [%],-4.958219425
+10cat,3,parameters,OD in M [%],-5.487150663
+10cat,4,parameters,OD in M [%],4.529927987
+10cat,5,parameters,OD in M [%],16.05725407
+10cat,6,parameters,OD in M [%],11.60120636
+10cat,7,parameters,OD in M [%],7.407740592
+10cat,8,parameters,OD in M [%],-8.69630897
+10cat,9,parameters,OD in M [%],-6.993460894
+10cat,10,parameters,OD in M [%],-10.33191228
+10cat,1,parameters,OD in S [%],0
+10cat,2,parameters,OD in S [%],7.590745679
+10cat,3,parameters,OD in S [%],-1.01365926
+10cat,4,parameters,OD in S [%],0.186598643
+10cat,5,parameters,OD in S [%],-1.820357289
+10cat,6,parameters,OD in S [%],-4.476222883
+10cat,7,parameters,OD in S [%],-4.616621316
+10cat,8,parameters,OD in S [%],-0.046782564
+10cat,9,parameters,OD in S [%],-9.905415639
+10cat,10,parameters,OD in S [%],9.313008
+10cat,1,parameters,Shift in L [nm],0
+10cat,2,parameters,Shift in L [nm],-0.092437331
+10cat,3,parameters,Shift in L [nm],0.851065129
+10cat,4,parameters,Shift in L [nm],-1.039069074
+10cat,5,parameters,Shift in L [nm],1.142685675
+10cat,6,parameters,Shift in L [nm],-0.609794229
+10cat,7,parameters,Shift in L [nm],-0.615094438
+10cat,8,parameters,Shift in L [nm],0.492360583
+10cat,9,parameters,Shift in L [nm],0.34234673
+10cat,10,parameters,Shift in L [nm],0.746978772
+10cat,1,parameters,Shift in M [nm],0
+10cat,2,parameters,Shift in M [nm],0.333817959
+10cat,3,parameters,Shift in M [nm],0.507858148
+10cat,4,parameters,Shift in M [nm],-1.413070735
+10cat,5,parameters,Shift in M [nm],-1.122374849
+10cat,6,parameters,Shift in M [nm],-1.270910749
+10cat,7,parameters,Shift in M [nm],0.147189064
+10cat,8,parameters,Shift in M [nm],0.082763693
+10cat,9,parameters,Shift in M [nm],-0.57907462
+10cat,10,parameters,Shift in M [nm],0.41841603
+10cat,1,parameters,Shift in S [nm],0
+10cat,2,parameters,Shift in S [nm],-0.787800703
+10cat,3,parameters,Shift in S [nm],0.713851142
+10cat,4,parameters,Shift in S [nm],0.05733172
+10cat,5,parameters,Shift in S [nm],0.233255808
+10cat,6,parameters,Shift in S [nm],-0.061290033
+10cat,7,parameters,Shift in S [nm],0.798124933
+10cat,8,parameters,Shift in S [nm],0.127790838
+10cat,9,parameters,Shift in S [nm],-0.086908738
+10cat,10,parameters,Shift in S [nm],0.424340588
+151ind,1,parameters,Age,26
+151ind,2,parameters,Age,47
+151ind,3,parameters,Age,50
+151ind,4,parameters,Age,24
+151ind,5,parameters,Age,22
+151ind,6,parameters,Age,28
+151ind,7,parameters,Age,27
+151ind,8,parameters,Age,29
+151ind,9,parameters,Age,34
+151ind,10,parameters,Age,36
+151ind,11,parameters,Age,48
+151ind,12,parameters,Age,52
+151ind,13,parameters,Age,45
+151ind,14,parameters,Age,46
+151ind,15,parameters,Age,30
+151ind,16,parameters,Age,35
+151ind,17,parameters,Age,45
+151ind,18,parameters,Age,23
+151ind,19,parameters,Age,20
+151ind,20,parameters,Age,36
+151ind,21,parameters,Age,51
+151ind,22,parameters,Age,26
+151ind,23,parameters,Age,48
+151ind,24,parameters,Age,39
+151ind,25,parameters,Age,25
+151ind,26,parameters,Age,23
+151ind,27,parameters,Age,28
+151ind,28,parameters,Age,34
+151ind,29,parameters,Age,52
+151ind,30,parameters,Age,23
+151ind,31,parameters,Age,40
+151ind,32,parameters,Age,42
+151ind,33,parameters,Age,37
+151ind,34,parameters,Age,29
+151ind,35,parameters,Age,44
+151ind,36,parameters,Age,45
+151ind,37,parameters,Age,50
+151ind,38,parameters,Age,24
+151ind,39,parameters,Age,38
+151ind,40,parameters,Age,38
+151ind,41,parameters,Age,43
+151ind,42,parameters,Age,50
+151ind,43,parameters,Age,52
+151ind,44,parameters,Age,37
+151ind,45,parameters,Age,44
+151ind,46,parameters,Age,50
+151ind,47,parameters,Age,40
+151ind,48,parameters,Age,43
+151ind,49,parameters,Age,32
+151ind,50,parameters,Age,51
+151ind,51,parameters,Age,42
+151ind,52,parameters,Age,45
+151ind,53,parameters,Age,50
+151ind,54,parameters,Age,36
+151ind,55,parameters,Age,52
+151ind,56,parameters,Age,40
+151ind,57,parameters,Age,45
+151ind,58,parameters,Age,32
+151ind,59,parameters,Age,53
+151ind,60,parameters,Age,43
+151ind,61,parameters,Age,52
+151ind,62,parameters,Age,20
+151ind,63,parameters,Age,25
+151ind,64,parameters,Age,34
+151ind,65,parameters,Age,48
+151ind,66,parameters,Age,28
+151ind,67,parameters,Age,46
+151ind,68,parameters,Age,49
+151ind,69,parameters,Age,69
+151ind,70,parameters,Age,47
+151ind,71,parameters,Age,45
+151ind,72,parameters,Age,24
+151ind,73,parameters,Age,24
+151ind,74,parameters,Age,21
+151ind,75,parameters,Age,31
+151ind,76,parameters,Age,63
+151ind,77,parameters,Age,40
+151ind,78,parameters,Age,46
+151ind,79,parameters,Age,51
+151ind,80,parameters,Age,47
+151ind,81,parameters,Age,23
+151ind,82,parameters,Age,53
+151ind,83,parameters,Age,21
+151ind,84,parameters,Age,37
+151ind,85,parameters,Age,30
+151ind,86,parameters,Age,30
+151ind,87,parameters,Age,30
+151ind,88,parameters,Age,50
+151ind,89,parameters,Age,41
+151ind,90,parameters,Age,30
+151ind,91,parameters,Age,58
+151ind,92,parameters,Age,46
+151ind,93,parameters,Age,59
+151ind,94,parameters,Age,30
+151ind,95,parameters,Age,48
+151ind,96,parameters,Age,29
+151ind,97,parameters,Age,29
+151ind,98,parameters,Age,25
+151ind,99,parameters,Age,32
+151ind,100,parameters,Age,32
+151ind,101,parameters,Age,52
+151ind,102,parameters,Age,38
+151ind,103,parameters,Age,40
+151ind,104,parameters,Age,56
+151ind,105,parameters,Age,65
+151ind,106,parameters,Age,27
+151ind,107,parameters,Age,53
+151ind,108,parameters,Age,50
+151ind,109,parameters,Age,51
+151ind,110,parameters,Age,27
+151ind,111,parameters,Age,45
+151ind,112,parameters,Age,46
+151ind,113,parameters,Age,52
+151ind,114,parameters,Age,50
+151ind,115,parameters,Age,59
+151ind,116,parameters,Age,62
+151ind,117,parameters,Age,59
+151ind,118,parameters,Age,30
+151ind,119,parameters,Age,32
+151ind,120,parameters,Age,24
+151ind,121,parameters,Age,39
+151ind,122,parameters,Age,59
+151ind,123,parameters,Age,33
+151ind,124,parameters,Age,46
+151ind,125,parameters,Age,27
+151ind,126,parameters,Age,40
+151ind,127,parameters,Age,26
+151ind,128,parameters,Age,36
+151ind,129,parameters,Age,48
+151ind,130,parameters,Age,67
+151ind,131,parameters,Age,51
+151ind,132,parameters,Age,33
+151ind,133,parameters,Age,55
+151ind,134,parameters,Age,32
+151ind,135,parameters,Age,30
+151ind,136,parameters,Age,44
+151ind,137,parameters,Age,49
+151ind,138,parameters,Age,24
+151ind,139,parameters,Age,38
+151ind,140,parameters,Age,38
+151ind,141,parameters,Age,43
+151ind,142,parameters,Age,33
+151ind,143,parameters,Age,67
+151ind,144,parameters,Age,41
+151ind,145,parameters,Age,57
+151ind,146,parameters,Age,24
+151ind,147,parameters,Age,28
+151ind,148,parameters,Age,31
+151ind,149,parameters,Age,38
+151ind,150,parameters,Age,34
+151ind,151,parameters,Age,47
+151ind,1,parameters,Lens [%],22.83365635
+151ind,2,parameters,Lens [%],0.7354084094
+151ind,3,parameters,Lens [%],0.5267466085
+151ind,4,parameters,Lens [%],-3.685288886
+151ind,5,parameters,Lens [%],2.287772136
+151ind,6,parameters,Lens [%],17.76069047
+151ind,7,parameters,Lens [%],-7.084073012
+151ind,8,parameters,Lens [%],8.416821732
+151ind,9,parameters,Lens [%],0.6991628817
+151ind,10,parameters,Lens [%],-4.63475319
+151ind,11,parameters,Lens [%],-6.981022876
+151ind,12,parameters,Lens [%],-27.57406186
+151ind,13,parameters,Lens [%],11.30792998
+151ind,14,parameters,Lens [%],7.099885399
+151ind,15,parameters,Lens [%],6.329390891
+151ind,16,parameters,Lens [%],2.732798916
+151ind,17,parameters,Lens [%],-8.160843211
+151ind,18,parameters,Lens [%],-0.5314032277
+151ind,19,parameters,Lens [%],0.9820910234
+151ind,20,parameters,Lens [%],-25.43628614
+151ind,21,parameters,Lens [%],-0.1649201718
+151ind,22,parameters,Lens [%],10.53191029
+151ind,23,parameters,Lens [%],-10.51673839
+151ind,24,parameters,Lens [%],-6.917904118
+151ind,25,parameters,Lens [%],-13.47624374
+151ind,26,parameters,Lens [%],-1.286778108
+151ind,27,parameters,Lens [%],-23.71306584
+151ind,28,parameters,Lens [%],-2.068106372
+151ind,29,parameters,Lens [%],4.688949347
+151ind,30,parameters,Lens [%],-4.620853467
+151ind,31,parameters,Lens [%],6.537098196
+151ind,32,parameters,Lens [%],-12.07849852
+151ind,33,parameters,Lens [%],12.80283898
+151ind,34,parameters,Lens [%],8.195542886
+151ind,35,parameters,Lens [%],-2.10242961
+151ind,36,parameters,Lens [%],-7.514958305
+151ind,37,parameters,Lens [%],-14.40547513
+151ind,38,parameters,Lens [%],-7.088003197
+151ind,39,parameters,Lens [%],-1.349384312
+151ind,40,parameters,Lens [%],-16.74368675
+151ind,41,parameters,Lens [%],15.32169282
+151ind,42,parameters,Lens [%],-8.23733263
+151ind,43,parameters,Lens [%],-1.425276737
+151ind,44,parameters,Lens [%],-19.8774819
+151ind,45,parameters,Lens [%],1.828762839
+151ind,46,parameters,Lens [%],-2.024159947
+151ind,47,parameters,Lens [%],3.268823061
+151ind,48,parameters,Lens [%],-4.847181654
+151ind,49,parameters,Lens [%],-1.571355898
+151ind,50,parameters,Lens [%],9.697270995
+151ind,51,parameters,Lens [%],-4.854454949
+151ind,52,parameters,Lens [%],4.69311658
+151ind,53,parameters,Lens [%],3.24637263
+151ind,54,parameters,Lens [%],-6.836313307
+151ind,55,parameters,Lens [%],1.950711978
+151ind,56,parameters,Lens [%],-17.75531125
+151ind,57,parameters,Lens [%],1.210111423
+151ind,58,parameters,Lens [%],-3.381862577
+151ind,59,parameters,Lens [%],10.83317588
+151ind,60,parameters,Lens [%],7.582861744
+151ind,61,parameters,Lens [%],0.5710957557
+151ind,62,parameters,Lens [%],13.92281833
+151ind,63,parameters,Lens [%],-21.25493611
+151ind,64,parameters,Lens [%],-4.372430142
+151ind,65,parameters,Lens [%],-2.924157277
+151ind,66,parameters,Lens [%],-6.400241499
+151ind,67,parameters,Lens [%],-10.35936594
+151ind,68,parameters,Lens [%],6.304528347
+151ind,69,parameters,Lens [%],14.59757143
+151ind,70,parameters,Lens [%],-1.752199463
+151ind,71,parameters,Lens [%],21.90421172
+151ind,72,parameters,Lens [%],24.56127389
+151ind,73,parameters,Lens [%],-18.8960979
+151ind,74,parameters,Lens [%],-8.828122458
+151ind,75,parameters,Lens [%],-7.790220522
+151ind,76,parameters,Lens [%],-2.740076013
+151ind,77,parameters,Lens [%],-8.446601362
+151ind,78,parameters,Lens [%],-29.77921436
+151ind,79,parameters,Lens [%],-17.75403145
+151ind,80,parameters,Lens [%],30.99652118
+151ind,81,parameters,Lens [%],-3.751997295
+151ind,82,parameters,Lens [%],-1.430726706
+151ind,83,parameters,Lens [%],-8.194117494
+151ind,84,parameters,Lens [%],-26.18592665
+151ind,85,parameters,Lens [%],-21.75432058
+151ind,86,parameters,Lens [%],-17.31069224
+151ind,87,parameters,Lens [%],-25.73678617
+151ind,88,parameters,Lens [%],8.626525533
+151ind,89,parameters,Lens [%],-0.6371638856
+151ind,90,parameters,Lens [%],-4.655972446
+151ind,91,parameters,Lens [%],-20.8848781
+151ind,92,parameters,Lens [%],-17.2414692
+151ind,93,parameters,Lens [%],1.909076166
+151ind,94,parameters,Lens [%],-30.4969283
+151ind,95,parameters,Lens [%],-9.773074586
+151ind,96,parameters,Lens [%],-25.26080276
+151ind,97,parameters,Lens [%],-6.933307445
+151ind,98,parameters,Lens [%],-6.823968487
+151ind,99,parameters,Lens [%],-18.11898441
+151ind,100,parameters,Lens [%],-0.4391317755
+151ind,101,parameters,Lens [%],-13.58510995
+151ind,102,parameters,Lens [%],-11.3371902
+151ind,103,parameters,Lens [%],-0.8864643103
+151ind,104,parameters,Lens [%],-13.93109239
+151ind,105,parameters,Lens [%],29.18899972
+151ind,106,parameters,Lens [%],-23.87592245
+151ind,107,parameters,Lens [%],-3.961297013
+151ind,108,parameters,Lens [%],14.96819974
+151ind,109,parameters,Lens [%],25.70442753
+151ind,110,parameters,Lens [%],-6.55385442
+151ind,111,parameters,Lens [%],0.1637507314
+151ind,112,parameters,Lens [%],1.025548783
+151ind,113,parameters,Lens [%],1.647546028
+151ind,114,parameters,Lens [%],19.04898439
+151ind,115,parameters,Lens [%],17.82045259
+151ind,116,parameters,Lens [%],7.137905568
+151ind,117,parameters,Lens [%],-18.41093277
+151ind,118,parameters,Lens [%],-4.21784949
+151ind,119,parameters,Lens [%],-29.85607322
+151ind,120,parameters,Lens [%],-10.34276468
+151ind,121,parameters,Lens [%],3.67187055
+151ind,122,parameters,Lens [%],8.162638355
+151ind,123,parameters,Lens [%],-11.52790407
+151ind,124,parameters,Lens [%],-23.68468809
+151ind,125,parameters,Lens [%],-4.080155182
+151ind,126,parameters,Lens [%],-14.54499402
+151ind,127,parameters,Lens [%],0.94901452
+151ind,128,parameters,Lens [%],-11.89257159
+151ind,129,parameters,Lens [%],-0.7568312397
+151ind,130,parameters,Lens [%],36.82443405
+151ind,131,parameters,Lens [%],10.24055931
+151ind,132,parameters,Lens [%],-20.08210354
+151ind,133,parameters,Lens [%],43.63920084
+151ind,134,parameters,Lens [%],-18.75442463
+151ind,135,parameters,Lens [%],-13.94357134
+151ind,136,parameters,Lens [%],10.51041063
+151ind,137,parameters,Lens [%],4.749736509
+151ind,138,parameters,Lens [%],-17.23852264
+151ind,139,parameters,Lens [%],11.65345799
+151ind,140,parameters,Lens [%],-2.163545988
+151ind,141,parameters,Lens [%],-0.7143274725
+151ind,142,parameters,Lens [%],-30.99940202
+151ind,143,parameters,Lens [%],31.08488483
+151ind,144,parameters,Lens [%],-1.761537985
+151ind,145,parameters,Lens [%],-2.894167023
+151ind,146,parameters,Lens [%],12.55735533
+151ind,147,parameters,Lens [%],-16.65625586
+151ind,148,parameters,Lens [%],-3.060111869
+151ind,149,parameters,Lens [%],8.66725866
+151ind,150,parameters,Lens [%],3.872334628
+151ind,151,parameters,Lens [%],30.31387491
+151ind,1,parameters,Macula [%],-44.6652045
+151ind,2,parameters,Macula [%],-80.65500378
+151ind,3,parameters,Macula [%],15.67726484
+151ind,4,parameters,Macula [%],37.4299296
+151ind,5,parameters,Macula [%],7.208437843
+151ind,6,parameters,Macula [%],0.08802884207
+151ind,7,parameters,Macula [%],77.20346302
+151ind,8,parameters,Macula [%],7.393993706
+151ind,9,parameters,Macula [%],18.53726405
+151ind,10,parameters,Macula [%],-9.231994948
+151ind,11,parameters,Macula [%],24.84593253
+151ind,12,parameters,Macula [%],42.27442951
+151ind,13,parameters,Macula [%],-2.3493386
+151ind,14,parameters,Macula [%],-13.139163
+151ind,15,parameters,Macula [%],-43.31979374
+151ind,16,parameters,Macula [%],0.2113742576
+151ind,17,parameters,Macula [%],1.057596228
+151ind,18,parameters,Macula [%],20.28750523
+151ind,19,parameters,Macula [%],-20.03221226
+151ind,20,parameters,Macula [%],-9.643511112
+151ind,21,parameters,Macula [%],78.68318958
+151ind,22,parameters,Macula [%],-93.37843336
+151ind,23,parameters,Macula [%],-15.56489135
+151ind,24,parameters,Macula [%],-0.9581321912
+151ind,25,parameters,Macula [%],-0.1445064434
+151ind,26,parameters,Macula [%],-45.20924743
+151ind,27,parameters,Macula [%],20.36364008
+151ind,28,parameters,Macula [%],38.60197468
+151ind,29,parameters,Macula [%],3.341661336
+151ind,30,parameters,Macula [%],-44.87525465
+151ind,31,parameters,Macula [%],-5.58300975
+151ind,32,parameters,Macula [%],7.092319667
+151ind,33,parameters,Macula [%],0.01462967621
+151ind,34,parameters,Macula [%],58.20420654
+151ind,35,parameters,Macula [%],40.1143877
+151ind,36,parameters,Macula [%],-41.01577263
+151ind,37,parameters,Macula [%],2.778977274
+151ind,38,parameters,Macula [%],35.37503585
+151ind,39,parameters,Macula [%],14.8237911
+151ind,40,parameters,Macula [%],1.774729906
+151ind,41,parameters,Macula [%],-20.39723462
+151ind,42,parameters,Macula [%],-25.47581889
+151ind,43,parameters,Macula [%],74.17098419
+151ind,44,parameters,Macula [%],34.31484604
+151ind,45,parameters,Macula [%],-32.20592199
+151ind,46,parameters,Macula [%],14.08343612
+151ind,47,parameters,Macula [%],-48.26707578
+151ind,48,parameters,Macula [%],-29.05571562
+151ind,49,parameters,Macula [%],-38.00658792
+151ind,50,parameters,Macula [%],0.0613517139
+151ind,51,parameters,Macula [%],109.368
+151ind,52,parameters,Macula [%],65.19011125
+151ind,53,parameters,Macula [%],-41.95413464
+151ind,54,parameters,Macula [%],-5.872993461
+151ind,55,parameters,Macula [%],13.07630731
+151ind,56,parameters,Macula [%],-0.004660569698
+151ind,57,parameters,Macula [%],0.2340309519
+151ind,58,parameters,Macula [%],-9.322176495
+151ind,59,parameters,Macula [%],-17.77166878
+151ind,60,parameters,Macula [%],81.20412158
+151ind,61,parameters,Macula [%],3.006263929
+151ind,62,parameters,Macula [%],11.28772512
+151ind,63,parameters,Macula [%],-29.86678339
+151ind,64,parameters,Macula [%],38.77807749
+151ind,65,parameters,Macula [%],-91.09079361
+151ind,66,parameters,Macula [%],26.69341582
+151ind,67,parameters,Macula [%],-10.64078607
+151ind,68,parameters,Macula [%],-52.95423508
+151ind,69,parameters,Macula [%],18.15308828
+151ind,70,parameters,Macula [%],40.19905866
+151ind,71,parameters,Macula [%],-24.2942708
+151ind,72,parameters,Macula [%],71.86265873
+151ind,73,parameters,Macula [%],36.90216468
+151ind,74,parameters,Macula [%],38.33924254
+151ind,75,parameters,Macula [%],0.4314142375
+151ind,76,parameters,Macula [%],46.59011241
+151ind,77,parameters,Macula [%],26.3985062
+151ind,78,parameters,Macula [%],-9.573976067
+151ind,79,parameters,Macula [%],-41.079047
+151ind,80,parameters,Macula [%],7.619074663e-05
+151ind,81,parameters,Macula [%],0.4744116298
+151ind,82,parameters,Macula [%],-30.25089406
+151ind,83,parameters,Macula [%],-63.6266946
+151ind,84,parameters,Macula [%],16.82831829
+151ind,85,parameters,Macula [%],37.82678482
+151ind,86,parameters,Macula [%],11.09429925
+151ind,87,parameters,Macula [%],-12.0425255
+151ind,88,parameters,Macula [%],4.230857043
+151ind,89,parameters,Macula [%],-8.392621376
+151ind,90,parameters,Macula [%],-74.75447823
+151ind,91,parameters,Macula [%],56.1020514
+151ind,92,parameters,Macula [%],19.05149383
+151ind,93,parameters,Macula [%],18.3179304
+151ind,94,parameters,Macula [%],109.368
+151ind,95,parameters,Macula [%],74.7517216
+151ind,96,parameters,Macula [%],19.29346421
+151ind,97,parameters,Macula [%],-22.90027174
+151ind,98,parameters,Macula [%],-50.32728092
+151ind,99,parameters,Macula [%],55.71390339
+151ind,100,parameters,Macula [%],59.88085055
+151ind,101,parameters,Macula [%],0.007136626733
+151ind,102,parameters,Macula [%],70.62562738
+151ind,103,parameters,Macula [%],-0.1760266288
+151ind,104,parameters,Macula [%],-29.90012379
+151ind,105,parameters,Macula [%],10.01994191
+151ind,106,parameters,Macula [%],19.27901636
+151ind,107,parameters,Macula [%],0.000631335229
+151ind,108,parameters,Macula [%],43.31391435
+151ind,109,parameters,Macula [%],-34.5986295
+151ind,110,parameters,Macula [%],-35.19387931
+151ind,111,parameters,Macula [%],-18.14097315
+151ind,112,parameters,Macula [%],27.39831305
+151ind,113,parameters,Macula [%],64.88071704
+151ind,114,parameters,Macula [%],0.3847748277
+151ind,115,parameters,Macula [%],-0.005359211343
+151ind,116,parameters,Macula [%],-54.03466576
+151ind,117,parameters,Macula [%],0.0004383131266
+151ind,118,parameters,Macula [%],71.94739218
+151ind,119,parameters,Macula [%],18.29445735
+151ind,120,parameters,Macula [%],43.08941657
+151ind,121,parameters,Macula [%],-21.54944229
+151ind,122,parameters,Macula [%],-1.824217118
+151ind,123,parameters,Macula [%],-17.40050359
+151ind,124,parameters,Macula [%],-8.577104157
+151ind,125,parameters,Macula [%],0.2584324674
+151ind,126,parameters,Macula [%],-0.001577271294
+151ind,127,parameters,Macula [%],-2.878366228
+151ind,128,parameters,Macula [%],38.40243516
+151ind,129,parameters,Macula [%],1.57322962
+151ind,130,parameters,Macula [%],29.15868564
+151ind,131,parameters,Macula [%],-24.63083117
+151ind,132,parameters,Macula [%],12.93524333
+151ind,133,parameters,Macula [%],-40.82348236
+151ind,134,parameters,Macula [%],-9.778420104
+151ind,135,parameters,Macula [%],8.994200944
+151ind,136,parameters,Macula [%],-0.1885646769
+151ind,137,parameters,Macula [%],109.368
+151ind,138,parameters,Macula [%],0.01463489378
+151ind,139,parameters,Macula [%],-26.45534631
+151ind,140,parameters,Macula [%],-43.27887491
+151ind,141,parameters,Macula [%],-21.04139715
+151ind,142,parameters,Macula [%],-1.286231443
+151ind,143,parameters,Macula [%],-6.609434924
+151ind,144,parameters,Macula [%],-53.75257427
+151ind,145,parameters,Macula [%],105.2516043
+151ind,146,parameters,Macula [%],-36.12544464
+151ind,147,parameters,Macula [%],-48.74159236
+151ind,148,parameters,Macula [%],-69.97755547
+151ind,149,parameters,Macula [%],-2.513155144
+151ind,150,parameters,Macula [%],-0.08451869441
+151ind,151,parameters,Macula [%],-29.93763978
+151ind,1,parameters,OD in L [%],0.04899991482
+151ind,2,parameters,OD in L [%],0.0006816818441
+151ind,3,parameters,OD in L [%],-26.85
+151ind,4,parameters,OD in L [%],-26.85
+151ind,5,parameters,OD in L [%],0.002624522353
+151ind,6,parameters,OD in L [%],0.0007825048999
+151ind,7,parameters,OD in L [%],-0.1883788658
+151ind,8,parameters,OD in L [%],0.003602810581
+151ind,9,parameters,OD in L [%],-26.85
+151ind,10,parameters,OD in L [%],-26.85
+151ind,11,parameters,OD in L [%],-0.009246648639
+151ind,12,parameters,OD in L [%],-26.84179283
+151ind,13,parameters,OD in L [%],-25.98245685
+151ind,14,parameters,OD in L [%],-26.85
+151ind,15,parameters,OD in L [%],-0.009584614857
+151ind,16,parameters,OD in L [%],0.006896180118
+151ind,17,parameters,OD in L [%],0.04005271479
+151ind,18,parameters,OD in L [%],-0.002503284655
+151ind,19,parameters,OD in L [%],-21.4942953
+151ind,20,parameters,OD in L [%],-9.684516305e-05
+151ind,21,parameters,OD in L [%],-7.211741904
+151ind,22,parameters,OD in L [%],-26.85
+151ind,23,parameters,OD in L [%],-1.525498336e-05
+151ind,24,parameters,OD in L [%],-26.84998615
+151ind,25,parameters,OD in L [%],-26.85
+151ind,26,parameters,OD in L [%],-7.529739784
+151ind,27,parameters,OD in L [%],-26.85
+151ind,28,parameters,OD in L [%],-6.862444502
+151ind,29,parameters,OD in L [%],-0.0263974221
+151ind,30,parameters,OD in L [%],-26.85
+151ind,31,parameters,OD in L [%],-26.85
+151ind,32,parameters,OD in L [%],-26.85
+151ind,33,parameters,OD in L [%],-0.003443478933
+151ind,34,parameters,OD in L [%],-0.01318240266
+151ind,35,parameters,OD in L [%],-26.85
+151ind,36,parameters,OD in L [%],-0.001104830495
+151ind,37,parameters,OD in L [%],-5.878906617e-05
+151ind,38,parameters,OD in L [%],-0.01190469155
+151ind,39,parameters,OD in L [%],-26.85
+151ind,40,parameters,OD in L [%],-26.85
+151ind,41,parameters,OD in L [%],25.69187701
+151ind,42,parameters,OD in L [%],-0.007766044535
+151ind,43,parameters,OD in L [%],0.0159846524
+151ind,44,parameters,OD in L [%],-5.664765793
+151ind,45,parameters,OD in L [%],-7.002362732e-05
+151ind,46,parameters,OD in L [%],0.002032970899
+151ind,47,parameters,OD in L [%],-26.85
+151ind,48,parameters,OD in L [%],-0.002373450617
+151ind,49,parameters,OD in L [%],0.0008887806272
+151ind,50,parameters,OD in L [%],-0.003342505862
+151ind,51,parameters,OD in L [%],-6.2261526
+151ind,52,parameters,OD in L [%],-26.85
+151ind,53,parameters,OD in L [%],4.367777752e-05
+151ind,54,parameters,OD in L [%],-26.85
+151ind,55,parameters,OD in L [%],-0.3632144299
+151ind,56,parameters,OD in L [%],-26.85
+151ind,57,parameters,OD in L [%],0.000915772429
+151ind,58,parameters,OD in L [%],-0.02877963906
+151ind,59,parameters,OD in L [%],-25.65244177
+151ind,60,parameters,OD in L [%],-1.955272005
+151ind,61,parameters,OD in L [%],-0.01132794332
+151ind,62,parameters,OD in L [%],0.0008254617197
+151ind,63,parameters,OD in L [%],-0.003491682768
+151ind,64,parameters,OD in L [%],0.003282751124
+151ind,65,parameters,OD in L [%],26.85
+151ind,66,parameters,OD in L [%],-0.1174643657
+151ind,67,parameters,OD in L [%],-0.002940250371
+151ind,68,parameters,OD in L [%],26.85
+151ind,69,parameters,OD in L [%],0.01423414446
+151ind,70,parameters,OD in L [%],0.0001655434563
+151ind,71,parameters,OD in L [%],0.0001648899161
+151ind,72,parameters,OD in L [%],-19.86126588
+151ind,73,parameters,OD in L [%],-0.002651515094
+151ind,74,parameters,OD in L [%],0.006899186587
+151ind,75,parameters,OD in L [%],1.118439725
+151ind,76,parameters,OD in L [%],-26.85
+151ind,77,parameters,OD in L [%],-24.99188609
+151ind,78,parameters,OD in L [%],-24.74785519
+151ind,79,parameters,OD in L [%],-26.85
+151ind,80,parameters,OD in L [%],0.04638258511
+151ind,81,parameters,OD in L [%],-0.001162966039
+151ind,82,parameters,OD in L [%],-26.85
+151ind,83,parameters,OD in L [%],-0.2415778085
+151ind,84,parameters,OD in L [%],-26.85
+151ind,85,parameters,OD in L [%],-0.08624596641
+151ind,86,parameters,OD in L [%],0.0002441763468
+151ind,87,parameters,OD in L [%],-26.85
+151ind,88,parameters,OD in L [%],-0.001747016615
+151ind,89,parameters,OD in L [%],0.009432611564
+151ind,90,parameters,OD in L [%],-0.004185446801
+151ind,91,parameters,OD in L [%],-26.85
+151ind,92,parameters,OD in L [%],-26.85
+151ind,93,parameters,OD in L [%],-0.005720089837
+151ind,94,parameters,OD in L [%],-26.85
+151ind,95,parameters,OD in L [%],-0.05867298906
+151ind,96,parameters,OD in L [%],-26.85
+151ind,97,parameters,OD in L [%],-26.83162885
+151ind,98,parameters,OD in L [%],-0.2719981415
+151ind,99,parameters,OD in L [%],-0.0180562007
+151ind,100,parameters,OD in L [%],26.85
+151ind,101,parameters,OD in L [%],3.446872398e-05
+151ind,102,parameters,OD in L [%],-5.786996439
+151ind,103,parameters,OD in L [%],0.002526977735
+151ind,104,parameters,OD in L [%],-7.498685938e-06
+151ind,105,parameters,OD in L [%],-0.1268710202
+151ind,106,parameters,OD in L [%],0.002901288879
+151ind,107,parameters,OD in L [%],-0.0006027391924
+151ind,108,parameters,OD in L [%],0.00479347147
+151ind,109,parameters,OD in L [%],-1.31526539e-06
+151ind,110,parameters,OD in L [%],-0.1742316358
+151ind,111,parameters,OD in L [%],-0.002286228665
+151ind,112,parameters,OD in L [%],8.665157643e-06
+151ind,113,parameters,OD in L [%],-0.02418884762
+151ind,114,parameters,OD in L [%],-0.0002015569407
+151ind,115,parameters,OD in L [%],1.259176599
+151ind,116,parameters,OD in L [%],0.0487776011
+151ind,117,parameters,OD in L [%],0.000691679363
+151ind,118,parameters,OD in L [%],-2.104457306
+151ind,119,parameters,OD in L [%],0.002432857962
+151ind,120,parameters,OD in L [%],-0.0009031989095
+151ind,121,parameters,OD in L [%],4.032794628e-05
+151ind,122,parameters,OD in L [%],-26.85
+151ind,123,parameters,OD in L [%],0.0005626329509
+151ind,124,parameters,OD in L [%],-0.0006265956627
+151ind,125,parameters,OD in L [%],-0.0001353869259
+151ind,126,parameters,OD in L [%],0.0004636509024
+151ind,127,parameters,OD in L [%],-26.85
+151ind,128,parameters,OD in L [%],-0.001637087263
+151ind,129,parameters,OD in L [%],-0.003693696825
+151ind,130,parameters,OD in L [%],26.85
+151ind,131,parameters,OD in L [%],-0.003692457878
+151ind,132,parameters,OD in L [%],-0.001503209577
+151ind,133,parameters,OD in L [%],-26.85
+151ind,134,parameters,OD in L [%],-26.85
+151ind,135,parameters,OD in L [%],-22.39753791
+151ind,136,parameters,OD in L [%],-0.004182251735
+151ind,137,parameters,OD in L [%],-0.00134298607
+151ind,138,parameters,OD in L [%],0.001231873222
+151ind,139,parameters,OD in L [%],-1.652874955e-07
+151ind,140,parameters,OD in L [%],-0.001314074966
+151ind,141,parameters,OD in L [%],-26.85
+151ind,142,parameters,OD in L [%],0.004677742816
+151ind,143,parameters,OD in L [%],0.3852382125
+151ind,144,parameters,OD in L [%],-0.02584163808
+151ind,145,parameters,OD in L [%],-26.85
+151ind,146,parameters,OD in L [%],-15.52445619
+151ind,147,parameters,OD in L [%],0.01200499101
+151ind,148,parameters,OD in L [%],-25.12280883
+151ind,149,parameters,OD in L [%],-15.32674676
+151ind,150,parameters,OD in L [%],-26.85
+151ind,151,parameters,OD in L [%],0.004378268514
+151ind,1,parameters,OD in M [%],-26.85
+151ind,2,parameters,OD in M [%],-11.20371035
+151ind,3,parameters,OD in M [%],0.2342400364
+151ind,4,parameters,OD in M [%],-0.04479110662
+151ind,5,parameters,OD in M [%],-0.00180309525
+151ind,6,parameters,OD in M [%],-0.001312554892
+151ind,7,parameters,OD in M [%],-0.003290834898
+151ind,8,parameters,OD in M [%],-0.002652624675
+151ind,9,parameters,OD in M [%],-0.000827071754
+151ind,10,parameters,OD in M [%],-0.003567202886
+151ind,11,parameters,OD in M [%],-0.001786145134
+151ind,12,parameters,OD in M [%],-15.06389567
+151ind,13,parameters,OD in M [%],-1.576355882
+151ind,14,parameters,OD in M [%],0.06900094066
+151ind,15,parameters,OD in M [%],-0.0002971993765
+151ind,16,parameters,OD in M [%],-20.76409528
+151ind,17,parameters,OD in M [%],25.07554023
+151ind,18,parameters,OD in M [%],-0.03917100295
+151ind,19,parameters,OD in M [%],-0.7737422538
+151ind,20,parameters,OD in M [%],0.176932972
+151ind,21,parameters,OD in M [%],-26.69543246
+151ind,22,parameters,OD in M [%],0.02507907447
+151ind,23,parameters,OD in M [%],0.000157825414
+151ind,24,parameters,OD in M [%],26.85
+151ind,25,parameters,OD in M [%],-0.8448854817
+151ind,26,parameters,OD in M [%],0.003296270094
+151ind,27,parameters,OD in M [%],-26.85
+151ind,28,parameters,OD in M [%],0.0003004737937
+151ind,29,parameters,OD in M [%],-0.008595611849
+151ind,30,parameters,OD in M [%],0.6748222607
+151ind,31,parameters,OD in M [%],-26.85
+151ind,32,parameters,OD in M [%],-0.01026987882
+151ind,33,parameters,OD in M [%],-1.256998004
+151ind,34,parameters,OD in M [%],0.02626916417
+151ind,35,parameters,OD in M [%],0.244810724
+151ind,36,parameters,OD in M [%],1.350252013
+151ind,37,parameters,OD in M [%],-8.875509751e-05
+151ind,38,parameters,OD in M [%],0.002270775814
+151ind,39,parameters,OD in M [%],22.49188491
+151ind,40,parameters,OD in M [%],-0.006219641606
+151ind,41,parameters,OD in M [%],-26.82134591
+151ind,42,parameters,OD in M [%],23.79768657
+151ind,43,parameters,OD in M [%],-1.225696436
+151ind,44,parameters,OD in M [%],-0.001800886425
+151ind,45,parameters,OD in M [%],-8.842875419e-06
+151ind,46,parameters,OD in M [%],-26.85
+151ind,47,parameters,OD in M [%],-26.85
+151ind,48,parameters,OD in M [%],-9.248895019e-05
+151ind,49,parameters,OD in M [%],1.554249258
+151ind,50,parameters,OD in M [%],-0.005132418764
+151ind,51,parameters,OD in M [%],-0.0001935092722
+151ind,52,parameters,OD in M [%],0.1435067594
+151ind,53,parameters,OD in M [%],-0.001915939628
+151ind,54,parameters,OD in M [%],14.50054404
+151ind,55,parameters,OD in M [%],-24.32131885
+151ind,56,parameters,OD in M [%],-0.0002524845743
+151ind,57,parameters,OD in M [%],-0.0008697345844
+151ind,58,parameters,OD in M [%],0.009201982901
+151ind,59,parameters,OD in M [%],-25.64452731
+151ind,60,parameters,OD in M [%],-26.85
+151ind,61,parameters,OD in M [%],-26.85
+151ind,62,parameters,OD in M [%],0.0004768792876
+151ind,63,parameters,OD in M [%],0.001310766762
+151ind,64,parameters,OD in M [%],-0.05178063159
+151ind,65,parameters,OD in M [%],-3.761748111e-06
+151ind,66,parameters,OD in M [%],-26.22786626
+151ind,67,parameters,OD in M [%],26.85
+151ind,68,parameters,OD in M [%],-0.3185755826
+151ind,69,parameters,OD in M [%],-26.85
+151ind,70,parameters,OD in M [%],0.0001829594444
+151ind,71,parameters,OD in M [%],-22.47969212
+151ind,72,parameters,OD in M [%],-1.897584116
+151ind,73,parameters,OD in M [%],-12.0826867
+151ind,74,parameters,OD in M [%],0.001019703675
+151ind,75,parameters,OD in M [%],-10.60217332
+151ind,76,parameters,OD in M [%],-9.248268979
+151ind,77,parameters,OD in M [%],-6.800498537
+151ind,78,parameters,OD in M [%],1.398277554
+151ind,79,parameters,OD in M [%],0.005784881456
+151ind,80,parameters,OD in M [%],0.001058895706
+151ind,81,parameters,OD in M [%],-0.01184501403
+151ind,82,parameters,OD in M [%],-1.585060205
+151ind,83,parameters,OD in M [%],-0.4619330913
+151ind,84,parameters,OD in M [%],0.01402752474
+151ind,85,parameters,OD in M [%],19.20844569
+151ind,86,parameters,OD in M [%],0.00361513037
+151ind,87,parameters,OD in M [%],0.003585207823
+151ind,88,parameters,OD in M [%],-16.11453207
+151ind,89,parameters,OD in M [%],12.93386191
+151ind,90,parameters,OD in M [%],3.07296577e-05
+151ind,91,parameters,OD in M [%],-1.671583135
+151ind,92,parameters,OD in M [%],-0.0004386812076
+151ind,93,parameters,OD in M [%],-0.0006047629428
+151ind,94,parameters,OD in M [%],0.003362569514
+151ind,95,parameters,OD in M [%],-26.77847339
+151ind,96,parameters,OD in M [%],0.02822856769
+151ind,97,parameters,OD in M [%],10.88785578
+151ind,98,parameters,OD in M [%],0.402735628
+151ind,99,parameters,OD in M [%],-0.171408701
+151ind,100,parameters,OD in M [%],-26.85
+151ind,101,parameters,OD in M [%],0.00167607781
+151ind,102,parameters,OD in M [%],-5.877767269
+151ind,103,parameters,OD in M [%],-0.05887949171
+151ind,104,parameters,OD in M [%],6.007413002e-06
+151ind,105,parameters,OD in M [%],-22.59674647
+151ind,106,parameters,OD in M [%],-0.006095188589
+151ind,107,parameters,OD in M [%],-8.683502436
+151ind,108,parameters,OD in M [%],-3.007895154
+151ind,109,parameters,OD in M [%],-26.85
+151ind,110,parameters,OD in M [%],26.85
+151ind,111,parameters,OD in M [%],-10.75336561
+151ind,112,parameters,OD in M [%],-0.005823952131
+151ind,113,parameters,OD in M [%],-26.85
+151ind,114,parameters,OD in M [%],-0.00053073154
+151ind,115,parameters,OD in M [%],-26.85
+151ind,116,parameters,OD in M [%],0.01874097925
+151ind,117,parameters,OD in M [%],0.0001705599506
+151ind,118,parameters,OD in M [%],0.02325854482
+151ind,119,parameters,OD in M [%],-0.5059560659
+151ind,120,parameters,OD in M [%],-0.006723516729
+151ind,121,parameters,OD in M [%],-26.85
+151ind,122,parameters,OD in M [%],26.85
+151ind,123,parameters,OD in M [%],0.001408620731
+151ind,124,parameters,OD in M [%],-0.0003586399687
+151ind,125,parameters,OD in M [%],-0.0003112445977
+151ind,126,parameters,OD in M [%],0.005188787308
+151ind,127,parameters,OD in M [%],26.85
+151ind,128,parameters,OD in M [%],-0.003217739643
+151ind,129,parameters,OD in M [%],-26.85
+151ind,130,parameters,OD in M [%],-26.85
+151ind,131,parameters,OD in M [%],0.009311334339
+151ind,132,parameters,OD in M [%],-26.85
+151ind,133,parameters,OD in M [%],24.10161641
+151ind,134,parameters,OD in M [%],-26.85
+151ind,135,parameters,OD in M [%],1.836321705
+151ind,136,parameters,OD in M [%],0.01083327548
+151ind,137,parameters,OD in M [%],0.00440394595
+151ind,138,parameters,OD in M [%],0.001572387409
+151ind,139,parameters,OD in M [%],-9.517989648e-07
+151ind,140,parameters,OD in M [%],0.0671164313
+151ind,141,parameters,OD in M [%],22.28306759
+151ind,142,parameters,OD in M [%],-0.0004322037636
+151ind,143,parameters,OD in M [%],-26.85
+151ind,144,parameters,OD in M [%],0.04557465351
+151ind,145,parameters,OD in M [%],-2.076766274
+151ind,146,parameters,OD in M [%],-0.001193961831
+151ind,147,parameters,OD in M [%],26.85
+151ind,148,parameters,OD in M [%],-26.85
+151ind,149,parameters,OD in M [%],-0.004966585137
+151ind,150,parameters,OD in M [%],26.85
+151ind,151,parameters,OD in M [%],-26.16582608
+151ind,1,parameters,OD in S [%],0.00911024407
+151ind,2,parameters,OD in S [%],-0.0006028948802
+151ind,3,parameters,OD in S [%],0.189658778
+151ind,4,parameters,OD in S [%],0.2713308095
+151ind,5,parameters,OD in S [%],0.0095773248
+151ind,6,parameters,OD in S [%],-1.738689277e-06
+151ind,7,parameters,OD in S [%],-0.07829423779
+151ind,8,parameters,OD in S [%],0.0005350832839
+151ind,9,parameters,OD in S [%],-0.02765703416
+151ind,10,parameters,OD in S [%],-0.001036049885
+151ind,11,parameters,OD in S [%],0.0003762332775
+151ind,12,parameters,OD in S [%],-0.009597992201
+151ind,13,parameters,OD in S [%],0.01120847046
+151ind,14,parameters,OD in S [%],0.1925053107
+151ind,15,parameters,OD in S [%],-2.568202186e-05
+151ind,16,parameters,OD in S [%],-0.01298416725
+151ind,17,parameters,OD in S [%],0.002018258684
+151ind,18,parameters,OD in S [%],-0.0109275109
+151ind,19,parameters,OD in S [%],-4.02177297
+151ind,20,parameters,OD in S [%],-0.0002374261125
+151ind,21,parameters,OD in S [%],0.3781883157
+151ind,22,parameters,OD in S [%],0.004362560226
+151ind,23,parameters,OD in S [%],-0.0001358126895
+151ind,24,parameters,OD in S [%],0.03417791585
+151ind,25,parameters,OD in S [%],0.03865229729
+151ind,26,parameters,OD in S [%],0.009427661031
+151ind,27,parameters,OD in S [%],-0.001399955948
+151ind,28,parameters,OD in S [%],2.184101284e-05
+151ind,29,parameters,OD in S [%],0.001828268362
+151ind,30,parameters,OD in S [%],-0.0001699756044
+151ind,31,parameters,OD in S [%],-0.004273970648
+151ind,32,parameters,OD in S [%],0.0001211929492
+151ind,33,parameters,OD in S [%],-0.0005636925235
+151ind,34,parameters,OD in S [%],-0.0105459446
+151ind,35,parameters,OD in S [%],-0.4942565995
+151ind,36,parameters,OD in S [%],-0.001111341469
+151ind,37,parameters,OD in S [%],0.0001141142978
+151ind,38,parameters,OD in S [%],-0.0001415876414
+151ind,39,parameters,OD in S [%],0.003563151434
+151ind,40,parameters,OD in S [%],-0.1182440176
+151ind,41,parameters,OD in S [%],-0.1958358314
+151ind,42,parameters,OD in S [%],-0.01107285284
+151ind,43,parameters,OD in S [%],0.445983586
+151ind,44,parameters,OD in S [%],0.0002243879949
+151ind,45,parameters,OD in S [%],-0.000243245772
+151ind,46,parameters,OD in S [%],-0.01790469037
+151ind,47,parameters,OD in S [%],0.003119286271
+151ind,48,parameters,OD in S [%],0.002596146841
+151ind,49,parameters,OD in S [%],0.0002494041098
+151ind,50,parameters,OD in S [%],0.001871312499
+151ind,51,parameters,OD in S [%],-0.009736574135
+151ind,52,parameters,OD in S [%],0.3669755042
+151ind,53,parameters,OD in S [%],0.0005044107945
+151ind,54,parameters,OD in S [%],0.0008407090828
+151ind,55,parameters,OD in S [%],0.05209471767
+151ind,56,parameters,OD in S [%],-0.000585265054
+151ind,57,parameters,OD in S [%],-0.0001070290729
+151ind,58,parameters,OD in S [%],5.534456943e-05
+151ind,59,parameters,OD in S [%],-0.348307804
+151ind,60,parameters,OD in S [%],0.9776862549
+151ind,61,parameters,OD in S [%],-0.005419376789
+151ind,62,parameters,OD in S [%],-0.0004762213137
+151ind,63,parameters,OD in S [%],0.004201124896
+151ind,64,parameters,OD in S [%],0.001438062782
+151ind,65,parameters,OD in S [%],5.229349071e-05
+151ind,66,parameters,OD in S [%],-0.005603686673
+151ind,67,parameters,OD in S [%],-0.002639921301
+151ind,68,parameters,OD in S [%],-0.1229799102
+151ind,69,parameters,OD in S [%],0.003860796684
+151ind,70,parameters,OD in S [%],-2.329190694e-05
+151ind,71,parameters,OD in S [%],-0.0003799532776
+151ind,72,parameters,OD in S [%],-0.06416356501
+151ind,73,parameters,OD in S [%],-0.001568786127
+151ind,74,parameters,OD in S [%],0.005325287197
+151ind,75,parameters,OD in S [%],-0.01958332697
+151ind,76,parameters,OD in S [%],-0.8973671834
+151ind,77,parameters,OD in S [%],-0.007892245284
+151ind,78,parameters,OD in S [%],0.02762640384
+151ind,79,parameters,OD in S [%],-0.01261949292
+151ind,80,parameters,OD in S [%],-0.01777071191
+151ind,81,parameters,OD in S [%],-0.0005876455444
+151ind,82,parameters,OD in S [%],-22.05
+151ind,83,parameters,OD in S [%],0.2073363941
+151ind,84,parameters,OD in S [%],0.03746618731
+151ind,85,parameters,OD in S [%],0.0175101421
+151ind,86,parameters,OD in S [%],-0.0003370893704
+151ind,87,parameters,OD in S [%],-0.0004750512006
+151ind,88,parameters,OD in S [%],-0.0002685881485
+151ind,89,parameters,OD in S [%],-0.0005618628367
+151ind,90,parameters,OD in S [%],-1.012107649e-06
+151ind,91,parameters,OD in S [%],0.0004437272685
+151ind,92,parameters,OD in S [%],0.0004914684976
+151ind,93,parameters,OD in S [%],0.02227391987
+151ind,94,parameters,OD in S [%],-0.0003208650164
+151ind,95,parameters,OD in S [%],-0.5816405954
+151ind,96,parameters,OD in S [%],0.005952176717
+151ind,97,parameters,OD in S [%],-0.03820161112
+151ind,98,parameters,OD in S [%],0.08856839603
+151ind,99,parameters,OD in S [%],0.003960784331
+151ind,100,parameters,OD in S [%],-0.2804786105
+151ind,101,parameters,OD in S [%],0.0001437921477
+151ind,102,parameters,OD in S [%],-1.005369056
+151ind,103,parameters,OD in S [%],0.002742286296
+151ind,104,parameters,OD in S [%],1.751439846e-05
+151ind,105,parameters,OD in S [%],0.02485038468
+151ind,106,parameters,OD in S [%],5.357074396e-05
+151ind,107,parameters,OD in S [%],0.001044687865
+151ind,108,parameters,OD in S [%],0.000660046348
+151ind,109,parameters,OD in S [%],7.641280231e-05
+151ind,110,parameters,OD in S [%],0.02095552083
+151ind,111,parameters,OD in S [%],0.0004335460987
+151ind,112,parameters,OD in S [%],0.001256077368
+151ind,113,parameters,OD in S [%],0.01035298757
+151ind,114,parameters,OD in S [%],0.0001364408282
+151ind,115,parameters,OD in S [%],-0.05510685204
+151ind,116,parameters,OD in S [%],0.001443061003
+151ind,117,parameters,OD in S [%],0.0004628841954
+151ind,118,parameters,OD in S [%],0.4792327465
+151ind,119,parameters,OD in S [%],0.002138481013
+151ind,120,parameters,OD in S [%],0.0006824887028
+151ind,121,parameters,OD in S [%],0.0002015723014
+151ind,122,parameters,OD in S [%],0.0003351724463
+151ind,123,parameters,OD in S [%],-0.000762976477
+151ind,124,parameters,OD in S [%],-0.0009660073228
+151ind,125,parameters,OD in S [%],0.0002561936922
+151ind,126,parameters,OD in S [%],0.0003622050135
+151ind,127,parameters,OD in S [%],-0.0006114879176
+151ind,128,parameters,OD in S [%],0.0003457629714
+151ind,129,parameters,OD in S [%],-0.0006488053237
+151ind,130,parameters,OD in S [%],-0.01314940918
+151ind,131,parameters,OD in S [%],-0.003293877106
+151ind,132,parameters,OD in S [%],0.02250906609
+151ind,133,parameters,OD in S [%],9.370030028e-05
+151ind,134,parameters,OD in S [%],6.317690254e-05
+151ind,135,parameters,OD in S [%],-0.01944837858
+151ind,136,parameters,OD in S [%],0.001498609904
+151ind,137,parameters,OD in S [%],-0.001525766857
+151ind,138,parameters,OD in S [%],-0.001172920059
+151ind,139,parameters,OD in S [%],8.483448934e-06
+151ind,140,parameters,OD in S [%],-0.05956607584
+151ind,141,parameters,OD in S [%],0.001041317301
+151ind,142,parameters,OD in S [%],0.003966545079
+151ind,143,parameters,OD in S [%],0.0112299058
+151ind,144,parameters,OD in S [%],-0.2767594547
+151ind,145,parameters,OD in S [%],-0.001677338597
+151ind,146,parameters,OD in S [%],-0.0007012309376
+151ind,147,parameters,OD in S [%],-0.006309463972
+151ind,148,parameters,OD in S [%],-0.2288932896
+151ind,149,parameters,OD in S [%],-0.000509503885
+151ind,150,parameters,OD in S [%],0.01059549209
+151ind,151,parameters,OD in S [%],-0.001974678876
+151ind,1,parameters,Shift in L [nm],-0.1324024841
+151ind,2,parameters,Shift in L [nm],3.284008356
+151ind,3,parameters,Shift in L [nm],5.965527742
+151ind,4,parameters,Shift in L [nm],6
+151ind,5,parameters,Shift in L [nm],-0.002528605194
+151ind,6,parameters,Shift in L [nm],3.088129204
+151ind,7,parameters,Shift in L [nm],0.00568398513
+151ind,8,parameters,Shift in L [nm],-1.949902538e-05
+151ind,9,parameters,Shift in L [nm],6
+151ind,10,parameters,Shift in L [nm],4.078270767
+151ind,11,parameters,Shift in L [nm],-0.1072627416
+151ind,12,parameters,Shift in L [nm],5.872597329
+151ind,13,parameters,Shift in L [nm],-0.0001847397836
+151ind,14,parameters,Shift in L [nm],0.017439508
+151ind,15,parameters,Shift in L [nm],0.6775283793
+151ind,16,parameters,Shift in L [nm],3.227392787
+151ind,17,parameters,Shift in L [nm],-0.0007432515421
+151ind,18,parameters,Shift in L [nm],4.269941824
+151ind,19,parameters,Shift in L [nm],2.02912762
+151ind,20,parameters,Shift in L [nm],0.08009489541
+151ind,21,parameters,Shift in L [nm],5.951143173
+151ind,22,parameters,Shift in L [nm],0.7720782388
+151ind,23,parameters,Shift in L [nm],-3.641892016
+151ind,24,parameters,Shift in L [nm],-0.007098897635
+151ind,25,parameters,Shift in L [nm],6
+151ind,26,parameters,Shift in L [nm],-0.005709653356
+151ind,27,parameters,Shift in L [nm],6
+151ind,28,parameters,Shift in L [nm],-0.0001651568931
+151ind,29,parameters,Shift in L [nm],-0.008533166689
+151ind,30,parameters,Shift in L [nm],6
+151ind,31,parameters,Shift in L [nm],6
+151ind,32,parameters,Shift in L [nm],6
+151ind,33,parameters,Shift in L [nm],4.81779691e-05
+151ind,34,parameters,Shift in L [nm],-0.01346412639
+151ind,35,parameters,Shift in L [nm],6
+151ind,36,parameters,Shift in L [nm],1.428664457
+151ind,37,parameters,Shift in L [nm],6
+151ind,38,parameters,Shift in L [nm],-0.9997730034
+151ind,39,parameters,Shift in L [nm],5.142394501
+151ind,40,parameters,Shift in L [nm],6
+151ind,41,parameters,Shift in L [nm],-0.006344871505
+151ind,42,parameters,Shift in L [nm],-0.0004833384325
+151ind,43,parameters,Shift in L [nm],1.830057583
+151ind,44,parameters,Shift in L [nm],0.003158843329
+151ind,45,parameters,Shift in L [nm],5.135723125
+151ind,46,parameters,Shift in L [nm],-0.1687422475
+151ind,47,parameters,Shift in L [nm],4.715583509
+151ind,48,parameters,Shift in L [nm],1.476223913
+151ind,49,parameters,Shift in L [nm],-0.01862325356
+151ind,50,parameters,Shift in L [nm],1.86030025
+151ind,51,parameters,Shift in L [nm],0.001252601075
+151ind,52,parameters,Shift in L [nm],-0.2534853766
+151ind,53,parameters,Shift in L [nm],1.014963062
+151ind,54,parameters,Shift in L [nm],1.823498067
+151ind,55,parameters,Shift in L [nm],0.04065568323
+151ind,56,parameters,Shift in L [nm],4.976980322
+151ind,57,parameters,Shift in L [nm],-0.8160003796
+151ind,58,parameters,Shift in L [nm],-0.07644611434
+151ind,59,parameters,Shift in L [nm],5.991738947
+151ind,60,parameters,Shift in L [nm],6
+151ind,61,parameters,Shift in L [nm],-0.008730711061
+151ind,62,parameters,Shift in L [nm],2.301326102
+151ind,63,parameters,Shift in L [nm],4.188761698
+151ind,64,parameters,Shift in L [nm],-4.291296079
+151ind,65,parameters,Shift in L [nm],0.08369884258
+151ind,66,parameters,Shift in L [nm],-0.01281710954
+151ind,67,parameters,Shift in L [nm],-0.03958592117
+151ind,68,parameters,Shift in L [nm],-2.483439405
+151ind,69,parameters,Shift in L [nm],0.3827144261
+151ind,70,parameters,Shift in L [nm],5.999429812
+151ind,71,parameters,Shift in L [nm],0.1068944765
+151ind,72,parameters,Shift in L [nm],4.864205321
+151ind,73,parameters,Shift in L [nm],-0.001341760909
+151ind,74,parameters,Shift in L [nm],4.274479335
+151ind,75,parameters,Shift in L [nm],-3.039892987e-07
+151ind,76,parameters,Shift in L [nm],-0.1207692013
+151ind,77,parameters,Shift in L [nm],5.799579761
+151ind,78,parameters,Shift in L [nm],6
+151ind,79,parameters,Shift in L [nm],5.524798376
+151ind,80,parameters,Shift in L [nm],-4.871234882
+151ind,81,parameters,Shift in L [nm],-0.7075696798
+151ind,82,parameters,Shift in L [nm],6
+151ind,83,parameters,Shift in L [nm],4.912206179
+151ind,84,parameters,Shift in L [nm],6
+151ind,85,parameters,Shift in L [nm],0.505052727
+151ind,86,parameters,Shift in L [nm],0.281819836
+151ind,87,parameters,Shift in L [nm],6
+151ind,88,parameters,Shift in L [nm],-8.90183999e-05
+151ind,89,parameters,Shift in L [nm],-0.001559236157
+151ind,90,parameters,Shift in L [nm],5.896547443
+151ind,91,parameters,Shift in L [nm],-6
+151ind,92,parameters,Shift in L [nm],6
+151ind,93,parameters,Shift in L [nm],0.0002149341899
+151ind,94,parameters,Shift in L [nm],-3.211901508
+151ind,95,parameters,Shift in L [nm],4.024640799
+151ind,96,parameters,Shift in L [nm],-1.449464434
+151ind,97,parameters,Shift in L [nm],0.03173177077
+151ind,98,parameters,Shift in L [nm],-0.08568447514
+151ind,99,parameters,Shift in L [nm],0.02289390813
+151ind,100,parameters,Shift in L [nm],0.6516219068
+151ind,101,parameters,Shift in L [nm],-2.014079045e-06
+151ind,102,parameters,Shift in L [nm],5.073893962
+151ind,103,parameters,Shift in L [nm],0.8953163562
+151ind,104,parameters,Shift in L [nm],3.442364446
+151ind,105,parameters,Shift in L [nm],-6
+151ind,106,parameters,Shift in L [nm],6
+151ind,107,parameters,Shift in L [nm],0.007450199295
+151ind,108,parameters,Shift in L [nm],0.6091628703
+151ind,109,parameters,Shift in L [nm],3.044419925
+151ind,110,parameters,Shift in L [nm],-5.733584596
+151ind,111,parameters,Shift in L [nm],3.61994799
+151ind,112,parameters,Shift in L [nm],-1.914683389
+151ind,113,parameters,Shift in L [nm],3.017222911
+151ind,114,parameters,Shift in L [nm],4.027485004e-05
+151ind,115,parameters,Shift in L [nm],1.346843694
+151ind,116,parameters,Shift in L [nm],1.52723558
+151ind,117,parameters,Shift in L [nm],-0.0002686752366
+151ind,118,parameters,Shift in L [nm],-0.1187587881
+151ind,119,parameters,Shift in L [nm],-0.2837091189
+151ind,120,parameters,Shift in L [nm],0.0001953250756
+151ind,121,parameters,Shift in L [nm],4.117376765
+151ind,122,parameters,Shift in L [nm],-6
+151ind,123,parameters,Shift in L [nm],1.989346669e-05
+151ind,124,parameters,Shift in L [nm],1.908197767
+151ind,125,parameters,Shift in L [nm],3.813088927e-05
+151ind,126,parameters,Shift in L [nm],3.928022001
+151ind,127,parameters,Shift in L [nm],-0.7510273869
+151ind,128,parameters,Shift in L [nm],5.683298607
+151ind,129,parameters,Shift in L [nm],5.342892483
+151ind,130,parameters,Shift in L [nm],0.9558397338
+151ind,131,parameters,Shift in L [nm],0.001512628337
+151ind,132,parameters,Shift in L [nm],4.036486249
+151ind,133,parameters,Shift in L [nm],-6
+151ind,134,parameters,Shift in L [nm],6
+151ind,135,parameters,Shift in L [nm],0.007554006171
+151ind,136,parameters,Shift in L [nm],-0.003506719782
+151ind,137,parameters,Shift in L [nm],-6
+151ind,138,parameters,Shift in L [nm],0.00859062838
+151ind,139,parameters,Shift in L [nm],-6
+151ind,140,parameters,Shift in L [nm],1.057953528e-05
+151ind,141,parameters,Shift in L [nm],5.423988146
+151ind,142,parameters,Shift in L [nm],1.811194267
+151ind,143,parameters,Shift in L [nm],-0.6907686001
+151ind,144,parameters,Shift in L [nm],-0.6738024976
+151ind,145,parameters,Shift in L [nm],-0.0007217546323
+151ind,146,parameters,Shift in L [nm],0.0007875944463
+151ind,147,parameters,Shift in L [nm],-1.236968219
+151ind,148,parameters,Shift in L [nm],4.785148628
+151ind,149,parameters,Shift in L [nm],-0.01408983499
+151ind,150,parameters,Shift in L [nm],-0.006179846633
+151ind,151,parameters,Shift in L [nm],-3.189235613
+151ind,1,parameters,Shift in M [nm],-0.2588417013
+151ind,2,parameters,Shift in M [nm],0.0009355749065
+151ind,3,parameters,Shift in M [nm],0.800859589
+151ind,4,parameters,Shift in M [nm],0.2010966732
+151ind,5,parameters,Shift in M [nm],3.636847895
+151ind,6,parameters,Shift in M [nm],0.0001420171692
+151ind,7,parameters,Shift in M [nm],-0.1838699343
+151ind,8,parameters,Shift in M [nm],1.951447636
+151ind,9,parameters,Shift in M [nm],2.411821618
+151ind,10,parameters,Shift in M [nm],-0.6049494735
+151ind,11,parameters,Shift in M [nm],-4.5
+151ind,12,parameters,Shift in M [nm],-1.381447522
+151ind,13,parameters,Shift in M [nm],-0.5382022001
+151ind,14,parameters,Shift in M [nm],-0.5670031476
+151ind,15,parameters,Shift in M [nm],0.001285457075
+151ind,16,parameters,Shift in M [nm],0.000448092906
+151ind,17,parameters,Shift in M [nm],2.201596016
+151ind,18,parameters,Shift in M [nm],-4.5
+151ind,19,parameters,Shift in M [nm],2.031585171
+151ind,20,parameters,Shift in M [nm],-2.348651606e-05
+151ind,21,parameters,Shift in M [nm],-4.5
+151ind,22,parameters,Shift in M [nm],0.4752058206
+151ind,23,parameters,Shift in M [nm],3.569628049
+151ind,24,parameters,Shift in M [nm],0.5120021128
+151ind,25,parameters,Shift in M [nm],-0.3409711829
+151ind,26,parameters,Shift in M [nm],-0.009664123057
+151ind,27,parameters,Shift in M [nm],-3.908671312
+151ind,28,parameters,Shift in M [nm],2.938210678e-05
+151ind,29,parameters,Shift in M [nm],-0.7189616128
+151ind,30,parameters,Shift in M [nm],0.004302703809
+151ind,31,parameters,Shift in M [nm],-4.5
+151ind,32,parameters,Shift in M [nm],-2.427293148
+151ind,33,parameters,Shift in M [nm],-2.665363005
+151ind,34,parameters,Shift in M [nm],-0.01314371354
+151ind,35,parameters,Shift in M [nm],-3.334221705
+151ind,36,parameters,Shift in M [nm],0.1751868593
+151ind,37,parameters,Shift in M [nm],-4.495653484
+151ind,38,parameters,Shift in M [nm],-4.5
+151ind,39,parameters,Shift in M [nm],2.734230721
+151ind,40,parameters,Shift in M [nm],-4.466595123
+151ind,41,parameters,Shift in M [nm],-0.005733472149
+151ind,42,parameters,Shift in M [nm],-0.0001350847618
+151ind,43,parameters,Shift in M [nm],-0.2854256348
+151ind,44,parameters,Shift in M [nm],-2.985667266
+151ind,45,parameters,Shift in M [nm],-4.5
+151ind,46,parameters,Shift in M [nm],-0.03410875266
+151ind,47,parameters,Shift in M [nm],-4.5
+151ind,48,parameters,Shift in M [nm],-1.202681983
+151ind,49,parameters,Shift in M [nm],-2.237928348
+151ind,50,parameters,Shift in M [nm],0.001327545416
+151ind,51,parameters,Shift in M [nm],0.006187461513
+151ind,52,parameters,Shift in M [nm],-0.004573098479
+151ind,53,parameters,Shift in M [nm],1.364374161
+151ind,54,parameters,Shift in M [nm],0.0005102727305
+151ind,55,parameters,Shift in M [nm],-4.331019455
+151ind,56,parameters,Shift in M [nm],-0.005065180321
+151ind,57,parameters,Shift in M [nm],3.090918934e-05
+151ind,58,parameters,Shift in M [nm],-0.7895621871
+151ind,59,parameters,Shift in M [nm],-4.5
+151ind,60,parameters,Shift in M [nm],-4.5
+151ind,61,parameters,Shift in M [nm],-1.996105798
+151ind,62,parameters,Shift in M [nm],0.03059427298
+151ind,63,parameters,Shift in M [nm],0.001803799789
+151ind,64,parameters,Shift in M [nm],4.494652261
+151ind,65,parameters,Shift in M [nm],1.066087521e-05
+151ind,66,parameters,Shift in M [nm],0.0007095437473
+151ind,67,parameters,Shift in M [nm],-0.0004006113971
+151ind,68,parameters,Shift in M [nm],2.131940887
+151ind,69,parameters,Shift in M [nm],-3.930509361
+151ind,70,parameters,Shift in M [nm],-4.122489056e-05
+151ind,71,parameters,Shift in M [nm],-0.1807355421
+151ind,72,parameters,Shift in M [nm],0.08855210095
+151ind,73,parameters,Shift in M [nm],-0.0001148957567
+151ind,74,parameters,Shift in M [nm],0.004406479874
+151ind,75,parameters,Shift in M [nm],4.5
+151ind,76,parameters,Shift in M [nm],-0.2433739757
+151ind,77,parameters,Shift in M [nm],-0.0009076808953
+151ind,78,parameters,Shift in M [nm],0.02828099096
+151ind,79,parameters,Shift in M [nm],-3.012441268
+151ind,80,parameters,Shift in M [nm],0.0001291743874
+151ind,81,parameters,Shift in M [nm],-0.001705567663
+151ind,82,parameters,Shift in M [nm],-2.293873964
+151ind,83,parameters,Shift in M [nm],-0.02925142518
+151ind,84,parameters,Shift in M [nm],-2.565580696
+151ind,85,parameters,Shift in M [nm],-0.0001886243021
+151ind,86,parameters,Shift in M [nm],1.580912012
+151ind,87,parameters,Shift in M [nm],-0.2026963649
+151ind,88,parameters,Shift in M [nm],-0.2250860828
+151ind,89,parameters,Shift in M [nm],-0.01815538526
+151ind,90,parameters,Shift in M [nm],-0.0003753725543
+151ind,91,parameters,Shift in M [nm],-4.5
+151ind,92,parameters,Shift in M [nm],-2.285495564
+151ind,93,parameters,Shift in M [nm],-2.609796299
+151ind,94,parameters,Shift in M [nm],0.0002766171331
+151ind,95,parameters,Shift in M [nm],-4.5
+151ind,96,parameters,Shift in M [nm],-0.0008712119848
+151ind,97,parameters,Shift in M [nm],0.006771114889
+151ind,98,parameters,Shift in M [nm],4.28680198e-05
+151ind,99,parameters,Shift in M [nm],2.093739141
+151ind,100,parameters,Shift in M [nm],-0.00880788752
+151ind,101,parameters,Shift in M [nm],1.063289609
+151ind,102,parameters,Shift in M [nm],-0.0107331061
+151ind,103,parameters,Shift in M [nm],-2.665132661
+151ind,104,parameters,Shift in M [nm],-4.5
+151ind,105,parameters,Shift in M [nm],-0.4980696271
+151ind,106,parameters,Shift in M [nm],-4.167068667
+151ind,107,parameters,Shift in M [nm],-0.789023817
+151ind,108,parameters,Shift in M [nm],-3.353527539
+151ind,109,parameters,Shift in M [nm],-4.5
+151ind,110,parameters,Shift in M [nm],-0.007081003367
+151ind,111,parameters,Shift in M [nm],0.0001184778167
+151ind,112,parameters,Shift in M [nm],-4.5
+151ind,113,parameters,Shift in M [nm],-0.001969052058
+151ind,114,parameters,Shift in M [nm],-4.5
+151ind,115,parameters,Shift in M [nm],-2.036906461
+151ind,116,parameters,Shift in M [nm],0.0002693582092
+151ind,117,parameters,Shift in M [nm],3.220976942
+151ind,118,parameters,Shift in M [nm],-1.779215412
+151ind,119,parameters,Shift in M [nm],-4.5
+151ind,120,parameters,Shift in M [nm],-4.936597216e-06
+151ind,121,parameters,Shift in M [nm],-4.5
+151ind,122,parameters,Shift in M [nm],2.25079322
+151ind,123,parameters,Shift in M [nm],-5.443059115e-05
+151ind,124,parameters,Shift in M [nm],5.97249376e-05
+151ind,125,parameters,Shift in M [nm],-4.5
+151ind,126,parameters,Shift in M [nm],-4.035173959e-05
+151ind,127,parameters,Shift in M [nm],-3.762964954e-05
+151ind,128,parameters,Shift in M [nm],-4.179996093
+151ind,129,parameters,Shift in M [nm],-4.5
+151ind,130,parameters,Shift in M [nm],-4.5
+151ind,131,parameters,Shift in M [nm],-4.169182006
+151ind,132,parameters,Shift in M [nm],-4.5
+151ind,133,parameters,Shift in M [nm],-0.3902240221
+151ind,134,parameters,Shift in M [nm],-4.5
+151ind,135,parameters,Shift in M [nm],0.01821382983
+151ind,136,parameters,Shift in M [nm],-1.955688059
+151ind,137,parameters,Shift in M [nm],0.1727783698
+151ind,138,parameters,Shift in M [nm],0.9461390951
+151ind,139,parameters,Shift in M [nm],3.778889131
+151ind,140,parameters,Shift in M [nm],2.724799774
+151ind,141,parameters,Shift in M [nm],0.0007905630535
+151ind,142,parameters,Shift in M [nm],-0.00145929374
+151ind,143,parameters,Shift in M [nm],-0.1447232721
+151ind,144,parameters,Shift in M [nm],-0.0001933159693
+151ind,145,parameters,Shift in M [nm],-4.5
+151ind,146,parameters,Shift in M [nm],0.0001220970834
+151ind,147,parameters,Shift in M [nm],0.01810128337
+151ind,148,parameters,Shift in M [nm],-1.404792812
+151ind,149,parameters,Shift in M [nm],-2.985676324
+151ind,150,parameters,Shift in M [nm],-2.054722252
+151ind,151,parameters,Shift in M [nm],-1.244738551
+151ind,1,parameters,Shift in S [nm],-3.75
+151ind,2,parameters,Shift in S [nm],-3.75
+151ind,3,parameters,Shift in S [nm],-0.0384897394
+151ind,4,parameters,Shift in S [nm],-0.003165648379
+151ind,5,parameters,Shift in S [nm],0.000649602695
+151ind,6,parameters,Shift in S [nm],-3.75
+151ind,7,parameters,Shift in S [nm],0.002176898489
+151ind,8,parameters,Shift in S [nm],-3.653433864
+151ind,9,parameters,Shift in S [nm],-3.75
+151ind,10,parameters,Shift in S [nm],-3.75
+151ind,11,parameters,Shift in S [nm],7.754054721e-06
+151ind,12,parameters,Shift in S [nm],-0.001691321853
+151ind,13,parameters,Shift in S [nm],-3.75
+151ind,14,parameters,Shift in S [nm],-3.75
+151ind,15,parameters,Shift in S [nm],-3.75
+151ind,16,parameters,Shift in S [nm],-0.002449801309
+151ind,17,parameters,Shift in S [nm],-3.75
+151ind,18,parameters,Shift in S [nm],-1.283566321
+151ind,19,parameters,Shift in S [nm],-3.75
+151ind,20,parameters,Shift in S [nm],3.75
+151ind,21,parameters,Shift in S [nm],-0.01002002253
+151ind,22,parameters,Shift in S [nm],-3.75
+151ind,23,parameters,Shift in S [nm],-3.888906485e-05
+151ind,24,parameters,Shift in S [nm],2.144014059
+151ind,25,parameters,Shift in S [nm],-0.002717907177
+151ind,26,parameters,Shift in S [nm],0.002296834262
+151ind,27,parameters,Shift in S [nm],3.75
+151ind,28,parameters,Shift in S [nm],4.132068206e-05
+151ind,29,parameters,Shift in S [nm],0.00161198537
+151ind,30,parameters,Shift in S [nm],-0.8648932148
+151ind,31,parameters,Shift in S [nm],-1.034466241
+151ind,32,parameters,Shift in S [nm],-3.194317987e-06
+151ind,33,parameters,Shift in S [nm],-3.008576468
+151ind,34,parameters,Shift in S [nm],0.001328289602
+151ind,35,parameters,Shift in S [nm],-0.007287567123
+151ind,36,parameters,Shift in S [nm],-0.01057251565
+151ind,37,parameters,Shift in S [nm],2.480916743e-06
+151ind,38,parameters,Shift in S [nm],0.0005245948371
+151ind,39,parameters,Shift in S [nm],-3.75
+151ind,40,parameters,Shift in S [nm],-0.04984064863
+151ind,41,parameters,Shift in S [nm],-3.702338919
+151ind,42,parameters,Shift in S [nm],-3.75
+151ind,43,parameters,Shift in S [nm],-0.008366748008
+151ind,44,parameters,Shift in S [nm],-9.851415032e-05
+151ind,45,parameters,Shift in S [nm],-3.75
+151ind,46,parameters,Shift in S [nm],-3.75
+151ind,47,parameters,Shift in S [nm],0.0001791653618
+151ind,48,parameters,Shift in S [nm],-3.75
+151ind,49,parameters,Shift in S [nm],0.4498260847
+151ind,50,parameters,Shift in S [nm],-0.0008708215004
+151ind,51,parameters,Shift in S [nm],-0.001244779174
+151ind,52,parameters,Shift in S [nm],0.1969683914
+151ind,53,parameters,Shift in S [nm],-3.75
+151ind,54,parameters,Shift in S [nm],-3.75
+151ind,55,parameters,Shift in S [nm],0.01135198139
+151ind,56,parameters,Shift in S [nm],2.080317336e-06
+151ind,57,parameters,Shift in S [nm],0.4633645775
+151ind,58,parameters,Shift in S [nm],0.001248503814
+151ind,59,parameters,Shift in S [nm],-0.01079158731
+151ind,60,parameters,Shift in S [nm],-3.75
+151ind,61,parameters,Shift in S [nm],-0.0007899518806
+151ind,62,parameters,Shift in S [nm],-3.75
+151ind,63,parameters,Shift in S [nm],-0.0004325353147
+151ind,64,parameters,Shift in S [nm],-0.01838553292
+151ind,65,parameters,Shift in S [nm],-3.75
+151ind,66,parameters,Shift in S [nm],-1.982940893e-05
+151ind,67,parameters,Shift in S [nm],-1.550950397e-06
+151ind,68,parameters,Shift in S [nm],3.680347378
+151ind,69,parameters,Shift in S [nm],0.002683258579
+151ind,70,parameters,Shift in S [nm],-0.0002237492858
+151ind,71,parameters,Shift in S [nm],-3.75
+151ind,72,parameters,Shift in S [nm],-0.01001811752
+151ind,73,parameters,Shift in S [nm],3.73017922
+151ind,74,parameters,Shift in S [nm],0.8336607067
+151ind,75,parameters,Shift in S [nm],-3.75
+151ind,76,parameters,Shift in S [nm],-0.3333107169
+151ind,77,parameters,Shift in S [nm],-0.5387223955
+151ind,78,parameters,Shift in S [nm],-0.003721200127
+151ind,79,parameters,Shift in S [nm],-0.04349683936
+151ind,80,parameters,Shift in S [nm],-3.75
+151ind,81,parameters,Shift in S [nm],0.0002071900377
+151ind,82,parameters,Shift in S [nm],-3.75
+151ind,83,parameters,Shift in S [nm],-0.02782306158
+151ind,84,parameters,Shift in S [nm],0.002094948275
+151ind,85,parameters,Shift in S [nm],3.75
+151ind,86,parameters,Shift in S [nm],3.889341558e-05
+151ind,87,parameters,Shift in S [nm],2.241657453
+151ind,88,parameters,Shift in S [nm],0.8690845227
+151ind,89,parameters,Shift in S [nm],-3.75
+151ind,90,parameters,Shift in S [nm],-3.75
+151ind,91,parameters,Shift in S [nm],-0.0251125605
+151ind,92,parameters,Shift in S [nm],-3.714584798
+151ind,93,parameters,Shift in S [nm],3.75
+151ind,94,parameters,Shift in S [nm],3.75
+151ind,95,parameters,Shift in S [nm],0.005940439899
+151ind,96,parameters,Shift in S [nm],3.75
+151ind,97,parameters,Shift in S [nm],-1.026947703e-05
+151ind,98,parameters,Shift in S [nm],0.01284659668
+151ind,99,parameters,Shift in S [nm],-0.001039358618
+151ind,100,parameters,Shift in S [nm],-0.4558762274
+151ind,101,parameters,Shift in S [nm],4.699719002e-05
+151ind,102,parameters,Shift in S [nm],-2.44132667
+151ind,103,parameters,Shift in S [nm],0.001016862124
+151ind,104,parameters,Shift in S [nm],-3.75
+151ind,105,parameters,Shift in S [nm],-0.008672742604
+151ind,106,parameters,Shift in S [nm],1.010364689
+151ind,107,parameters,Shift in S [nm],0.001347549429
+151ind,108,parameters,Shift in S [nm],-0.0003754794021
+151ind,109,parameters,Shift in S [nm],-3.75
+151ind,110,parameters,Shift in S [nm],-0.002880106635
+151ind,111,parameters,Shift in S [nm],-3.75
+151ind,112,parameters,Shift in S [nm],3.75
+151ind,113,parameters,Shift in S [nm],0.0007831519894
+151ind,114,parameters,Shift in S [nm],0.3560709167
+151ind,115,parameters,Shift in S [nm],1.719877711
+151ind,116,parameters,Shift in S [nm],-3.75
+151ind,117,parameters,Shift in S [nm],-0.0001813715887
+151ind,118,parameters,Shift in S [nm],0.004166439582
+151ind,119,parameters,Shift in S [nm],3.75
+151ind,120,parameters,Shift in S [nm],-6.242541696e-05
+151ind,121,parameters,Shift in S [nm],-3.75
+151ind,122,parameters,Shift in S [nm],0.001470773173
+151ind,123,parameters,Shift in S [nm],2.789411628e-05
+151ind,124,parameters,Shift in S [nm],-0.006225810117
+151ind,125,parameters,Shift in S [nm],-3.405299912
+151ind,126,parameters,Shift in S [nm],-0.0001924201356
+151ind,127,parameters,Shift in S [nm],-2.751521768
+151ind,128,parameters,Shift in S [nm],0.0001025269068
+151ind,129,parameters,Shift in S [nm],-0.0001597957875
+151ind,130,parameters,Shift in S [nm],1.887865007
+151ind,131,parameters,Shift in S [nm],-0.005119854257
+151ind,132,parameters,Shift in S [nm],1.368959359e-06
+151ind,133,parameters,Shift in S [nm],-3.75
+151ind,134,parameters,Shift in S [nm],3.320786199
+151ind,135,parameters,Shift in S [nm],0.009604461942
+151ind,136,parameters,Shift in S [nm],-4.20717141e-05
+151ind,137,parameters,Shift in S [nm],3.75
+151ind,138,parameters,Shift in S [nm],-0.001513042185
+151ind,139,parameters,Shift in S [nm],-3.75
+151ind,140,parameters,Shift in S [nm],-3.75
+151ind,141,parameters,Shift in S [nm],-3.75
+151ind,142,parameters,Shift in S [nm],2.490150511
+151ind,143,parameters,Shift in S [nm],-3.75
+151ind,144,parameters,Shift in S [nm],-3.636486018
+151ind,145,parameters,Shift in S [nm],3.75
+151ind,146,parameters,Shift in S [nm],-3.75
+151ind,147,parameters,Shift in S [nm],-0.00628138329
+151ind,148,parameters,Shift in S [nm],-3.75
+151ind,149,parameters,Shift in S [nm],0.0002195769979
+151ind,150,parameters,Shift in S [nm],-3.75
+151ind,151,parameters,Shift in S [nm],-0.662447978
+151ind,1,Other Info,Age,26
+151ind,2,Other Info,Age,47
+151ind,3,Other Info,Age,50
+151ind,4,Other Info,Age,24
+151ind,5,Other Info,Age,22
+151ind,6,Other Info,Age,28
+151ind,7,Other Info,Age,27
+151ind,8,Other Info,Age,29
+151ind,9,Other Info,Age,34
+151ind,10,Other Info,Age,36
+151ind,11,Other Info,Age,48
+151ind,12,Other Info,Age,52
+151ind,13,Other Info,Age,45
+151ind,14,Other Info,Age,46
+151ind,15,Other Info,Age,30
+151ind,16,Other Info,Age,35
+151ind,17,Other Info,Age,45
+151ind,18,Other Info,Age,23
+151ind,19,Other Info,Age,20
+151ind,20,Other Info,Age,36
+151ind,21,Other Info,Age,51
+151ind,22,Other Info,Age,26
+151ind,23,Other Info,Age,48
+151ind,24,Other Info,Age,39
+151ind,25,Other Info,Age,25
+151ind,26,Other Info,Age,23
+151ind,27,Other Info,Age,28
+151ind,28,Other Info,Age,34
+151ind,29,Other Info,Age,52
+151ind,30,Other Info,Age,23
+151ind,31,Other Info,Age,40
+151ind,32,Other Info,Age,42
+151ind,33,Other Info,Age,37
+151ind,34,Other Info,Age,29
+151ind,35,Other Info,Age,44
+151ind,36,Other Info,Age,45
+151ind,37,Other Info,Age,50
+151ind,38,Other Info,Age,24
+151ind,39,Other Info,Age,38
+151ind,40,Other Info,Age,38
+151ind,41,Other Info,Age,43
+151ind,42,Other Info,Age,50
+151ind,43,Other Info,Age,52
+151ind,44,Other Info,Age,37
+151ind,45,Other Info,Age,44
+151ind,46,Other Info,Age,50
+151ind,47,Other Info,Age,40
+151ind,48,Other Info,Age,43
+151ind,49,Other Info,Age,32
+151ind,50,Other Info,Age,51
+151ind,51,Other Info,Age,42
+151ind,52,Other Info,Age,45
+151ind,53,Other Info,Age,50
+151ind,54,Other Info,Age,36
+151ind,55,Other Info,Age,52
+151ind,56,Other Info,Age,40
+151ind,57,Other Info,Age,45
+151ind,58,Other Info,Age,32
+151ind,59,Other Info,Age,53
+151ind,60,Other Info,Age,43
+151ind,61,Other Info,Age,52
+151ind,62,Other Info,Age,20
+151ind,63,Other Info,Age,25
+151ind,64,Other Info,Age,34
+151ind,65,Other Info,Age,48
+151ind,66,Other Info,Age,28
+151ind,67,Other Info,Age,46
+151ind,68,Other Info,Age,49
+151ind,69,Other Info,Age,69
+151ind,70,Other Info,Age,47
+151ind,71,Other Info,Age,45
+151ind,72,Other Info,Age,24
+151ind,73,Other Info,Age,24
+151ind,74,Other Info,Age,21
+151ind,75,Other Info,Age,31
+151ind,76,Other Info,Age,63
+151ind,77,Other Info,Age,40
+151ind,78,Other Info,Age,46
+151ind,79,Other Info,Age,51
+151ind,80,Other Info,Age,47
+151ind,81,Other Info,Age,23
+151ind,82,Other Info,Age,53
+151ind,83,Other Info,Age,21
+151ind,84,Other Info,Age,37
+151ind,85,Other Info,Age,30
+151ind,86,Other Info,Age,30
+151ind,87,Other Info,Age,30
+151ind,88,Other Info,Age,50
+151ind,89,Other Info,Age,41
+151ind,90,Other Info,Age,30
+151ind,91,Other Info,Age,58
+151ind,92,Other Info,Age,46
+151ind,93,Other Info,Age,59
+151ind,94,Other Info,Age,30
+151ind,95,Other Info,Age,48
+151ind,96,Other Info,Age,29
+151ind,97,Other Info,Age,29
+151ind,98,Other Info,Age,25
+151ind,99,Other Info,Age,32
+151ind,100,Other Info,Age,32
+151ind,101,Other Info,Age,52
+151ind,102,Other Info,Age,38
+151ind,103,Other Info,Age,40
+151ind,104,Other Info,Age,56
+151ind,105,Other Info,Age,65
+151ind,106,Other Info,Age,27
+151ind,107,Other Info,Age,53
+151ind,108,Other Info,Age,50
+151ind,109,Other Info,Age,51
+151ind,110,Other Info,Age,27
+151ind,111,Other Info,Age,45
+151ind,112,Other Info,Age,46
+151ind,113,Other Info,Age,52
+151ind,114,Other Info,Age,50
+151ind,115,Other Info,Age,59
+151ind,116,Other Info,Age,62
+151ind,117,Other Info,Age,59
+151ind,118,Other Info,Age,30
+151ind,119,Other Info,Age,32
+151ind,120,Other Info,Age,24
+151ind,121,Other Info,Age,39
+151ind,122,Other Info,Age,59
+151ind,123,Other Info,Age,33
+151ind,124,Other Info,Age,46
+151ind,125,Other Info,Age,27
+151ind,126,Other Info,Age,40
+151ind,127,Other Info,Age,26
+151ind,128,Other Info,Age,36
+151ind,129,Other Info,Age,48
+151ind,130,Other Info,Age,67
+151ind,131,Other Info,Age,51
+151ind,132,Other Info,Age,33
+151ind,133,Other Info,Age,55
+151ind,134,Other Info,Age,32
+151ind,135,Other Info,Age,30
+151ind,136,Other Info,Age,44
+151ind,137,Other Info,Age,49
+151ind,138,Other Info,Age,24
+151ind,139,Other Info,Age,38
+151ind,140,Other Info,Age,38
+151ind,141,Other Info,Age,43
+151ind,142,Other Info,Age,33
+151ind,143,Other Info,Age,67
+151ind,144,Other Info,Age,41
+151ind,145,Other Info,Age,57
+151ind,146,Other Info,Age,24
+151ind,147,Other Info,Age,28
+151ind,148,Other Info,Age,31
+151ind,149,Other Info,Age,38
+151ind,150,Other Info,Age,34
+151ind,151,Other Info,Age,47
+151ind,1,Other Info,Gender [Male/Female],M
+151ind,2,Other Info,Gender [Male/Female],M
+151ind,3,Other Info,Gender [Male/Female],M
+151ind,4,Other Info,Gender [Male/Female],F
+151ind,5,Other Info,Gender [Male/Female],F
+151ind,6,Other Info,Gender [Male/Female],F
+151ind,7,Other Info,Gender [Male/Female],F
+151ind,8,Other Info,Gender [Male/Female],M
+151ind,9,Other Info,Gender [Male/Female],M
+151ind,10,Other Info,Gender [Male/Female],F
+151ind,11,Other Info,Gender [Male/Female],F
+151ind,12,Other Info,Gender [Male/Female],F
+151ind,13,Other Info,Gender [Male/Female],M
+151ind,14,Other Info,Gender [Male/Female],M
+151ind,15,Other Info,Gender [Male/Female],M
+151ind,16,Other Info,Gender [Male/Female],M
+151ind,17,Other Info,Gender [Male/Female],M
+151ind,18,Other Info,Gender [Male/Female],M
+151ind,19,Other Info,Gender [Male/Female],M
+151ind,20,Other Info,Gender [Male/Female],F
+151ind,21,Other Info,Gender [Male/Female],M
+151ind,22,Other Info,Gender [Male/Female],M
+151ind,23,Other Info,Gender [Male/Female],M
+151ind,24,Other Info,Gender [Male/Female],M
+151ind,25,Other Info,Gender [Male/Female],F
+151ind,26,Other Info,Gender [Male/Female],M
+151ind,27,Other Info,Gender [Male/Female],F
+151ind,28,Other Info,Gender [Male/Female],F
+151ind,29,Other Info,Gender [Male/Female],M
+151ind,30,Other Info,Gender [Male/Female],F
+151ind,31,Other Info,Gender [Male/Female],M
+151ind,32,Other Info,Gender [Male/Female],F
+151ind,33,Other Info,Gender [Male/Female],M
+151ind,34,Other Info,Gender [Male/Female],M
+151ind,35,Other Info,Gender [Male/Female],M
+151ind,36,Other Info,Gender [Male/Female],M
+151ind,37,Other Info,Gender [Male/Female],M
+151ind,38,Other Info,Gender [Male/Female],M
+151ind,39,Other Info,Gender [Male/Female],M
+151ind,40,Other Info,Gender [Male/Female],F
+151ind,41,Other Info,Gender [Male/Female],M
+151ind,42,Other Info,Gender [Male/Female],F
+151ind,43,Other Info,Gender [Male/Female],F
+151ind,44,Other Info,Gender [Male/Female],F
+151ind,45,Other Info,Gender [Male/Female],F
+151ind,46,Other Info,Gender [Male/Female],M
+151ind,47,Other Info,Gender [Male/Female],M
+151ind,48,Other Info,Gender [Male/Female],M
+151ind,49,Other Info,Gender [Male/Female],M
+151ind,50,Other Info,Gender [Male/Female],M
+151ind,51,Other Info,Gender [Male/Female],F
+151ind,52,Other Info,Gender [Male/Female],F
+151ind,53,Other Info,Gender [Male/Female],M
+151ind,54,Other Info,Gender [Male/Female],F
+151ind,55,Other Info,Gender [Male/Female],M
+151ind,56,Other Info,Gender [Male/Female],F
+151ind,57,Other Info,Gender [Male/Female],M
+151ind,58,Other Info,Gender [Male/Female],M
+151ind,59,Other Info,Gender [Male/Female],M
+151ind,60,Other Info,Gender [Male/Female],M
+151ind,61,Other Info,Gender [Male/Female],M
+151ind,62,Other Info,Gender [Male/Female],F
+151ind,63,Other Info,Gender [Male/Female],M
+151ind,64,Other Info,Gender [Male/Female],M
+151ind,65,Other Info,Gender [Male/Female],F
+151ind,66,Other Info,Gender [Male/Female],M
+151ind,67,Other Info,Gender [Male/Female],F
+151ind,68,Other Info,Gender [Male/Female],M
+151ind,69,Other Info,Gender [Male/Female],M
+151ind,70,Other Info,Gender [Male/Female],M
+151ind,71,Other Info,Gender [Male/Female],F
+151ind,72,Other Info,Gender [Male/Female],M
+151ind,73,Other Info,Gender [Male/Female],F
+151ind,74,Other Info,Gender [Male/Female],M
+151ind,75,Other Info,Gender [Male/Female],M
+151ind,76,Other Info,Gender [Male/Female],M
+151ind,77,Other Info,Gender [Male/Female],M
+151ind,78,Other Info,Gender [Male/Female],M
+151ind,79,Other Info,Gender [Male/Female],M
+151ind,80,Other Info,Gender [Male/Female],M
+151ind,81,Other Info,Gender [Male/Female],F
+151ind,82,Other Info,Gender [Male/Female],M
+151ind,83,Other Info,Gender [Male/Female],F
+151ind,84,Other Info,Gender [Male/Female],M
+151ind,85,Other Info,Gender [Male/Female],F
+151ind,86,Other Info,Gender [Male/Female],M
+151ind,87,Other Info,Gender [Male/Female],F
+151ind,88,Other Info,Gender [Male/Female],M
+151ind,89,Other Info,Gender [Male/Female],M
+151ind,90,Other Info,Gender [Male/Female],M
+151ind,91,Other Info,Gender [Male/Female],M
+151ind,92,Other Info,Gender [Male/Female],M
+151ind,93,Other Info,Gender [Male/Female],M
+151ind,94,Other Info,Gender [Male/Female],F
+151ind,95,Other Info,Gender [Male/Female],M
+151ind,96,Other Info,Gender [Male/Female],F
+151ind,97,Other Info,Gender [Male/Female],M
+151ind,98,Other Info,Gender [Male/Female],F
+151ind,99,Other Info,Gender [Male/Female],F
+151ind,100,Other Info,Gender [Male/Female],F
+151ind,101,Other Info,Gender [Male/Female],M
+151ind,102,Other Info,Gender [Male/Female],M
+151ind,103,Other Info,Gender [Male/Female],M
+151ind,104,Other Info,Gender [Male/Female],M
+151ind,105,Other Info,Gender [Male/Female],M
+151ind,106,Other Info,Gender [Male/Female],M
+151ind,107,Other Info,Gender [Male/Female],M
+151ind,108,Other Info,Gender [Male/Female],M
+151ind,109,Other Info,Gender [Male/Female],M
+151ind,110,Other Info,Gender [Male/Female],F
+151ind,111,Other Info,Gender [Male/Female],M
+151ind,112,Other Info,Gender [Male/Female],M
+151ind,113,Other Info,Gender [Male/Female],F
+151ind,114,Other Info,Gender [Male/Female],M
+151ind,115,Other Info,Gender [Male/Female],M
+151ind,116,Other Info,Gender [Male/Female],M
+151ind,117,Other Info,Gender [Male/Female],F
+151ind,118,Other Info,Gender [Male/Female],M
+151ind,119,Other Info,Gender [Male/Female],M
+151ind,120,Other Info,Gender [Male/Female],M
+151ind,121,Other Info,Gender [Male/Female],M
+151ind,122,Other Info,Gender [Male/Female],F
+151ind,123,Other Info,Gender [Male/Female],F
+151ind,124,Other Info,Gender [Male/Female],F
+151ind,125,Other Info,Gender [Male/Female],M
+151ind,126,Other Info,Gender [Male/Female],F
+151ind,127,Other Info,Gender [Male/Female],F
+151ind,128,Other Info,Gender [Male/Female],F
+151ind,129,Other Info,Gender [Male/Female],F
+151ind,130,Other Info,Gender [Male/Female],M
+151ind,131,Other Info,Gender [Male/Female],M
+151ind,132,Other Info,Gender [Male/Female],M
+151ind,133,Other Info,Gender [Male/Female],M
+151ind,134,Other Info,Gender [Male/Female],F
+151ind,135,Other Info,Gender [Male/Female],F
+151ind,136,Other Info,Gender [Male/Female],F
+151ind,137,Other Info,Gender [Male/Female],F
+151ind,138,Other Info,Gender [Male/Female],M
+151ind,139,Other Info,Gender [Male/Female],M
+151ind,140,Other Info,Gender [Male/Female],M
+151ind,141,Other Info,Gender [Male/Female],M
+151ind,142,Other Info,Gender [Male/Female],M
+151ind,143,Other Info,Gender [Male/Female],M
+151ind,144,Other Info,Gender [Male/Female],M
+151ind,145,Other Info,Gender [Male/Female],F
+151ind,146,Other Info,Gender [Male/Female],F
+151ind,147,Other Info,Gender [Male/Female],F
+151ind,148,Other Info,Gender [Male/Female],M
+151ind,149,Other Info,Gender [Male/Female],F
+151ind,150,Other Info,Gender [Male/Female],M
+151ind,151,Other Info,Gender [Male/Female],M
+151ind,1,Other Info,Experience [Expert/Naive],E
+151ind,2,Other Info,Experience [Expert/Naive],E
+151ind,3,Other Info,Experience [Expert/Naive],E
+151ind,4,Other Info,Experience [Expert/Naive],E
+151ind,5,Other Info,Experience [Expert/Naive],N
+151ind,6,Other Info,Experience [Expert/Naive],E
+151ind,7,Other Info,Experience [Expert/Naive],E
+151ind,8,Other Info,Experience [Expert/Naive],E
+151ind,9,Other Info,Experience [Expert/Naive],N
+151ind,10,Other Info,Experience [Expert/Naive],E
+151ind,11,Other Info,Experience [Expert/Naive],E
+151ind,12,Other Info,Experience [Expert/Naive],E
+151ind,13,Other Info,Experience [Expert/Naive],E
+151ind,14,Other Info,Experience [Expert/Naive],E
+151ind,15,Other Info,Experience [Expert/Naive],E
+151ind,16,Other Info,Experience [Expert/Naive],N
+151ind,17,Other Info,Experience [Expert/Naive],E
+151ind,18,Other Info,Experience [Expert/Naive],N
+151ind,19,Other Info,Experience [Expert/Naive],N
+151ind,20,Other Info,Experience [Expert/Naive],N
+151ind,21,Other Info,Experience [Expert/Naive],N
+151ind,22,Other Info,Experience [Expert/Naive],N
+151ind,23,Other Info,Experience [Expert/Naive],N
+151ind,24,Other Info,Experience [Expert/Naive],E
+151ind,25,Other Info,Experience [Expert/Naive],N
+151ind,26,Other Info,Experience [Expert/Naive],E
+151ind,27,Other Info,Experience [Expert/Naive],E
+151ind,28,Other Info,Experience [Expert/Naive],N
+151ind,29,Other Info,Experience [Expert/Naive],N
+151ind,30,Other Info,Experience [Expert/Naive],N
+151ind,31,Other Info,Experience [Expert/Naive],N
+151ind,32,Other Info,Experience [Expert/Naive],N
+151ind,33,Other Info,Experience [Expert/Naive],N
+151ind,34,Other Info,Experience [Expert/Naive],N
+151ind,35,Other Info,Experience [Expert/Naive],N
+151ind,36,Other Info,Experience [Expert/Naive],N
+151ind,37,Other Info,Experience [Expert/Naive],N
+151ind,38,Other Info,Experience [Expert/Naive],N
+151ind,39,Other Info,Experience [Expert/Naive],E
+151ind,40,Other Info,Experience [Expert/Naive],N
+151ind,41,Other Info,Experience [Expert/Naive],N
+151ind,42,Other Info,Experience [Expert/Naive],N
+151ind,43,Other Info,Experience [Expert/Naive],N
+151ind,44,Other Info,Experience [Expert/Naive],E
+151ind,45,Other Info,Experience [Expert/Naive],N
+151ind,46,Other Info,Experience [Expert/Naive],N
+151ind,47,Other Info,Experience [Expert/Naive],N
+151ind,48,Other Info,Experience [Expert/Naive],N
+151ind,49,Other Info,Experience [Expert/Naive],N
+151ind,50,Other Info,Experience [Expert/Naive],N
+151ind,51,Other Info,Experience [Expert/Naive],N
+151ind,52,Other Info,Experience [Expert/Naive],N
+151ind,53,Other Info,Experience [Expert/Naive],E
+151ind,54,Other Info,Experience [Expert/Naive],N
+151ind,55,Other Info,Experience [Expert/Naive],N
+151ind,56,Other Info,Experience [Expert/Naive],N
+151ind,57,Other Info,Experience [Expert/Naive],N
+151ind,58,Other Info,Experience [Expert/Naive],N
+151ind,59,Other Info,Experience [Expert/Naive],N
+151ind,60,Other Info,Experience [Expert/Naive],N
+151ind,61,Other Info,Experience [Expert/Naive],N
+151ind,62,Other Info,Experience [Expert/Naive],N
+151ind,63,Other Info,Experience [Expert/Naive],E
+151ind,64,Other Info,Experience [Expert/Naive],E
+151ind,65,Other Info,Experience [Expert/Naive],E
+151ind,66,Other Info,Experience [Expert/Naive],E
+151ind,67,Other Info,Experience [Expert/Naive],E
+151ind,68,Other Info,Experience [Expert/Naive],E
+151ind,69,Other Info,Experience [Expert/Naive],E
+151ind,70,Other Info,Experience [Expert/Naive],E
+151ind,71,Other Info,Experience [Expert/Naive],E
+151ind,72,Other Info,Experience [Expert/Naive],N
+151ind,73,Other Info,Experience [Expert/Naive],N
+151ind,74,Other Info,Experience [Expert/Naive],N
+151ind,75,Other Info,Experience [Expert/Naive],N
+151ind,76,Other Info,Experience [Expert/Naive],E
+151ind,77,Other Info,Experience [Expert/Naive],E
+151ind,78,Other Info,Experience [Expert/Naive],E
+151ind,79,Other Info,Experience [Expert/Naive],E
+151ind,80,Other Info,Experience [Expert/Naive],E
+151ind,81,Other Info,Experience [Expert/Naive],E
+151ind,82,Other Info,Experience [Expert/Naive],E
+151ind,83,Other Info,Experience [Expert/Naive],N
+151ind,84,Other Info,Experience [Expert/Naive],E
+151ind,85,Other Info,Experience [Expert/Naive],E
+151ind,86,Other Info,Experience [Expert/Naive],N
+151ind,87,Other Info,Experience [Expert/Naive],N
+151ind,88,Other Info,Experience [Expert/Naive],E
+151ind,89,Other Info,Experience [Expert/Naive],E
+151ind,90,Other Info,Experience [Expert/Naive],E
+151ind,91,Other Info,Experience [Expert/Naive],E
+151ind,92,Other Info,Experience [Expert/Naive],E
+151ind,93,Other Info,Experience [Expert/Naive],E
+151ind,94,Other Info,Experience [Expert/Naive],E
+151ind,95,Other Info,Experience [Expert/Naive],E
+151ind,96,Other Info,Experience [Expert/Naive],E
+151ind,97,Other Info,Experience [Expert/Naive],E
+151ind,98,Other Info,Experience [Expert/Naive],E
+151ind,99,Other Info,Experience [Expert/Naive],E
+151ind,100,Other Info,Experience [Expert/Naive],E
+151ind,101,Other Info,Experience [Expert/Naive],E
+151ind,102,Other Info,Experience [Expert/Naive],E
+151ind,103,Other Info,Experience [Expert/Naive],E
+151ind,104,Other Info,Experience [Expert/Naive],E
+151ind,105,Other Info,Experience [Expert/Naive],E
+151ind,106,Other Info,Experience [Expert/Naive],E
+151ind,107,Other Info,Experience [Expert/Naive],E
+151ind,108,Other Info,Experience [Expert/Naive],E
+151ind,109,Other Info,Experience [Expert/Naive],E
+151ind,110,Other Info,Experience [Expert/Naive],E
+151ind,111,Other Info,Experience [Expert/Naive],E
+151ind,112,Other Info,Experience [Expert/Naive],E
+151ind,113,Other Info,Experience [Expert/Naive],E
+151ind,114,Other Info,Experience [Expert/Naive],N
+151ind,115,Other Info,Experience [Expert/Naive],E
+151ind,116,Other Info,Experience [Expert/Naive],E
+151ind,117,Other Info,Experience [Expert/Naive],E
+151ind,118,Other Info,Experience [Expert/Naive],E
+151ind,119,Other Info,Experience [Expert/Naive],N
+151ind,120,Other Info,Experience [Expert/Naive],N
+151ind,121,Other Info,Experience [Expert/Naive],E
+151ind,122,Other Info,Experience [Expert/Naive],N
+151ind,123,Other Info,Experience [Expert/Naive],N
+151ind,124,Other Info,Experience [Expert/Naive],N
+151ind,125,Other Info,Experience [Expert/Naive],N
+151ind,126,Other Info,Experience [Expert/Naive],N
+151ind,127,Other Info,Experience [Expert/Naive],N
+151ind,128,Other Info,Experience [Expert/Naive],N
+151ind,129,Other Info,Experience [Expert/Naive],N
+151ind,130,Other Info,Experience [Expert/Naive],E
+151ind,131,Other Info,Experience [Expert/Naive],E
+151ind,132,Other Info,Experience [Expert/Naive],E
+151ind,133,Other Info,Experience [Expert/Naive],E
+151ind,134,Other Info,Experience [Expert/Naive],N
+151ind,135,Other Info,Experience [Expert/Naive],E
+151ind,136,Other Info,Experience [Expert/Naive],E
+151ind,137,Other Info,Experience [Expert/Naive],E
+151ind,138,Other Info,Experience [Expert/Naive],N
+151ind,139,Other Info,Experience [Expert/Naive],E
+151ind,140,Other Info,Experience [Expert/Naive],E
+151ind,141,Other Info,Experience [Expert/Naive],E
+151ind,142,Other Info,Experience [Expert/Naive],E
+151ind,143,Other Info,Experience [Expert/Naive],E
+151ind,144,Other Info,Experience [Expert/Naive],N
+151ind,145,Other Info,Experience [Expert/Naive],N
+151ind,146,Other Info,Experience [Expert/Naive],E
+151ind,147,Other Info,Experience [Expert/Naive],E
+151ind,148,Other Info,Experience [Expert/Naive],E
+151ind,149,Other Info,Experience [Expert/Naive],N
+151ind,150,Other Info,Experience [Expert/Naive],E
+151ind,151,Other Info,Experience [Expert/Naive],E
+151ind,1,Other Info,Ethnic Orign,Asia
+151ind,2,Other Info,Ethnic Orign,Europe
+151ind,3,Other Info,Ethnic Orign,Europe
+151ind,4,Other Info,Ethnic Orign,Africa
+151ind,5,Other Info,Ethnic Orign,Asia
+151ind,6,Other Info,Ethnic Orign,Asia
+151ind,7,Other Info,Ethnic Orign,Africa
+151ind,8,Other Info,Ethnic Orign,Asia
+151ind,9,Other Info,Ethnic Orign,Europe
+151ind,10,Other Info,Ethnic Orign,Europe
+151ind,11,Other Info,Ethnic Orign,Europe
+151ind,12,Other Info,Ethnic Orign,Europe
+151ind,13,Other Info,Ethnic Orign,Europe
+151ind,14,Other Info,Ethnic Orign,Europe
+151ind,15,Other Info,Ethnic Orign,Europe
+151ind,16,Other Info,Ethnic Orign,Europe
+151ind,17,Other Info,Ethnic Orign,Europe
+151ind,18,Other Info,Ethnic Orign,Europe
+151ind,19,Other Info,Ethnic Orign,Europe
+151ind,20,Other Info,Ethnic Orign,Asia
+151ind,21,Other Info,Ethnic Orign,Europe
+151ind,22,Other Info,Ethnic Orign,Europe
+151ind,23,Other Info,Ethnic Orign,Europe
+151ind,24,Other Info,Ethnic Orign,Europe
+151ind,25,Other Info,Ethnic Orign,Europe
+151ind,26,Other Info,Ethnic Orign,Europe
+151ind,27,Other Info,Ethnic Orign,Europe
+151ind,28,Other Info,Ethnic Orign,Europe
+151ind,29,Other Info,Ethnic Orign,Europe
+151ind,30,Other Info,Ethnic Orign,Europe
+151ind,31,Other Info,Ethnic Orign,Europe
+151ind,32,Other Info,Ethnic Orign,Europe
+151ind,33,Other Info,Ethnic Orign,Europe
+151ind,34,Other Info,Ethnic Orign,Europe
+151ind,35,Other Info,Ethnic Orign,Europe
+151ind,36,Other Info,Ethnic Orign,Europe
+151ind,37,Other Info,Ethnic Orign,Europe
+151ind,38,Other Info,Ethnic Orign,Europe
+151ind,39,Other Info,Ethnic Orign,Asia
+151ind,40,Other Info,Ethnic Orign,Europe
+151ind,41,Other Info,Ethnic Orign,Europe
+151ind,42,Other Info,Ethnic Orign,Europe
+151ind,43,Other Info,Ethnic Orign,Europe
+151ind,44,Other Info,Ethnic Orign,Europe
+151ind,45,Other Info,Ethnic Orign,Europe
+151ind,46,Other Info,Ethnic Orign,Europe
+151ind,47,Other Info,Ethnic Orign,Europe
+151ind,48,Other Info,Ethnic Orign,Europe
+151ind,49,Other Info,Ethnic Orign,Europe
+151ind,50,Other Info,Ethnic Orign,Europe
+151ind,51,Other Info,Ethnic Orign,Europe
+151ind,52,Other Info,Ethnic Orign,Europe
+151ind,53,Other Info,Ethnic Orign,Europe
+151ind,54,Other Info,Ethnic Orign,Europe
+151ind,55,Other Info,Ethnic Orign,Europe
+151ind,56,Other Info,Ethnic Orign,Europe
+151ind,57,Other Info,Ethnic Orign,Europe
+151ind,58,Other Info,Ethnic Orign,Europe
+151ind,59,Other Info,Ethnic Orign,Europe
+151ind,60,Other Info,Ethnic Orign,Europe
+151ind,61,Other Info,Ethnic Orign,Europe
+151ind,62,Other Info,Ethnic Orign,Asia
+151ind,63,Other Info,Ethnic Orign,North America
+151ind,64,Other Info,Ethnic Orign,Asia
+151ind,65,Other Info,Ethnic Orign,North America
+151ind,66,Other Info,Ethnic Orign,Europe
+151ind,67,Other Info,Ethnic Orign,North America
+151ind,68,Other Info,Ethnic Orign,North America
+151ind,69,Other Info,Ethnic Orign,North America
+151ind,70,Other Info,Ethnic Orign,North America
+151ind,71,Other Info,Ethnic Orign,North America
+151ind,72,Other Info,Ethnic Orign,Asia
+151ind,73,Other Info,Ethnic Orign,Asia
+151ind,74,Other Info,Ethnic Orign,Asia
+151ind,75,Other Info,Ethnic Orign,Asia
+151ind,76,Other Info,Ethnic Orign,North America
+151ind,77,Other Info,Ethnic Orign,Europe
+151ind,78,Other Info,Ethnic Orign,Europe
+151ind,79,Other Info,Ethnic Orign,Europe
+151ind,80,Other Info,Ethnic Orign,Europe
+151ind,81,Other Info,Ethnic Orign,Europe
+151ind,82,Other Info,Ethnic Orign,Europe
+151ind,83,Other Info,Ethnic Orign,Europe
+151ind,84,Other Info,Ethnic Orign,Europe
+151ind,85,Other Info,Ethnic Orign,Europe
+151ind,86,Other Info,Ethnic Orign,Europe
+151ind,87,Other Info,Ethnic Orign,Europe
+151ind,88,Other Info,Ethnic Orign,Europe
+151ind,89,Other Info,Ethnic Orign,Europe
+151ind,90,Other Info,Ethnic Orign,Europe
+151ind,91,Other Info,Ethnic Orign,Europe
+151ind,92,Other Info,Ethnic Orign,Europe
+151ind,93,Other Info,Ethnic Orign,Europe
+151ind,94,Other Info,Ethnic Orign,Africa
+151ind,95,Other Info,Ethnic Orign,Europe
+151ind,96,Other Info,Ethnic Orign,Europe
+151ind,97,Other Info,Ethnic Orign,Europe
+151ind,98,Other Info,Ethnic Orign,Europe
+151ind,99,Other Info,Ethnic Orign,Europe
+151ind,100,Other Info,Ethnic Orign,Europe
+151ind,101,Other Info,Ethnic Orign,Europe
+151ind,102,Other Info,Ethnic Orign,Europe
+151ind,103,Other Info,Ethnic Orign,Europe
+151ind,104,Other Info,Ethnic Orign,Europe
+151ind,105,Other Info,Ethnic Orign,Europe
+151ind,106,Other Info,Ethnic Orign,Europe
+151ind,107,Other Info,Ethnic Orign,Europe
+151ind,108,Other Info,Ethnic Orign,Europe
+151ind,109,Other Info,Ethnic Orign,Europe
+151ind,110,Other Info,Ethnic Orign,Europe
+151ind,111,Other Info,Ethnic Orign,Europe
+151ind,112,Other Info,Ethnic Orign,Europe
+151ind,113,Other Info,Ethnic Orign,Europe
+151ind,114,Other Info,Ethnic Orign,Europe
+151ind,115,Other Info,Ethnic Orign,Europe
+151ind,116,Other Info,Ethnic Orign,Europe
+151ind,117,Other Info,Ethnic Orign,Europe
+151ind,118,Other Info,Ethnic Orign,Europe
+151ind,119,Other Info,Ethnic Orign,Europe
+151ind,120,Other Info,Ethnic Orign,Asia
+151ind,121,Other Info,Ethnic Orign,Europe
+151ind,122,Other Info,Ethnic Orign,Europe
+151ind,123,Other Info,Ethnic Orign,Europe
+151ind,124,Other Info,Ethnic Orign,Europe
+151ind,125,Other Info,Ethnic Orign,Asia
+151ind,126,Other Info,Ethnic Orign,Europe
+151ind,127,Other Info,Ethnic Orign,Europe
+151ind,128,Other Info,Ethnic Orign,Europe
+151ind,129,Other Info,Ethnic Orign,Europe
+151ind,130,Other Info,Ethnic Orign,Europe
+151ind,131,Other Info,Ethnic Orign,Europe
+151ind,132,Other Info,Ethnic Orign,Europe
+151ind,133,Other Info,Ethnic Orign,Europe
+151ind,134,Other Info,Ethnic Orign,Asia
+151ind,135,Other Info,Ethnic Orign,Asia
+151ind,136,Other Info,Ethnic Orign,Europe
+151ind,137,Other Info,Ethnic Orign,Europe
+151ind,138,Other Info,Ethnic Orign,Europe
+151ind,139,Other Info,Ethnic Orign,Europe
+151ind,140,Other Info,Ethnic Orign,Europe
+151ind,141,Other Info,Ethnic Orign,Europe
+151ind,142,Other Info,Ethnic Orign,North America
+151ind,143,Other Info,Ethnic Orign,Europe
+151ind,144,Other Info,Ethnic Orign,Europe
+151ind,145,Other Info,Ethnic Orign,Europe
+151ind,146,Other Info,Ethnic Orign,Asia
+151ind,147,Other Info,Ethnic Orign,Europe
+151ind,148,Other Info,Ethnic Orign,Europe
+151ind,149,Other Info,Ethnic Orign,Europe
+151ind,150,Other Info,Ethnic Orign,Europe
+151ind,151,Other Info,Ethnic Orign,Europe
+151ind,1,Other Info,Color Deficiency in Family [Y/N],N
+151ind,2,Other Info,Color Deficiency in Family [Y/N],N
+151ind,3,Other Info,Color Deficiency in Family [Y/N],N
+151ind,4,Other Info,Color Deficiency in Family [Y/N],N
+151ind,5,Other Info,Color Deficiency in Family [Y/N],N
+151ind,6,Other Info,Color Deficiency in Family [Y/N],N
+151ind,7,Other Info,Color Deficiency in Family [Y/N],N
+151ind,8,Other Info,Color Deficiency in Family [Y/N],N
+151ind,9,Other Info,Color Deficiency in Family [Y/N],N
+151ind,10,Other Info,Color Deficiency in Family [Y/N],N
+151ind,11,Other Info,Color Deficiency in Family [Y/N],N
+151ind,12,Other Info,Color Deficiency in Family [Y/N],N
+151ind,13,Other Info,Color Deficiency in Family [Y/N],N
+151ind,14,Other Info,Color Deficiency in Family [Y/N],N
+151ind,15,Other Info,Color Deficiency in Family [Y/N],N
+151ind,16,Other Info,Color Deficiency in Family [Y/N],N
+151ind,17,Other Info,Color Deficiency in Family [Y/N],N
+151ind,18,Other Info,Color Deficiency in Family [Y/N],N
+151ind,19,Other Info,Color Deficiency in Family [Y/N],N
+151ind,20,Other Info,Color Deficiency in Family [Y/N],N
+151ind,21,Other Info,Color Deficiency in Family [Y/N],N
+151ind,22,Other Info,Color Deficiency in Family [Y/N],N
+151ind,23,Other Info,Color Deficiency in Family [Y/N],N
+151ind,24,Other Info,Color Deficiency in Family [Y/N],N
+151ind,25,Other Info,Color Deficiency in Family [Y/N],N
+151ind,26,Other Info,Color Deficiency in Family [Y/N],N
+151ind,27,Other Info,Color Deficiency in Family [Y/N],N
+151ind,28,Other Info,Color Deficiency in Family [Y/N],N
+151ind,29,Other Info,Color Deficiency in Family [Y/N],N
+151ind,30,Other Info,Color Deficiency in Family [Y/N],N
+151ind,31,Other Info,Color Deficiency in Family [Y/N],N
+151ind,32,Other Info,Color Deficiency in Family [Y/N],N
+151ind,33,Other Info,Color Deficiency in Family [Y/N],N
+151ind,34,Other Info,Color Deficiency in Family [Y/N],N
+151ind,35,Other Info,Color Deficiency in Family [Y/N],N
+151ind,36,Other Info,Color Deficiency in Family [Y/N],N
+151ind,37,Other Info,Color Deficiency in Family [Y/N],N
+151ind,38,Other Info,Color Deficiency in Family [Y/N],N
+151ind,39,Other Info,Color Deficiency in Family [Y/N],N
+151ind,40,Other Info,Color Deficiency in Family [Y/N],Y
+151ind,41,Other Info,Color Deficiency in Family [Y/N],N
+151ind,42,Other Info,Color Deficiency in Family [Y/N],N
+151ind,43,Other Info,Color Deficiency in Family [Y/N],N
+151ind,44,Other Info,Color Deficiency in Family [Y/N],N
+151ind,45,Other Info,Color Deficiency in Family [Y/N],Y
+151ind,46,Other Info,Color Deficiency in Family [Y/N],N
+151ind,47,Other Info,Color Deficiency in Family [Y/N],N
+151ind,48,Other Info,Color Deficiency in Family [Y/N],N
+151ind,49,Other Info,Color Deficiency in Family [Y/N],N
+151ind,50,Other Info,Color Deficiency in Family [Y/N],N
+151ind,51,Other Info,Color Deficiency in Family [Y/N],N
+151ind,52,Other Info,Color Deficiency in Family [Y/N],N
+151ind,53,Other Info,Color Deficiency in Family [Y/N],N
+151ind,54,Other Info,Color Deficiency in Family [Y/N],N
+151ind,55,Other Info,Color Deficiency in Family [Y/N],N
+151ind,56,Other Info,Color Deficiency in Family [Y/N],N
+151ind,57,Other Info,Color Deficiency in Family [Y/N],N
+151ind,58,Other Info,Color Deficiency in Family [Y/N],N
+151ind,59,Other Info,Color Deficiency in Family [Y/N],N
+151ind,60,Other Info,Color Deficiency in Family [Y/N],N
+151ind,61,Other Info,Color Deficiency in Family [Y/N],N
+151ind,62,Other Info,Color Deficiency in Family [Y/N],N
+151ind,63,Other Info,Color Deficiency in Family [Y/N],N
+151ind,64,Other Info,Color Deficiency in Family [Y/N],N
+151ind,65,Other Info,Color Deficiency in Family [Y/N],N
+151ind,66,Other Info,Color Deficiency in Family [Y/N],N
+151ind,67,Other Info,Color Deficiency in Family [Y/N],N
+151ind,68,Other Info,Color Deficiency in Family [Y/N],N
+151ind,69,Other Info,Color Deficiency in Family [Y/N],N
+151ind,70,Other Info,Color Deficiency in Family [Y/N],N
+151ind,71,Other Info,Color Deficiency in Family [Y/N],N
+151ind,72,Other Info,Color Deficiency in Family [Y/N],Y
+151ind,73,Other Info,Color Deficiency in Family [Y/N],N
+151ind,74,Other Info,Color Deficiency in Family [Y/N],N
+151ind,75,Other Info,Color Deficiency in Family [Y/N],N
+151ind,76,Other Info,Color Deficiency in Family [Y/N],N
+151ind,77,Other Info,Color Deficiency in Family [Y/N],N
+151ind,78,Other Info,Color Deficiency in Family [Y/N],N
+151ind,79,Other Info,Color Deficiency in Family [Y/N],N
+151ind,80,Other Info,Color Deficiency in Family [Y/N],N
+151ind,81,Other Info,Color Deficiency in Family [Y/N],N
+151ind,82,Other Info,Color Deficiency in Family [Y/N],N
+151ind,83,Other Info,Color Deficiency in Family [Y/N],N
+151ind,84,Other Info,Color Deficiency in Family [Y/N],N
+151ind,85,Other Info,Color Deficiency in Family [Y/N],N
+151ind,86,Other Info,Color Deficiency in Family [Y/N],N
+151ind,87,Other Info,Color Deficiency in Family [Y/N],N
+151ind,88,Other Info,Color Deficiency in Family [Y/N],N
+151ind,89,Other Info,Color Deficiency in Family [Y/N],N
+151ind,90,Other Info,Color Deficiency in Family [Y/N],N
+151ind,91,Other Info,Color Deficiency in Family [Y/N],N
+151ind,92,Other Info,Color Deficiency in Family [Y/N],N
+151ind,93,Other Info,Color Deficiency in Family [Y/N],N
+151ind,94,Other Info,Color Deficiency in Family [Y/N],N
+151ind,95,Other Info,Color Deficiency in Family [Y/N],N
+151ind,96,Other Info,Color Deficiency in Family [Y/N],N
+151ind,97,Other Info,Color Deficiency in Family [Y/N],N
+151ind,98,Other Info,Color Deficiency in Family [Y/N],N
+151ind,99,Other Info,Color Deficiency in Family [Y/N],N
+151ind,100,Other Info,Color Deficiency in Family [Y/N],N
+151ind,101,Other Info,Color Deficiency in Family [Y/N],N
+151ind,102,Other Info,Color Deficiency in Family [Y/N],N
+151ind,103,Other Info,Color Deficiency in Family [Y/N],N
+151ind,104,Other Info,Color Deficiency in Family [Y/N],N
+151ind,105,Other Info,Color Deficiency in Family [Y/N],N
+151ind,106,Other Info,Color Deficiency in Family [Y/N],N
+151ind,107,Other Info,Color Deficiency in Family [Y/N],N
+151ind,108,Other Info,Color Deficiency in Family [Y/N],N
+151ind,109,Other Info,Color Deficiency in Family [Y/N],N
+151ind,110,Other Info,Color Deficiency in Family [Y/N],N
+151ind,111,Other Info,Color Deficiency in Family [Y/N],N
+151ind,112,Other Info,Color Deficiency in Family [Y/N],N
+151ind,113,Other Info,Color Deficiency in Family [Y/N],N
+151ind,114,Other Info,Color Deficiency in Family [Y/N],N
+151ind,115,Other Info,Color Deficiency in Family [Y/N],N
+151ind,116,Other Info,Color Deficiency in Family [Y/N],N
+151ind,117,Other Info,Color Deficiency in Family [Y/N],N
+151ind,118,Other Info,Color Deficiency in Family [Y/N],N
+151ind,119,Other Info,Color Deficiency in Family [Y/N],N
+151ind,120,Other Info,Color Deficiency in Family [Y/N],N
+151ind,121,Other Info,Color Deficiency in Family [Y/N],N
+151ind,122,Other Info,Color Deficiency in Family [Y/N],N
+151ind,123,Other Info,Color Deficiency in Family [Y/N],N
+151ind,124,Other Info,Color Deficiency in Family [Y/N],N
+151ind,125,Other Info,Color Deficiency in Family [Y/N],N
+151ind,126,Other Info,Color Deficiency in Family [Y/N],N
+151ind,127,Other Info,Color Deficiency in Family [Y/N],N
+151ind,128,Other Info,Color Deficiency in Family [Y/N],N
+151ind,129,Other Info,Color Deficiency in Family [Y/N],N
+151ind,130,Other Info,Color Deficiency in Family [Y/N],N
+151ind,131,Other Info,Color Deficiency in Family [Y/N],N
+151ind,132,Other Info,Color Deficiency in Family [Y/N],N
+151ind,133,Other Info,Color Deficiency in Family [Y/N],Y
+151ind,134,Other Info,Color Deficiency in Family [Y/N],N
+151ind,135,Other Info,Color Deficiency in Family [Y/N],Y
+151ind,136,Other Info,Color Deficiency in Family [Y/N],N
+151ind,137,Other Info,Color Deficiency in Family [Y/N],N
+151ind,138,Other Info,Color Deficiency in Family [Y/N],N
+151ind,139,Other Info,Color Deficiency in Family [Y/N],N
+151ind,140,Other Info,Color Deficiency in Family [Y/N],N
+151ind,141,Other Info,Color Deficiency in Family [Y/N],N
+151ind,142,Other Info,Color Deficiency in Family [Y/N],N
+151ind,143,Other Info,Color Deficiency in Family [Y/N],N
+151ind,144,Other Info,Color Deficiency in Family [Y/N],N
+151ind,145,Other Info,Color Deficiency in Family [Y/N],N
+151ind,146,Other Info,Color Deficiency in Family [Y/N],N
+151ind,147,Other Info,Color Deficiency in Family [Y/N],N
+151ind,148,Other Info,Color Deficiency in Family [Y/N],N
+151ind,149,Other Info,Color Deficiency in Family [Y/N],N
+151ind,150,Other Info,Color Deficiency in Family [Y/N],N
+151ind,151,Other Info,Color Deficiency in Family [Y/N],N
+151ind,1,Other Info,Diabetes [Y/N],N
+151ind,2,Other Info,Diabetes [Y/N],N
+151ind,3,Other Info,Diabetes [Y/N],N
+151ind,4,Other Info,Diabetes [Y/N],N
+151ind,5,Other Info,Diabetes [Y/N],N
+151ind,6,Other Info,Diabetes [Y/N],N
+151ind,7,Other Info,Diabetes [Y/N],N
+151ind,8,Other Info,Diabetes [Y/N],N
+151ind,9,Other Info,Diabetes [Y/N],N
+151ind,10,Other Info,Diabetes [Y/N],N
+151ind,11,Other Info,Diabetes [Y/N],N
+151ind,12,Other Info,Diabetes [Y/N],N
+151ind,13,Other Info,Diabetes [Y/N],N
+151ind,14,Other Info,Diabetes [Y/N],N
+151ind,15,Other Info,Diabetes [Y/N],N
+151ind,16,Other Info,Diabetes [Y/N],N
+151ind,17,Other Info,Diabetes [Y/N],N
+151ind,18,Other Info,Diabetes [Y/N],N
+151ind,19,Other Info,Diabetes [Y/N],N
+151ind,20,Other Info,Diabetes [Y/N],N
+151ind,21,Other Info,Diabetes [Y/N],N
+151ind,22,Other Info,Diabetes [Y/N],N
+151ind,23,Other Info,Diabetes [Y/N],N
+151ind,24,Other Info,Diabetes [Y/N],N
+151ind,25,Other Info,Diabetes [Y/N],N
+151ind,26,Other Info,Diabetes [Y/N],N
+151ind,27,Other Info,Diabetes [Y/N],N
+151ind,28,Other Info,Diabetes [Y/N],N
+151ind,29,Other Info,Diabetes [Y/N],N
+151ind,30,Other Info,Diabetes [Y/N],N
+151ind,31,Other Info,Diabetes [Y/N],N
+151ind,32,Other Info,Diabetes [Y/N],N
+151ind,33,Other Info,Diabetes [Y/N],N
+151ind,34,Other Info,Diabetes [Y/N],N
+151ind,35,Other Info,Diabetes [Y/N],N
+151ind,36,Other Info,Diabetes [Y/N],N
+151ind,37,Other Info,Diabetes [Y/N],N
+151ind,38,Other Info,Diabetes [Y/N],N
+151ind,39,Other Info,Diabetes [Y/N],N
+151ind,40,Other Info,Diabetes [Y/N],N
+151ind,41,Other Info,Diabetes [Y/N],N
+151ind,42,Other Info,Diabetes [Y/N],N
+151ind,43,Other Info,Diabetes [Y/N],N
+151ind,44,Other Info,Diabetes [Y/N],N
+151ind,45,Other Info,Diabetes [Y/N],N
+151ind,46,Other Info,Diabetes [Y/N],N
+151ind,47,Other Info,Diabetes [Y/N],N
+151ind,48,Other Info,Diabetes [Y/N],N
+151ind,49,Other Info,Diabetes [Y/N],N
+151ind,50,Other Info,Diabetes [Y/N],N
+151ind,51,Other Info,Diabetes [Y/N],N
+151ind,52,Other Info,Diabetes [Y/N],N
+151ind,53,Other Info,Diabetes [Y/N],N
+151ind,54,Other Info,Diabetes [Y/N],N
+151ind,55,Other Info,Diabetes [Y/N],N
+151ind,56,Other Info,Diabetes [Y/N],N
+151ind,57,Other Info,Diabetes [Y/N],N
+151ind,58,Other Info,Diabetes [Y/N],N
+151ind,59,Other Info,Diabetes [Y/N],N
+151ind,60,Other Info,Diabetes [Y/N],N
+151ind,61,Other Info,Diabetes [Y/N],N
+151ind,62,Other Info,Diabetes [Y/N],N
+151ind,63,Other Info,Diabetes [Y/N],N
+151ind,64,Other Info,Diabetes [Y/N],N
+151ind,65,Other Info,Diabetes [Y/N],N
+151ind,66,Other Info,Diabetes [Y/N],N
+151ind,67,Other Info,Diabetes [Y/N],N
+151ind,68,Other Info,Diabetes [Y/N],N
+151ind,69,Other Info,Diabetes [Y/N],N
+151ind,70,Other Info,Diabetes [Y/N],N
+151ind,71,Other Info,Diabetes [Y/N],N
+151ind,72,Other Info,Diabetes [Y/N],N
+151ind,73,Other Info,Diabetes [Y/N],N
+151ind,74,Other Info,Diabetes [Y/N],N
+151ind,75,Other Info,Diabetes [Y/N],N
+151ind,76,Other Info,Diabetes [Y/N],N
+151ind,77,Other Info,Diabetes [Y/N],N
+151ind,78,Other Info,Diabetes [Y/N],N
+151ind,79,Other Info,Diabetes [Y/N],N
+151ind,80,Other Info,Diabetes [Y/N],N
+151ind,81,Other Info,Diabetes [Y/N],N
+151ind,82,Other Info,Diabetes [Y/N],N
+151ind,83,Other Info,Diabetes [Y/N],N
+151ind,84,Other Info,Diabetes [Y/N],N
+151ind,85,Other Info,Diabetes [Y/N],N
+151ind,86,Other Info,Diabetes [Y/N],N
+151ind,87,Other Info,Diabetes [Y/N],N
+151ind,88,Other Info,Diabetes [Y/N],N
+151ind,89,Other Info,Diabetes [Y/N],Y
+151ind,90,Other Info,Diabetes [Y/N],N
+151ind,91,Other Info,Diabetes [Y/N],N
+151ind,92,Other Info,Diabetes [Y/N],N
+151ind,93,Other Info,Diabetes [Y/N],N
+151ind,94,Other Info,Diabetes [Y/N],N
+151ind,95,Other Info,Diabetes [Y/N],N
+151ind,96,Other Info,Diabetes [Y/N],N
+151ind,97,Other Info,Diabetes [Y/N],N
+151ind,98,Other Info,Diabetes [Y/N],N
+151ind,99,Other Info,Diabetes [Y/N],N
+151ind,100,Other Info,Diabetes [Y/N],N
+151ind,101,Other Info,Diabetes [Y/N],N
+151ind,102,Other Info,Diabetes [Y/N],N
+151ind,103,Other Info,Diabetes [Y/N],N
+151ind,104,Other Info,Diabetes [Y/N],N
+151ind,105,Other Info,Diabetes [Y/N],N
+151ind,106,Other Info,Diabetes [Y/N],N
+151ind,107,Other Info,Diabetes [Y/N],N
+151ind,108,Other Info,Diabetes [Y/N],N
+151ind,109,Other Info,Diabetes [Y/N],N
+151ind,110,Other Info,Diabetes [Y/N],N
+151ind,111,Other Info,Diabetes [Y/N],N
+151ind,112,Other Info,Diabetes [Y/N],N
+151ind,113,Other Info,Diabetes [Y/N],N
+151ind,114,Other Info,Diabetes [Y/N],N
+151ind,115,Other Info,Diabetes [Y/N],N
+151ind,116,Other Info,Diabetes [Y/N],N
+151ind,117,Other Info,Diabetes [Y/N],N
+151ind,118,Other Info,Diabetes [Y/N],N
+151ind,119,Other Info,Diabetes [Y/N],N
+151ind,120,Other Info,Diabetes [Y/N],N
+151ind,121,Other Info,Diabetes [Y/N],N
+151ind,122,Other Info,Diabetes [Y/N],N
+151ind,123,Other Info,Diabetes [Y/N],N
+151ind,124,Other Info,Diabetes [Y/N],N
+151ind,125,Other Info,Diabetes [Y/N],N
+151ind,126,Other Info,Diabetes [Y/N],N
+151ind,127,Other Info,Diabetes [Y/N],N
+151ind,128,Other Info,Diabetes [Y/N],N
+151ind,129,Other Info,Diabetes [Y/N],N
+151ind,130,Other Info,Diabetes [Y/N],N
+151ind,131,Other Info,Diabetes [Y/N],N
+151ind,132,Other Info,Diabetes [Y/N],N
+151ind,133,Other Info,Diabetes [Y/N],Y
+151ind,134,Other Info,Diabetes [Y/N],N
+151ind,135,Other Info,Diabetes [Y/N],N
+151ind,136,Other Info,Diabetes [Y/N],N
+151ind,137,Other Info,Diabetes [Y/N],N
+151ind,138,Other Info,Diabetes [Y/N],N
+151ind,139,Other Info,Diabetes [Y/N],N
+151ind,140,Other Info,Diabetes [Y/N],N
+151ind,141,Other Info,Diabetes [Y/N],N
+151ind,142,Other Info,Diabetes [Y/N],N
+151ind,143,Other Info,Diabetes [Y/N],N
+151ind,144,Other Info,Diabetes [Y/N],N
+151ind,145,Other Info,Diabetes [Y/N],Y
+151ind,146,Other Info,Diabetes [Y/N],N
+151ind,147,Other Info,Diabetes [Y/N],N
+151ind,148,Other Info,Diabetes [Y/N],N
+151ind,149,Other Info,Diabetes [Y/N],N
+151ind,150,Other Info,Diabetes [Y/N],N
+151ind,151,Other Info,Diabetes [Y/N],N
+151ind,1,Other Info,Eye Used [Left/Right],L
+151ind,2,Other Info,Eye Used [Left/Right],R
+151ind,3,Other Info,Eye Used [Left/Right],R
+151ind,4,Other Info,Eye Used [Left/Right],R
+151ind,5,Other Info,Eye Used [Left/Right],L
+151ind,6,Other Info,Eye Used [Left/Right],R
+151ind,7,Other Info,Eye Used [Left/Right],R
+151ind,8,Other Info,Eye Used [Left/Right],R
+151ind,9,Other Info,Eye Used [Left/Right],R
+151ind,10,Other Info,Eye Used [Left/Right],R
+151ind,11,Other Info,Eye Used [Left/Right],R
+151ind,12,Other Info,Eye Used [Left/Right],R
+151ind,13,Other Info,Eye Used [Left/Right],R
+151ind,14,Other Info,Eye Used [Left/Right],R
+151ind,15,Other Info,Eye Used [Left/Right],R
+151ind,16,Other Info,Eye Used [Left/Right],R
+151ind,17,Other Info,Eye Used [Left/Right],R
+151ind,18,Other Info,Eye Used [Left/Right],R
+151ind,19,Other Info,Eye Used [Left/Right],R
+151ind,20,Other Info,Eye Used [Left/Right],L
+151ind,21,Other Info,Eye Used [Left/Right],R
+151ind,22,Other Info,Eye Used [Left/Right],L
+151ind,23,Other Info,Eye Used [Left/Right],L
+151ind,24,Other Info,Eye Used [Left/Right],R
+151ind,25,Other Info,Eye Used [Left/Right],R
+151ind,26,Other Info,Eye Used [Left/Right],R
+151ind,27,Other Info,Eye Used [Left/Right],R
+151ind,28,Other Info,Eye Used [Left/Right],L
+151ind,29,Other Info,Eye Used [Left/Right],L
+151ind,30,Other Info,Eye Used [Left/Right],R
+151ind,31,Other Info,Eye Used [Left/Right],R
+151ind,32,Other Info,Eye Used [Left/Right],R
+151ind,33,Other Info,Eye Used [Left/Right],L
+151ind,34,Other Info,Eye Used [Left/Right],R
+151ind,35,Other Info,Eye Used [Left/Right],R
+151ind,36,Other Info,Eye Used [Left/Right],L
+151ind,37,Other Info,Eye Used [Left/Right],R
+151ind,38,Other Info,Eye Used [Left/Right],L
+151ind,39,Other Info,Eye Used [Left/Right],R
+151ind,40,Other Info,Eye Used [Left/Right],L
+151ind,41,Other Info,Eye Used [Left/Right],R
+151ind,42,Other Info,Eye Used [Left/Right],L
+151ind,43,Other Info,Eye Used [Left/Right],L
+151ind,44,Other Info,Eye Used [Left/Right],L
+151ind,45,Other Info,Eye Used [Left/Right],L
+151ind,46,Other Info,Eye Used [Left/Right],R
+151ind,47,Other Info,Eye Used [Left/Right],R
+151ind,48,Other Info,Eye Used [Left/Right],R
+151ind,49,Other Info,Eye Used [Left/Right],R
+151ind,50,Other Info,Eye Used [Left/Right],R
+151ind,51,Other Info,Eye Used [Left/Right],L
+151ind,52,Other Info,Eye Used [Left/Right],R
+151ind,53,Other Info,Eye Used [Left/Right],R
+151ind,54,Other Info,Eye Used [Left/Right],L
+151ind,55,Other Info,Eye Used [Left/Right],R
+151ind,56,Other Info,Eye Used [Left/Right],R
+151ind,57,Other Info,Eye Used [Left/Right],L
+151ind,58,Other Info,Eye Used [Left/Right],R
+151ind,59,Other Info,Eye Used [Left/Right],R
+151ind,60,Other Info,Eye Used [Left/Right],L
+151ind,61,Other Info,Eye Used [Left/Right],R
+151ind,62,Other Info,Eye Used [Left/Right],R
+151ind,63,Other Info,Eye Used [Left/Right],R
+151ind,64,Other Info,Eye Used [Left/Right],L
+151ind,65,Other Info,Eye Used [Left/Right],R
+151ind,66,Other Info,Eye Used [Left/Right],R
+151ind,67,Other Info,Eye Used [Left/Right],R
+151ind,68,Other Info,Eye Used [Left/Right],R
+151ind,69,Other Info,Eye Used [Left/Right],L
+151ind,70,Other Info,Eye Used [Left/Right],R
+151ind,71,Other Info,Eye Used [Left/Right],L
+151ind,72,Other Info,Eye Used [Left/Right],L
+151ind,73,Other Info,Eye Used [Left/Right],R
+151ind,74,Other Info,Eye Used [Left/Right],L
+151ind,75,Other Info,Eye Used [Left/Right],R
+151ind,76,Other Info,Eye Used [Left/Right],L
+151ind,77,Other Info,Eye Used [Left/Right],R
+151ind,78,Other Info,Eye Used [Left/Right],R
+151ind,79,Other Info,Eye Used [Left/Right],R
+151ind,80,Other Info,Eye Used [Left/Right],L
+151ind,81,Other Info,Eye Used [Left/Right],R
+151ind,82,Other Info,Eye Used [Left/Right],R
+151ind,83,Other Info,Eye Used [Left/Right],L
+151ind,84,Other Info,Eye Used [Left/Right],R
+151ind,85,Other Info,Eye Used [Left/Right],L
+151ind,86,Other Info,Eye Used [Left/Right],L
+151ind,87,Other Info,Eye Used [Left/Right],L
+151ind,88,Other Info,Eye Used [Left/Right],R
+151ind,89,Other Info,Eye Used [Left/Right],L
+151ind,90,Other Info,Eye Used [Left/Right],L
+151ind,91,Other Info,Eye Used [Left/Right],R
+151ind,92,Other Info,Eye Used [Left/Right],R
+151ind,93,Other Info,Eye Used [Left/Right],R
+151ind,94,Other Info,Eye Used [Left/Right],R
+151ind,95,Other Info,Eye Used [Left/Right],R
+151ind,96,Other Info,Eye Used [Left/Right],R
+151ind,97,Other Info,Eye Used [Left/Right],R
+151ind,98,Other Info,Eye Used [Left/Right],R
+151ind,99,Other Info,Eye Used [Left/Right],R
+151ind,100,Other Info,Eye Used [Left/Right],R
+151ind,101,Other Info,Eye Used [Left/Right],L
+151ind,102,Other Info,Eye Used [Left/Right],L
+151ind,103,Other Info,Eye Used [Left/Right],R
+151ind,104,Other Info,Eye Used [Left/Right],L
+151ind,105,Other Info,Eye Used [Left/Right],R
+151ind,106,Other Info,Eye Used [Left/Right],L
+151ind,107,Other Info,Eye Used [Left/Right],R
+151ind,108,Other Info,Eye Used [Left/Right],R
+151ind,109,Other Info,Eye Used [Left/Right],R
+151ind,110,Other Info,Eye Used [Left/Right],L
+151ind,111,Other Info,Eye Used [Left/Right],R
+151ind,112,Other Info,Eye Used [Left/Right],R
+151ind,113,Other Info,Eye Used [Left/Right],R
+151ind,114,Other Info,Eye Used [Left/Right],R
+151ind,115,Other Info,Eye Used [Left/Right],R
+151ind,116,Other Info,Eye Used [Left/Right],R
+151ind,117,Other Info,Eye Used [Left/Right],R
+151ind,118,Other Info,Eye Used [Left/Right],R
+151ind,119,Other Info,Eye Used [Left/Right],R
+151ind,120,Other Info,Eye Used [Left/Right],R
+151ind,121,Other Info,Eye Used [Left/Right],R
+151ind,122,Other Info,Eye Used [Left/Right],R
+151ind,123,Other Info,Eye Used [Left/Right],L
+151ind,124,Other Info,Eye Used [Left/Right],R
+151ind,125,Other Info,Eye Used [Left/Right],R
+151ind,126,Other Info,Eye Used [Left/Right],R
+151ind,127,Other Info,Eye Used [Left/Right],R
+151ind,128,Other Info,Eye Used [Left/Right],R
+151ind,129,Other Info,Eye Used [Left/Right],R
+151ind,130,Other Info,Eye Used [Left/Right],R
+151ind,131,Other Info,Eye Used [Left/Right],R
+151ind,132,Other Info,Eye Used [Left/Right],R
+151ind,133,Other Info,Eye Used [Left/Right],L
+151ind,134,Other Info,Eye Used [Left/Right],R
+151ind,135,Other Info,Eye Used [Left/Right],L
+151ind,136,Other Info,Eye Used [Left/Right],R
+151ind,137,Other Info,Eye Used [Left/Right],L
+151ind,138,Other Info,Eye Used [Left/Right],R
+151ind,139,Other Info,Eye Used [Left/Right],R
+151ind,140,Other Info,Eye Used [Left/Right],L
+151ind,141,Other Info,Eye Used [Left/Right],L
+151ind,142,Other Info,Eye Used [Left/Right],R
+151ind,143,Other Info,Eye Used [Left/Right],R
+151ind,144,Other Info,Eye Used [Left/Right],R
+151ind,145,Other Info,Eye Used [Left/Right],R
+151ind,146,Other Info,Eye Used [Left/Right],R
+151ind,147,Other Info,Eye Used [Left/Right],L
+151ind,148,Other Info,Eye Used [Left/Right],R
+151ind,149,Other Info,Eye Used [Left/Right],R
+151ind,150,Other Info,Eye Used [Left/Right],R
+151ind,151,Other Info,Eye Used [Left/Right],L
+151ind,1,Other Info,Location,Rennes
+151ind,2,Other Info,Location,Rennes
+151ind,3,Other Info,Location,Rennes
+151ind,4,Other Info,Location,Rennes
+151ind,5,Other Info,Location,Rennes
+151ind,6,Other Info,Location,Rennes
+151ind,7,Other Info,Location,Rennes
+151ind,8,Other Info,Location,Rennes
+151ind,9,Other Info,Location,Rennes
+151ind,10,Other Info,Location,Rennes
+151ind,11,Other Info,Location,Rennes
+151ind,12,Other Info,Location,Rennes
+151ind,13,Other Info,Location,Rennes
+151ind,14,Other Info,Location,Rennes
+151ind,15,Other Info,Location,Rennes
+151ind,16,Other Info,Location,Rennes
+151ind,17,Other Info,Location,Rennes
+151ind,18,Other Info,Location,Rennes
+151ind,19,Other Info,Location,Rennes
+151ind,20,Other Info,Location,Rennes
+151ind,21,Other Info,Location,Rennes
+151ind,22,Other Info,Location,Rennes
+151ind,23,Other Info,Location,Rennes
+151ind,24,Other Info,Location,Rennes
+151ind,25,Other Info,Location,Rennes
+151ind,26,Other Info,Location,Rennes
+151ind,27,Other Info,Location,Rennes
+151ind,28,Other Info,Location,Rennes
+151ind,29,Other Info,Location,Rennes
+151ind,30,Other Info,Location,Rennes
+151ind,31,Other Info,Location,Rennes
+151ind,32,Other Info,Location,Rennes
+151ind,33,Other Info,Location,Rennes
+151ind,34,Other Info,Location,Rennes
+151ind,35,Other Info,Location,Rennes
+151ind,36,Other Info,Location,Rennes
+151ind,37,Other Info,Location,Rennes
+151ind,38,Other Info,Location,Rennes
+151ind,39,Other Info,Location,Rennes
+151ind,40,Other Info,Location,Rennes
+151ind,41,Other Info,Location,Rennes
+151ind,42,Other Info,Location,Rennes
+151ind,43,Other Info,Location,Rennes
+151ind,44,Other Info,Location,Rennes
+151ind,45,Other Info,Location,Rennes
+151ind,46,Other Info,Location,Rennes
+151ind,47,Other Info,Location,Rennes
+151ind,48,Other Info,Location,Rennes
+151ind,49,Other Info,Location,Rennes
+151ind,50,Other Info,Location,Rennes
+151ind,51,Other Info,Location,Rennes
+151ind,52,Other Info,Location,Rennes
+151ind,53,Other Info,Location,Rennes
+151ind,54,Other Info,Location,Rennes
+151ind,55,Other Info,Location,Rennes
+151ind,56,Other Info,Location,Rennes
+151ind,57,Other Info,Location,Rennes
+151ind,58,Other Info,Location,Rennes
+151ind,59,Other Info,Location,Rennes
+151ind,60,Other Info,Location,Rennes
+151ind,61,Other Info,Location,Rennes
+151ind,62,Other Info,Location,Rochester
+151ind,63,Other Info,Location,Rochester
+151ind,64,Other Info,Location,Rochester
+151ind,65,Other Info,Location,Rochester
+151ind,66,Other Info,Location,Rochester
+151ind,67,Other Info,Location,Rochester
+151ind,68,Other Info,Location,Rochester
+151ind,69,Other Info,Location,Rochester
+151ind,70,Other Info,Location,Rochester
+151ind,71,Other Info,Location,Rochester
+151ind,72,Other Info,Location,Rochester
+151ind,73,Other Info,Location,Rochester
+151ind,74,Other Info,Location,Rochester
+151ind,75,Other Info,Location,Rochester
+151ind,76,Other Info,Location,Rochester
+151ind,77,Other Info,Location,Munich
+151ind,78,Other Info,Location,Munich
+151ind,79,Other Info,Location,Munich
+151ind,80,Other Info,Location,Munich
+151ind,81,Other Info,Location,Munich
+151ind,82,Other Info,Location,Munich
+151ind,83,Other Info,Location,Munich
+151ind,84,Other Info,Location,Munich
+151ind,85,Other Info,Location,Munich
+151ind,86,Other Info,Location,Munich
+151ind,87,Other Info,Location,Munich
+151ind,88,Other Info,Location,Munich
+151ind,89,Other Info,Location,Munich
+151ind,90,Other Info,Location,Munich
+151ind,91,Other Info,Location,Munich
+151ind,92,Other Info,Location,Munich
+151ind,93,Other Info,Location,Munich
+151ind,94,Other Info,Location,Munich
+151ind,95,Other Info,Location,Munich
+151ind,96,Other Info,Location,Munich
+151ind,97,Other Info,Location,Munich
+151ind,98,Other Info,Location,Munich
+151ind,99,Other Info,Location,Munich
+151ind,100,Other Info,Location,Munich
+151ind,101,Other Info,Location,Munich
+151ind,102,Other Info,Location,Munich
+151ind,103,Other Info,Location,Munich
+151ind,104,Other Info,Location,Munich
+151ind,105,Other Info,Location,Munich
+151ind,106,Other Info,Location,Munich
+151ind,107,Other Info,Location,Munich
+151ind,108,Other Info,Location,Munich
+151ind,109,Other Info,Location,Munich
+151ind,110,Other Info,Location,Munich
+151ind,111,Other Info,Location,Munich
+151ind,112,Other Info,Location,Munich
+151ind,113,Other Info,Location,Darmstadt
+151ind,114,Other Info,Location,Darmstadt
+151ind,115,Other Info,Location,Darmstadt
+151ind,116,Other Info,Location,Darmstadt
+151ind,117,Other Info,Location,Darmstadt
+151ind,118,Other Info,Location,Darmstadt
+151ind,119,Other Info,Location,Darmstadt
+151ind,120,Other Info,Location,Darmstadt
+151ind,121,Other Info,Location,Darmstadt
+151ind,122,Other Info,Location,Darmstadt
+151ind,123,Other Info,Location,Darmstadt
+151ind,124,Other Info,Location,Darmstadt
+151ind,125,Other Info,Location,Darmstadt
+151ind,126,Other Info,Location,Darmstadt
+151ind,127,Other Info,Location,Darmstadt
+151ind,128,Other Info,Location,Darmstadt
+151ind,129,Other Info,Location,Darmstadt
+151ind,130,Other Info,Location,Darmstadt
+151ind,131,Other Info,Location,Darmstadt
+151ind,132,Other Info,Location,Darmstadt
+151ind,133,Other Info,Location,Darmstadt
+151ind,134,Other Info,Location,Darmstadt
+151ind,135,Other Info,Location,Darmstadt
+151ind,136,Other Info,Location,Darmstadt
+151ind,137,Other Info,Location,Darmstadt
+151ind,138,Other Info,Location,Darmstadt
+151ind,139,Other Info,Location,Darmstadt
+151ind,140,Other Info,Location,Darmstadt
+151ind,141,Other Info,Location,Darmstadt
+151ind,142,Other Info,Location,Darmstadt
+151ind,143,Other Info,Location,Darmstadt
+151ind,144,Other Info,Location,Darmstadt
+151ind,145,Other Info,Location,Darmstadt
+151ind,146,Other Info,Location,Darmstadt
+151ind,147,Other Info,Location,Darmstadt
+151ind,148,Other Info,Location,Darmstadt
+151ind,149,Other Info,Location,Darmstadt
+151ind,150,Other Info,Location,Darmstadt
+151ind,151,Other Info,Location,Darmstadt
+151ind,1,Other Info,Match 01,1
+151ind,2,Other Info,Match 01,2.2
+151ind,3,Other Info,Match 01,0.3
+151ind,4,Other Info,Match 01,3.8
+151ind,5,Other Info,Match 01,0.9
+151ind,6,Other Info,Match 01,1.9
+151ind,7,Other Info,Match 01,1.1
+151ind,8,Other Info,Match 01,2.6
+151ind,9,Other Info,Match 01,1.7
+151ind,10,Other Info,Match 01,4.5
+151ind,11,Other Info,Match 01,2
+151ind,12,Other Info,Match 01,1
+151ind,13,Other Info,Match 01,2.3
+151ind,14,Other Info,Match 01,1.2
+151ind,15,Other Info,Match 01,1.7
+151ind,16,Other Info,Match 01,2.6
+151ind,17,Other Info,Match 01,2.6
+151ind,18,Other Info,Match 01,2.7
+151ind,19,Other Info,Match 01,1.3
+151ind,20,Other Info,Match 01,0.7
+151ind,21,Other Info,Match 01,1.7
+151ind,22,Other Info,Match 01,0.7
+151ind,23,Other Info,Match 01,1.3
+151ind,24,Other Info,Match 01,2.7
+151ind,25,Other Info,Match 01,2.9
+151ind,26,Other Info,Match 01,3.5
+151ind,27,Other Info,Match 01,0.4
+151ind,28,Other Info,Match 01,2.8
+151ind,29,Other Info,Match 01,1.8
+151ind,30,Other Info,Match 01,0.9
+151ind,31,Other Info,Match 01,1.3
+151ind,32,Other Info,Match 01,4.1
+151ind,33,Other Info,Match 01,0.5
+151ind,34,Other Info,Match 01,2.5
+151ind,35,Other Info,Match 01,0.8
+151ind,36,Other Info,Match 01,2.3
+151ind,37,Other Info,Match 01,3.5
+151ind,38,Other Info,Match 01,1.6
+151ind,39,Other Info,Match 01,1
+151ind,40,Other Info,Match 01,1.2
+151ind,41,Other Info,Match 01,1.6
+151ind,42,Other Info,Match 01,5.6
+151ind,43,Other Info,Match 01,2.8
+151ind,44,Other Info,Match 01,1.2
+151ind,45,Other Info,Match 01,2.5
+151ind,46,Other Info,Match 01,2.2
+151ind,47,Other Info,Match 01,1.1
+151ind,48,Other Info,Match 01,2.1
+151ind,49,Other Info,Match 01,0.4
+151ind,50,Other Info,Match 01,2.9
+151ind,51,Other Info,Match 01,2.9
+151ind,52,Other Info,Match 01,1
+151ind,53,Other Info,Match 01,3.6
+151ind,54,Other Info,Match 01,1.6
+151ind,55,Other Info,Match 01,2.8
+151ind,56,Other Info,Match 01,1.7
+151ind,57,Other Info,Match 01,3.8
+151ind,58,Other Info,Match 01,4.9
+151ind,59,Other Info,Match 01,4
+151ind,60,Other Info,Match 01,1.6
+151ind,61,Other Info,Match 01,1.6
+151ind,62,Other Info,Match 01,1
+151ind,63,Other Info,Match 01,1.1
+151ind,64,Other Info,Match 01,0.7
+151ind,65,Other Info,Match 01,1.3
+151ind,66,Other Info,Match 01,1.3
+151ind,67,Other Info,Match 01,1.8
+151ind,68,Other Info,Match 01,2.5
+151ind,69,Other Info,Match 01,1.8
+151ind,70,Other Info,Match 01,1
+151ind,71,Other Info,Match 01,0.5
+151ind,72,Other Info,Match 01,1
+151ind,73,Other Info,Match 01,3.2
+151ind,74,Other Info,Match 01,1.7
+151ind,75,Other Info,Match 01,2.4
+151ind,76,Other Info,Match 01,1.8
+151ind,77,Other Info,Match 01,1.5
+151ind,78,Other Info,Match 01,1.4
+151ind,79,Other Info,Match 01,0.9
+151ind,80,Other Info,Match 01,1.9
+151ind,81,Other Info,Match 01,0.7
+151ind,82,Other Info,Match 01,1.2
+151ind,83,Other Info,Match 01,2.3
+151ind,84,Other Info,Match 01,1.5
+151ind,85,Other Info,Match 01,1.7
+151ind,86,Other Info,Match 01,3.1
+151ind,87,Other Info,Match 01,0.6
+151ind,88,Other Info,Match 01,1.9
+151ind,89,Other Info,Match 01,2.2
+151ind,90,Other Info,Match 01,1
+151ind,91,Other Info,Match 01,2.2
+151ind,92,Other Info,Match 01,1.5
+151ind,93,Other Info,Match 01,1.2
+151ind,94,Other Info,Match 01,7.5
+151ind,95,Other Info,Match 01,1.6
+151ind,96,Other Info,Match 01,1.9
+151ind,97,Other Info,Match 01,2
+151ind,98,Other Info,Match 01,0.9
+151ind,99,Other Info,Match 01,0.8
+151ind,100,Other Info,Match 01,1.9
+151ind,101,Other Info,Match 01,2.3
+151ind,102,Other Info,Match 01,1.1
+151ind,103,Other Info,Match 01,1.9
+151ind,104,Other Info,Match 01,2.1
+151ind,105,Other Info,Match 01,0.7
+151ind,106,Other Info,Match 01,0.8
+151ind,107,Other Info,Match 01,1.7
+151ind,108,Other Info,Match 01,1.6
+151ind,109,Other Info,Match 01,1.2
+151ind,110,Other Info,Match 01,1.4
+151ind,111,Other Info,Match 01,1.5
+151ind,112,Other Info,Match 01,2.8
+151ind,113,Other Info,Match 01,2.8
+151ind,114,Other Info,Match 01,1.5
+151ind,115,Other Info,Match 01,1.1
+151ind,116,Other Info,Match 01,4.2
+151ind,117,Other Info,Match 01,2.6
+151ind,118,Other Info,Match 01,3
+151ind,119,Other Info,Match 01,1.6
+151ind,120,Other Info,Match 01,2.8
+151ind,121,Other Info,Match 01,1.3
+151ind,122,Other Info,Match 01,4.7
+151ind,123,Other Info,Match 01,3
+151ind,124,Other Info,Match 01,1.4
+151ind,125,Other Info,Match 01,1.3
+151ind,126,Other Info,Match 01,1.7
+151ind,127,Other Info,Match 01,0.9
+151ind,128,Other Info,Match 01,2.2
+151ind,129,Other Info,Match 01,0.9
+151ind,130,Other Info,Match 01,2
+151ind,131,Other Info,Match 01,3.1
+151ind,132,Other Info,Match 01,1.5
+151ind,133,Other Info,Match 01,2
+151ind,134,Other Info,Match 01,1.6
+151ind,135,Other Info,Match 01,0.8
+151ind,136,Other Info,Match 01,3.4
+151ind,137,Other Info,Match 01,1.2
+151ind,138,Other Info,Match 01,3.3
+151ind,139,Other Info,Match 01,1.3
+151ind,140,Other Info,Match 01,0.9
+151ind,141,Other Info,Match 01,2.8
+151ind,142,Other Info,Match 01,2.1
+151ind,143,Other Info,Match 01,1.6
+151ind,144,Other Info,Match 01,2.7
+151ind,145,Other Info,Match 01,2.8
+151ind,146,Other Info,Match 01,1.7
+151ind,147,Other Info,Match 01,0.8
+151ind,148,Other Info,Match 01,0.9
+151ind,149,Other Info,Match 01,1.3
+151ind,150,Other Info,Match 01,2.3
+151ind,151,Other Info,Match 01,1.7
+151ind,1,Other Info,Match 02,0.9
+151ind,2,Other Info,Match 02,1.2
+151ind,3,Other Info,Match 02,1.4
+151ind,4,Other Info,Match 02,1.4
+151ind,5,Other Info,Match 02,2.3
+151ind,6,Other Info,Match 02,2.3
+151ind,7,Other Info,Match 02,2.9
+151ind,8,Other Info,Match 02,2.9
+151ind,9,Other Info,Match 02,1.4
+151ind,10,Other Info,Match 02,2.7
+151ind,11,Other Info,Match 02,1.6
+151ind,12,Other Info,Match 02,0.2
+151ind,13,Other Info,Match 02,0.4
+151ind,14,Other Info,Match 02,0.9
+151ind,15,Other Info,Match 02,1.5
+151ind,16,Other Info,Match 02,2.3
+151ind,17,Other Info,Match 02,1.6
+151ind,18,Other Info,Match 02,1.6
+151ind,19,Other Info,Match 02,0.5
+151ind,20,Other Info,Match 02,1.9
+151ind,21,Other Info,Match 02,2.4
+151ind,22,Other Info,Match 02,0.4
+151ind,23,Other Info,Match 02,1.2
+151ind,24,Other Info,Match 02,1.7
+151ind,25,Other Info,Match 02,1.3
+151ind,26,Other Info,Match 02,0.9
+151ind,27,Other Info,Match 02,2.1
+151ind,28,Other Info,Match 02,1
+151ind,29,Other Info,Match 02,2.9
+151ind,30,Other Info,Match 02,0.7
+151ind,31,Other Info,Match 02,1.6
+151ind,32,Other Info,Match 02,1.7
+151ind,33,Other Info,Match 02,1.4
+151ind,34,Other Info,Match 02,4
+151ind,35,Other Info,Match 02,0.7
+151ind,36,Other Info,Match 02,1.7
+151ind,37,Other Info,Match 02,2.3
+151ind,38,Other Info,Match 02,2.5
+151ind,39,Other Info,Match 02,1.1
+151ind,40,Other Info,Match 02,4.9
+151ind,41,Other Info,Match 02,1.7
+151ind,42,Other Info,Match 02,2.3
+151ind,43,Other Info,Match 02,1.7
+151ind,44,Other Info,Match 02,1.8
+151ind,45,Other Info,Match 02,2.7
+151ind,46,Other Info,Match 02,1.6
+151ind,47,Other Info,Match 02,2.8
+151ind,48,Other Info,Match 02,2.5
+151ind,49,Other Info,Match 02,1
+151ind,50,Other Info,Match 02,2
+151ind,51,Other Info,Match 02,1.7
+151ind,52,Other Info,Match 02,1.5
+151ind,53,Other Info,Match 02,2.6
+151ind,54,Other Info,Match 02,1.1
+151ind,55,Other Info,Match 02,3.4
+151ind,56,Other Info,Match 02,1.2
+151ind,57,Other Info,Match 02,1.8
+151ind,58,Other Info,Match 02,0.8
+151ind,59,Other Info,Match 02,1.2
+151ind,60,Other Info,Match 02,2.3
+151ind,61,Other Info,Match 02,2.2
+151ind,62,Other Info,Match 02,1.2
+151ind,63,Other Info,Match 02,0.7
+151ind,64,Other Info,Match 02,1.1
+151ind,65,Other Info,Match 02,1.6
+151ind,66,Other Info,Match 02,2.7
+151ind,67,Other Info,Match 02,1.9
+151ind,68,Other Info,Match 02,2
+151ind,69,Other Info,Match 02,0.5
+151ind,70,Other Info,Match 02,1.1
+151ind,71,Other Info,Match 02,0.4
+151ind,72,Other Info,Match 02,0.8
+151ind,73,Other Info,Match 02,2.1
+151ind,74,Other Info,Match 02,1
+151ind,75,Other Info,Match 02,1.8
+151ind,76,Other Info,Match 02,1.6
+151ind,77,Other Info,Match 02,0.9
+151ind,78,Other Info,Match 02,0.6
+151ind,79,Other Info,Match 02,1
+151ind,80,Other Info,Match 02,1
+151ind,81,Other Info,Match 02,0.7
+151ind,82,Other Info,Match 02,0.6
+151ind,83,Other Info,Match 02,1.1
+151ind,84,Other Info,Match 02,0.3
+151ind,85,Other Info,Match 02,0.6
+151ind,86,Other Info,Match 02,0.6
+151ind,87,Other Info,Match 02,0.7
+151ind,88,Other Info,Match 02,0.8
+151ind,89,Other Info,Match 02,3.2
+151ind,90,Other Info,Match 02,1.7
+151ind,91,Other Info,Match 02,2.3
+151ind,92,Other Info,Match 02,1.7
+151ind,93,Other Info,Match 02,0.6
+151ind,94,Other Info,Match 02,2
+151ind,95,Other Info,Match 02,0.8
+151ind,96,Other Info,Match 02,1.1
+151ind,97,Other Info,Match 02,2.5
+151ind,98,Other Info,Match 02,0.5
+151ind,99,Other Info,Match 02,0.4
+151ind,100,Other Info,Match 02,2.3
+151ind,101,Other Info,Match 02,3.3
+151ind,102,Other Info,Match 02,1.8
+151ind,103,Other Info,Match 02,1.6
+151ind,104,Other Info,Match 02,1.8
+151ind,105,Other Info,Match 02,0.6
+151ind,106,Other Info,Match 02,0.3
+151ind,107,Other Info,Match 02,3.1
+151ind,108,Other Info,Match 02,0.2
+151ind,109,Other Info,Match 02,1
+151ind,110,Other Info,Match 02,1.6
+151ind,111,Other Info,Match 02,1.2
+151ind,112,Other Info,Match 02,2.9
+151ind,113,Other Info,Match 02,2.8
+151ind,114,Other Info,Match 02,1.5
+151ind,115,Other Info,Match 02,1.3
+151ind,116,Other Info,Match 02,2.8
+151ind,117,Other Info,Match 02,1.6
+151ind,118,Other Info,Match 02,1.4
+151ind,119,Other Info,Match 02,0.6
+151ind,120,Other Info,Match 02,2.6
+151ind,121,Other Info,Match 02,1.2
+151ind,122,Other Info,Match 02,2
+151ind,123,Other Info,Match 02,2.7
+151ind,124,Other Info,Match 02,1.1
+151ind,125,Other Info,Match 02,0.6
+151ind,126,Other Info,Match 02,1.4
+151ind,127,Other Info,Match 02,0.6
+151ind,128,Other Info,Match 02,1.9
+151ind,129,Other Info,Match 02,1.7
+151ind,130,Other Info,Match 02,0.1
+151ind,131,Other Info,Match 02,2.2
+151ind,132,Other Info,Match 02,1.2
+151ind,133,Other Info,Match 02,0.4
+151ind,134,Other Info,Match 02,2
+151ind,135,Other Info,Match 02,1.2
+151ind,136,Other Info,Match 02,1.3
+151ind,137,Other Info,Match 02,2.2
+151ind,138,Other Info,Match 02,3.1
+151ind,139,Other Info,Match 02,1.6
+151ind,140,Other Info,Match 02,1.6
+151ind,141,Other Info,Match 02,0.8
+151ind,142,Other Info,Match 02,1.4
+151ind,143,Other Info,Match 02,0.4
+151ind,144,Other Info,Match 02,1.9
+151ind,145,Other Info,Match 02,3.6
+151ind,146,Other Info,Match 02,0.6
+151ind,147,Other Info,Match 02,0.4
+151ind,148,Other Info,Match 02,1.3
+151ind,149,Other Info,Match 02,0.7
+151ind,150,Other Info,Match 02,2.5
+151ind,151,Other Info,Match 02,0.8
+151ind,1,Other Info,Match 03,0.6
+151ind,2,Other Info,Match 03,1
+151ind,3,Other Info,Match 03,0.6
+151ind,4,Other Info,Match 03,1.4
+151ind,5,Other Info,Match 03,1.4
+151ind,6,Other Info,Match 03,1.7
+151ind,7,Other Info,Match 03,2.2
+151ind,8,Other Info,Match 03,1.4
+151ind,9,Other Info,Match 03,0.6
+151ind,10,Other Info,Match 03,1.2
+151ind,11,Other Info,Match 03,1.4
+151ind,12,Other Info,Match 03,0.2
+151ind,13,Other Info,Match 03,0.4
+151ind,14,Other Info,Match 03,0.5
+151ind,15,Other Info,Match 03,0.6
+151ind,16,Other Info,Match 03,0.7
+151ind,17,Other Info,Match 03,0.7
+151ind,18,Other Info,Match 03,1.3
+151ind,19,Other Info,Match 03,0.5
+151ind,20,Other Info,Match 03,0.2
+151ind,21,Other Info,Match 03,1
+151ind,22,Other Info,Match 03,0.4
+151ind,23,Other Info,Match 03,0.8
+151ind,24,Other Info,Match 03,1.3
+151ind,25,Other Info,Match 03,0.6
+151ind,26,Other Info,Match 03,1.1
+151ind,27,Other Info,Match 03,0
+151ind,28,Other Info,Match 03,0.4
+151ind,29,Other Info,Match 03,0.7
+151ind,30,Other Info,Match 03,0.7
+151ind,31,Other Info,Match 03,0.5
+151ind,32,Other Info,Match 03,2.1
+151ind,33,Other Info,Match 03,0.7
+151ind,34,Other Info,Match 03,4.1
+151ind,35,Other Info,Match 03,0.8
+151ind,36,Other Info,Match 03,0.6
+151ind,37,Other Info,Match 03,2
+151ind,38,Other Info,Match 03,0.5
+151ind,39,Other Info,Match 03,1
+151ind,40,Other Info,Match 03,0.7
+151ind,41,Other Info,Match 03,0.9
+151ind,42,Other Info,Match 03,0.3
+151ind,43,Other Info,Match 03,1.2
+151ind,44,Other Info,Match 03,0.1
+151ind,45,Other Info,Match 03,2.6
+151ind,46,Other Info,Match 03,2.1
+151ind,47,Other Info,Match 03,0.7
+151ind,48,Other Info,Match 03,1.1
+151ind,49,Other Info,Match 03,1.2
+151ind,50,Other Info,Match 03,1.5
+151ind,51,Other Info,Match 03,1
+151ind,52,Other Info,Match 03,0.8
+151ind,53,Other Info,Match 03,1
+151ind,54,Other Info,Match 03,0.2
+151ind,55,Other Info,Match 03,0.9
+151ind,56,Other Info,Match 03,0.5
+151ind,57,Other Info,Match 03,0.8
+151ind,58,Other Info,Match 03,0.6
+151ind,59,Other Info,Match 03,1.1
+151ind,60,Other Info,Match 03,1.3
+151ind,61,Other Info,Match 03,0.4
+151ind,62,Other Info,Match 03,1.3
+151ind,63,Other Info,Match 03,0.2
+151ind,64,Other Info,Match 03,0.4
+151ind,65,Other Info,Match 03,1.1
+151ind,66,Other Info,Match 03,0.6
+151ind,67,Other Info,Match 03,0.4
+151ind,68,Other Info,Match 03,0.7
+151ind,69,Other Info,Match 03,0
+151ind,70,Other Info,Match 03,0.7
+151ind,71,Other Info,Match 03,0
+151ind,72,Other Info,Match 03,0.7
+151ind,73,Other Info,Match 03,0.8
+151ind,74,Other Info,Match 03,0.6
+151ind,75,Other Info,Match 03,0.6
+151ind,76,Other Info,Match 03,1
+151ind,77,Other Info,Match 03,1
+151ind,78,Other Info,Match 03,0.3
+151ind,79,Other Info,Match 03,0.5
+151ind,80,Other Info,Match 03,0.3
+151ind,81,Other Info,Match 03,0.9
+151ind,82,Other Info,Match 03,1.1
+151ind,83,Other Info,Match 03,1.9
+151ind,84,Other Info,Match 03,0.4
+151ind,85,Other Info,Match 03,0.4
+151ind,86,Other Info,Match 03,0.5
+151ind,87,Other Info,Match 03,0.7
+151ind,88,Other Info,Match 03,1.2
+151ind,89,Other Info,Match 03,0.6
+151ind,90,Other Info,Match 03,1
+151ind,91,Other Info,Match 03,0.7
+151ind,92,Other Info,Match 03,1.6
+151ind,93,Other Info,Match 03,0.4
+151ind,94,Other Info,Match 03,1
+151ind,95,Other Info,Match 03,0.9
+151ind,96,Other Info,Match 03,0.6
+151ind,97,Other Info,Match 03,1.5
+151ind,98,Other Info,Match 03,0.3
+151ind,99,Other Info,Match 03,0.5
+151ind,100,Other Info,Match 03,1
+151ind,101,Other Info,Match 03,2
+151ind,102,Other Info,Match 03,0.4
+151ind,103,Other Info,Match 03,1.6
+151ind,104,Other Info,Match 03,0.9
+151ind,105,Other Info,Match 03,0.7
+151ind,106,Other Info,Match 03,0.3
+151ind,107,Other Info,Match 03,0.7
+151ind,108,Other Info,Match 03,1
+151ind,109,Other Info,Match 03,0.6
+151ind,110,Other Info,Match 03,0.9
+151ind,111,Other Info,Match 03,1.3
+151ind,112,Other Info,Match 03,1
+151ind,113,Other Info,Match 03,1.2
+151ind,114,Other Info,Match 03,0.8
+151ind,115,Other Info,Match 03,0.9
+151ind,116,Other Info,Match 03,1.5
+151ind,117,Other Info,Match 03,1.3
+151ind,118,Other Info,Match 03,0.5
+151ind,119,Other Info,Match 03,0.4
+151ind,120,Other Info,Match 03,1.6
+151ind,121,Other Info,Match 03,1
+151ind,122,Other Info,Match 03,1.2
+151ind,123,Other Info,Match 03,1.3
+151ind,124,Other Info,Match 03,0.5
+151ind,125,Other Info,Match 03,1.5
+151ind,126,Other Info,Match 03,0.9
+151ind,127,Other Info,Match 03,0.9
+151ind,128,Other Info,Match 03,1.9
+151ind,129,Other Info,Match 03,1
+151ind,130,Other Info,Match 03,0
+151ind,131,Other Info,Match 03,1
+151ind,132,Other Info,Match 03,0.4
+151ind,133,Other Info,Match 03,0.5
+151ind,134,Other Info,Match 03,1
+151ind,135,Other Info,Match 03,0.7
+151ind,136,Other Info,Match 03,1.9
+151ind,137,Other Info,Match 03,0.7
+151ind,138,Other Info,Match 03,0.9
+151ind,139,Other Info,Match 03,0.7
+151ind,140,Other Info,Match 03,0.4
+151ind,141,Other Info,Match 03,0.7
+151ind,142,Other Info,Match 03,0.4
+151ind,143,Other Info,Match 03,0.6
+151ind,144,Other Info,Match 03,4.3
+151ind,145,Other Info,Match 03,1.3
+151ind,146,Other Info,Match 03,0.5
+151ind,147,Other Info,Match 03,0.3
+151ind,148,Other Info,Match 03,2.3
+151ind,149,Other Info,Match 03,0.8
+151ind,150,Other Info,Match 03,1.5
+151ind,151,Other Info,Match 03,0.2
+151ind,1,Other Info,Match 04,0.9
+151ind,2,Other Info,Match 04,0.9
+151ind,3,Other Info,Match 04,1
+151ind,4,Other Info,Match 04,0.7
+151ind,5,Other Info,Match 04,2.1
+151ind,6,Other Info,Match 04,0.5
+151ind,7,Other Info,Match 04,1
+151ind,8,Other Info,Match 04,1.8
+151ind,9,Other Info,Match 04,0.4
+151ind,10,Other Info,Match 04,3.3
+151ind,11,Other Info,Match 04,0.9
+151ind,12,Other Info,Match 04,0.3
+151ind,13,Other Info,Match 04,0.7
+151ind,14,Other Info,Match 04,0.6
+151ind,15,Other Info,Match 04,0.5
+151ind,16,Other Info,Match 04,1
+151ind,17,Other Info,Match 04,0.6
+151ind,18,Other Info,Match 04,1
+151ind,19,Other Info,Match 04,0.5
+151ind,20,Other Info,Match 04,0.5
+151ind,21,Other Info,Match 04,2.1
+151ind,22,Other Info,Match 04,0.6
+151ind,23,Other Info,Match 04,1.4
+151ind,24,Other Info,Match 04,0.9
+151ind,25,Other Info,Match 04,1.2
+151ind,26,Other Info,Match 04,0.6
+151ind,27,Other Info,Match 04,1.3
+151ind,28,Other Info,Match 04,1.4
+151ind,29,Other Info,Match 04,1.2
+151ind,30,Other Info,Match 04,1.1
+151ind,31,Other Info,Match 04,0.4
+151ind,32,Other Info,Match 04,1.8
+151ind,33,Other Info,Match 04,0.9
+151ind,34,Other Info,Match 04,1.6
+151ind,35,Other Info,Match 04,1.4
+151ind,36,Other Info,Match 04,0.8
+151ind,37,Other Info,Match 04,1.8
+151ind,38,Other Info,Match 04,2.7
+151ind,39,Other Info,Match 04,2.7
+151ind,40,Other Info,Match 04,1.4
+151ind,41,Other Info,Match 04,0.5
+151ind,42,Other Info,Match 04,1.3
+151ind,43,Other Info,Match 04,1
+151ind,44,Other Info,Match 04,1.4
+151ind,45,Other Info,Match 04,3
+151ind,46,Other Info,Match 04,1.8
+151ind,47,Other Info,Match 04,0.7
+151ind,48,Other Info,Match 04,0.6
+151ind,49,Other Info,Match 04,0.7
+151ind,50,Other Info,Match 04,0.9
+151ind,51,Other Info,Match 04,0.2
+151ind,52,Other Info,Match 04,1.2
+151ind,53,Other Info,Match 04,1.3
+151ind,54,Other Info,Match 04,1
+151ind,55,Other Info,Match 04,0.7
+151ind,56,Other Info,Match 04,1.2
+151ind,57,Other Info,Match 04,1
+151ind,58,Other Info,Match 04,1.3
+151ind,59,Other Info,Match 04,1.3
+151ind,60,Other Info,Match 04,1
+151ind,61,Other Info,Match 04,0.9
+151ind,62,Other Info,Match 04,0.4
+151ind,63,Other Info,Match 04,0.8
+151ind,64,Other Info,Match 04,1
+151ind,65,Other Info,Match 04,0.5
+151ind,66,Other Info,Match 04,0.9
+151ind,67,Other Info,Match 04,0.6
+151ind,68,Other Info,Match 04,0.6
+151ind,69,Other Info,Match 04,0.7
+151ind,70,Other Info,Match 04,0.9
+151ind,71,Other Info,Match 04,0.5
+151ind,72,Other Info,Match 04,0.9
+151ind,73,Other Info,Match 04,0.7
+151ind,74,Other Info,Match 04,0.3
+151ind,75,Other Info,Match 04,0.5
+151ind,76,Other Info,Match 04,0.6
+151ind,77,Other Info,Match 04,0.6
+151ind,78,Other Info,Match 04,0.3
+151ind,79,Other Info,Match 04,0.2
+151ind,80,Other Info,Match 04,1.2
+151ind,81,Other Info,Match 04,0.3
+151ind,82,Other Info,Match 04,0.7
+151ind,83,Other Info,Match 04,0.4
+151ind,84,Other Info,Match 04,0.8
+151ind,85,Other Info,Match 04,0.7
+151ind,86,Other Info,Match 04,0.6
+151ind,87,Other Info,Match 04,0.7
+151ind,88,Other Info,Match 04,1.2
+151ind,89,Other Info,Match 04,0.6
+151ind,90,Other Info,Match 04,0.3
+151ind,91,Other Info,Match 04,1.8
+151ind,92,Other Info,Match 04,1.1
+151ind,93,Other Info,Match 04,0.9
+151ind,94,Other Info,Match 04,2.1
+151ind,95,Other Info,Match 04,1.1
+151ind,96,Other Info,Match 04,1
+151ind,97,Other Info,Match 04,1.3
+151ind,98,Other Info,Match 04,0.3
+151ind,99,Other Info,Match 04,0.4
+151ind,100,Other Info,Match 04,0.5
+151ind,101,Other Info,Match 04,1.8
+151ind,102,Other Info,Match 04,0.7
+151ind,103,Other Info,Match 04,0.7
+151ind,104,Other Info,Match 04,0.8
+151ind,105,Other Info,Match 04,0.7
+151ind,106,Other Info,Match 04,0.2
+151ind,107,Other Info,Match 04,0.8
+151ind,108,Other Info,Match 04,0.9
+151ind,109,Other Info,Match 04,0.2
+151ind,110,Other Info,Match 04,0.4
+151ind,111,Other Info,Match 04,0.5
+151ind,112,Other Info,Match 04,1.8
+151ind,113,Other Info,Match 04,0.7
+151ind,114,Other Info,Match 04,0.9
+151ind,115,Other Info,Match 04,0.7
+151ind,116,Other Info,Match 04,0.6
+151ind,117,Other Info,Match 04,1.2
+151ind,118,Other Info,Match 04,1.3
+151ind,119,Other Info,Match 04,0.4
+151ind,120,Other Info,Match 04,0.9
+151ind,121,Other Info,Match 04,0.6
+151ind,122,Other Info,Match 04,2.1
+151ind,123,Other Info,Match 04,0.9
+151ind,124,Other Info,Match 04,0.4
+151ind,125,Other Info,Match 04,0.5
+151ind,126,Other Info,Match 04,0.7
+151ind,127,Other Info,Match 04,0.5
+151ind,128,Other Info,Match 04,0.8
+151ind,129,Other Info,Match 04,0.9
+151ind,130,Other Info,Match 04,0.7
+151ind,131,Other Info,Match 04,1
+151ind,132,Other Info,Match 04,0.7
+151ind,133,Other Info,Match 04,0.6
+151ind,134,Other Info,Match 04,1.8
+151ind,135,Other Info,Match 04,0.9
+151ind,136,Other Info,Match 04,0.7
+151ind,137,Other Info,Match 04,0.7
+151ind,138,Other Info,Match 04,0.8
+151ind,139,Other Info,Match 04,0.5
+151ind,140,Other Info,Match 04,0.9
+151ind,141,Other Info,Match 04,0.7
+151ind,142,Other Info,Match 04,0.7
+151ind,143,Other Info,Match 04,0.8
+151ind,144,Other Info,Match 04,1.7
+151ind,145,Other Info,Match 04,1.3
+151ind,146,Other Info,Match 04,0.5
+151ind,147,Other Info,Match 04,0.8
+151ind,148,Other Info,Match 04,0.7
+151ind,149,Other Info,Match 04,1
+151ind,150,Other Info,Match 04,1.3
+151ind,151,Other Info,Match 04,0.4
+151ind,1,Other Info,Match 05,1.1
+151ind,2,Other Info,Match 05,1.3
+151ind,3,Other Info,Match 05,0.7
+151ind,4,Other Info,Match 05,1.4
+151ind,5,Other Info,Match 05,0.8
+151ind,6,Other Info,Match 05,0.6
+151ind,7,Other Info,Match 05,2.4
+151ind,8,Other Info,Match 05,4
+151ind,9,Other Info,Match 05,0.9
+151ind,10,Other Info,Match 05,2.6
+151ind,11,Other Info,Match 05,1.4
+151ind,12,Other Info,Match 05,0.8
+151ind,13,Other Info,Match 05,1.1
+151ind,14,Other Info,Match 05,1.2
+151ind,15,Other Info,Match 05,0.6
+151ind,16,Other Info,Match 05,1.2
+151ind,17,Other Info,Match 05,2.1
+151ind,18,Other Info,Match 05,1.1
+151ind,19,Other Info,Match 05,1.1
+151ind,20,Other Info,Match 05,2.2
+151ind,21,Other Info,Match 05,2
+151ind,22,Other Info,Match 05,1.5
+151ind,23,Other Info,Match 05,1.6
+151ind,24,Other Info,Match 05,2
+151ind,25,Other Info,Match 05,2.1
+151ind,26,Other Info,Match 05,2.8
+151ind,27,Other Info,Match 05,1.2
+151ind,28,Other Info,Match 05,2.7
+151ind,29,Other Info,Match 05,2.2
+151ind,30,Other Info,Match 05,3.4
+151ind,31,Other Info,Match 05,1.1
+151ind,32,Other Info,Match 05,2.7
+151ind,33,Other Info,Match 05,0.6
+151ind,34,Other Info,Match 05,3.3
+151ind,35,Other Info,Match 05,1.9
+151ind,36,Other Info,Match 05,2.6
+151ind,37,Other Info,Match 05,3.8
+151ind,38,Other Info,Match 05,1.6
+151ind,39,Other Info,Match 05,0.9
+151ind,40,Other Info,Match 05,2
+151ind,41,Other Info,Match 05,1.4
+151ind,42,Other Info,Match 05,3.5
+151ind,43,Other Info,Match 05,1.8
+151ind,44,Other Info,Match 05,3.3
+151ind,45,Other Info,Match 05,3.2
+151ind,46,Other Info,Match 05,2.7
+151ind,47,Other Info,Match 05,3
+151ind,48,Other Info,Match 05,1.6
+151ind,49,Other Info,Match 05,1.2
+151ind,50,Other Info,Match 05,3.5
+151ind,51,Other Info,Match 05,2
+151ind,52,Other Info,Match 05,0.4
+151ind,53,Other Info,Match 05,5
+151ind,54,Other Info,Match 05,1.1
+151ind,55,Other Info,Match 05,2.4
+151ind,56,Other Info,Match 05,1.4
+151ind,57,Other Info,Match 05,3.9
+151ind,58,Other Info,Match 05,1.8
+151ind,59,Other Info,Match 05,3.4
+151ind,60,Other Info,Match 05,2.4
+151ind,61,Other Info,Match 05,1
+151ind,62,Other Info,Match 05,2.8
+151ind,63,Other Info,Match 05,1
+151ind,64,Other Info,Match 05,0.7
+151ind,65,Other Info,Match 05,1.9
+151ind,66,Other Info,Match 05,2.3
+151ind,67,Other Info,Match 05,1.5
+151ind,68,Other Info,Match 05,0.5
+151ind,69,Other Info,Match 05,0.5
+151ind,70,Other Info,Match 05,0.6
+151ind,71,Other Info,Match 05,0.3
+151ind,72,Other Info,Match 05,0.6
+151ind,73,Other Info,Match 05,3.5
+151ind,74,Other Info,Match 05,1.5
+151ind,75,Other Info,Match 05,1
+151ind,76,Other Info,Match 05,1.2
+151ind,77,Other Info,Match 05,1.7
+151ind,78,Other Info,Match 05,0.9
+151ind,79,Other Info,Match 05,1.7
+151ind,80,Other Info,Match 05,0.6
+151ind,81,Other Info,Match 05,0.3
+151ind,82,Other Info,Match 05,1.2
+151ind,83,Other Info,Match 05,1.3
+151ind,84,Other Info,Match 05,0.4
+151ind,85,Other Info,Match 05,1
+151ind,86,Other Info,Match 05,1.3
+151ind,87,Other Info,Match 05,0.6
+151ind,88,Other Info,Match 05,1.4
+151ind,89,Other Info,Match 05,1.4
+151ind,90,Other Info,Match 05,2.7
+151ind,91,Other Info,Match 05,2.4
+151ind,92,Other Info,Match 05,1.9
+151ind,93,Other Info,Match 05,0.8
+151ind,94,Other Info,Match 05,2.3
+151ind,95,Other Info,Match 05,1.6
+151ind,96,Other Info,Match 05,1.1
+151ind,97,Other Info,Match 05,2.4
+151ind,98,Other Info,Match 05,1.4
+151ind,99,Other Info,Match 05,1
+151ind,100,Other Info,Match 05,1.5
+151ind,101,Other Info,Match 05,1.9
+151ind,102,Other Info,Match 05,0.7
+151ind,103,Other Info,Match 05,2.2
+151ind,104,Other Info,Match 05,1.6
+151ind,105,Other Info,Match 05,0.4
+151ind,106,Other Info,Match 05,1.7
+151ind,107,Other Info,Match 05,1.4
+151ind,108,Other Info,Match 05,0.6
+151ind,109,Other Info,Match 05,0.9
+151ind,110,Other Info,Match 05,0.6
+151ind,111,Other Info,Match 05,1
+151ind,112,Other Info,Match 05,3.4
+151ind,113,Other Info,Match 05,2
+151ind,114,Other Info,Match 05,0.8
+151ind,115,Other Info,Match 05,0.8
+151ind,116,Other Info,Match 05,3.3
+151ind,117,Other Info,Match 05,1.6
+151ind,118,Other Info,Match 05,1.3
+151ind,119,Other Info,Match 05,1.8
+151ind,120,Other Info,Match 05,3.4
+151ind,121,Other Info,Match 05,3
+151ind,122,Other Info,Match 05,0.5
+151ind,123,Other Info,Match 05,2.8
+151ind,124,Other Info,Match 05,1.4
+151ind,125,Other Info,Match 05,0.9
+151ind,126,Other Info,Match 05,1.7
+151ind,127,Other Info,Match 05,1.5
+151ind,128,Other Info,Match 05,1.9
+151ind,129,Other Info,Match 05,2.1
+151ind,130,Other Info,Match 05,0.6
+151ind,131,Other Info,Match 05,1.4
+151ind,132,Other Info,Match 05,1.7
+151ind,133,Other Info,Match 05,0.7
+151ind,134,Other Info,Match 05,3.3
+151ind,135,Other Info,Match 05,0.9
+151ind,136,Other Info,Match 05,0.6
+151ind,137,Other Info,Match 05,1.1
+151ind,138,Other Info,Match 05,1
+151ind,139,Other Info,Match 05,1
+151ind,140,Other Info,Match 05,2.8
+151ind,141,Other Info,Match 05,1.3
+151ind,142,Other Info,Match 05,1.1
+151ind,143,Other Info,Match 05,0.7
+151ind,144,Other Info,Match 05,4.5
+151ind,145,Other Info,Match 05,1.8
+151ind,146,Other Info,Match 05,0.4
+151ind,147,Other Info,Match 05,0.9
+151ind,148,Other Info,Match 05,1.6
+151ind,149,Other Info,Match 05,1
+151ind,150,Other Info,Match 05,0.9
+151ind,151,Other Info,Match 05,0.6
