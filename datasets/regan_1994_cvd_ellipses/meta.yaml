@@ -1,0 +1,59 @@
+name: regan_1994_cvd_ellipses
+full_name: Regan, Reffin & Mollon (1994) CVD discrimination ellipses (Cambridge Colour Test)
+schema: cvd_ellipses
+n_observers: 27
+n_ellipses: 79
+illuminant: display (equiluminant plane)
+observer: real colour-vision-deficient + normal observers
+citation: >
+  Regan, B. C., Reffin, J. P. & Mollon, J. D. (1994). Luminance noise and the
+  rapid determination of discrimination ellipses in colour deficiency.
+  Vision Research, 34(10), 1279-1299. Tables 1 (centres) + 2 (ellipse params).
+source_pdf: papers-human-data/03-cvd-discrimination/regan1994_cambridge_colour_test.pdf
+description: >
+  The first REAL colour-vision-deficient observer discrimination data in this
+  pool. 27 observers — 5 normal, 1 protanope, 4 protanomalous (1 extreme), 2
+  deuteranopes, 2 extreme + 12 deuteranomalous, 1 tritanope (both eyes) —
+  each with up to 3 full discrimination ellipses measured by the luminance-
+  noise Cambridge Colour Test on the CIE u'v' isoluminant plane. Each ellipse:
+  centre (Table 1, xy 1931 + u'v' 1976), long-axis length (u'v' units), axis
+  ratio (long/short), orientation angle. CVD ellipses are hugely elongated
+  (axis ratio up to 20) along each defect's confusion axis (protan ~178/2 deg,
+  deutan ~165, tritan ~90) — the MacAdam-ellipse analogue for colour deficiency.
+schema_columns:
+  observer: subject initials (DC_L/DC_R = left/right eye of tritanope DC)
+  classification: N normal, P protanope, PA/EPA (extreme) protanomalous, D deuteranope, DA/EDA (extreme) deuteranomalous, T tritanope
+  age, sex: demographics
+  ellipse_no: 1, 2, or 3 (the three field-chromaticity centres)
+  center_u, center_v: CIE 1976 u'v' of the ellipse centre
+  center_x, center_y: CIE 1931 xy of the ellipse centre
+  long_axis_uv: full long-axis length in u'v' units
+  axis_ratio: long/short axis ratio (>= 1)
+  angle_deg: orientation of the long axis (degrees)
+  nagel_midpoint, nagel_range: anomaloscope match (blank = not available)
+  hue100_score: Farnsworth-Munsell 100-hue error score (blank = not available)
+provenance:
+  extraction_method: >
+    Table 2 read from a high-DPI render of the scanned page (journal p.1299)
+    plus Table 1 centres (p.1289). Transcription spot-verified against the
+    render (JLM, PC-protanope, DC-tritanope rows exact).
+  extraction_date: 2026-07-09
+  verification_status: >
+    79 ellipses, 0 internal-consistency violations (all axis_ratio>=1, angles
+    0-180, lengths>0). CVD structure confirmed coherent: each defect type's
+    ellipses cluster on that type's known confusion axis (protan 178/2, deutan
+    158-170, tritan 89-99, normal 34-99). Reconstructable to CIE XYZ from the
+    u'v' centre + long axis + ratio + angle at a chosen luminance (paper: six
+    equal levels 7.6-17.0 cd/m2, equiluminant, luminance-noise masked).
+usage_notes: >
+  INTENDED USE: ground truth for validating CVD SIMULATION models
+  (Brettel-Vienot-Mollon / Machado) — real observer confusion-axis orientations
+  to check a simulation against. NOT a uniform-colour-space judge: CVD ellipse
+  elongation is the visual defect itself, so a normal-vision perceptual space
+  should NOT map these to circles (forcing an isotropy judge here would be
+  methodologically wrong). The 5 normal-observer ellipses are ordinary
+  discrimination ellipses (axis ratio 1.3-2.2) and could supplement the
+  MacAdam/Hong/Luo-Rigg discrimination set if desired.
+license: >
+  Data are factual experimental results from Regan, Reffin & Mollon (1994).
+  Cite the paper.
