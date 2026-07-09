@@ -1,0 +1,59 @@
+name: osa_ucs_1974
+full_name: OSA Uniform Color Scales — 558-sample committee atlas (CIE specification)
+schema: uniform_spacing
+n_samples: 558
+n_full_step_integer: 478
+n_half_step_noninteger_L: 80
+n_neighbour_pairs: 344
+illuminant: D65
+observer: CIE 1964 10 degree
+citation: >
+  ASTM E1360-90(2000) "Standard Practice for Specifying Color by Using the
+  Optical Society of America Uniform Color Scales System", Table 1 (CIE
+  Specification for OSA-UCS Notations). Underlying system: MacAdam, D.L. (1974)
+  and the OSA Committee on Uniform Color Scales (Judd, Nickerson, MacAdam et
+  al., 1947-1974).
+source_pdf: /Volumes/harici_ssd/color-space/osa_ucs_ASTM_E1360.pdf
+description: >
+  The OSA-UCS atlas: 558 physical colour samples placed at the lattice points
+  of a rhombohedral (cuboctahedral/FCC) close-packed arrangement, designed by
+  the OSA committee so that each interior sample is one EQUAL perceived colour
+  difference from its 12 nearest neighbours. This is the principal
+  suprathreshold uniform-spacing dataset independent of Munsell — the natural
+  held-out anchor for spacing claims. Columns: OSA lattice coordinates (L, j, g)
+  + CIE 1964 10-degree specification (x10, y10, Y10) under D65.
+schema_columns:
+  sample_id: OSA lattice notation (osa_L_j_g; m = minus)
+  L: OSA lightness coordinate (integer for full-step, half-integer for the finer half-step samples)
+  j: OSA yellow(+)/blue(-) coordinate
+  g: OSA green(+)/red(-) coordinate
+  x10, y10: CIE 1964 10-degree chromaticity
+  Y10: luminous reflectance factor (0-100)
+  illuminant: D65
+provenance:
+  extraction_method: >
+    pdftotext -layout on ASTM E1360 Table 1 (pages 3-7), two-column parse
+    anchored on the (x10,y10) chromaticity pair; OSA lattice L recovered per row
+    by chromaticity-primary fit to the official OSA_UCS_to_XYZ formula
+    (colour-science).
+  extraction_date: 2026-07-09
+  verification_status: >
+    Every one of the 558 rows validated against the official OSA-UCS formula:
+    max chromaticity residual 0.0052, mean 0.00029, zero rows above 0.01, zero
+    duplicate (L,j,g). One pdftotext OCR-layer error caught and fixed against
+    the PDF render + the formula + neighbour monotonicity: L=1,j=-3,g=3 y10
+    0.2041 -> 0.2941 (a "9" misread as "0"; the PDF itself prints 0.2941).
+usage_notes: >
+  neighbor_pairs.csv lists the 344 equal-perceptual-step pairs (same-parity
+  sqrt2 cuboctahedral neighbours among the 478 integer-coordinate samples) — the
+  standard's "twelve equidistant nearest neighbours" structure. A uniform space
+  maps every sample's neighbours to EQUAL distances; the ColorBench
+  judge_osa_spacing scores the mean coefficient-of-variation of those distances
+  (lower = better). The 80 half-integer-L samples are kept for completeness but
+  excluded from the pair set to avoid mixing step sizes. Coordinates are CIE
+  1964 10-degree; candidate spaces are fed the xyY->XYZ stimuli directly (the
+  spacing CV is relative, so the 2/10-degree observer choice is immaterial).
+license: >
+  ASTM standard is copyrighted; the OSA-UCS CIE specification values are
+  factual data from the committee's public work. Cite ASTM E1360 and
+  MacAdam (1974).
