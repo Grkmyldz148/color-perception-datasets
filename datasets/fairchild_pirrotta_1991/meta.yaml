@@ -1,0 +1,49 @@
+name: fairchild_pirrotta_1991
+full_name: Fairchild & Pirrotta (1991) chromatic-lightness (Helmholtz-Kohlrausch) object-colour data
+schema: hk_lightness
+n_samples: 36
+n_observers: 11
+illuminant: C
+observer: CIE 1931 2 degree
+citation: >
+  Fairchild, M. D. & Pirrotta, E. (1991). Predicting the lightness of chromatic
+  object colors using CIELAB. Color Research & Application, 16(6), 385-393.
+  DOI 10.1002/col.5080160611.
+source_pdf: Predicting_the_lightness_of_chromatic_ob.pdf (Table I, journal p389)
+description: >
+  The classic OBJECT-colour Helmholtz-Kohlrausch dataset: 11 observers matched
+  the perceived lightness of a variable achromatic sample to each of 36 chromatic
+  Munsell papers (4 hues 5R/5Y/2.5G/5PB x 3 values x 3 chroma levels). The
+  "observed_lightness" column is the mean L* of the equal-lightness achromatic
+  match = the H-K-corrected perceptual lightness. Chromatic samples appear
+  LIGHTER than their measured L* by an amount that grows with chroma
+  (observed - L* rises from ~3 at C*~10 to ~11 at C*~71) — the H-K effect on
+  surface colours. The reference for CIELAB L* corrections (the L** metric).
+schema_columns:
+  sample_id: fp_<row>
+  munsell: Munsell notation (hue value/chroma)
+  L_star: measured CIELAB L* of the glossy painted-paper sample
+  C_star: measured CIELAB C*
+  h_deg: measured CIELAB hue angle (degrees)
+  observed_lightness: mean L* of the achromatic sample judged equal in lightness (n=11)
+  std_dev: interobserver SD of observed_lightness (mean 4.2)
+  illuminant: C (Munsell standard; experiment used 6900K simulated daylight)
+provenance:
+  extraction_method: >
+    Read from a high-DPI render of Table I (the Academia.edu scan's text layer
+    is corrupted by a watermark). Every one of the 36 rows validated against the
+    Munsell renotation (colour-science munsell_colour_to_xyY -> Lab under
+    illuminant C): all L*/C*/h agree with the notation within real-sample
+    tolerance (dL<4, dC<8, dh<12) — zero transcription errors.
+  extraction_date: 2026-07-09
+usage_notes: >
+  ColorBench judge_fp_lightness (hk_mechanism tier, diagnostic): compares each
+  sample's H-K boost (observed_lightness - L*) with the candidate space's own
+  chromatic-vs-equal-luminance-gray lightness difference; Spearman rho. A space
+  that models H-K scores rho>0; purely luminance-based lightness (OKLab, CIELab)
+  scores ~0 (correctly flags that static geometric spaces do not model surface
+  H-K). Complements the aperture-colour H-K sets (Sanders-Wyszecki, Wyszecki
+  1967, Zhang) with real OBJECT-colour data.
+license: >
+  Data are factual experimental results from Fairchild & Pirrotta (1991).
+  Cite the paper.

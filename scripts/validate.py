@@ -280,6 +280,8 @@ VALIDATORS = {
         ("n_pairs",), ("mean_perceptual_CD", "n_observations")),
     "uniform_spacing": _generic_validator(
         ("n_samples",), ("L", "j", "g", "x10", "y10", "Y10")),
+    "hk_lightness": _generic_validator(
+        ("n_samples",), ("L_star", "C_star", "h_deg", "observed_lightness")),
     "tolerance_ellipsoids": lambda meta, rows: ([
         f"row count {len(rows)} != meta declared {meta['n_ellipsoids']}"
     ] if meta.get("n_ellipsoids") and meta["n_ellipsoids"] != len(rows) else []),
