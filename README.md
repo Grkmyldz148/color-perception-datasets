@@ -1,6 +1,6 @@
 # color-perception-datasets
 
-A clean, schema-validated pool of psychophysical color datasets used in color-space and color-difference research. 43 datasets, one consistent layout, every file CC BY 4.0.
+A clean, schema-validated pool of psychophysical color datasets used in color-space and color-difference research. **46 datasets**, one consistent layout, **every dataset digit- or byte-verified against its primary source** (a 2026-07 audit repaired ~30 OCR/transcription errors across 7 sets — see each `meta.yaml` provenance block).
 
 Maintained by **[Görkem Yıldız](https://gorkemyildiz.com)** as part of the [helmlab](https://helmlab.space) research toolkit.
 
@@ -25,7 +25,7 @@ Maintained by **[Görkem Yıldız](https://gorkemyildiz.com)** as part of the [h
 | [Ebner-Fairchild](datasets/ebner_fairchild/) | Constant-hue surfaces | 306 | D65 / 2° | 15 hue centers (0°…336°, 24° step) |
 | [Pointer 1980](datasets/pointer/) | Real-surface gamut boundary | 576 | Illuminant C | Boundary points (L × hue grid) |
 | [Munsell](datasets/munsell/) | Renotation chips | 2,734 | Illuminant C | Snapshot from `colour` library |
-| [xkcd colors](datasets/xkcd_colors/) | Color naming (English) | 949 | sRGB / D65 | Curated 950 most-popular names (Munroe 2010, CC0) |
+| [xkcd colors](datasets/xkcd_colors/) | Color naming (English) | 949 | sRGB / D65 | Curated 949 most-popular names (Munroe 2010, CC0) |
 | [WCS](datasets/wcs/) | Cross-cultural naming | 330 chips × 110 langs × 863k responses | Munsell / Illum C | World Color Survey (Kay-Berlin-Maffi 1976–1981) |
 | [Luo-Rigg 1986](datasets/luo_rigg_ellipses/) | **JND** chromaticity ellipses | 132 (10 source sets) | Illuminant C | Surface-color JND, larger than MacAdam 1942 |
 | [Alman 1989](datasets/alman1989/) | 3D tolerance ellipsoids | 45 (9 centers) | D65 / 2° | RIT-DuPont probit-fitted tolerance, industrial QA |
@@ -35,9 +35,9 @@ Maintained by **[Görkem Yıldız](https://gorkemyildiz.com)** as part of the [h
 | [Brown-MacAdam 1949](datasets/brown_macadam_1949_ellipsoids/) | **JND** 3D ellipsoids | 114 (38 centers × 3 obs) | dark surround | WRJB + DLM (3D) + PGN (2D MacAdam). First 3-D color-matching variance with luminance. From W-S 1982 Table I(5.4.2). |
 | [Brown 1957](datasets/brown_1957_12obs_ellipsoids/) | **JND** 3D ellipsoids (12-obs avg) | 46 (22 centers × straight + weighted) | white | First large-N (n=12) average ellipsoids. From W-S 1982 Table II(5.4.2). |
 | [Wyszecki-Fielder 1971](datasets/wyszecki_fielder_1971_ellipsoids/) | **JND** 3D ellipsoids | 84 (28 centers × 3 obs) | white surround | GF, AR, GW observers; constant Y₀=12 cd/m². From W-S 1982 Table I(5.4.3). |
-| [Sanders-Wyszecki 1964](datasets/sanders_wyszecki_1964_HK/) | Heterochromatic brightness (H-K) | 88 (wavelength series × directions) | white | 20 observers, B/L ratio per chromaticity. From W-S 1982 Table 1(5.8.1). |
+| [Sanders-Wyszecki 1964](datasets/sanders_wyszecki_1964_HK/) | Heterochromatic brightness (H-K) | 95 (wavelength series × directions) | white | 20 observers, B/L ratio per chromaticity. From W-S 1982 Table 1(5.8.1). |
 | [Wyszecki 1967 OSA tiles](datasets/wyszecki_1967_osa_tiles/) | Tile lightness vs brightness | 43 tiles | C / artificial daylight | 76 observers, Y_gray/Y_color ratio (H-K). From W-S 1982 Table 2(5.8.1). |
-| [Wright 1941](datasets/wright_1941_jnd_chromaticity/) | **JND** chromaticity steps (35+ lines) | 539 | CIE 1931 / 2° foveal | Original "Wright dashes" — 4 observers, CIE + RUCS charts, founding non-uniformity evidence. From Proc Phys Soc 53, 93 (1941) Tables 1-7. |
+| [Wright 1941](datasets/wright_1941_jnd_chromaticity/) | **JND** chromaticity steps (35+ lines) | 533 | CIE 1931 / 2° foveal | Original "Wright dashes" — 4 observers, CIE + RUCS charts, founding non-uniformity evidence. From Proc Phys Soc 53, 93 (1941) Tables 1-7. |
 | [Smet 2010 memory colors](datasets/smet_2010_memory_colors/) | Memory colour distributions | 10 | IPT / D65 | 10 familiar objects × ~250 observer ratings, Sa metric. Optics Express 18, 26229. |
 | [CIE 224:2017 TM-30 CES](datasets/cie_224_2017_tm30_ces/) | Reflectance spectra | 99 samples × 400 wavelengths | spectral 380-779nm | 99 color evaluation samples for modern fidelity index (TM-30 R_f). Mirrored from colour-science. |
 | [CIE 170-2 cone fundamentals](datasets/cie_170_2_2015_cone_fundamentals/) | Spectral sensitivities | 4 files | spectral 390-830nm | Stockman-Sharpe 2°/10° cone fundamentals at 1/5 nm. From CVRL + official CIE. |
@@ -50,7 +50,10 @@ Maintained by **[Görkem Yıldız](https://gorkemyildiz.com)** as part of the [h
 | [Huang 2012](datasets/huang_2012_cielab_ellipses/) | **JND** chromaticity ellipses (printed) | 17 centers | CIELAB10 / D65 | 9 observers, 446 pairs × 27 reps. Industrial printed samples. JOSA A 29, 883 (2012). |
 | [Koenderink 2026 3D metric](datasets/koenderink_2026_3d_metric_field/) | **JND** 3D metric field | 35 (BCC lattice) | RGB / display | 8 observers, 7 orientations × 14 extents. Median 3D Σ matrices. bioRxiv 2026. |
 | [Klabes 2024 lighting preference](datasets/klabes_2024_color_preference_lighting/) | Color preference aggregation | **890 scenarios** × 67 metrics + SPDs | various / mixed | Z-score color preference + SPD for 890 lighting scenes from ~20 studies. TU Darmstadt 2024. |
-| [Natural objects 2024 Argentina](datasets/natural_objects_2024_southern_cone_spectra/) | Spectral reflectance | 532 objects (3 files) | 400-1000 nm at 4 nm | Plants/Animals/Stones from Northwestern Argentina. Southern hemisphere bias correction. Scientific Data 2025. |
+| [Natural objects 2024 Argentina](datasets/natural_objects_2024_southern_cone_spectra/) | Spectral reflectance | 1,576 measurements (3 domains) | 400-1000 nm at 4 nm | Plants/Animals/Stones from Northwestern Argentina. Southern hemisphere bias correction. Scientific Data 2025. |
+| [OSA-UCS 1974](datasets/osa_ucs_1974/) | **Uniform spacing** (committee atlas) | 558 samples + 344 equal-step pairs | D65 / 10° | The OSA committee's cuboctahedral equal-spacing lattice — the independent, **non-Munsell** spacing anchor. From ASTM E1360 Table 1; every row formula-validated. |
+| [Fairchild-Pirrotta 1991](datasets/fairchild_pirrotta_1991/) | **H-K** object-colour lightness | 36 chromatic Munsell samples | Illuminant C | 11 observers matched achromatic lightness to chromatic surfaces — the classic CIELAB L\* correction reference. Color Res Appl 16, 385 (1991) Table I. |
+| [Regan-Reffin-Mollon 1994](datasets/regan_1994_cvd_ellipses/) | **CVD discrimination ellipses** | 27 observers × 79 ellipses | display (equiluminant) | The pool's first **real colour-vision-deficient** observer data — protan/deutan/tritan + normal ellipses (Cambridge Colour Test). Validates CVD simulations. Vision Res 34, 1279 (1994) Tables 1-2. |
 
 ## Layout
 
