@@ -24,25 +24,27 @@
 <main>
 <div class="detail-header">
   <div class="crumbs"><a href="../">Datasets</a> / Fairchild_Johnson_1999</div>
-  <h1>Fairchild &amp; Johnson (1999) constant-perceived-hue surfaces</h1>
-  <p class="lede">constant-perceived-hue surfaces (306 colors × 15 hue angles, 30 observers × 3 trials)</p>
-  <div class="detail-tags"><span class="card-type" style="background:#0891b215;color:#0891b2"><span class="dot"></span>constant-hue</span></div>
+  <h1>Fairchild &amp; Johnson (1999) cross-media corresponding colors (printed / D65-CRT / D50-CRT)</h1>
+  <p class="lede">Cross-media color reproduction matches: 110 colors from 6 natural scenes (barn 24, colorchecker 25, fruit 19, golfer 25, noidea 1, pinklady 16), each given as a printed ↔ D65-CRT ↔ D50-CRT corresponding-color triple (3 media × 110 colors = 330 rows).
+</p>
+  <div class="detail-tags"><span class="card-type" style="background:#d9770615;color:#d97706"><span class="dot"></span>corresponding-colors</span></div>
 </div>
 
 <div class="detail-grid">
   <div>
-    <h2>Description</h2><p>Constant-perceived-hue surfaces measured by Fairchild &amp; Johnson (1999) on a calibrated CRT for the cross-medium matching task &#x27;which printed color corresponds to which CRT color of the same perceived hue?&#x27;. 306 sampled colors across 15 equally spaced hue angles (24° step in CIELAB), 30 observers, 3 trials each. Used to evaluate CIELAB and CIECAM97s hue uniformity; the article is the standard reference for cross-medium (printed vs display) hue surfaces.</p>
+    <h2>Description</h2><p>Cross-media appearance-reproduction experiment by Fairchild &amp; Johnson (1999): observers matched colors across printed hardcopy and CRT display under D65 and D50 states, producing corresponding-color triples per scene color. The hue_id column holds SCENE names (barn, colorchecker, fruit, golfer, noidea, pinklady), not hue loci. Useful as a corresponding-colors / chromatic-adaptation judge for cross-media reproduction.
+</p>
 
     <div class="download-block">
       <div class="info">
         <div class="name">fairchild_johnson.zip</div>
         <div class="sub">Contains canonical.csv + meta.yaml + raw/</div>
       </div>
-      <span class="size">12.8 KB</span>
+      <span class="size">13.3 KB</span>
       <a class="btn btn-primary" href="../downloads/fairchild_johnson.zip" download>Download</a>
     </div>
 
-    <h2>Notes</h2><ul class='notes-list'><li>Denser than both Hung-Berns (156 chips × 5 hue families) and Ebner-Fairchild (306 chips × 15 hue centers); but Ebner-Fairchild was on CRT only, while this dataset spans printed AND CRT media.</li><li>The YAML&#x27;s top-level key is the medium (e.g. `printed`); inner keys are scene names rather than hue numbers — refer to the paper for the angle-to-scene mapping.</li><li>Per-chip observer counts and inter-observer variability are summarized in the paper but not preserved in the raw YAML.</li></ul>
+    <h2>Notes</h2><ul class='notes-list'><li>⚠ SCHEMA DÜZELTMESİ (2026-06-12): Bu set constant-hue verisi DEĞİLDİR. coloria-dev kaynak dosyasının başlığı iki makaleyi karıştırır — abstract Ebner&amp;Fairchild 1998 SPIE hue-yüzeyleri (306×15, o veri havuzda ebner_fairchild olarak ZATEN var), veri ise Fairchild&amp;Johnson 1999 CR&amp;A cross-media reproduction deneyi (printed ↔ D65-CRT ↔ D50-CRT eşleşmeleri). hue_id kolonu sahne adıdır, lokus değil. Constant-hue yargıcı olarak KULLANILAMAZ (G1 G0-c2 verdikti, color-space/research/fortress/G1_G0C2_VERDICT.md); corresponding-colors / adaptasyon yargıcı olarak kullanılabilir (printed↔CRT üçlüleri).</li><li>2026-07-08 audit: 330 rows verified = 3 media × 110 colors, every color id complete as a printed/d65crt/d50crt triple; 15 rows at L=100 with nonzero a,b are printed-medium white patches (media-relative colorimetry). The 15 rows at L=100 are plausible, not errors.</li><li>The raw YAML&#x27;s top-level key is the medium (e.g. `printed`); inner keys are scene names — refer to the paper for details.</li><li>Per-chip observer counts and inter-observer variability are summarized in the paper but not preserved in the raw YAML.</li></ul>
 
     <h2>Sample rows</h2>
     <p>First 5 rows of <code>canonical.csv</code>:</p>
@@ -53,13 +55,13 @@
     <h3>Raw files preserved</h3><div class='table-wrap'><table><thead><tr><th>File</th><th class='num'>Size</th></tr></thead><tbody><tr><td><code>raw/README.md</code></td><td class='num'>1.4 KB</td></tr><tr><td><code>raw/fairchild-johnson.yaml</code></td><td class='num'>10.3 KB</td></tr></tbody></table></div>
 
     <h2>Source publications</h2>
-    <div class="citation">Fairchild, M. D. &amp; Johnson, G. M. (1999). Color Appearance Reproduction: Visual Data and Predictive Modeling. Color Research &amp; Application 24(2), 121–131.</div><div class="citation">Snapshot: coloria-dev/color-data (community extraction).</div>
+    <div class="citation">Fairchild, M. D. &amp; Johnson, G. M. (1999). Color Appearance Reproduction: Visual Data and Predictive Modeling. Color Research &amp; Application 24(2), 121-131.</div><div class="citation">Snapshot: coloria-dev/color-data (community extraction).</div>
   </div>
 
   <aside>
     <div class="aside-card">
       <h4>At a glance</h4>
-      <div class="aside-stat"><span class="k">Year</span><span class="v">1999</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">D65</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">constant_hue</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">330</span></div><div class="aside-stat"><span class="k">Observers</span><span class="v">30</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">12.8 KB</span></div>
+      <div class="aside-stat"><span class="k">Year</span><span class="v">1999</span></div><div class="aside-stat"><span class="k">Illuminant</span><span class="v">D65</span></div><div class="aside-stat"><span class="k">Schema</span><span class="v">corresponding_colors</span></div><div class="aside-stat"><span class="k">Rows</span><span class="v">330</span></div><div class="aside-stat"><span class="k">Observers</span><span class="v">30</span></div><div class="aside-stat"><span class="k">File size</span><span class="v">13.3 KB</span></div>
     </div>
   </aside>
 </div>
