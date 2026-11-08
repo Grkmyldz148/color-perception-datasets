@@ -23,6 +23,36 @@ DOCS = REPO / "docs"
 DL = DOCS / "downloads"
 SCHEMAS = REPO / "schemas"
 
+# Datasets left out of all-datasets.zip (2026-11-08): the license stated in their meta.yaml
+# is unspecified, limited to academic / non-commercial / research use, or absent.
+# Each one stays downloadable on its own page with its own terms. Full license review pending.
+BUNDLE_EXCLUDED = {
+    "alder1982", "alman1989", "asano_observers", "cie_170_2_2015_cone_fundamentals",
+    "cie_224_2017_tm30_ces", "corresponding_colours", "fairchild_chen", "fairchild_johnson",
+    "fairchild_pirrotta_1991", "lu_2023_facial_skin_colors", "luo_rigg_ellipses", "lutchi",
+    "osa_ucs_1974", "regan_1994_cvd_ellipses", "spcd_2023_photographic_color_difference",
+    "wcs", "xiao_unique_hues",
+}
+
+# Known errors in the published files (2026-11-08). The data files stay unchanged until the
+# corrected release; the notes are shown on the dataset pages and on the index page.
+KNOWN_ERRORS = {
+    "macadam1974": (
+        "Known error (2026-11-08): part of the dv values in this file are model estimates, "
+        "not the observed values published by MacAdam (1974). The data file is unchanged "
+        "until the corrected release; do not use dv from this version for evaluation."
+    ),
+    "fairchild_pirrotta_1991": (
+        "Known error (2026-11-08): sample 26 has L* = 72.75 in this file; the published "
+        "value is 72.16. The data file is unchanged until the corrected release."
+    ),
+}
+KNOWN_ERRORS_INDEX = (
+    "Known errors (2026-11-08): two files contain wrong values, MacAdam 1974 (dv) and "
+    "Fairchild & Pirrotta 1991 (sample 26 L*). See their pages; corrected files are planned."
+)
+TAKEDOWN_URL = "https://github.com/Grkmyldz148/color-perception-datasets/issues"
+
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -63,7 +93,7 @@ def make_combined_zip(out_path: Path) -> int:
         out_path.unlink()
     with zipfile.ZipFile(out_path, "w", compression=zipfile.ZIP_DEFLATED) as zf:
         for ds_dir in sorted(DATASETS.iterdir()):
-            if not ds_dir.is_dir():
+            if not ds_dir.is_dir() or ds_dir.name in BUNDLE_EXCLUDED:
                 continue
             for p in sorted(ds_dir.rglob("*")):
                 if p.is_file():
@@ -630,7 +660,7 @@ def header(active: str = "") -> str:
 
 FOOTER = """<footer class="site-footer">
   <div class="inner">
-    <span>Released under CC BY 4.0 · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
+    <span>Each dataset has its own license, shown on its page (updated 2026-11-08). Takedown requests: <a href="https://github.com/Grkmyldz148/color-perception-datasets/issues">GitHub issues</a> · Maintained by <a href="https://gorkemyildiz.com">Görkem Yıldız</a> · part of <a href="https://helmlab.space">helmlab</a>.</span>
     <span><a href="https://github.com/Grkmyldz148/color-perception-datasets">Source on GitHub</a></span>
   </div>
 </footer>
@@ -786,12 +816,16 @@ def build() -> None:
   </div>
 </article>""")
 
+    n_excluded = sum(1 for s in BUNDLE_EXCLUDED if (DATASETS / s).is_dir())
+
     # ----- index page -----
     index_body = f"""
 <section class="hero">
   <span class="eyebrow">Open dataset pool</span>
   <h1>Psychophysical color-perception datasets, cleaned and unified.</h1>
   <p class="lede">A single pool of {len(cards)} classic and modern datasets — JND ellipses, suprathreshold color difference, constant hue, gamut boundaries, corresponding colors, color naming and more — packaged in consistent schemas with provenance and caveats intact.</p>
+  <p class="lede">{html.escape(KNOWN_ERRORS_INDEX)}</p>
+  <p class="lede">“Download all” leaves out {n_excluded} datasets whose license is unspecified or limited to academic or non-commercial use; each of them can still be downloaded from its own page, under its own terms.</p>
   <div class="hero-actions">
     <a class="btn btn-primary" href="downloads/all-datasets.zip" download>Download all ({human_size(all_size)})</a>
     <a class="btn btn-ghost" href="https://github.com/Grkmyldz148/color-perception-datasets" target="_blank" rel="noopener">View on GitHub</a>
@@ -801,7 +835,7 @@ def build() -> None:
     <div class="hero-stat"><div class="num">{total_rows:,}</div><div class="lbl">total rows</div></div>
     <div class="hero-stat"><div class="num">{len(tag_counts)}</div><div class="lbl">categories</div></div>
     <div class="hero-stat"><div class="num">{year_span}</div><div class="lbl">year range</div></div>
-    <div class="hero-stat"><div class="num">CC BY 4.0</div><div class="lbl">license</div></div>
+    <div class="hero-stat"><div class="num">Per dataset</div><div class="lbl">license</div></div>
   </div>
 </section>
 
@@ -961,6 +995,7 @@ def build() -> None:
         if m.get("dv_units"): add("Δv units", m["dv_units"][:40] + ("…" if len(str(m["dv_units"])) > 40 else ""))
         if "is_jnd" in m: add("JND data?", "yes" if m["is_jnd"] else "no")
         add("File size", human_size(m["__zip_size"]))
+        add("License", " ".join(str(m.get("license", "")).split()))
 
         sub_html = ""
         if m.get("sub_datasets"):
@@ -983,10 +1018,14 @@ def build() -> None:
                     for f in files
                 ) + "</tbody></table></div>"
 
+        known_error_html = ""
+        if slug in KNOWN_ERRORS:
+            known_error_html = f'<p class="lede"><strong>{html.escape(KNOWN_ERRORS[slug])}</strong></p>'
+
         body = f"""<div class="detail-header">
   <div class="crumbs"><a href="../">Datasets</a> / {html.escape(m.get('name', slug))}</div>
   <h1>{html.escape(m.get('full_name', m.get('name', slug)))}</h1>
-  <p class="lede">{html.escape(m.get('type', ''))}</p>
+  <p class="lede">{html.escape(m.get('type', ''))}</p>{known_error_html}
   <div class="detail-tags">{tag_chip_html}</div>
 </div>
 
