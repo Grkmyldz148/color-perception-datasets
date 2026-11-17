@@ -124,7 +124,7 @@ DATASET_YEARS = {
     "breneman1987": 1987, "cherepkova_contrast": 2025, "combvd": 1995,
     "corresponding_colours": 1999, "ebner_fairchild": 1998,
     "fairchild_chen": 2010, "fairchild_johnson": 1999, "he2022": 2022,
-    "helmlabfb": 2026, "hong_2025_ellipsoids": 2025, "hung_berns": 1995,
+    "hong_2025_ellipsoids": 2025, "hung_berns": 1995,
     "luo_rigg_ellipses": 1986, "lutchi": 1997,
     "macadam1935_optimal": 1935, "macadam1942": 1942, "macadam1974": 1974,
     "munsell": 1943, "pointer": 1980, "wcs": 1981,
@@ -1091,9 +1091,6 @@ def build() -> None:
   <li>It is <em>not</em> exhaustive — paywalled / out-of-print datasets (Brown 1957, Wyszecki-Fielder 1971, Huang 2015 SCD/LCD, Sanders-Wyszecki 1958, Bartleson 1960, etc.) are listed as <em>Wanted</em> in the README. PRs welcome.</li>
   <li>It is <em>not</em> a substitute for reading the original papers. The papers carry experimental conditions, observer briefing, and uncertainty estimates that no CSV row count can replace.</li>
 </ul>
-
-<h2>Privacy</h2>
-<p>The HelmlabFB dataset is self-collected and originally contained 71 named observers. All names have been replaced with deterministic pseudonyms (<code>observer_001</code>..<code>observer_071</code>) so per-observer grouping is preserved for analysis but no personal data is published.</p>
 
 <h2>How to contribute</h2>
 <p>Open an issue or a pull request on <a href="https://github.com/Grkmyldz148/color-perception-datasets">GitHub</a>. Useful contributions: missing datasets (especially the paywalled classics), corrections to caveats, additional metadata fields, schema extensions.</p>

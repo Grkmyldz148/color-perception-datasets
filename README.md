@@ -1,6 +1,6 @@
 # color-perception-datasets
 
-A clean, schema-validated pool of psychophysical color datasets used in color-space and color-difference research. **46 datasets**, one consistent layout, **every dataset digit- or byte-verified against its primary source** (a 2026-07 audit repaired ~30 OCR/transcription errors across 7 sets — see each `meta.yaml` provenance block).
+A clean, schema-validated pool of psychophysical color datasets used in color-space and color-difference research. **45 datasets**, one consistent layout, **every dataset digit- or byte-verified against its primary source** (a 2026-07 audit repaired ~30 OCR/transcription errors across 7 sets — see each `meta.yaml` provenance block).
 
 Maintained by **[Görkem Yıldız](https://gorkemyildiz.com)** as part of the [helmlab](https://helmlab.space) research toolkit.
 
@@ -20,7 +20,6 @@ Maintained by **[Görkem Yıldız](https://gorkemyildiz.com)** as part of the [h
 | [Corresponding Colours](datasets/corresponding_colours/) | Corresponding colors compilation | 746 | varies | Luo & Rhodes 1999 bundle: Breneman + CSAJ + Helson + Kuo + Lam + LUTCHI + McCann + RIT + Stevens |
 | [LUTCHI](datasets/lutchi/) | Color appearance (magnitude estimation) | 100 files | varies | Luo & Rhodes 1997, 43k estimations across 100 raw files — compound legacy schema |
 | [He 2022](datasets/he2022/) | Pair Δ values (suprathreshold) | 82 | D65 / 10° | 3D-printed spheres, Δ-only schema |
-| [HelmlabFB](datasets/helmlabfb/) | Pair color difference (per-judgement) | 3,477 | sRGB / D65 | Collected by [helmlab.space](https://helmlab.space); 71 observers pseudonymized; 4 designed zones |
 | [Hung-Berns](datasets/hung_berns/) | Constant-hue chips | 156 | D65 / 2° | Hue-uniformity test |
 | [Ebner-Fairchild](datasets/ebner_fairchild/) | Constant-hue surfaces | 306 | D65 / 2° | 15 hue centers (0°…336°, 24° step) |
 | [Pointer 1980](datasets/pointer/) | Real-surface gamut boundary | 576 | Illuminant C | Boundary points (L × hue grid) |
@@ -72,7 +71,7 @@ All canonical CSVs use CIELAB. The illuminant used to derive each pair's L*a*b* 
 
 Three schemas cover everything. Each is fully specified under [`schemas/`](schemas/).
 
-- **`pair_diff`** — color-difference pairs with both endpoints in CIELAB and a `dv` (visual difference) score. Used by COMBVD, MacAdam 1974, HelmlabFB.
+- **`pair_diff`** — color-difference pairs with both endpoints in CIELAB and a `dv` (visual difference) score. Used by COMBVD and MacAdam 1974.
 - **`jnd_ellipses`** — discrimination-threshold ellipses around chromaticity centers. Used by MacAdam 1942.
 - **`corresponding_colors`** — chromatic-adaptation pairs (test stimulus + matched stimulus under reference illuminant). Used by Breneman 1987.
 - **`constant_hue`** — chips arranged on perceptual constant-hue loci. Used by Hung-Berns, Ebner-Fairchild, Munsell.
@@ -126,8 +125,6 @@ Each dataset's `meta.yaml` carries a `caveats:` field. The ones most often misse
 - **MacAdam 1974 is suprathreshold, not JND.** The famous MacAdam *ellipses* are from his 1942 paper; the 1974 paper is OSA UCS sample-pair spacing. If your code labels it `is_jnd = True`, that's a bug.
 - **COMBVD uses three different reference whites.** The canonical CIELAB is computed under each pair's own white, not a common D65. Don't mix-and-match without chromatic adaptation.
 - **He 2022 chip-pair linkage is missing in the source xlsx.** The pair sheet reports only Δ values, not which two chips form each pair. We keep the chips and Δ values in separate CSVs (`chips.csv`, `canonical.csv`).
-- **HelmlabFB has no display calibration.** Observer monitors and ambient light vary across sessions; treat any per-pair number as a noisy estimate. Stratify by `color_gamut` (sRGB vs P3) and `platform` if you need cleaner subsets.
-- **HelmlabFB observers are all tr-TR.** Cross-cultural generalization is unverified.
 - **Pointer 1980 was specified under Illuminant SC**, not D65. The canonical L*a*b* is derived from the LCH source without chromatic adaptation.
 
 ## License

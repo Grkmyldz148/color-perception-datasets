@@ -111,7 +111,6 @@ license: "Research-only access. The published score data is available under fair
 related_datasets:
   - combvd — classic uniformly-colored patch ΔE (BFD-P + LEEDS + RIT-DuPont + Witt)
   - he2022 — moderate-size suprathreshold patch ΔE
-  - helmlabfb — modern crowdsourced patch ΔE
 
 tags:
   - color-difference
